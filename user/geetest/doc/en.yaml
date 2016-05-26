@@ -16,6 +16,7 @@ install: |
     1.2 Go to the obtain page, search hellochanzhi.
     1.3 Click the AutoInstall and begin the installation.
   2. Manual install. Unzip this package and copy files under module directory to the chanzhi/module.
+  3. The parameter configuration:regist account from a test website (http://user.geetest.com/), add validation,then you can get a set of current validation ID/Key, add the ID and the Key to the plugin config in the configuration file.
 releases:
   1.0:
     chanzhi:

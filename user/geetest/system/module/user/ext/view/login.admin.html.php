@@ -75,7 +75,7 @@ if(isset($pageJS)) js::execute($pageJS);
                 e.preventDefault();
             }
             $.ajax({
-                url: "../web/VerifyLoginServlet.php", // 进行二次验证
+                url: "../system/module/user/ext/web/VerifyLoginServlet.php", // 进行二次验证
                 type: "post",
                 // dataType: "json",
                 data: {
@@ -91,11 +91,10 @@ if(isset($pageJS)) js::execute($pageJS);
         captchaObj.bindOn("#popup-submit");
         // 将验证码加到id为captcha的元素里
         captchaObj.appendTo("#popup-captcha");
-        // 更多接口参考：http://www.geetest.com/install/sections/idx-client-sdk.html
     };
     $.ajax({
         // 获取id，challenge，success（是否启用failback）
-        url: "../web/StartCaptchaServlet.php?t=" + (new Date()).getTime(), // 加随机数防止缓存
+        url: "../system/module/user/ext/web/StartCaptchaServlet.php?t=" + (new Date()).getTime(), // 加随机数防止缓存
         type: "get",
         dataType: "json",
         success: function (data) {
