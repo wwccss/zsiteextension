@@ -1,0 +1,30 @@
+---
+name: Geetest Validation plugin
+code: GeetestValidateCode
+type: extension
+copyright: GavinHsueh
+site: http://www.chanzhi.org/
+author: 'gavinhsueh1989@gmail.com>'
+abstract: >
+  Login authentications, drag the puzzle form validation, security and simple.
+desc: >
+  Front desk embedded validation, the background pop-up authentication.
+  Operation is simple and beautiful, and effectively prevent malicious login.
+install: |
+  1. Install through the buildin extension manager.
+    1.1 Login to chanzhi system as administrator, visit the admin->extension
+    1.2 Go to the obtain page, search hellochanzhi.
+    1.3 Click the AutoInstall and begin the installation.
+  2. Manual install. Unzip this package and copy files under module directory to the chanzhi/module.
+  3. The parameter configuration:regist account from a test website (http://user.geetest.com/), add validation,then you can get a set of current validation ID/Key, add the ID and the Key to the plugin config in the configuration file.
+releases:
+  1.0:
+    chanzhi:
+      compatible: all
+      incompatible:
+    charge: free
+    date: 2016-5-20
+    conflicts: null
+    depends: null
+    license: ZPL (http://zpl.pub/v1)
+    changelog: the first version
