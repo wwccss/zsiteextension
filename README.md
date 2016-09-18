@@ -21,9 +21,9 @@
 #### Security
 #### SEO
  
- * <a href='/easysoft/changeextension/tree/master/seo/StaticsCode'>StatisticsCode</a> Gavin hu
+ * <a href='https://github.com/easysoft/changerextension/tree/master/seo/statisticscode'>StatisticsCode</a> Gavin hu
 
 #### Theme
 #### User
 
- * <a href='/easysoft/changeextension/tree/master/user/geetest'>geetest</a> Gavin hu.
+ * <a href='https://github.com/easysoft/changerextension/tree/master/user/geetest'>geetest</a> Gavin hu.
