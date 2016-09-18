@@ -1,2 +1,5 @@
-# chanzhi_extension
-the extension repo for chanzhi enterprise portal system.
+蝉知扩展库使用说明
+
+这个库用来大家分享交流蝉知扩展使用。您如果有好的插件，可以通过github的Pull Request来提交您的代码。
+为了方便代码管理，我们对插件做了一定的分类，请您选择相应的目录提交代码。
+同时请修改README.md文件，将您的插件放到索引中。
