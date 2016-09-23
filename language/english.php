@@ -1104,14 +1104,14 @@ $lang->index->news    = 'Latest Feed';
 $lang->index->blog    = 'Latest Blog';
 $lang->index->contact = 'Contact Us';
 /* install */
-$lang->install->common  = 'Installl';
+$lang->install->common  = 'Install';
 $lang->install->next    = 'Next';
 $lang->install->pre     = 'Return';
 $lang->install->reload  = 'Refresh';
 $lang->install->error   = 'Error';
 
-$lang->install->start            = 'Installl';
-$lang->install->keepInstalllling   = 'Continue installation';
+$lang->install->start            = 'Install';
+$lang->install->keepInstalling   = 'Continue installation';
 $lang->install->welcome          = 'Thank you for choosing Changer CMS!';
 $lang->install->license          = 'License';
 $lang->install->desc             = <<<EOT
@@ -1187,7 +1187,7 @@ $lang->install->account  = 'Account';
 $lang->install->password = 'Password';
 $lang->install->errorEmptyPassword = 'Password Required!';
 
-$lang->install->success    = "Installlled!";
+$lang->install->success    = "Installed!";
 $lang->install->visitAdmin = 'Admin Login';
 /* links */
 $lang->links->common  = 'Blogroll';
@@ -1486,9 +1486,9 @@ $lang->order->statusList['canceled']  = 'Cancelled';
 /* package */
 $lang->package->common        = 'Plug-ins';
 $lang->package->browse        = 'View Plug-ins';
-$lang->package->install       = 'Installl';
-$lang->package->installAuto   = 'Auto Installl';
-$lang->package->installForce  = 'Mandatory Installl';
+$lang->package->install       = 'Install';
+$lang->package->installAuto   = 'Auto Install';
+$lang->package->installForce  = 'Mandatory Install';
 $lang->package->uninstall     = 'Uninstal';
 $lang->package->activate      = 'Activate';
 $lang->package->deactivate    = 'Disable';
@@ -1496,7 +1496,7 @@ $lang->package->obtain        = 'Get Plug-ins';
 $lang->package->view          = 'Details';
 $lang->package->download      = 'Download';
 $lang->package->downloadAB    = 'Download';
-$lang->package->upload        = 'Local Installl';
+$lang->package->upload        = 'Local Install';
 $lang->package->erase         = 'Clear';
 $lang->package->upgrade       = 'Upgrade';
 $lang->package->agreeLicense  = 'I have read and acknowledged the License';
@@ -1504,7 +1504,7 @@ $lang->package->settemplate   = 'Template Settings';
 $lang->package->buy           = 'Buy';
 
 $lang->package->structure   = 'Directory Structure';
-$lang->package->installed   = 'Installlled';
+$lang->package->installed   = 'Installed';
 $lang->package->deactivated = 'Deactivated';
 $lang->package->available   = 'Available';
 
@@ -1556,14 +1556,14 @@ $lang->package->executeCommands          = '<h3> Execute the followings to fix t
 $lang->package->successDownloadedPackage = 'Plug-in is downloaded.';
 $lang->package->successUploadedPackage   = 'Plug-in is uploaded.';
 $lang->package->successCopiedFiles       = 'Files is copied.';
-$lang->package->successInstallllDB         = 'Databse is installed.';
-$lang->package->viewInstalllled            = 'View installed plug-ins.';
+$lang->package->successInstallDB         = 'Databse is installed.';
+$lang->package->viewInstalled            = 'View installed plug-ins.';
 $lang->package->viewAvailable            = 'View available plug-ins';
 $lang->package->viewDeactivated          = 'View deactivated plug-ins.';
 $lang->package->backDBFile               = 'Relavant plug-in data has been backed up to %s ！';
 
 $lang->package->upgradeExt     = 'Upgrade';
-$lang->package->installExt     = 'Installl';
+$lang->package->installExt     = 'Install';
 $lang->package->upgradeVersion = '(%s has been upgraded to %s)';
 
 $lang->package->types = new stdclass();
@@ -1587,7 +1587,7 @@ $lang->package->errorFileConflicted          = 'It is conflicted with <br />%s. 
 $lang->package->errorPackageNotFound         = ' <strong>%s </strong> is not found. It could be auto downloading failure. Please try it again.';
 $lang->package->errorTargetPathNotWritable   = 'Path <strong>%s </strong>is not writable.';
 $lang->package->errorTargetPathNotExists     = 'Path <strong>%s </strong>does not exist.';
-$lang->package->errorInstallllDB               = 'Databse statement execution failed. Error info is %s';
+$lang->package->errorInstallDB               = 'Databse statement execution failed. Error info is %s';
 $lang->package->errorConflicts               = 'Conflicted with “%s”!';
 $lang->package->errorDepends                 = 'Dependent plug-in<br /><br /> %s is not installed or its version is incompatible.';
 $lang->package->errorIncompatible            = 'This plug-in is incompatible with Changer.';
@@ -2378,7 +2378,7 @@ $lang->ui->templateName    = "Template";
 $lang->ui->currentTheme    = 'Current Theme';
 $lang->ui->internalTheme   = 'Built-in Theme';
 $lang->ui->uploadTheme     = 'Upload a Theme';
-$lang->ui->installTheme    = 'Installl a Theme';
+$lang->ui->installTheme    = 'Install a Theme';
 $lang->ui->importedBlocks  = 'Import a Block';
 $lang->ui->matchedBlock    = 'Match a Block';
 $lang->ui->createBlock     = 'Add a Block';
@@ -2388,7 +2388,7 @@ $lang->ui->help            = "Help";
 $lang->ui->deleteLogo      = "Delete Logo";
 $lang->ui->setCode         = "Code";
 $lang->ui->editTemplate    = "Edit a Template";
-$lang->ui->installedThemes = "Installled Themes";
+$lang->ui->installedThemes = "Installed Themes";
 $lang->ui->enableTheme     = "Apply this theme";
 $lang->ui->industry        = "Industry";
 $lang->ui->offcial         = "Official";
@@ -2458,7 +2458,7 @@ $lang->ui->template->manageTemplate  = 'Template Admin';
 $lang->ui->template->manageBlock     = 'Block Admin';
 $lang->ui->template->enable          = 'Activate';
 $lang->ui->template->reload          = 'Refresh';
-$lang->ui->template->doInstallll       = 'Confirm Installlation';
+$lang->ui->template->doInstall       = 'Confirm Installation';
 $lang->ui->template->info            = 'Template Info';
 $lang->ui->template->demo            = 'Demo';
 $lang->ui->template->qq              = 'QQ';
@@ -3362,6 +3362,7 @@ $lang->widget->typeList->commonMenu     = 'Quick Entry';
 $lang->yangcong = new stdclass();
 $lang->yangcong->qrcodeInfo   = "请用洋葱客户端扫描下方二维码";
 $lang->yangcong->scanFinished = "已完成扫描";
+
 
 
 
