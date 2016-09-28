@@ -23,7 +23,7 @@ $lang->about  = 'About';
 $lang->thanks = 'Acknowledgement';
 
 $lang->chanzhiEPS     = 'Changer CMS';
-$lang->chanzhiEPSx    = 'Changer ';
+$lang->chanzhiEPSx    = 'Changer';
 $lang->agreement      = "I have read and understood<a href='http://zpl.pub/page/zplv12.html' target='_blank'>《Z PUBLIC LICENSE 1.2》</a>. <span class='text-danger'>If not authorized, I should not remove, hide, or cover any signs/links of Changer CMS.</span>";
 $lang->poweredBy      = "<a href='http://www.chanzhi.org/?v=%s' target='_blank' title='%s'>%s</a>";
 $lang->poweredByAdmin = "<span id='poweredBy'> is powered by <a href='http://www.chanzhi.org/?v=%s' target='_blank' title='%s'>Changer CMS %s</a></span>";
@@ -1111,7 +1111,7 @@ $lang->install->reload  = 'Refresh';
 $lang->install->error   = 'Error';
 
 $lang->install->start            = 'Install';
-$lang->install->keepInstallling   = 'Continue installation';
+$lang->install->keepInstalling   = 'Continue installation';
 $lang->install->welcome          = 'Thank you for choosing Changer CMS!';
 $lang->install->license          = 'License';
 $lang->install->desc             = <<<EOT
@@ -1187,7 +1187,7 @@ $lang->install->account  = 'Account';
 $lang->install->password = 'Password';
 $lang->install->errorEmptyPassword = 'Password Required!';
 
-$lang->install->success    = "Installled!";
+$lang->install->success    = "Installed!";
 $lang->install->visitAdmin = 'Admin Login';
 /* links */
 $lang->links->common  = 'Blogroll';
@@ -1504,7 +1504,7 @@ $lang->package->settemplate   = 'Template Settings';
 $lang->package->buy           = 'Buy';
 
 $lang->package->structure   = 'Directory Structure';
-$lang->package->installed   = 'Installled';
+$lang->package->installed   = 'Installed';
 $lang->package->deactivated = 'Deactivated';
 $lang->package->available   = 'Available';
 
@@ -1556,8 +1556,8 @@ $lang->package->executeCommands          = '<h3> Execute the followings to fix t
 $lang->package->successDownloadedPackage = 'Plug-in is downloaded.';
 $lang->package->successUploadedPackage   = 'Plug-in is uploaded.';
 $lang->package->successCopiedFiles       = 'Files is copied.';
-$lang->package->successInstalllDB         = 'Databse is installed.';
-$lang->package->viewInstallled            = 'View installed plug-ins.';
+$lang->package->successInstallDB         = 'Databse is installed.';
+$lang->package->viewInstalled            = 'View installed plug-ins.';
 $lang->package->viewAvailable            = 'View available plug-ins';
 $lang->package->viewDeactivated          = 'View deactivated plug-ins.';
 $lang->package->backDBFile               = 'Relavant plug-in data has been backed up to %s ！';
@@ -1587,7 +1587,7 @@ $lang->package->errorFileConflicted          = 'It is conflicted with <br />%s. 
 $lang->package->errorPackageNotFound         = ' <strong>%s </strong> is not found. It could be auto downloading failure. Please try it again.';
 $lang->package->errorTargetPathNotWritable   = 'Path <strong>%s </strong>is not writable.';
 $lang->package->errorTargetPathNotExists     = 'Path <strong>%s </strong>does not exist.';
-$lang->package->errorInstalllDB               = 'Databse statement execution failed. Error info is %s';
+$lang->package->errorInstallDB               = 'Databse statement execution failed. Error info is %s';
 $lang->package->errorConflicts               = 'Conflicted with “%s”!';
 $lang->package->errorDepends                 = 'Dependent plug-in<br /><br /> %s is not installed or its version is incompatible.';
 $lang->package->errorIncompatible            = 'This plug-in is incompatible with Changer.';
@@ -2458,7 +2458,7 @@ $lang->ui->template->manageTemplate  = 'Template Admin';
 $lang->ui->template->manageBlock     = 'Block Admin';
 $lang->ui->template->enable          = 'Activate';
 $lang->ui->template->reload          = 'Refresh';
-$lang->ui->template->doInstalll       = 'Confirm Installation';
+$lang->ui->template->doInstall       = 'Confirm Installation';
 $lang->ui->template->info            = 'Template Info';
 $lang->ui->template->demo            = 'Demo';
 $lang->ui->template->qq              = 'QQ';
@@ -3362,4 +3362,7 @@ $lang->widget->typeList->commonMenu     = 'Quick Entry';
 $lang->yangcong = new stdclass();
 $lang->yangcong->qrcodeInfo   = "请用洋葱客户端扫描下方二维码";
 $lang->yangcong->scanFinished = "已完成扫描";
+
+
+
 
