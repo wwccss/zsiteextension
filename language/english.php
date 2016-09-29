@@ -10,7 +10,7 @@ $lang->raquo      = '&raquo;';
 $lang->minus      = ' - ';
 $lang->dollarSign = '￥';
 $lang->divider    = "<span class='divider'>{$lang->raquo}</span> ";
-$lang->back2Top   = 'Return<br/>to<br/>the<br/>Top';
+$lang->back2Top   = 'Back <br/>to<br/> the<br/> Top';
 $lang->cancel     = 'Cancel';
 
 $lang->cn = '简';
@@ -24,7 +24,7 @@ $lang->thanks = 'Acknowledgement';
 
 $lang->chanzhiEPS     = 'Changer CMS';
 $lang->chanzhiEPSx    = 'Changer';
-$lang->agreement      = "I have read and understood<a href='http://zpl.pub/page/zplv12.html' target='_blank'>《Z PUBLIC LICENSE 1.2》</a>. <span class='text-danger'>If not authorized, I should not remove, hide, or cover any signs/links of Changer CMS.</span>";
+$lang->agreement      = "I have read and agreed to <a href='http://zpl.pub/page/zplv12.html' target='_blank'>《Z PUBLIC LICENSE 1.2》</a>. <span class='text-danger'>If not authorized, I should not remove, hide, or cover any signs/links of Changer CMS.</span>";
 $lang->poweredBy      = "<a href='http://www.chanzhi.org/?v=%s' target='_blank' title='%s'>%s</a>";
 $lang->poweredByAdmin = "<span id='poweredBy'> is powered by <a href='http://www.chanzhi.org/?v=%s' target='_blank' title='%s'>Changer CMS %s</a></span>";
 $lang->newVersion     = "Note: Changer CMS has released <span id='version'></span> on <span id='releaseDate'></span>. <a href='' target='_blank' id='upgradeLink'>Download it NOW!</a>";
@@ -69,7 +69,7 @@ $lang->confirm        = 'Confirm';
 $lang->addToBlacklist = 'Block';
 $lang->send           = 'Send';
 $lang->preview        = 'Preview';
-$lang->goback         = 'Return';
+$lang->goback         = 'Back';
 $lang->more           = 'More';
 $lang->refresh        = 'Refresh';
 $lang->actions        = 'Action';
@@ -110,7 +110,7 @@ $lang->js->timeout          = 'Timeout. Please try it again.';
 $lang->js->errorThrown      = '<h4> Error </h4>';
 $lang->js->continueShopping = 'Continue shopping';
 $lang->js->required         = 'Required';
-$lang->js->back             = 'Return';
+$lang->js->back             = 'Back';
 $lang->js->continue         = 'Continue';
 
 $lang->company = new stdclass();
@@ -1106,7 +1106,7 @@ $lang->index->contact = 'Contact Us';
 /* install */
 $lang->install->common  = 'Install';
 $lang->install->next    = 'Next';
-$lang->install->pre     = 'Return';
+$lang->install->pre     = 'Back';
 $lang->install->reload  = 'Refresh';
 $lang->install->error   = 'Error';
 
@@ -1528,7 +1528,7 @@ $lang->package->grade       = 'Rate';
 $lang->package->depends     = 'Depedent';
 
 $lang->package->publicList[0] = 'Manual Download';
-$lang->package->publicList[1] = 'Download';
+$lang->package->publicList[1] = 'Auto Download';
 
 $lang->package->compatibleList[0] = 'Unknown';
 $lang->package->compatibleList[1] = 'Compatible';
@@ -1656,7 +1656,7 @@ $lang->product->layout       = 'Layout';
 $lang->product->congratulations  = "Congrats";
 $lang->product->addToCartSuccess = "Added to your cart!";
 $lang->product->gotoCart         = "Check out";
-$lang->product->goback           = "Return";
+$lang->product->goback           = "Back";
 
 $lang->product->confirmDelete = 'Do you want to delete it?';
 
@@ -1734,7 +1734,7 @@ $lang->reply->stool     = '板凳';
 $lang->reply->edit       = 'Edit';
 $lang->reply->deleteFile = 'Delete File';
 /* score */
-$lang->score->back        = 'Return';
+$lang->score->back        = 'Back';
 $lang->score->rankingList = 'Point Ranking';
 $lang->score->rule        = 'Point Rules';
 
@@ -2104,7 +2104,7 @@ $lang->slide->edit        = 'Edit a Slide';
 $lang->slide->createGroup = 'Add a Group';
 $lang->slide->editGroup   = 'Edit a Group';
 $lang->slide->removeGroup = 'Delete a Group';
-$lang->slide->return      = 'Return to List';
+$lang->slide->return      = 'Back to List';
 $lang->slide->rename      = 'Rename';
 $lang->slide->removeGroup = 'Delete a Group';
 
@@ -2847,7 +2847,7 @@ $lang->user->gtalk     = 'Gtalk';
 $lang->user->wangwang  = '旺旺';
 $lang->user->mobile    = 'Mobile';
 $lang->user->phone     = 'Phone';
-$lang->user->company   = 'Organization';
+$lang->user->company   = 'Company';
 $lang->user->address   = 'Mailing Address';
 $lang->user->zipcode   = 'Zip Code';
 $lang->user->join      = 'Join Date';
@@ -3362,7 +3362,3 @@ $lang->widget->typeList->commonMenu     = 'Quick Entry';
 $lang->yangcong = new stdclass();
 $lang->yangcong->qrcodeInfo   = "请用洋葱客户端扫描下方二维码";
 $lang->yangcong->scanFinished = "已完成扫描";
-
-
-
-
