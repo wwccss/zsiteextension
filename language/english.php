@@ -20,7 +20,7 @@ $lang->en = 'EN';
 $lang->toBeAdded = 'To be added';
 
 $lang->about  = 'About';
-$lang->thanks = 'Acknowledgement';
+$lang->thanks = 'Acknowledge';
 
 $lang->chanzhiEPS     = 'Changer CMS';
 $lang->chanzhiEPSx    = 'Changer';
