@@ -192,15 +192,15 @@ $lang->menuGroups->guarder = 'security';
 
 $lang->article = new stdclass();
 $lang->article->menu = new stdclass();
-$lang->article->menu->browse       = 'Article List|article|admin|';
+$lang->article->menu->browse       = 'Articles|article|admin|';
 
 $lang->blog = new stdclass();
 $lang->blog->menu = new stdclass();
-$lang->blog->menu->browse       = 'Blog List|article|admin|type=blog';
+$lang->blog->menu->browse       = 'Blogs|article|admin|type=blog';
 
 $lang->page = new stdclass();
 $lang->page->menu = new stdclass();
-$lang->page->menu->browse = array('link' => 'Page List|article|admin|type=page', 'alias' => 'create, edit');
+$lang->page->menu->browse = array('link' => 'Pages|article|admin|type=page', 'alias' => 'create, edit');
 
 $lang->express = new stdclass();
 
@@ -244,7 +244,7 @@ $lang->site->menu->cache    = 'Cache Settings|site|setcache|';
 $lang->site->menu->home     = 'Home Menu|site|sethomemenu|';
 $lang->site->menu->company  = 'Company Info|company|setbasic|';
 $lang->site->menu->contact  = 'Contact Us|company|setcontact|';
-$lang->site->menu->oauth    = '开放登录|site|setoauth|';
+$lang->site->menu->oauth    = 'Social Login|site|setoauth|';
 $lang->site->menu->mail     = array('link' => 'Email Settings|mail|admin|', 'alias' => 'detect,edit,save,test');
 $lang->site->menu->wechat   = array('link' => 'Wechat Settings|wechat|admin|', 'alias' => 'create,edit,adminresponse,integrate');
 $lang->site->menu->search   = 'Full Text Retrieval|search|buildindex|';
@@ -341,7 +341,7 @@ $lang->pager->first        = "<i class='icon-step-backward' title='Home'></i>";
 $lang->pager->pre          = "<i class='icon-play icon-rotate-180' title='Previous'></i>";
 $lang->pager->next         = "<i class='icon-play' title='Next'></i>";
 $lang->pager->last         = "<i class='icon-step-forward' title='last page'></i>";
-$lang->pager->locate       = "GO!";
+$lang->pager->locate       = "GO";
 $lang->pager->previousPage = "Previous";
 $lang->pager->nextPage     = "Next";
 $lang->pager->summery      = "<strong>%s-%s</strong> of <strong>%s</strong>.";
@@ -373,7 +373,7 @@ $lang->address->phone   = 'Phone';
 $lang->address->zipcode = 'zip code';
 $lang->address->contact = 'Contact';
 
-$lang->address->browse = 'Address List';
+$lang->address->browse = 'Addresses';
 $lang->address->create = 'Add';
 $lang->address->edit   = 'Edit';
 /* admin */ 
@@ -384,14 +384,14 @@ $lang->admin->ignoreupgrade = 'Ignore upgrade prompt';
 
 $lang->admin->shortcuts = new stdclass();
 $lang->admin->shortcuts->common             = 'Quick Entry';
-$lang->admin->shortcuts->articleCategories  = 'Article Category';
-$lang->admin->shortcuts->article            = 'Publish an article';
-$lang->admin->shortcuts->product            = 'Add a product';
-$lang->admin->shortcuts->feedback           = 'Feedback Mgmt';
+$lang->admin->shortcuts->articleCategories  = 'Article Categories';
+$lang->admin->shortcuts->article            = 'Publish an Article';
+$lang->admin->shortcuts->product            = 'Add a Product';
+$lang->admin->shortcuts->feedback           = 'Feedback';
 $lang->admin->shortcuts->site               = 'Site Settings';
-$lang->admin->shortcuts->logo               = 'LOGO sETTINGS';
-$lang->admin->shortcuts->company            = 'Compsny Info';
-$lang->admin->shortcuts->contact            = 'Contact US';
+$lang->admin->shortcuts->logo               = 'Logo Settings';
+$lang->admin->shortcuts->company            = 'Company Info';
+$lang->admin->shortcuts->contact            = 'Contact';
 
 $lang->admin->thread       = 'New Thread';
 $lang->admin->order        = 'New Order';
@@ -503,8 +503,8 @@ $lang->article->statusList['Open'] = 'Normal';
 $lang->article->statusList['draft']  = 'Draft';
 
 $lang->article->sticks[0] = 'No Stickup';
-$lang->article->sticks[1] = 'Category Stickup';
-$lang->article->sticks[2] = 'Global Stickup';
+$lang->article->sticks[1] = 'Category Sticky';
+$lang->article->sticks[2] = 'Global Sticky';
 
 $lang->article->successStick   = 'Sticked to Top!';
 $lang->article->successUnstick = 'Stickup cancelled!';
