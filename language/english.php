@@ -1992,7 +1992,7 @@ $lang->site->moduleAvailable['search']     = 'Search';
 $lang->site->moduleAvailable['shop']       = 'Mall';
 $lang->site->moduleAvailable['score']      = 'Points';
 $lang->site->moduleAvailable['stat']       = 'Statistics';
-$lang->site->moduleAvailable['submittion'] = 'Contribute';
+$lang->site->moduleAvailable['submittion'] = 'Contributions';
 
 $lang->site->metaHolder       = 'Tag <meta><script><style> and <link> applicable';
 $lang->site->fileAllowedRole  = 'Use "," as place holder';
@@ -2034,7 +2034,7 @@ $lang->site->api = new stdclass();
 $lang->site->api->common = 'Integration';
 $lang->site->api->key    = 'Key';
 $lang->site->api->ip     = 'IP List';
-$lang->site->api->allip  = 'No Restriction';
+$lang->site->api->allip  = 'No Restrictions';
 $lang->site->api->ipTip  = 'Use comma to separate IPs allowed to visit. Ip segment is OK, such as 192.168.1.*';
 
 $lang->site->menus = array();
@@ -2265,7 +2265,7 @@ $lang->thread->readonlyMessage = 'This has been set as <strong>Read Only</strong
 $lang->thread->successTransfer = 'Transferred!';
 $lang->thread->thanks          = 'It will be posted to the board once approved.';
 
-$lang->thread->score    = 'Reward Points';
+$lang->thread->score    = 'Points';
 $lang->thread->scoreSum = "<i class='text-warning icon icon-plus'><b>%s</b></i> ";
 $lang->thread->scores[5]  = '+ 5';
 $lang->thread->scores[10] = '+ 10';
