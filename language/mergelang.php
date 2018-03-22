@@ -19,7 +19,7 @@ if($handle)
         if(!file_exists($filePath)) continue;
 
         /* Remove the comments and start tag of php. */
-        $langFiles[$module] = preg_replace("/\/\*.*?\*\/\n/s", '', ltrim(file_get_contents($filePath), "<?php"));
+        $langFiles[$module] = preg_replace("/\/\*.*?\*\/\n/s", '', ltrim(ltrim(file_get_contents($filePath)), "<?php"));
     }  
     closedir($handle);
 

@@ -448,7 +448,7 @@ $lang->address->contact = 'Contact';
 $lang->address->browse = 'Address';
 $lang->address->create = 'Add';
 $lang->address->edit   = 'Edit';
-/* admin */ <?php 
+/* admin */ 
 $lang->admin->common        = 'Admin';
 $lang->admin->index         = 'Home';
 $lang->admin->checked       = 'Checked';
