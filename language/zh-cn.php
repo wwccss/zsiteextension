@@ -19,7 +19,7 @@ $lang->en = 'EN';
 
 $lang->toBeAdded = '待添加';
 
-$lang->about  = '关于';
+$lang->about  = '关于蝉知';
 $lang->thanks = '致谢';
 
 $lang->chanzhiEPS     = '蝉知企业门户系统';
@@ -29,8 +29,11 @@ $lang->poweredBy      = "<a href='http://www.chanzhi.org/?v=%s' target='_blank' 
 $lang->poweredByAdmin = "<span id='poweredBy'>由 <a href='http://www.chanzhi.org/?v=%s' target='_blank' title='%s'>蝉知企业门户系统 %s</a> 强力驱动！</span>";
 $lang->newVersion     = "提示：蝉知系统已于 <span id='releaseDate'></span> 发布 <span id='version'></span>版本。<a href='' target='_blank' id='upgradeLink'>马上下载</a>";
 $lang->execInfo       = "<span id='execInfoBar' class='hide'><span class='text-left'>SQL查询：<b>%s</b> 次<br>内存占用：<b>%s</b><br> PHP 执行时间：<b>%s</b> 秒</span></span>";
+$lang->customCssError = "不能生成样式文件，如果您是网站管理员，请到网站后台外观管理重新设置样式文件";
+$lang->redirecting    = "<span class='text-muted'><span id='countDown'>3</span>秒后跳转到类目管理页面......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>立即跳转</a>";
 
 $lang->home             = '首页';
+$lang->siteHome         = '网站首页';
 $lang->welcome          = '欢迎您，<strong>%s</strong>！';
 $lang->messages         = "<strong><i class='icon-comment-alt'></i> %s</strong>";
 $lang->todayIs          = '今天是%s，';
@@ -43,6 +46,8 @@ $lang->dashboard        = '用户中心';
 $lang->visualEdit       = '可视化编辑';
 $lang->editMode         = '编辑模式';
 $lang->register         = '注册';
+$lang->unbind           = '解除绑定';
+$lang->bind             = '绑定账号';
 $lang->logout           = '退出';
 $lang->login            = '登录';
 $lang->account          = '帐号';
@@ -57,6 +62,9 @@ $lang->wechatTip        = '微信订阅';
 $lang->qrcodeTip        = '移动访问';
 $lang->language         = '语言';
 $lang->custom           = '自定义';
+$lang->productMenu      = '产品';
+$lang->history          = '历史记录';
+$lang->reverse          = '切换顺序';
 
 $lang->reset          = '重置';
 $lang->edit           = '编辑';
@@ -78,6 +86,7 @@ $lang->year           = '年';
 $lang->selectAll      = '全选';
 $lang->selectReverse  = '反选';
 $lang->loading        = '稍候...';
+$lang->sending        = '发送中...';
 $lang->saveSuccess    = '保存成功';
 $lang->setSuccess     = '设置成功';
 $lang->createSuccess  = '创建成功';
@@ -87,6 +96,7 @@ $lang->fail           = '失败';
 $lang->noResultsMatch = '没有匹配的选项';
 $lang->alias          = '搜索引擎优化使用，可使用英文或数字';
 $lang->keywordsHolder = '多个关键字中间用逗号隔开';
+$lang->autoUpgrade    = '自动升级';
 
 $lang->setOkFile = <<<EOT
 <h5>请按照下面的步骤操作以确认您的管理员身份。</h5>
@@ -99,6 +109,19 @@ $lang->colorPlates = '333333|000000|CA1407|45872B|148D00|F25D03|2286D2|D92958|A6
 
 $lang->score = new stdclass();
 $lang->score->common = '积分';
+
+$lang->community = new stdclass();
+$lang->community->common  = '社区';
+$lang->getMobileCodeByApi = '获取手机验证码';
+$lang->getEmailCodeByApi  = '获取邮箱验证码';
+$lang->checkEmail         = '验证邮箱';
+$lang->checkMobile        = '验证手机';
+$lang->getUserByApi       = '获取绑定信息';
+
+$lang->selectLangTip = array();
+$lang->selectLangTip['zh-cn'] = '切换到简体中文站点';
+$lang->selectLangTip['zh-tw'] = '切换到繁体中文站点';
+$lang->selectLangTip['en']    = '切换到英文站点';
 
 $lang->js = new stdclass();
 $lang->js->confirmDelete    = '您确定要执行删除操作吗？';
@@ -131,7 +154,7 @@ $lang->sitemap = new stdclass();
 $lang->sitemap->common = '站点地图';
 
 $lang->groups = new stdclass();
-$lang->groups->home     = array('title' => '首页', 'link' => 'admin|index|',               'icon' => 'home');
+$lang->groups->home     = array('title' => '蝉知', 'link' => 'admin|index|',               'icon' => 'home');
 $lang->groups->content  = array('title' => '内容', 'link' => 'article|admin|type=article', 'icon' => 'edit');
 $lang->groups->shop     = array('title' => '商城', 'link' => 'order|admin|',               'icon' => 'shopping-cart');
 $lang->groups->user     = array('title' => '会员', 'link' => 'user|admin|',                'icon' => 'group');
@@ -141,24 +164,23 @@ $lang->groups->open     = array('title' => '平台', 'link' => 'package|browse|'
 $lang->groups->setting  = array('title' => '设置', 'link' => 'site|setbasic|',             'icon' => 'cog');
 
 $lang->menu = new stdclass();
-$lang->menu->admin    = '首页|admin|index|';
-$lang->menu->article  = '文章|article|admin|type=article';
-$lang->menu->blog     = '博客|article|admin|type=blog';
-$lang->menu->book     = '手册|book|admin|';
-$lang->menu->page     = '单页|article|admin|type=page';
+$lang->menu->admin      = '首页|admin|index|';
+$lang->menu->article    = '文章|article|admin|type=article';
+$lang->menu->blog       = '博客|article|admin|type=blog';
+$lang->menu->book       = '手册|book|admin|';
+$lang->menu->page       = '单页|article|admin|type=page';
+$lang->menu->attachment = '附件|file|admin|';
 
 $lang->menu->order        = '订单|order|admin|';
 $lang->menu->product      = '产品|product|admin|';
 $lang->menu->orderSetting = '设置|product|setting|';
 
 $lang->menu->user         = '会员|user|admin|';
-$lang->menu->message      = '留言|message|admin|type=message';
-$lang->menu->comment      = '评论|message|admin|type=comment';
-$lang->menu->reply        = '回复|message|admin|type=reply';
+$lang->menu->message      = '反馈|message|admin|';
 $lang->menu->forum        = '论坛|forum|admin|';
 $lang->menu->thread       = '主题|forum|admin|';
 $lang->menu->forumreply   = '回帖|reply|admin|';
-$lang->menu->submittion   = '投稿|article|admin|type=submittion&tab=user';
+$lang->menu->submission   = '投稿|article|admin|type=submission&tab=user';
 $lang->menu->wechat       = '微信|wechat|message|mode=replied&replied=0';
 
 $lang->menu->stat    = '统计|stat|traffic|';
@@ -171,36 +193,40 @@ $lang->menu->nav      = '导航|nav|admin|';
 $lang->menu->block    = '区块|block|admin|';
 $lang->menu->slide    = '幻灯片|slide|admin|';
 $lang->menu->others   = "设置|ui|others|";
+$lang->menu->effect   = "特效|ui|effect|";
 $lang->menu->visual   = "可视化|visual|index|";
 $lang->menu->edit     = "编辑模板|ui|edittemplate|";
 
-$lang->menu->site     = '站点|site|setbasic|';
-$lang->menu->security = '安全|site|setsecurity|';
+$lang->menu->site          = '站点|site|setbasic|';
+$lang->menu->security      = '安全|site|setsecurity|';
+$lang->menu->company       = '公司|company|setbasic|';
+$lang->menu->score         = '积分|score|setcounts|';
+$lang->menu->interface     = '接口|site|setoauth|';
+$lang->menu->wechatSetting = '微信设置|wechat|admin|';
 
 $lang->menu->package    = '插件|package|browse|';
 $lang->menu->themestore = '主题|ui|themestore|';
+$lang->menu->community  = '社区|admin|register|';
 
 $lang->menuGroups = new stdclass();
-$lang->menuGroups->mail    = 'site';
-$lang->menuGroups->wechat  = 'site';
+$lang->menuGroups->mail    = 'interface';
+$lang->menuGroups->wechat  = 'wechatSetting';
 $lang->menuGroups->group   = 'security';
 $lang->menuGroups->tree    = 'article';
 $lang->menuGroups->search  = 'site';
-$lang->menuGroups->company = 'site';
-$lang->menuGroups->score   = 'site';
+$lang->menuGroups->company = 'company';
+$lang->menuGroups->score   = 'score';
 $lang->menuGroups->guarder = 'security';
 
 $lang->article = new stdclass();
 $lang->article->menu = new stdclass();
-$lang->article->menu->browse       = '文章列表|article|admin|';
+$lang->article->menu->browse = '文章列表|article|admin|';
 
 $lang->blog = new stdclass();
 $lang->blog->menu = new stdclass();
-$lang->blog->menu->browse       = '博客列表|article|admin|type=blog';
+$lang->blog->menu->browse = '博客列表|article|admin|type=blog';
 
 $lang->page = new stdclass();
-$lang->page->menu = new stdclass();
-$lang->page->menu->browse = array('link' => '单页列表|article|admin|type=page', 'alias' => 'create, edit');
 
 $lang->express = new stdclass();
 
@@ -237,37 +263,44 @@ $lang->forum->menu->setting = '论坛设置|forum|setting|';
 
 $lang->site = new stdclass();
 $lang->site->menu = new stdclass();
-$lang->site->menu->basic    = '站点设置|site|setbasic|';
-$lang->site->menu->domain   = '域名设置|site|setdomain|';
-$lang->site->menu->cdn      = 'CDN设置|site|setcdn|';
-$lang->site->menu->cache    = '缓存设置|site|setcache|';
-$lang->site->menu->home     = '首页菜单|site|sethomemenu|';
-$lang->site->menu->company  = '公司信息|company|setbasic|';
-$lang->site->menu->contact  = '联系方式|company|setcontact|';
-$lang->site->menu->oauth    = '开放登录|site|setoauth|';
-$lang->site->menu->mail     = array('link' => '发信设置|mail|admin|', 'alias' => 'detect,edit,save,test');
-$lang->site->menu->wechat   = array('link' => '微信设置|wechat|admin|', 'alias' => 'create,edit,adminresponse,integrate');
-$lang->site->menu->search   = '全文检索|search|buildindex|';
-$lang->site->menu->score    = '积分规则|score|setcounts|';
-$lang->site->menu->backup   = '备份还原|backup|index|';
-//$lang->site->menu->api      = '集成|site|setapi|';
+$lang->site->menu->basic     = '站点设置|site|setbasic|';
+$lang->site->menu->langs     = '语言设置|site|setlanguage|';
+$lang->site->menu->request   = '地址类型|site|seturltype|';
+$lang->site->menu->domain    = '域名设置|site|setdomain|';
+$lang->site->menu->cdn       = 'CDN设置|site|setcdn|';
+$lang->site->menu->cache     = '缓存设置|site|setcache|';
+$lang->site->menu->home      = '首页菜单|site|sethomemenu|';
+$lang->site->menu->search    = '全文检索|search|buildindex|';
+$lang->site->menu->backup    = '备份还原|backup|index|';
+$lang->site->menu->agreement = '注册协议|site|setagreement|';
+//$lang->site->menu->api    = 'API|site|setapi|';
+
+if(!isset($lang->company)) $lang->company = new stdclass();
+$lang->company->menu = new stdclass();
+$lang->company->menu->company   = '公司信息|company|setbasic|';
+$lang->company->menu->contact   = '联系方式|company|setcontact|';
 
 $lang->security = new stdclass();
 $lang->security->menu = new stdclass();
-$lang->security->menu->basic     = '基本设置|site|setsecurity|';
-$lang->security->menu->filter    = '过滤设置|site|setfilter|';
-$lang->security->menu->blacklist = '黑名单管理|guarder|setblacklist|';
-$lang->security->menu->whitelist = '白名单管理|guarder|setwhitelist|';
-$lang->security->menu->sensitive = '敏感词设置|site|setsensitive|';
-$lang->security->menu->captcha   = '验证码设置|guarder|setcaptcha|';
-$lang->security->menu->upload    = '附件上传|site|setupload|';
-$lang->security->menu->admin     = '管理员|user|admin|admin=1';
-$lang->security->menu->group     = array('link' => '分组权限|group|browse|', 'alias' => 'managepriv,managemember');
-$lang->security->menu->log       = '登录日志|user|adminlog|';
+$lang->security->menu->basic       = '基本设置|site|setsecurity|';
+$lang->security->menu->filter      = '过滤设置|site|setfilter|';
+$lang->security->menu->blacklist   = '黑名单管理|guarder|setblacklist|';
+$lang->security->menu->whitelist   = '白名单管理|guarder|setwhitelist|';
+$lang->security->menu->sensitive   = '敏感词设置|site|setsensitive|';
+$lang->security->menu->captcha     = '验证码设置|guarder|setcaptcha|';
+$lang->security->menu->upload      = '附件上传|site|setupload|';
+$lang->security->menu->admin       = array('link' => '管理员|user|admin|admin=1', 'alias' => 'delete,batchdelete');
+$lang->security->menu->group       = array('link' => '分组权限|group|browse|', 'alias' => 'managepriv,managemember');
+$lang->security->menu->log         = '登录日志|user|adminlog|';
 
-$lang->company->menu = $lang->site->menu;
+$lang->interface = new stdclass();
+$lang->interface->menu = new stdclass();
+$lang->interface->menu->oauth  = '开放登录|site|setoauth|';
+$lang->interface->menu->mail   = array('link' => '发信设置|mail|admin|', 'alias' => 'detect,edit,save,test');
 
-$lang->score->menu = $lang->site->menu;
+$lang->score->menu = new stdclass();
+$lang->score->menu->score     = '积分规则|score|setcounts|';
+$lang->score->menu->stateinfo = '积分结算|score|showstateinfo|';
 
 $lang->cart    = new stdclass();
 $lang->order   = new stdclass();
@@ -276,14 +309,8 @@ $lang->address = new stdclass();
 $lang->tree = new stdclass();
 $lang->tree->menu = $lang->article->menu;
 
-$lang->mail = new stdclass();
-$lang->mail->menu = $lang->site->menu;
-
 $lang->reply = new stdclass();
 $lang->reply->menu = $lang->forum->menu;
-
-$lang->wechat = new stdclass();
-$lang->wechat->menu = $lang->site->menu;
 
 $lang->search = new stdclass();
 $lang->search->menu   = $lang->site->menu;
@@ -322,6 +349,7 @@ $lang->error->email        = '<strong>%s</strong>应当为合法的EMAIL。';
 $lang->error->phone        = '<strong>%s</strong>应当为合法的电话号码。';
 $lang->error->mobile       = '<strong>%s</strong>应当为合法的手机号码。';
 $lang->error->URL          = '<strong>%s</strong>应当为合法的URL。';
+$lang->error->IP           = '<strong>%s</strong>应当为合法的IP。';
 $lang->error->date         = '<strong>%s</strong>应当为合法的日期。';
 $lang->error->account      = '<strong>%s</strong>应当为字母和数字的组合，至少三位';
 $lang->error->passwordsame = '两次密码应当相等。';
@@ -332,13 +360,15 @@ $lang->error->fingerprint  = '身份认证过期，请重试！';
 $lang->error->token        = '必须为英文或数字，长度为3-32字符！';
 $lang->error->sensitive    = '内容中不能存在敏感词!';
 $lang->error->noRepeat     = '主题或内容已存在，禁止重复';
+$lang->error->between      = '<strong>%s</strong>必须在<strong>%s</strong>之中。';
+$lang->error->idcard       = '<strong>%s</strong>应当为合法的身份证号。';
 
 $lang->pager = new stdclass();
 $lang->pager->noRecord     = "暂时没有记录";
 $lang->pager->digest       = "共 <strong>%s</strong> 条记录，%s <strong>%s/%s</strong> &nbsp; ";
 $lang->pager->recPerPage   = "每页 <strong>%s</strong> 条";
 $lang->pager->first        = "<i class='icon-step-backward' title='首页'></i>";
-$lang->pager->pre          = "<i class='icon-play icon-rotate-180' title='上一页'></i>";
+$lang->pager->pre          = "<i class='icon icon-play icon-rotate-180' title='上一页'></i>";
 $lang->pager->next         = "<i class='icon-play' title='下一页'></i>";
 $lang->pager->last         = "<i class='icon-step-forward' title='末页'></i>";
 $lang->pager->locate       = "GO!";
@@ -350,22 +380,64 @@ $lang->date = new stdclass();
 $lang->date->minute = '分钟';
 $lang->date->day    = '天';
 
-define('DT_DATETIME1',  'Y-m-d H:i:s');
-define('DT_DATETIME2',  'y-m-d H:i');
-define('DT_MONTHTIME1', 'n/d H:i');
-define('DT_MONTHTIME2', 'n月d日 H:i');
-define('DT_DATE1',     'Y年m月d日');
-define('DT_DATE2',     'Ymd');
-define('DT_DATE3',     'Y年m月d日');
-define('DT_DATE4',     'Y-m-d');
-define('DT_TIME1',     'H:i:s');
-define('DT_TIME2',     'H:i');
+if(!defined('DT_DATETIME1'))  define('DT_DATETIME1',  'Y-m-d H:i:s');
+if(!defined('DT_DATETIME2'))  define('DT_DATETIME2',  'y-m-d H:i');
+if(!defined('DT_MONTHTIME1')) define('DT_MONTHTIME1', 'n/d H:i');
+if(!defined('DT_MONTHTIME2')) define('DT_MONTHTIME2', 'n月d日 H:i');
+if(!defined('DT_DATE1'))      define('DT_DATE1',     'Y年m月d日');
+if(!defined('DT_DATE2'))      define('DT_DATE2',     'Ymd');
+if(!defined('DT_DATE3'))      define('DT_DATE3',     'Y年m月d日');
+if(!defined('DT_DATE4'))      define('DT_DATE4',     'Y-m-d');
+if(!defined('DT_TIME1'))      define('DT_TIME1',     'H:i:s');
+if(!defined('DT_TIME2'))      define('DT_TIME2',     'H:i');
 
 $lang->k  = '开源 cms — 首选蝉知建站系统;';
 $lang->k .= '蝉知建站系统，开源免费的CMS系统;';
 $lang->k .= 'cms系统，首选蝉知cms;';
 $lang->k .= '企业建站，就用蝉知cms;';
 $lang->k .= '蝉知企业建站系统，开源免费的php CMS系统';
+/* action */
+$lang->action->common = '系统日志';
+
+$lang->action->objectType = '对象类型';
+$lang->action->objectID   = '对象ID';
+$lang->action->objectName = '对象名称';
+$lang->action->actor      = '操作者';
+$lang->action->action     = '动作';
+$lang->action->date       = '日期';
+
+$lang->action->objectTypes['order'] = '订单';
+
+$lang->action->desc = new stdclass();
+$lang->action->desc->common            = '$date, <strong>$action</strong> by <strong>$actor</strong>' . "\n";
+$lang->action->desc->created           = '$date, 由 <strong>$actor</strong> 创建。' . "\n";
+$lang->action->desc->paid              = '$date, 由 <strong>$actor</strong> 付款。' . "\n";
+$lang->action->desc->savedpayment      = '$date, 由 <strong>$actor</strong> 收款，收款金额: <strong>$extra</strong>。' . "\n";
+$lang->action->desc->applyrefunded     = '$date, 由 <strong>$actor</strong> 申请退款。' . "\n";
+$lang->action->desc->refunded          = '$date, 由 <strong>$actor</strong> 退款$extra。' . "\n";
+$lang->action->desc->deliveried        = '$date, 由 <strong>$actor</strong> 发货。' . "\n";
+$lang->action->desc->confirmedDelivery = '$date, 由 <strong>$actor</strong> 确认收货。' . "\n";
+$lang->action->desc->edited            = '$date, 由 <strong>$actor</strong> 编辑。' . "\n";
+$lang->action->desc->finished          = '$date, 由 <strong>$actor</strong> 完成。' . "\n";
+$lang->action->desc->canceled          = '$date, 由 <strong>$actor</strong> 取消。' . "\n";
+$lang->action->desc->deleted           = '$date, 由 <strong>$actor</strong> 删除。' . "\n";
+$lang->action->desc->diff1             = '修改了 <strong><i>%s</i></strong>，旧值为 "%s"，新值为 "%s"。<br />' . "\n";
+$lang->action->desc->diff2             = '修改了 <strong><i>%s</i></strong>，区别为：' . "\n" . "<blockquote>%s</blockquote>" . "\n<div class='hidden'>%s</div>";
+$lang->action->desc->diff3             = "将文件名 %s 改为 %s 。\n";
+
+$lang->action->label = new stdclass();
+$lang->action->label->created           = '创建了';
+$lang->action->label->paid              = '付款';
+$lang->action->label->savedpayment      = '收款';
+$lang->action->label->applyRefunded     = '申请退款';
+$lang->action->label->refunded          = '退款';
+$lang->action->label->deliveried        = '发货';
+$lang->action->label->confirmedDelivery = '确认收货';
+$lang->action->label->edited            = '编辑了';
+$lang->action->label->finished          = '完成了';
+$lang->action->label->canceled          = '取消了';
+$lang->action->label->deleted           = '删除了';
+$lang->action->label->space             = '　';
 /* address */
 $lang->address->common  = '地址';
 $lang->address->address = '详细地址';
@@ -379,8 +451,7 @@ $lang->address->edit   = '编辑地址';
 /* admin */ 
 $lang->admin->common        = '后台管理';
 $lang->admin->index         = '首页';
-$lang->admin->ignore        = '忽略安全警告';
-$lang->admin->ignoreupgrade = '忽略升级提示';
+$lang->admin->checked       = '已认证';
 
 $lang->admin->shortcuts = new stdclass();
 $lang->admin->shortcuts->common             = '快捷入口';
@@ -398,14 +469,28 @@ $lang->admin->order        = '最新订单';
 $lang->admin->feedback     = '最新反馈';
 
 $lang->admin->adminEntry     = '警告：您现在的管理入口还是默认的admin.php，建议将admin.php改名以增强系统安全!';
-$lang->admin->orderTitle     = '用户 %s 创建了一笔 %s 的订单';
-$lang->admin->message        = '您今天有 %s 条留言待审核';
-$lang->admin->reply          = '您今天有 %s 条回复待审核';
-$lang->admin->comment        = '您今天有 %s 条评论待审核';
-$lang->admin->threadReply    = '您今天有 %s 篇回帖';
-$lang->admin->submittion     = '您今天有 %s 篇投稿待审核';
-$lang->admin->todayReport    = '网站今日浏览量 %s , 访客数 %s , IP数 %s';
-$lang->admin->yestodayReport = '网站昨日浏览量 %s , 访客数 %s , IP数 %s';
+
+$lang->admin->connectApiFail = "不能连接到蝉知社区，请检查您的网络设置后 <a href='javascritp:loaction.reload()'>重试</a>。";
+$lang->admin->registerInfo   = "站点已经绑定到蝉知账号%s，%s";
+$lang->admin->registerPage   = '登记页面';
+$lang->admin->rebind         = "重新绑定";
+$lang->admin->bindedInfo     = '蝉知社区账号信息';
+
+$lang->js->confirmRebind = "确认要重新绑定蝉知账号？";
+
+$lang->admin->register = new stdclass();
+$lang->admin->register->common     = '蝉知社区';
+$lang->admin->register->caption    = '没有蝉知社区账号？马上注册一个!';
+$lang->admin->register->lblAccount = '请设置您的用户名，英文字母和数字的组合，三位以上。';
+$lang->admin->register->lblPasswd  = '请设置您的密码。数字和字母的组合，六位以上。';
+$lang->admin->register->submit     = '注册';
+$lang->admin->register->success    = "注册账户成功";
+$lang->admin->register->update     = "更新资料";
+
+$lang->admin->bind = new stdclass();
+$lang->admin->bind->caption = '已有蝉知社区账号，输入用户名密码进行绑定！';
+$lang->admin->bind->submit  = '绑定账号';
+$lang->admin->bind->success = "关联账户成功";
 /* article */
 $lang->article->common      = '文章';
 $lang->article->setting     = '文章设置';
@@ -447,21 +532,22 @@ $lang->article->selectCategories = '选择类目';
 $lang->article->selectBoard      = '选择版块';
 $lang->article->confirmReject    = '确认驳回这篇投稿？';
 
-$lang->submittion= new stdclass();
-$lang->submittion->common  = '投稿';
-$lang->submittion->check   = '审核';
-$lang->submittion->list    = '投稿列表';
-$lang->submittion->publish = '发布';
-$lang->submittion->reject  = '驳回';
+$lang->submission= new stdclass();
+$lang->submission->common  = '投稿';
+$lang->submission->check   = '审核';
+$lang->submission->list    = '投稿列表';
+$lang->submission->publish = '发布';
+$lang->submission->reject  = '驳回';
 
-$lang->submittion->status[0] = '';
-$lang->submittion->status[1] = '<span class="label label-xsm label-primary">' . '待审核' .'</span>';
-$lang->submittion->status[2] = '<span class="label label-xsm label-success">' . '通过' . '</span>';
-$lang->submittion->status[3] = '驳回';
+$lang->submission->status[0] = '';
+$lang->submission->status[1] = '<span class="label label-xsm label-primary">' . '待审核' .'</span>';
+$lang->submission->status[2] = '<span class="label label-xsm label-success">' . '通过' . '</span>';
+$lang->submission->status[3] = '驳回';
 
-$lang->submittion->typeList = array();
-$lang->submittion->typeList['article'] = '文章';
-$lang->submittion->typeList['blog']    = '博客';
+$lang->submission->typeList = array();
+$lang->submission->typeList['article'] = '文章';
+$lang->submission->typeList['blog']    = '博客';
+$lang->submission->typeList['book']    = '手册';
 
 $lang->article->onlyBody = '不显示头部、侧边和底部(可定制性更强)';
 
@@ -474,13 +560,17 @@ $lang->article->edit          = '编辑文章';
 $lang->article->files         = '附件';
 $lang->article->images        = '图片';
 
-$lang->article->submittion     = '投稿';
+$lang->article->submission     = '投稿';
 $lang->article->submissionTime = '投递时间';
-$lang->article->noSubmittion   = '您还没有投稿记录，欢迎您提交投稿赚取积分，分享宣传。';
+$lang->article->noSubmission   = '您还没有投稿记录，欢迎您提交投稿赚取积分，分享宣传。';
 
-$lang->article->submittionOptions = new stdclass;
-$lang->article->submittionOptions->open  = '开启';
-$lang->article->submittionOptions->close = '关闭';
+$lang->article->orderBy = new stdclass();
+$lang->article->orderBy->time = '时间';
+$lang->article->orderBy->hot  = '热度';
+
+$lang->article->submissionOptions = new stdclass;
+$lang->article->submissionOptions->open  = '开启';
+$lang->article->submissionOptions->close = '关闭';
 
 $lang->blog->common = '博客';
 $lang->blog->admin  = '维护博客';
@@ -506,6 +596,8 @@ $lang->article->sticks[0] = '不置顶';
 $lang->article->sticks[1] = '类目置顶';
 $lang->article->sticks[2] = '全局置顶';
 
+$lang->article->stickTime      = '结束时间';
+$lang->article->stickBold      = '标题加粗';
 $lang->article->successStick   = '置顶成功';
 $lang->article->successUnstick = '取消置顶成功';
 
@@ -534,6 +626,34 @@ $lang->article->approveMessage = '您投递的文章 <strong>《%s》</strong> �
 $lang->article->rejectMessage  = '您投递的文章 <strong>《%s》</strong> 未通过审核，您可以编辑后再次提交审核，感谢您的支持。';
 
 $lang->article->forwardFrom = '转发自';
+
+$lang->article->noCategoriesTip = '您还没有添加类目，请添加类目。';
+
+$lang->article->noCategories = array();
+$lang->article->noCategories['article'] = '您还没有为文章添加类目，请添加类目。';
+$lang->article->noCategories['blog']    = '您还没有为博客添加类目，请添加类目。';
+$lang->article->noCategories['video']   = '您还没有为视频添加类目，请添加类目。';
+
+$lang->article->blog = new stdclass();
+$lang->article->blog->category                   = '博客列表类目';
+$lang->article->blog->categoryLevel              = '级别';
+$lang->article->blog->categoryNameList['abbr']   = '简称';
+$lang->article->blog->categoryNameList['full']   = '全称';
+$lang->article->blog->categoryLevelList['first'] = '顶级';
+$lang->article->blog->categoryLevelList['final'] = '终级';
+
+$lang->article->blog->categoryOptions['1'] = '显示';
+$lang->article->blog->categoryOptions['0'] = '不显示';
+
+$lang->article->browseImage = new stdclass();
+$lang->article->browseImage->common   = '列表图片';
+$lang->article->browseImage->maxWidth = '最大宽度';
+
+$lang->article->browseImage->positionList['left']  = '居左';
+$lang->article->browseImage->positionList['right'] = '居右';
+
+$lang->article->browseImage->sizeList['small']  = '小图';
+$lang->article->browseImage->sizeList['middle'] = '中图';
 /* backup */
 $lang->backup->common   = '备份';
 $lang->backup->index    = '备份首页';
@@ -541,8 +661,11 @@ $lang->backup->history  = '备份历史';
 $lang->backup->delete   = '删除备份';
 $lang->backup->backup   = '备份';
 $lang->backup->restore  = '还原';
-$lang->backup->change   = '修改保留时间';
+$lang->backup->change   = '修改保存时间';
 $lang->backup->changeAB = '修改';
+$lang->backup->note     = '备注';
+$lang->backup->reserve  = '保留备份';
+$lang->backup->reserved = '已保留';
 
 $lang->backup->time  = '备份时间';
 $lang->backup->files = '备份文件';
@@ -551,7 +674,7 @@ $lang->backup->size  = '大小';
 $lang->backup->waitting       = '<span id="backupType"></span>正在进行中，请稍候...';
 $lang->backup->confirmDelete  = '是否删除备份？';
 $lang->backup->confirmRestore = '是否还原该备份？';
-$lang->backup->holdDays       = '备份保留最近 %s 天';
+$lang->backup->holdDays       = '除已保留备份外，其他备份只保存最近 %s 天';
 
 $lang->backup->success = new stdclass();
 $lang->backup->success->backup  = '备份成功！';
@@ -584,10 +707,16 @@ $lang->block->regionList      = '区域列表';
 $lang->block->select          = '请选择区块';
 $lang->block->categories      = '分类';
 $lang->block->showImage       = '图文';
+$lang->block->showInfo        = '显示描述';
+$lang->block->infoAmount      = '最多显示';
+$lang->block->character       = '字';
 $lang->block->maxWidth        = '最大宽度';
 $lang->block->showCategory    = '显示类目';
 $lang->block->showBoard       = '显示版块';
 $lang->block->showTime        = '显示时间';
+$lang->block->showPrice       = '显示价格';
+$lang->block->showViews       = '显示浏览次数';
+$lang->block->titleAlign      = '标题对齐方式';
 $lang->block->product         = '产品';
 $lang->block->slide           = '幻灯片';
 $lang->block->titleless       = '无标题';
@@ -596,6 +725,7 @@ $lang->block->icon            = '图标';
 $lang->block->padding         = '内边距';
 $lang->block->border          = '边框';
 $lang->block->grid            = '宽度';
+$lang->block->probability     = '概率';
 $lang->block->more            = '更多';
 $lang->block->color           = '颜色';
 $lang->block->backgroundColor = '背景颜色';
@@ -620,6 +750,7 @@ $lang->block->planName        = '方案名称';
 $lang->block->saveLayoutAs    = '复制布局：%s';
 $lang->block->defaultPlan     = '默认方案';
 $lang->block->image           = '图片';
+$lang->block->uploadImage     = '上传图片';
 
 $lang->block->layout            = '布局';
 $lang->block->logoPosition      = 'Logo';
@@ -653,6 +784,7 @@ $lang->block->header->top->rightOptions['login']          = '登录注册 + 语�
 $lang->block->header->top->rightOptions['search']         = '搜索框';
 $lang->block->header->top->rightOptions['loginAndSearch'] = '登录注册语言 + 搜索框';
 $lang->block->header->top->rightOptions['searchAndLogin'] = '搜索框 + 登录注册语言';
+$lang->block->header->top->rightOptions['custom']         = '自定义';
 
 $lang->block->header->middle->leftOptions['']     = '不显示';
 $lang->block->header->middle->leftOptions['logo'] = 'Logo';
@@ -671,7 +803,9 @@ $lang->block->header->bottomOptions['navAndSearch'] = '导航 + 搜索框';
 $lang->block->admin        = "区块管理";
 $lang->block->pages        = "布局";
 $lang->block->add          = "添加";
+$lang->block->insertLink   = '插入';
 $lang->block->addChild     = "子区块";
+$lang->block->addRandom    = "随机区块";
 $lang->block->template     = "模板";
 $lang->block->create       = '添加区块';
 $lang->block->browseBlocks = '区块列表';
@@ -680,11 +814,13 @@ $lang->block->edit         = '编辑区块';
 $lang->block->view         = '查看区块';
 $lang->block->setPage      = '配置页面';
 $lang->block->setregion    = '配置布局';
+$lang->block->resetRegion  = '恢复默认';
 $lang->block->switchPlan   = '切换布局';
 $lang->block->cloneLayout  = '布局另存为';
 $lang->block->switchLayout = '切换布局';
 $lang->block->removeLayout = '删除布局方案';
 $lang->block->planIsUseing = '此方案正在使用，不能删除';
+$lang->block->noInsertTip  = '插入新选项需要删除原有的选项';
 
 $lang->block->paddingTop    = '上';
 $lang->block->paddingBottom = '下';
@@ -699,6 +835,7 @@ $lang->block->placeholder->customStyleTip         = '样式表支持Less语法�
 $lang->block->placeholder->desktopCustomScriptTip = '已包含 jQuery 1.9.0，可以用#blockID作为id选择器。';
 $lang->block->placeholder->mobileCustomScriptTip  = '支持基本的jQuery语法，可以用#blockID作为id选择器。';
 $lang->block->placeholder->class                  = '多个类名之间用空格隔开';
+$lang->block->placeholder->reset                  = '是否恢复此页面的统一布局设置？';
 
 $lang->block->gridOptions[0]  = '自动';
 $lang->block->gridOptions[6]  = '1/2';
@@ -710,8 +847,18 @@ $lang->block->gridOptions[2]  = '1/6';
 $lang->block->gridOptions[10] = '5/6';
 $lang->block->gridOptions[12] = '100%';
 
+$lang->block->probabilityOptions[1] = '10%';
+$lang->block->probabilityOptions[2] = '20%';
+$lang->block->probabilityOptions[3] = '30%';
+$lang->block->probabilityOptions[4] = '40%';
+$lang->block->probabilityOptions[5] = '50%';
+$lang->block->probabilityOptions[6] = '60%';
+$lang->block->probabilityOptions[7] = '70%';
+$lang->block->probabilityOptions[8] = '80%';
+$lang->block->probabilityOptions[9] = '90%';
+
 $lang->block->categoryList['custom']  = '自定义';
-$lang->block->categoryList['article'] = '文章';
+$lang->block->categoryList['article'] = '内容';
 $lang->block->categoryList['product'] = '产品';
 $lang->block->categoryList['system']  = '系统';
 
@@ -728,14 +875,18 @@ $lang->block->imagePositionList['left']  = '居左';
 $lang->block->imagePositionList['right'] = '居右';
 
 $lang->block->category = new stdclass();
-$lang->block->category->showChildren = '显示子分类';
-$lang->block->category->fromCurrent  = '当前类目开始';
+$lang->block->category->showChildren  = '显示子分类';
+$lang->block->category->fromCurrent   = '当前类目开始';
+$lang->block->category->initialExpand = '子分类默认展开';
 
 $lang->block->category->showChildrenList[1] = '是';
 $lang->block->category->showChildrenList[0] = '否';
 
 $lang->block->category->fromCurrentList[1] = '是';
 $lang->block->category->fromCurrentList[0] = '否';
+
+$lang->block->category->initialExpandList[1] = '是';
+$lang->block->category->initialExpandList[0] = '否';
 
 $lang->block->category->showCategoryList['abbr'] = '简称';
 $lang->block->category->showCategoryList['name'] = '全称';
@@ -751,8 +902,31 @@ $lang->block->navTypeList->mobile_top    = '移动版顶部';
 $lang->block->navTypeList->mobile_bottom = '移动版底部';
 $lang->block->navTypeList->mobile_blog   = '移动版博客';
 
+$lang->block->book = new stdclass();
+$lang->block->book->showType = '显示';
+
+$lang->block->book->sortList['order'] = '排序';
+$lang->block->book->sortList['time']  = '时间';
+
+$lang->block->book->showTypeList['block'] = '区块';
+$lang->block->book->showTypeList['list']  = '列表';
+
 $lang->block->sideGrid  = '侧边栏宽度';
 $lang->block->sideFloat = '侧边栏位置';
+
+$lang->block->alignList = array();
+$lang->block->alignList['left']   = '居左';
+$lang->block->alignList['middle'] = '居中';
+
+$lang->block->imageTypeList = array();
+$lang->block->imageTypeList['wechat'] = '微信二维码';
+$lang->block->imageTypeList['custom'] = '自定义图片';
+
+$lang->block->subscribe = new stdclass();
+$lang->block->subscribe->fixInNav = '固定到导航';
+$lang->block->subscribe->fixInNavList = array();
+$lang->block->subscribe->fixInNavList[1] = '是';
+$lang->block->subscribe->fixInNavList[0] = '否';
 /* blog */
 $lang->blog->common    = '博客';
 $lang->blog->home      = '博客首页';
@@ -765,6 +939,7 @@ $lang->book->articles     = '文档导航';
 $lang->book->backtolist   = '返回手册列表';
 
 $lang->book->admin      = '手册列表';
+$lang->book->info       = '手册介绍';
 $lang->book->createBook = '添加手册';
 $lang->book->create     = '添加';
 $lang->book->catalog    = '章节';
@@ -772,13 +947,17 @@ $lang->book->edit       = '编辑';
 $lang->book->sort       = '排序';
 $lang->book->setting    = '设置';
 $lang->book->index      = '首页';
+$lang->book->more       = '更多';
 
 $lang->book->searchResults     = '搜索结果';
 $lang->book->inputArticleTitle = '请输入文章标题';
 
 $lang->book->id          = '编号';
 $lang->book->type        = '类型';
-$lang->book->parent      = '类目';
+$lang->book->status      = '状态';
+$lang->book->link        = '链接';
+$lang->book->isLink      = '跳转';
+$lang->book->parent      = '章节';
 $lang->book->author      = '作者';
 $lang->book->editor      = '编辑者';
 $lang->book->addedDate   = '发布时间';
@@ -800,6 +979,9 @@ $lang->book->typeList['book']    = '手册';
 $lang->book->typeList['chapter'] = '章节';
 $lang->book->typeList['article'] = '文章';
 
+$lang->book->statusList['normal'] = '正常';
+$lang->book->statusList['draft']  = '草稿';
+
 $lang->book->chapterTypeList['home'] = '只在首页显示';
 $lang->book->chapterTypeList['left'] = '一直显示在左侧';
 
@@ -816,11 +998,12 @@ $lang->book->chapter  = '返回目录';
 $lang->book->back2Top = '返回顶部';
 $lang->book->goHome   = '返回首页';
 
-$lang->book->aliasRepeat   = '别名:<strong> %s </strong>不能重复添加。';
+$lang->book->aliasRepeat   = '别名: %s 不能重复添加。';
 $lang->book->confirmDelete = "<span class='text-danger'>此操作将删除该手册所有章节和文章，确认删除?</span>";
 
 $lang->book->note = new stdclass();
 $lang->book->note->addedDate = '可以延迟到选定的时间发布。';
+$lang->book->note->link      = '请输入链接，可以是站外链接';
 /* cart */
 $lang->cart->common = '购物车';
 $lang->cart->browse = '我的购物车';
@@ -845,7 +1028,7 @@ $lang->company->setContact = "联系方式";
 
 $lang->company->error = new stdclass(); 
 $lang->company->error->email = "请填写合法的EMAIL";
-/* error */
+/* errors */
 $lang->error = new stdclass();
 $lang->error->pageNotFound    = '页面不存在';
 $lang->error->articleCategory = '文章分类';
@@ -861,6 +1044,7 @@ $lang->file->download      = '下载附件';
 $lang->file->edit          = '编辑';
 $lang->file->primary       = '封面';
 $lang->file->name          = '名称';
+$lang->file->admin         = '附件管理';
 $lang->file->setPrimary    = '设为封面';
 $lang->file->cancelPrimary = '取消封面';
 $lang->file->deny          = '禁止';
@@ -876,6 +1060,29 @@ $lang->file->sourceURI     = '地址';
 $lang->file->deleteSource  = '删除素材';
 $lang->file->editSource    = '编辑素材';
 $lang->file->selectImage   = '选择素材';
+$lang->file->fileList      = '文件列表';
+$lang->file->invalidFile   = '无效文件';
+
+$lang->file->setWatermark      = '设置图片水印';
+$lang->file->watermark         = '图片水印';
+$lang->file->watermarkContent  = '内容';
+$lang->file->watermarkSize     = '大小';
+$lang->file->watermarkColor    = '颜色';
+$lang->file->watermarkOpacity  = '透明度';
+$lang->file->watermarkPosition = '位置';
+$lang->file->rebuildWatermark  = '重新生成图片水印';
+$lang->file->rebuildWatermarks = "已完成 %s";
+
+$lang->file->watermarkPositionList = array();
+$lang->file->watermarkPositionList['topLeft']      = '左上';
+$lang->file->watermarkPositionList['topMiddle']    = '中上';
+$lang->file->watermarkPositionList['topRight']     = '右上';
+$lang->file->watermarkPositionList['middleLeft']   = '中左';
+$lang->file->watermarkPositionList['middleMiddle'] = '正中';
+$lang->file->watermarkPositionList['middleRight']  = '中右';
+$lang->file->watermarkPositionList['bottomLeft']   = '左下';
+$lang->file->watermarkPositionList['bottomMiddle'] = '中下';
+$lang->file->watermarkPositionList['bottomRight']  = '右下';
 
 $lang->file->id        = '编号';
 $lang->file->title     = '名称';
@@ -908,11 +1115,31 @@ $lang->file->invalidParameter = '参数无效。';
 $lang->file->unWritable       = '目录不可写或不存在。';
 $lang->file->uploadForbidden  = '附件上传功能已禁用。';
 $lang->file->sizeLimit        = "<p class='text-danger'>附件大小不能大于%sM</p>";
-$lang->file->sameName         = "已存在同名文件，如果继续将覆盖原文件。";
+$lang->file->sameName         = "已存在同名文件，更改失败。";
 $lang->file->nameEmpty        = "文件名不能为空";
 $lang->file->copySuccess      = "已复制到剪贴板";
 $lang->file->evilChar         = "包含非法字符";
 $lang->file->rebuildThumbs    = "已完成 %s";
+$lang->file->noFlashTip       = "Flash插件被禁用，请手动复制";
+$lang->file->fontNotDownload  = "字体文件没有下载成功";
+$lang->file->fontPosition     = '图片水印功能需要下载字体文件到 %s 目录。';
+
+$lang->file->updateInvalidFiles = '更新列表';
+$lang->file->clearAllInvalid    = '删除全部';
+$lang->file->fileTip            = '提示：红色代表数据库中有文件记录，但是文件实际已经被删除';
+$lang->file->productTip         = '请上传长宽比一致的图片，保证页面的美观';
+
+$lang->file->dragFile    = '请拖拽文件到此处';
+$lang->file->addFile     = '添加文件';
+$lang->file->beginUpload = '开始上传';
+
+$lang->file->watermarkList = array();
+$lang->file->watermarkList['open']  = '开启';
+$lang->file->watermarkList['close'] = '关闭';
+
+$lang->file->image = array();
+$lang->file->image['width']  = '宽度';
+$lang->file->image['height'] = '高度';
 /* forum */
 $lang->forum->common      = '论坛';
 $lang->forum->board       = '版块';
@@ -925,14 +1152,21 @@ $lang->forum->readonly    = '只读版块。';
 $lang->forum->notExist    = '版块不存在。';
 $lang->forum->lblOwner    = " [ 版主：%s ]";
 
-$lang->forum->post    = '发帖';
-$lang->forum->admin   = '论坛维护';
-$lang->forum->update  = '更新数据';
-$lang->forum->setting = '论坛设置';
+$lang->forum->post       = '发帖';
+$lang->forum->admin      = '论坛维护';
+$lang->forum->update     = '更新数据';
+$lang->forum->setting    = '论坛设置';
 $lang->forum->postReview = '发帖审核';
+$lang->forum->allBoards  = '所有版块';
+$lang->forum->index      = '首页';
 
 $lang->forum->updateDesc    = '该更新操作会重新计算每个版块的发帖数据。';
 $lang->forum->successUpdate = '更新数据成功';
+
+$lang->forum->indexModeOptions = array();
+$lang->forum->indexModeOptions['board']  = '版块浏览';
+$lang->forum->indexModeOptions['latest'] = '最新主题';
+$lang->forum->indexModeOptions['stick']  = '置顶主题';
 
 $lang->pager->noRecord      = '';
 $lang->pager->digest        = str_replace('记录', '主题', $lang->pager->digest);
@@ -1022,7 +1256,7 @@ $lang->guarder->noConfigure   = "无法找到发信配置信息";
 $lang->guarder->noEmail       = "未填写个人邮箱";
 $lang->guarder->noQuestion    = "未设置密保问题";
 $lang->guarder->noCaptcha     = "邮箱验证无法启用。";
-$lang->guarder->okFileVerify  = "请在服务器创建 <span class='red'>%s</span> 文件，并写入内容 <span class='red'>%s</span> 。";
+$lang->guarder->okFileVerify  = "请在服务器创建 <span class='red'>%s</span> 文件，如果存在该文件，使用编辑软件打开，重新保存一遍。";
 $lang->guarder->sendSuccess   = '验证码已发送至 %s';
 $lang->guarder->options       = '验证方式';
 
@@ -1035,7 +1269,7 @@ $lang->guarder->blacklistModes['email']    = '邮箱地址';
 
 $lang->guarder->whitelist = new stdclass();
 $lang->guarder->whitelist->ip            = 'IP白名单';
-$lang->guarder->whitelist->account       = '账号白名单';
+$lang->guarder->whitelist->account       = '帐号白名单';
 $lang->guarder->whitelist->accountHolder = '多个账户使用 , 隔开如zhangsan,lisi';
 $lang->guarder->whitelist->ipHolder      = '多个IP使用 , 隔开如202.194.133.1,202.194.132.0/28';
 $lang->guarder->whitelist->wrongIP       = 'IP 格式错误';
@@ -1153,8 +1387,8 @@ $lang->install->pdoMySQL     = 'PDO_MySQL扩展';
 $lang->install->pdoMySQLFail = '修改PHP配置文件，加载pdo_mysql扩展。';
 $lang->install->tmpRoot      = '临时文件目录';
 $lang->install->dataRoot     = '上传文件目录';
-$lang->install->mkdir        = '<p>需要创建目录%s。linux下面命令为：<br /> <code>mkdir -p %s</code></p>';
-$lang->install->chmod        = '需要修改目录 "%s" 的权限。linux下面命令为：<br /><code>chmod o=rwx -R %s</code>';
+$lang->install->mkdir        = '<p>请创建目录%s。Linux下的命令为：<br /> <code>mkdir -p %s</code></p>';
+$lang->install->chmod        = '请修改目录 "%s" 的权限。Linux下的命令为：<br /><code>chmod o=rwx -R %s</code><br><br>';
 
 $lang->install->settingDB      = '设置数据库';
 $lang->install->dbHost         = '数据库服务器';
@@ -1243,12 +1477,10 @@ $lang->mail->trySendlater   = '三分钟内不能重复发送邮件。';
 
 $lang->mail->captcha     = '验证码';
 $lang->mail->sendContent = <<<EOT
-%s 您好：
-<br />您在<strong>%s</strong>(%s)上面的验证码为：%s
-<br />如非您本人操作，请忽略。
-<br />
-<br /><strong>%s</strong>由<a href='http://www.chanzhi.org' target='_blank'>蝉知企业门户系统</a>搭建。
-<br /><a href='http://www.cnezsoft.com' target='_blank'>易软天创</a>为天下企业提供专业的管理工具。
+<p>%s 您好：</p>
+<p>您在<strong>%s</strong>(%s)上面的验证码为：%s </p>
+<p>如非您本人操作，请忽略。</p>
+<p> <a style="color:gray;font-size:12px;text-decoration:none" href="http://www.chanzhi.org" target="_blank">Powerd By 蝉知</a> </p>
 EOT;
 /* message */
 $lang->message->common            = '留言';
@@ -1256,6 +1488,8 @@ $lang->message->id                = '编号';
 $lang->message->type              = '类型';
 $lang->message->from              = '称呼';
 $lang->message->content           = '内容';
+$lang->message->blockFrom         = $lang->message->from;
+$lang->message->blockContent      = $lang->message->content;
 $lang->message->phone             = '电话';
 $lang->message->mobile            = '手机';
 $lang->message->qq                = 'QQ';
@@ -1272,6 +1506,7 @@ $lang->message->noSelectedMessage = '您没有选择任何留言。';
 $lang->message->needCheck         = '留言通过审核后显示。';
 $lang->message->showDetail        = '显示全部';
 $lang->message->hideDetail        = '收起';
+$lang->message->submit            = '提交';
 
 $lang->message->admin          = '后台首页';
 $lang->message->pass           = '通过';
@@ -1315,6 +1550,7 @@ $lang->comment->viewComment  = '评论';
 $lang->comment->needCheck    = '评论通过审核后显示。';
 $lang->comment->receiveEmail = '接收邮件提醒';
 
+$lang->comment->submit        = '提交';
 $lang->comment->pass          = '通过';
 $lang->comment->reply         = '回复';
 $lang->comment->replyAt       = '回复于';
@@ -1361,6 +1597,11 @@ $lang->nav->inputUrl        = '请输入链接';
 $lang->nav->inputTitle      = '请输入标题';
 $lang->nav->cannotRemoveAll = '不能删除所有导航';
 
+$lang->nav->all['blog']    = '所有博客';
+$lang->nav->all['article'] = '所有文章';
+$lang->nav->all['product'] = '所有产品';
+$lang->nav->all['custom']  = '自定义';
+
 $lang->nav->types['system']  = '系统模块';
 $lang->nav->types['article'] = '文章类目';
 $lang->nav->types['blog']    = '博客类目';
@@ -1387,42 +1628,48 @@ $lang->nav->targetList = array();
 $lang->nav->targetList['_self']  = '当前窗口';
 $lang->nav->targetList['_blank'] = '新开窗口';
 $lang->nav->targetList['modal']  = '弹出窗口';
+
+$lang->nav->dropdown = array();
+$lang->nav->dropdown['dropdown']        = '点击展开';
+$lang->nav->dropdown['dropdown-hover']  = '悬停展开';
 /* order */
 $lang->order->common  = '订单';
 
-$lang->order->id             = 'ID';
-$lang->order->productInfo    = '商品信息';
-$lang->order->account        = '账号';
-$lang->order->address        = '收货地址';
-$lang->order->price          = '价格';
-$lang->order->score          = '积分';
-$lang->order->count          = '数量';
-$lang->order->amount         = '金额';
-$lang->order->sn             = '交易号';
-$lang->order->payStatus      = '付款状态';
-$lang->order->paidDate       = '付款时间';
-$lang->order->deliveryStatus = '发货状态';
-$lang->order->deliveriedDate = '发货时间';
-$lang->order->confirmedDate  = '收货时间';
-$lang->order->payment        = '交易方式';
-$lang->order->createdDate    = '下单时间';
-$lang->order->express        = '快递公司';
-$lang->order->waybill        = '快递单号';
-$lang->order->expressInfo    = '快递详情';
-$lang->order->receiver       = '收货人';
-$lang->order->noRecord       = '无';
-$lang->order->status         = '状态';
-$lang->order->note           = '买家留言';
-$lang->order->frontNote      = '留言';
-$lang->order->basic          = '基本信息';
-$lang->order->type           = '类型';
-$lang->order->info           = '订单信息';
-$lang->order->savePay        = '回款';
-$lang->order->edit           = '编辑';
-$lang->order->contact        = '收货姓名';
-$lang->order->phone          = '手机号';
-$lang->order->zipcode        = '邮编';
-$lang->order->deliveryStatus = '发货状态';
+$lang->order->id                = 'ID';
+$lang->order->productInfo       = '商品信息';
+$lang->order->account           = '帐号';
+$lang->order->address           = '收货地址';
+$lang->order->price             = '价格';
+$lang->order->score             = '积分';
+$lang->order->count             = '数量';
+$lang->order->amount            = '金额';
+$lang->order->sn                = '交易号';
+$lang->order->payStatus         = '付款状态';
+$lang->order->paidDate          = '付款时间';
+$lang->order->deliveryStatus    = '发货状态';
+$lang->order->deliveriedDate    = '发货时间';
+$lang->order->confirmedDate     = '收货时间';
+$lang->order->payment           = '交易方式';
+$lang->order->createdDate       = '下单时间';
+$lang->order->express           = '快递公司';
+$lang->order->waybill           = '快递单号';
+$lang->order->expressInfo       = '快递详情';
+$lang->order->receiver          = '收货人';
+$lang->order->noRecord          = '无';
+$lang->order->status            = '状态';
+$lang->order->note              = '买家留言';
+$lang->order->frontNote         = '留言';
+$lang->order->basic             = '基本信息';
+$lang->order->type              = '类型';
+$lang->order->info              = '订单信息';
+$lang->order->savePay           = '回款';
+$lang->order->edit              = '编辑';
+$lang->order->contact           = '收货姓名';
+$lang->order->phone             = '手机号';
+$lang->order->zipcode           = '邮编';
+$lang->order->deliveryStatus    = '发货状态';
+$lang->order->last              = '最后处理时间';
+$lang->order->comment           = '备注';
 
 $lang->order->deliverList['not_send']  = '待发货';
 $lang->order->deliverList['send']      = '已发货';
@@ -1439,15 +1686,18 @@ $lang->order->submit         = '提交订单';
 $lang->order->cancel         = '取消';
 $lang->order->pay            = '支付';
 $lang->order->goToPay        = '订单创建成功，请到支付页面完成付款。';
+$lang->order->editPrice      = '改价';
 $lang->order->return         = '收款';
+$lang->order->refund         = '退款';
 $lang->order->delivery       = '发货';
+$lang->order->delete         = '删除';
 $lang->order->finish         = '完成';
 $lang->order->confirm        = '确认订单信息';
 $lang->order->selectProducts = "选择了 <strong class='text-danger'>%s</strong> 件商品，";
-$lang->order->totalToPay     = "共计：<strong id='amount' class='text-danger'>%s</strong>";
+$lang->order->totalToPay     = "共计：<strong id='amount' class='text-lg text-danger'>%s</strong>";
 $lang->order->payInfo        = "%s %s 商品订单";
 $lang->order->goToBank       = "请在线支付您的订单。";
-$lang->order->track          = '查看物流';
+$lang->order->track          = '物流';
 $lang->order->life           = '订单跟踪';
 $lang->order->days           = '天';
 $lang->order->deliveryInfo   = '查看详情';
@@ -1457,8 +1707,11 @@ $lang->order->products       = '订单产品';
 $lang->order->selectPayment  = '选择支付方式';
 $lang->order->settlement     = '去结算';
 $lang->order->check          = '订单结算';
+$lang->order->all            = '所有';
+$lang->order->applyRefund    = '申请退款';
 
 $lang->order->confirmLimit         = '确认收货周期';
+$lang->order->expireLimit          = '订单过期时间';
 $lang->order->confirmReceived      = '确认收货';
 $lang->order->deliveryConfirmed    = '您的订单已经确认收货成功！';
 $lang->order->confirmWarning       = "请收到货后，再确认收货！否则您可能钱货两空！";
@@ -1489,11 +1742,20 @@ $lang->order->statusList = array();
 $lang->order->statusList['not_paid']  = '待付款';
 $lang->order->statusList['paid']      = '已付款';
 $lang->order->statusList['not_send']  = '待发货';
-$lang->order->statusList['send']      = '已发货';
+$lang->order->statusList['send']      = '待收货';
 $lang->order->statusList['confirmed'] = '已收货';
 $lang->order->statusList['normal']    = '进行中';
 $lang->order->statusList['finished']  = '已完成';
 $lang->order->statusList['canceled']  = '已取消';
+$lang->order->statusList['refunding'] = '待退款';
+$lang->order->statusList['refunded']  = '已退款';
+$lang->order->statusList['expired']   = '已过期';
+
+$lang->order->payStatusList = array();
+$lang->order->payStatusList['not_paid']  = '未付款';
+$lang->order->payStatusList['paid']      = '已付款';
+$lang->order->payStatusList['refunding'] = '待退款';
+$lang->order->payStatusList['refunded']  = '已退款';
 
 $lang->order->types = array();
 $lang->order->types['shop']  = '商品';
@@ -1504,6 +1766,18 @@ $lang->order->abbr->paidDate       = '付款';
 $lang->order->abbr->deliveriedDate = '发货';
 $lang->order->abbr->confirmedDate  = '收货';
 $lang->order->abbr->createdDate    = '下单';
+
+$lang->order->searchLabels = new stdclass();
+$lang->order->searchLabels->all         = '所有|mode=all';
+$lang->order->searchLabels->waitPay     = '待付款|mode=payStatus&param=not_paid';
+$lang->order->searchLabels->waitSend    = '待发货|mode=deliveryStatus&param=not_send';
+$lang->order->searchLabels->waitConfirm = '待收货|mode=deliveryStatus&param=send';
+$lang->order->searchLabels->refunding   = '待退款|mode=payStatus&param=refunding';
+$lang->order->searchLabels->confirmed   = '已收货|mode=deliveryStatus&param=confirmed';
+$lang->order->searchLabels->finished    = '已完成|mode=status&param=finished';
+$lang->order->searchLabels->refunded    = '已退款|mode=payStatus&param=refunded';
+$lang->order->searchLabels->canceled    = '已取消|mode=status&param=canceled';
+$lang->order->searchLabels->expired     = '已过期|mode=status&param=expired';
 /* package */
 $lang->package->common        = '插件';
 $lang->package->browse        = '浏览插件';
@@ -1591,12 +1865,13 @@ $lang->package->types = new stdclass();
 $lang->package->types->theme     = '主题';
 $lang->package->types->extension = '插件';
 $lang->package->types->ext       = '插件';
+$lang->package->types->patch     = '补丁';
 
 $lang->package->waring = '警告';
 
 $lang->package->errorOccurs                  = '错误：';
 $lang->package->errorGetModules              = '从www.chanzhi.org获得插件分类失败。可能是因为网络方面的原因，请检查后重新刷新页面。';
-$lang->package->errorGetPackages             = '从www.chanzhi.org获得插件失败。可能是因为网络方面的原因，您可以到 <a href="http://www.chanzhi.org/extemsion" target="_blank" class="alert-link">www.chanzhi.org</a> 手工下载插件，然后上传安装。';
+$lang->package->errorGetPackages             = '从www.chanzhi.org获得插件失败。可能是因为网络方面的原因，您可以到 <a href="http://www.chanzhi.org/extension" target="_blank" class="alert-link">www.chanzhi.org</a> 手工下载插件，然后上传安装。';
 $lang->package->errorDownloadPathNotFound    = '插件下载存储路径<strong>%s</strong>不存在。<br />linux下面请执行命令：<strong>mkdir -p %s</strong>来修正。';
 $lang->package->errorDownloadPathNotWritable = '插件下载存储路径<strong>%s</strong>不可写。<br />linux下面请执行命令：<strong>sudo chmod 777 %s</strong>来修正。';
 $lang->package->errorPackageFileExists       = '下载路径已经有一个名为的<strong>%s</strong>附件。<a href="%s" class="btn btn-primary loadInModal">重新%s</a>';
@@ -1653,8 +1928,9 @@ $lang->product->sales      = '产品定价';
 $lang->product->css        = 'CSS';
 $lang->product->js         = 'JS';
 
-$lang->product->currency = '货币';
-$lang->product->stock    = '库存';
+$lang->product->currency  = '货币';
+$lang->product->stock     = '库存';
+$lang->product->negotiate = '面议';
 
 $lang->product->list         = '产品列表';
 $lang->product->hot          = '热门产品';
@@ -1673,6 +1949,11 @@ $lang->product->detail       = '查看详情';
 $lang->product->setting      = '设置';
 $lang->product->soldout      = '已售罄';
 $lang->product->layout       = '布局';
+$lang->product->contact      = '联系我们';
+
+$lang->product->orderBy = new stdclass();
+$lang->product->orderBy->time = '时间';
+$lang->product->orderBy->hot  = '热度';
 
 $lang->product->congratulations  = "恭喜";
 $lang->product->addToCartSuccess = "成功加入购物车。";
@@ -1736,9 +2017,27 @@ $lang->product->currencySymbols['nzd']  = 'NZ$';
 $lang->product->currencySymbols['thb']  = 'B';
 $lang->product->currencySymbols['sgd']  = 'S$';
 
+$lang->product->browseOptions = array();
+$lang->product->browseOptions['card'] = '卡片模式';
+$lang->product->browseOptions['list'] = '列表模式';
+
 $lang->product->stockOptions = array();
 $lang->product->stockOptions[0] = '关闭';
 $lang->product->stockOptions[1] = '开启';
+
+$lang->product->viewsOptions = array();
+$lang->product->viewsOptions[1] = '显示';
+$lang->product->viewsOptions[0] = '不显示';
+
+$lang->product->priceOptions = array();
+$lang->product->priceOptions[1] = '显示';
+$lang->product->priceOptions[0] = '不显示';
+
+$lang->product->namePositionOptions = array();
+$lang->product->namePositionOptions['left']   = '居左';
+$lang->product->namePositionOptions['center'] = '居中';
+
+$lang->product->noCategoriesTip = '您还没有为产品添加类目，请添加类目';
 /* reply */
 $lang->reply = new stdclass();
 $lang->reply->common    = '回贴';
@@ -1754,10 +2053,19 @@ $lang->reply->stool     = '板凳';
 
 $lang->reply->edit       = '编辑回帖';
 $lang->reply->deleteFile = '删除附件';
+
+$lang->reply->noReply = array();
+$lang->reply->noReply['readonly'] = '板块状态为只读，禁止回帖';
+
+$lang->reply->noEdit = array();
+$lang->reply->noEdit['readonly']  = '板块状态为只读，禁止编辑';
+
 /* score */
 $lang->score->back        = '返回';
 $lang->score->rankingList = '积分排行榜';
 $lang->score->rule        = '积分规则';
+$lang->score->statement   = '积分结算';
+$lang->score->stateDesc   = '积分结算会将一个月之前的所有收入积分按照每个用户结算为总积分。以减少记录数。';
 
 $lang->score->id      = '编号';
 $lang->score->account = '用户';
@@ -1796,7 +2104,7 @@ $lang->score->methods['delReply']    = '删回复';
 $lang->score->methods['award']       = '奖励积分';
 $lang->score->methods['punish']      = '扣除积分';
 
-$lang->score->methods['approveSubmittion'] = '投稿成功';
+$lang->score->methods['approvesubmission'] = '投稿成功';
 
 $lang->score->methods['buyscore']  = '购买积分';
 $lang->score->methods['statement'] = '积分结算';
@@ -1815,6 +2123,7 @@ $lang->score->lblNoScore       = "抱歉，您的积分不够";
 $lang->score->lblNoScoreReason = "抱歉，您的积分不够 %s 需要 <strong class='red'>%s</strong> 分，您现在有 <strong class='red'>%s</strong> 分";
 $lang->score->lblDetail        = "详情可参考<a href='http://www.zentao.net/thread-view-79915.html' target='_blank'>《如何获得积分》</a><br /><br />";
 $lang->score->lblBuySocre      = "购买积分 %s";
+$lang->score->lblStateSuccess  = '积分结算成功！';
 
 $lang->score->setAmount   = '充值金额';
 $lang->score->getScore    = '获取积分';
@@ -1826,6 +2135,9 @@ $lang->score->alipay      = "立即使用支付宝支付";
 $lang->score->paySuccess  = '恭喜你，支付成功';
 $lang->score->payFail     = '对不起，支付没成功，如果有问题，请联系我们。';
 $lang->score->viewHistory = '查看支付历史';
+
+$lang->score->awardRule  = '奖励积分规则';
+$lang->score->punishRule = '惩罚积分规则';
 /* search */
 $lang->search->common     = '搜索';
 $lang->search->index      = '搜索结果';
@@ -1837,43 +2149,53 @@ $lang->search->buildResult       = "创建成功，新增<span class='text-succe
 /* site */
 $lang->site->common        = "站点";
 
-$lang->site->type            = '站点类型';
-$lang->site->requestType     = '访问类型';
-$lang->site->status          = '站点状态';
-$lang->site->pauseTip        = '暂停提示';
-$lang->site->name            = '网站名称';
-$lang->site->module          = '功能模块';
-$lang->site->lang            = '站点语言';
-$lang->site->defaultLang     = '默认语言';
-$lang->site->domain          = '主域名';
-$lang->site->allowedDomain   = '可访问域名';
-$lang->site->keywords        = '关键词';
-$lang->site->indexKeywords   = '首页关键词';
-$lang->site->meta            = 'Meta 标签';
-$lang->site->desc            = '站点描述';
-$lang->site->icpSN           = '备案编号';
-$lang->site->icpLink         = '备案链接';
-$lang->site->policeSN        = '公安部备案编号';
-$lang->site->policeLink      = '备案链接';
-$lang->site->slogan          = '站点口号';
-$lang->site->mission         = '站点使命';
-$lang->site->copyright       = '创建年份';
-$lang->site->allowUpload     = '允许上传附件';
-$lang->site->allowedFiles    = '允许附件类型';
-$lang->site->setImageSize    = '图片缩略图大小';
-$lang->site->captcha         = '前台表单';
-$lang->site->mailCaptcha     = '邮箱验证码';
-$lang->site->twContent       = '繁体内容';
-$lang->site->cn2tw           = '自动从简体版复制';
-$lang->site->cdn             = 'CDN地址';
-$lang->site->sensitive       = '敏感词';
-$lang->site->scheme          = '默认访问协议';
-$lang->site->saveDays        = '日志保存天数';
-$lang->site->openCache       = '开启缓存';
-$lang->site->cachePage       = '缓存整页';
-$lang->site->cacheExpired    = '更新时间';
-$lang->site->hour            = '小时';
-$lang->site->homeMenus       = '首页菜单';
+$lang->site->type             = '站点类型';
+$lang->site->tidy             = '代码美化';
+$lang->site->requestType      = '访问类型';
+$lang->site->status           = '站点状态';
+$lang->site->pauseTip         = '暂停提示';
+$lang->site->name             = '网站名称';
+$lang->site->module           = '功能模块';
+$lang->site->lang             = '站点语言';
+$lang->site->defaultLang      = '默认语言';
+$lang->site->domain           = '主域名';
+$lang->site->allowedDomain    = '可访问域名';
+$lang->site->keywords         = '关键词';
+$lang->site->indexKeywords    = '首页关键词';
+$lang->site->meta             = 'Meta 标签';
+$lang->site->desc             = '站点描述';
+$lang->site->icpSN            = '备案编号';
+$lang->site->icpLink          = '备案链接';
+$lang->site->policeSN         = '公安部备案编号';
+$lang->site->policeTip        = '公安部备案编号';
+$lang->site->policeLink       = '备案链接';
+$lang->site->slogan           = '站点口号';
+$lang->site->mission          = '站点使命';
+$lang->site->copyright        = '创建年份';
+$lang->site->allowUpload      = '允许上传附件';
+$lang->site->allowedFiles     = '允许附件类型';
+$lang->site->setImageSize     = '图片缩略图大小';
+$lang->site->captcha          = '前台表单';
+$lang->site->mailCaptcha      = '邮箱验证码';
+$lang->site->twContent        = '繁体内容';
+$lang->site->cn2tw            = '自动从简体版复制';
+$lang->site->cdn              = 'CDN地址';
+$lang->site->sensitive        = '敏感词';
+$lang->site->scheme           = '默认访问协议';
+$lang->site->saveDays         = '日志保存天数';
+$lang->site->openCache        = '开启缓存';
+$lang->site->cachePage        = '缓存整页';
+$lang->site->cacheExpired     = '更新时间';
+$lang->site->clearCache       = '清除缓存';
+$lang->site->clearingCache    = '清除中';
+$lang->site->clearedCache     = '清除完毕';
+$lang->site->failClear        = '清除失败';
+$lang->site->clearCacheTip    = '<td>删除权限不足，请修改<code>%s</code>权限<td>';
+$lang->site->hour             = '小时';
+$lang->site->homeMenus        = '首页菜单';
+$lang->site->agreement        = '注册协议';
+$lang->site->agreementTitle   = '协议标题';
+$lang->site->agreementContent = '协议内容';
 
 $lang->site->importantOption  = '重要操作';
 $lang->site->resetPassword    = '前台找回密码';
@@ -1883,31 +2205,32 @@ $lang->site->checkEmail       = '会员邮箱绑定';
 $lang->site->filterFunction   = '过滤功能';
 $lang->site->allowedLocation  = '允许登录地区';
 $lang->site->checkSessionIP   = '后台检查IP';
-$lang->site->forceYangcong    = '后台强制洋葱登录';
 $lang->site->setsecurity      = '安全设置';
 $lang->site->setsensitive     = '敏感词设置';
 $lang->site->filterSensitive  = '敏感词过滤';
 $lang->site->setBlacklist     = '黑名单管理';
 $lang->site->mobileTemplate   = '移动模板';
+$lang->site->gzipOutput       = 'gzip输出';
 $lang->site->score            = '积分';
 $lang->site->setCounts        = '积分规则';
 $lang->site->front            = '网站浏览';
 $lang->site->useCDN           = '启用CDN';
 
 $lang->site->setBasic      = "基本信息设置";
+$lang->site->setLanguage   = "语言设置";
+$lang->site->setUrlType    = "地址类型";
 $lang->site->setCache      = '缓存设置';
 $lang->site->setCDN        = "CDN设置";
 $lang->site->setDomain     = "域名设置";
 $lang->site->setLang       = "语言设置";
 $lang->site->setFilter     = "过滤设置";
 $lang->site->ipFilter      = "ip过滤";
-$lang->site->accountFilter = "账号过滤";
+$lang->site->accountFilter = "帐号过滤";
 $lang->site->setSecurity   = "安全设置";
 $lang->site->setUpload     = "附件上传";
 $lang->site->setRobots     = "Robots 设置";
 $lang->site->setOauth      = "开放登录";
 $lang->site->setSinaOauth  = "新浪微博接入";
-$lang->site->setYangcong   = "洋葱登录设置";
 $lang->site->setQQOauth    = "QQ接入";
 $lang->site->oauthHelp     = "使用帮助";
 $lang->site->setRecPerPage = "列表数量设置";
@@ -1915,27 +2238,34 @@ $lang->site->useLocation   = "使用当前登录地址: <span>%s</span>";
 $lang->site->changeSetting = "更改设置";
 $lang->site->setStat       = "流量统计设置";
 $lang->site->setHomeMenu   = "首页菜单";
+$lang->site->openModule    = "开启模块";
+$lang->site->setAgreement  = "设置注册协议";
+$lang->site->isVertified   = "已认证";
 
 $lang->site->typeList = new stdclass();
 $lang->site->typeList->portal = '企业门户';
 $lang->site->typeList->blog   = '个人博客';
 
 $lang->site->requestTypeList = array();
-$lang->site->requestTypeList['GET']        = 'GET';
 $lang->site->requestTypeList['PATH_INFO']  = 'PATH_INFO';
 $lang->site->requestTypeList['PATH_INFO2'] = 'PATH_INFO2';
+$lang->site->requestTypeList['GET']        = 'GET';
 
 $lang->site->statusList = new stdclass();
 $lang->site->statusList->normal = '正常';
 $lang->site->statusList->pause  = '暂停';
 
+$lang->site->agreementList = array();
+$lang->site->agreementList['open']  = '开启';
+$lang->site->agreementList['close'] = '关闭';
+
 $lang->site->resetPasswordList = array();
 $lang->site->resetPasswordList['open']  = '开启';
 $lang->site->resetPasswordList['close'] = '关闭';
 
-$lang->site->forceYangcongList = array();
-$lang->site->forceYangcongList['open']  = '开启';
-$lang->site->forceYangcongList['close'] = '关闭';
+$lang->site->tidyOptions = array();
+$lang->site->tidyOptions['open']  = '开启';
+$lang->site->tidyOptions['close'] = '关闭';
 
 $lang->site->checkIPList = array();
 $lang->site->checkIPList['open']  = '开启';
@@ -1952,6 +2282,10 @@ $lang->site->checkLocationList['close'] = '关闭';
 $lang->site->checkEmailList = array();
 $lang->site->checkEmailList['open']  = '开启';
 $lang->site->checkEmailList['close'] = '关闭';
+
+$lang->site->sensitiveList = array();
+$lang->site->sensitiveList['content'] = '内容敏感词';
+$lang->site->sensitiveList['user']    = '用户名敏感词';
 
 $lang->site->sessionIpoptions = array();
 $lang->site->sessionIpoptions[1] = '检查';
@@ -1985,35 +2319,46 @@ $lang->site->frontList['guest'] = '不需要登录';
 $lang->site->mobileTemplateList['open']  = '启用';
 $lang->site->mobileTemplateList['close'] = '禁用';
 
+$lang->site->gzipOutputList['open']  = '启用';
+$lang->site->gzipOutputList['close'] = '禁用';
+
 $lang->site->scoreList['open']  = '启用';
 $lang->site->scoreList['close'] = '禁用';
 
 $lang->site->cdnList['open']  = '启用';
 $lang->site->cdnList['close'] = '关闭';
 
-$lang->site->cacheTypes['close'] = '关闭';
 $lang->site->cacheTypes['file']  = '启用';
+$lang->site->cacheTypes['close'] = '关闭';
 
-$lang->site->cachePageOptions['close'] = '关闭';
 $lang->site->cachePageOptions['open']  = '开启';
+$lang->site->cachePageOptions['close'] = '关闭';
 
 $lang->site->filterFunctionList['open']  = '启用';
 $lang->site->filterFunctionList['close'] = '关闭';
 
-$lang->site->moduleAvailable = array();
-$lang->site->moduleAvailable['user']       = '会员';
-$lang->site->moduleAvailable['article']    = '文章';
-$lang->site->moduleAvailable['blog']       = '博客';
-$lang->site->moduleAvailable['product']    = '产品';
-$lang->site->moduleAvailable['book']       = '手册';
-$lang->site->moduleAvailable['page']       = '单页';
-$lang->site->moduleAvailable['forum']      = '论坛';
-$lang->site->moduleAvailable['message']    = '评论留言';
-$lang->site->moduleAvailable['search']     = '搜索';
-$lang->site->moduleAvailable['shop']       = '商城';
-$lang->site->moduleAvailable['score']      = '积分';
-$lang->site->moduleAvailable['stat']       = '统计';
-$lang->site->moduleAvailable['submittion'] = '投稿';
+$lang->site->moduleAvailable = new stdclass();
+                           
+$lang->site->moduleAvailable->content = array();
+$lang->site->moduleAvailable->content['article']    = '文章';
+$lang->site->moduleAvailable->content['blog']       = '博客';
+$lang->site->moduleAvailable->content['page']       = '单页';
+$lang->site->moduleAvailable->content['book']       = '手册';
+                           
+$lang->site->moduleAvailable->user = array();
+$lang->site->moduleAvailable->user['user']       = '会员';
+$lang->site->moduleAvailable->user['forum']      = '论坛';
+$lang->site->moduleAvailable->user['score']      = '积分';
+$lang->site->moduleAvailable->user['message']    = '评论留言';
+$lang->site->moduleAvailable->user['submission'] = '投稿';
+
+$lang->site->moduleAvailable->mall = array();
+$lang->site->moduleAvailable->mall['shop']    = '商城';
+$lang->site->moduleAvailable->mall['product'] = '产品';
+                           
+$lang->site->moduleAvailable->score = array();
+$lang->site->moduleAvailable->score['search'] = '搜索';
+$lang->site->moduleAvailable->score['stat']   = '统计';
 
 $lang->site->metaHolder       = '可放置<meta><script><style>和<link>标签。';
 $lang->site->fileAllowedRole  = '多个后缀名之间请用 "," 隔开';
@@ -2025,13 +2370,13 @@ $lang->site->changeLocation   = '您当前的登录地区与允许登录地区�
 $lang->site->sessionIpTip     = '开启后，如IP变化将自动退出登录。';
 $lang->site->schemeTip        = '所有访问会跳转至默认访问协议。';
 $lang->site->saveDaysTip      = '访问日志保存天数必须为为 >0 的数字。';
-$lang->site->yangcongTip      = '开启强制洋葱登录后，您可以通过设置密保问题开启密保登录作为备用。';
 $lang->site->closeScoreTip    = '禁用积分功能后不再记录积分，会员保持原有积分不变。';
 $lang->site->cdnFileLost      = '以下资源无法访问：';
 $lang->site->useDefaultCdn    = '使用默认地址';
 $lang->site->defaultTip       = '站点维护中……';
 $lang->site->icpTip           = '仅支持中国大陆网站';
 $lang->site->requestTypeTip   = '经检测，您可使用PATH_INFO模式，SEO效果更佳。';
+$lang->site->sensitiveTip     = '多个敏感词之间请用英文逗号分隔';
 
 $lang->site->robots            = 'Robots';
 $lang->site->robotsUnwriteable = 'Robots文件%s 不可写，请修改权限后设置。';
@@ -2041,15 +2386,11 @@ $lang->site->customizableList = new stdclass();
 $lang->site->customizableList->article = '文章列表数量';
 $lang->site->customizableList->product = '产品列表数量';
 $lang->site->customizableList->blog    = '博客列表数量';
+$lang->site->customizableList->book    = '手册列表数量';
 $lang->site->customizableList->forum   = '论坛列表数量';
 $lang->site->customizableList->reply   = '回帖列表数量';
 $lang->site->customizableList->message = '留言列表数量';
 $lang->site->customizableList->comment = '评论列表数量';
-
-$lang->site->yangcong = new stdclass();
-$lang->site->yangcong->appID = 'APP ID';
-$lang->site->yangcong->key   = 'APP KEY';
-$lang->site->yangcong->auth  = 'Auth ID';
 
 $lang->site->api = new stdclass();
 $lang->site->api->common = '集成';
@@ -2061,15 +2402,13 @@ $lang->site->api->ipTip  = '允许调用者使用这些IP访问，多个IP使用
 $lang->site->menus = array();
 $lang->site->menus['order']      = '订单';
 $lang->site->menus['message']    = '留言';
-$lang->site->menus['comment']    = '评论';
-$lang->site->menus['reply']      = '回复';
 $lang->site->menus['thread']     = '主题';
 $lang->site->menus['forumreply'] = '回帖';
 $lang->site->menus['article']    = '文章';
 $lang->site->menus['page']       = '单页';
 $lang->site->menus['blog']       = '博客';
 $lang->site->menus['book']       = '手册';
-$lang->site->menus['submittion'] = '投稿';
+$lang->site->menus['submission'] = '投稿';
 $lang->site->menus['product']    = '产品';
 $lang->site->menus['user']       = '会员';
 $lang->site->menus['wechat']     = '微信';
@@ -2078,12 +2417,23 @@ $lang->site->menus['tag']        = '关键词';
 $lang->site->menus['links']      = '友情链接';
 $lang->site->menus['site']       = '站点';
 $lang->site->menus['security']   = '安全';
+
+$lang->site->fileAuthority = '需要修改写入文件的权限，Linux下的运行命令为<code>%s</code>';
+$lang->site->fileRequired  = '需要创建文件，Linux下的运行命令为<code>%s</code>';
+
+$lang->site->wechatLoginTip = '使用微信登录需要开启PHP的openssl扩展';
+$lang->site->noZlib         = '启用gz输出需要开启PHP的zlib扩展';
+$lang->site->gzipOn         = 'apache已经安装gzip扩展，无需再启用gzip输出';
 /* sitemap */
 $lang->sitemap->productCategory = '产品分类';
 $lang->sitemap->articleCategory = '文章分类';
+$lang->sitemap->articleList     = '文章列表';
+$lang->sitemap->productList     = '产品列表';
 $lang->sitemap->blogCategory    = '博客分类';
 $lang->sitemap->boards          = '论坛版块';
+$lang->sitemap->threadList      = '论坛主题列表';
 $lang->sitemap->books           = '在线手册';
+$lang->sitemap->bookArticles    = '手册文章列表';
 $lang->sitemap->pages           = '页面';
 $lang->sitemap->xmlVersion      = '访问XML版';
 /* slide */
@@ -2161,7 +2511,7 @@ $lang->stat->domain        = '来路域名';
 $lang->stat->click         = '点击排行';
 $lang->stat->link          = '链接';
 $lang->stat->today         = '今天';
-$lang->stat->yestoday      = '昨天';
+$lang->stat->yesterday     = '昨天';
 $lang->stat->pv            = '浏览量(PV)';
 $lang->stat->uv            = '访客数(UV)';
 $lang->stat->ipCount       = 'IP数';
@@ -2209,17 +2559,22 @@ $lang->stat->dataTypes->ip = 'IP数';
 $lang->stat->page = new stdclass();
 $lang->stat->page->common = '页面访问量';
 $lang->stat->page->url    = '页面地址';
+
+$lang->stat->maxDays    = '概况图显示最大天数';
+$lang->stat->maxDaysTip = '最大天数必须为为 >0 的数字。';
 /* tag */
 $lang->tag->common = '关键词';
 $lang->tag->rank   = '权重';
 $lang->tag->link   = '链接';
 
-$lang->tag->admin     = '关键词管理';
-$lang->tag->editLink  = '编辑链接';
-$lang->tag->source    = '来源';
-$lang->tag->inputLink = '请输入链接';
-$lang->tag->inputTag  = '请输入关键词';
-$lang->tag->search    = '搜索';
+$lang->tag->admin         = '关键词管理';
+$lang->tag->editLink      = '编辑链接';
+$lang->tag->source        = '来源';
+$lang->tag->inputLink     = '请输入链接';
+$lang->tag->inputTag      = '请输入关键词';
+$lang->tag->linkFormatTip = '当输入的链接为外链时，链接应该以http或者https开头';
+$lang->tag->search        = '搜索';
+$lang->tag->delete        = '删除';
 
 $lang->tag->sourceList['article']  = '文章';
 $lang->tag->sourceList['blog']     = '博客';
@@ -2229,7 +2584,7 @@ $lang->tag->sourceList['book']     = '手册';
 $lang->tag->sourceList['category'] = '类目';
 $lang->tag->sourceList['board']    = '版块';
 /* thread */
-$lang->thread->common    = '主题';
+$lang->thread->common    = '帖子';
 
 $lang->thread->id          = '编号';
 $lang->thread->title       = '标题';
@@ -2243,6 +2598,7 @@ $lang->thread->views       = '阅读';
 $lang->thread->lastReply   = '最后回帖';
 $lang->thread->isLink      = '跳转';
 $lang->thread->link        = '链接';
+$lang->thread->discussion  = '讨论模式';
 
 $lang->thread->post           = '发帖';
 $lang->thread->postTo         = '发布帖子到';
@@ -2258,6 +2614,10 @@ $lang->thread->transfer       = '转移';
 $lang->thread->switchStatus   = '隐藏/显示';
 $lang->thread->deleteFile     = '删除附件';
 $lang->thread->unreplied      = "<span class='text-important'>未回复</span>";
+$lang->thread->quote          = '引用';
+$lang->thread->latest         = '最新帖子';
+$lang->thread->stickTime      = '结束时间';
+$lang->thread->stickBold      = '标题加粗';
 
 $lang->thread->sticks[0] = '不置顶';
 $lang->thread->sticks[1] = '版块置顶';
@@ -2274,6 +2634,7 @@ $lang->thread->confirmHideReply    = "您确定隐藏回帖吗？";
 $lang->thread->confirmHideThread   = "您确定隐藏该主题吗？";
 $lang->thread->confirmDeleteReply  = "您确定删除该回帖吗？";
 $lang->thread->confirmDeleteFile   = "您确定删除该附件吗？";
+$lang->thread->canNotDelete        = "删除失败，您没有删除权限。";
 
 $lang->thread->lblEdited       = '%s 最后编辑, %s';
 $lang->thread->message         = '%s在论坛#%s回复了主题：%s，内容为：%s';
@@ -2285,6 +2646,11 @@ $lang->thread->successShow     = '显示成功';
 $lang->thread->readonlyMessage = '该帖已被设置为 <strong>只读</strong>，您暂时无法发表新的回复。';
 $lang->thread->successTransfer = '转移成功';
 $lang->thread->thanks          = '帖子将在审核通过后显示';
+$lang->thread->replySuccess    = '回帖成功。';
+$lang->thread->viewReplies     = '查看回帖内容';
+$lang->thread->stayCurrent     = '留在当前页面';
+$lang->thread->quoteTitle      = "<div class='quote-title'>原帖由 %s 于 %s 发表</div>";    
+$lang->thread->replyFloor      = "回复<strong>#%s</strong>";    
 
 $lang->thread->score    = '奖励积分';
 $lang->thread->scoreSum = "<i class='text-warning icon icon-plus'><b>%s</b></i> ";
@@ -2353,6 +2719,7 @@ $lang->board->readonly   = '访问权限';
 $lang->board->moderators = '版主';
 $lang->board->isLink     = '跳转';
 $lang->board->link       = '链接';
+$lang->board->discussion = '讨论模式';
 
 $lang->board->readonlyList[0] = '开放';
 $lang->board->readonlyList[1] = '只读';
@@ -2366,14 +2733,20 @@ $lang->express->common = '快递';
 $lang->express->name   = '快递名称';
 
 $lang->wechatMenu = new stdclass();
-$lang->wechatMenu->common     = '公众号菜单';
-$lang->wechatMenu->name       = '标题';
-$lang->wechatMenu->parent     = '上级菜单';
-$lang->wechatMenu->children   = "子菜单";
-$lang->wechatMenu->delete     = "清空微信菜单";
-$lang->wechatMenu->commit     = "同步到微信";
-
+$lang->wechatMenu->common      = '公众号菜单';
+$lang->wechatMenu->name        = '标题';
+$lang->wechatMenu->parent      = '上级菜单';
+$lang->wechatMenu->children    = "子菜单";
+$lang->wechatMenu->delete      = "清空菜单";
+$lang->wechatMenu->commit      = "同步菜单";
 $lang->wechatMenu->setResponse = '响应设置';
+$lang->wechatMenu->responseTip = '提示：每个菜单都要设置响应。';
+
+$lang->tree->adminLinks = new stdclass();
+$lang->tree->adminLinks->article = '返回文章列表|article|admin|type=article';
+$lang->tree->adminLinks->blog    = '返回博客列表|article|admin|type=blog';
+$lang->tree->adminLinks->forum   = '返回主题列表|forum|admin|';
+$lang->tree->adminLinks->product = '返回产品列表|product|admin|';
 /* ui */
 $lang->ui->common = "界面";
 
@@ -2388,11 +2761,13 @@ $lang->ui->manageTheme     = '主题管理';
 $lang->ui->installTemplate = '导入模板';
 $lang->ui->exportTheme     = '导出主题';
 $lang->ui->setTheme        = '主题设置';
+$lang->ui->setDevice       = '设备设置';
 $lang->ui->setFavicon      = "Favicon设置";
 $lang->ui->deleteFavicon   = "不显示Favicon";
 $lang->ui->deleteLogo      = "删除Logo";
 $lang->ui->others          = "其他设置";
 $lang->ui->productView     = "产品点击量";
+$lang->ui->viewMode        = "视图模式";
 $lang->ui->QRCode          = "移动二维码";
 $lang->ui->execInfo        = "运行信息";
 $lang->ui->templateName    = "模板";
@@ -2413,7 +2788,11 @@ $lang->ui->installedThemes = "已安装主题";
 $lang->ui->enableTheme     = "使用此主题";
 $lang->ui->industry        = "行业";
 $lang->ui->offcial         = "官方";
+$lang->ui->score           = "积分";
 $lang->ui->reset           = "重置为默认";
+$lang->ui->themePackage    = "主题包";
+$lang->ui->refreshPage     = "刷新页面";
+$lang->ui->mobileBottomNav = '移动版底部导航';
 
 $lang->ui->uploadLogo             = "上传Logo";
 $lang->ui->uploadFavicon          = "上传小图标";
@@ -2432,6 +2811,10 @@ $lang->ui->importThemeSuccess     = '导入主题成功';
 $lang->ui->packagePathUnwriteable = '上传目录：%s 不可写';
 $lang->ui->selectSourceImage      = '从素材库选择';
 $lang->ui->rebuildThumbs          = '重新生成缩略图';
+$lang->ui->packagePathTip         = '请将主题包的zip文件上传至 %s 目录，进行安装。';
+$lang->ui->gdHelp                 = '查看安装方式';
+$lang->ui->gdTip                  = '蝉知图片水印功能需要安装php-gd扩展才能使用。';
+$lang->ui->effectError            = '导入特效失败，请检查您的特效是否正常，查看地址：http://www.chanzhi.org/effect';
 
 $lang->ui->deviceList = new stdclass();
 $lang->ui->deviceList->desktop = "<i class='icon icon-desktop'></i> 桌面";
@@ -2486,20 +2869,24 @@ $lang->ui->template->qq              = 'QQ';
 $lang->ui->template->email           = 'Email';
 $lang->ui->template->site            = 'site';
 
-$lang->ui->appearance  = '外观';
-$lang->ui->custom      = '自定义';
-$lang->ui->themeSaved  = '主题配置已保存';
-$lang->ui->unWritable  = "不能生成样式文件，请检查 %s目录的权限";
-$lang->ui->codeHolder  = "字母加数字组合成的主题代号";
+$lang->ui->appearance         = '外观';
+$lang->ui->custom             = '自定义';
+$lang->ui->themeSaved         = '主题配置已保存';
+$lang->ui->unWritable         = "不能生成样式文件，请检查 %s目录的权限";
+$lang->ui->codeHolder         = "字母加数字组合成的主题代号";
+$lang->ui->unWritableFile     = "不能生成样式文件，请检查 %s文件的权限";
+$lang->ui->openMobileTemplate = "确认开启移动模板？";
 
 $lang->ui->blocks2Merge  = "可合并区块";
 $lang->ui->blocks2Create = "新创建区块";
 
 $lang->ui->theme = new stdclass();
-$lang->ui->theme->reset                                = '重置为默认';
+$lang->ui->theme->reset                                = '重置';
 $lang->ui->theme->online                               = '在线主题';
 $lang->ui->theme->default                              = '默认';
-$lang->ui->theme->resetTip                             = '参数已重置，保存后生效';
+$lang->ui->theme->all                                  = '全部';
+$lang->ui->theme->noTheme                              = '此分类下没有主题';
+$lang->ui->theme->resetTip                             = '确认重置所有外观设置？';
 $lang->ui->theme->sizeTip                              = '默认单位为像素，如1px';
 $lang->ui->theme->colorTip                             = '如: red 或 #FFF';
 $lang->ui->theme->positionTip                          = '如: 100px, 50%, left, top, center';
@@ -2640,6 +3027,22 @@ $lang->ui->right           = '右边距';
 $lang->ui->top             = '上边距';
 $lang->ui->bottom          = '下边距';
 
+$lang->ui->importType    = '导入方式';
+$lang->js->importTip     = "只导入主题的风格和样式";
+$lang->js->fullImportTip = "将会导入测试数据以及替换站点文章、产品等数据";
+
+$lang->ui->importTypes = new stdclass();
+$lang->ui->importTypes->theme = '只导入主题';
+$lang->ui->importTypes->full  = '完整导入';
+
+$lang->ui->theme->encryptTip = new stdclass();
+$lang->ui->theme->encryptTip->common    = '提示：';
+$lang->ui->theme->encryptTip->zend      = '您导入的主题是zend方式加密的，需要环境安装Zend Guard Loader解密程序，<a href="http://www.chanzhi.org/book/chanzhieps/133.html" target="_blank">Zend Guard Loader安装文档</a> 。';
+$lang->ui->theme->encryptTip->ioncube   = '导入的主题是ioncube软件加密的，需要环境安装ioncube扩展，<a href="http://www.chanzhi.org/book/chanzhieps/189.html" target="_blank">ioncube扩展安装文档</a> 。';
+$lang->ui->theme->encryptTip->noZend    = '您没有安装Zend Guard Loader解密程序。';
+$lang->ui->theme->encryptTip->noIoncube = '您没有安装ioncube扩展。';
+$lang->ui->theme->encryptTip->none      = '您还没有安装任何解密程序。';
+
 $lang->ui->themeColors = array();
 $lang->ui->themeColors[] = 'FF2A2A';
 $lang->ui->themeColors[] = 'F8F100';
@@ -2661,6 +3064,11 @@ $lang->ui->folderList->order   = '订单';
 $lang->ui->folderList->user    = '会员';
 $lang->ui->folderList->message = '评论留言';
 $lang->ui->folderList->forum   = '论坛';
+
+$lang->ui->settingList['display']   = '显示设置';
+$lang->ui->settingList['browse']    = '列表设置';
+$lang->ui->settingList['thumb']     = '缩略图设置';
+$lang->ui->settingList['watermark'] = '图片水印';
 
 $lang->ui->files = new stdclass();
 $lang->ui->files->default = new stdclass();
@@ -2769,6 +3177,33 @@ unset($this->lang->ui->files->mobile->block['usermenu']);
 unset($this->lang->ui->files->mobile->product['browse.card']);
 unset($this->lang->ui->files->mobile->product['browse.list']);
 unset($this->lang->ui->files->mobile->forum['reply/reply']);
+
+if(!isset($lang->effect)) $lang->effect = new stdclass();
+
+$lang->effect->category    = '分类';
+$lang->effect->name        = '名称';
+$lang->effect->account     = '设计师';
+$lang->effect->desc        = '描述';
+$lang->effect->score       = '积分';
+$lang->effect->content     = '代码';
+$lang->effect->image       = '效果图';
+$lang->effect->package     = '特效包';
+$lang->effect->status      = '状态';
+$lang->effect->views       = '浏览';
+$lang->effect->downloads   = '下载次数';
+$lang->effect->createdTime = '创建时间';
+
+$lang->effect->admin         = '特效管理';
+$lang->effect->import        = '导入';
+$lang->effect->blockName     = '区块名';
+$lang->effect->newBlock      = '导入新区块';
+$lang->effect->obtan         = '获取特效';
+$lang->effect->imported      = '已导入';
+$lang->effect->importSuccess = '导入成功';
+$lang->effect->noWritable    = "<code>%s</code> 不可写！请检查该目录权限，否则无法导入。";
+$lang->effect->bindCommunity = '蝉知特效只对蝉知社区认证用户开放，请先注册并绑定蝉知社区账号后，获取蝉知特效。';
+$lang->effect->noRsults      = "你还没有任何特效，请登录蝉知特效平台，<a href='http://www.chanzhi.org/effect.html' target='_blank'>获取特效</a>。";
+$lang->effect->redirecting   = "<span class='text-muted'><span id='countDown'>3</span>秒后跳转到社区账号注册/绑定页面......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>立即跳转</a>";
 /* upgrade */
 $lang->upgrade->common  = '升级';
 
@@ -2777,13 +3212,18 @@ $lang->upgrade->fail    = '升级失败';
 $lang->upgrade->success = '升级成功';
 $lang->upgrade->tohome  = '返回首页';
 
-$lang->upgrade->backup        = '备份数据';
-$lang->upgrade->prepair       = '准备升级';
-$lang->upgrade->selectVersion = '确认升级之前的版本';
-$lang->upgrade->confirm       = '确认要执行的SQL语句';
-$lang->upgrade->execute       = '确认执行';
-$lang->upgrade->next          = '下一步';
-$lang->upgrade->updateLicense = '蝉知 4.0 已更换授权协议至 Z PUBLIC LICENSE(ZPL) 1.2。';
+$lang->upgrade->backup           = '备份数据';
+$lang->upgrade->prepair          = '准备升级';
+$lang->upgrade->selectVersion    = '确认升级之前的版本';
+$lang->upgrade->confirm          = '确认要执行的SQL语句';
+$lang->upgrade->execute          = '确认执行';
+$lang->upgrade->next             = '下一步';
+$lang->upgrade->updateLicense    = '蝉知 4.0 已更换授权协议至 Z PUBLIC LICENSE(ZPL) 1.2。';
+
+$lang->upgrade->deleteTips   = '需要删除部分文件。linux下面命令为：';
+$lang->upgrade->deleteDir    = '<code>rm -fr %s</code>';
+$lang->upgrade->deleteFile   = '<code>rm %s</code>';
+$lang->upgrade->afterDeleted = '<br />删除以上文件后刷新！';
 
 $lang->upgrade->backupData = <<<EOT
 <pre>
@@ -2798,6 +3238,10 @@ EOT;
 
 $lang->upgrade->chmodThemePath = <<<EOT
 <div class='alert'> 请开启<b>%s</b> 目录写权限后继续。 </div>
+EOT;
+
+$lang->upgrade->chmodCustomConfig = <<<EOT
+<div class='alert'> 请开启<b>%s</b> 文件写权限后继续 。 </div>
 EOT;
 
 $lang->upgrade->versionNote = "务必选择正确的版本，否则会造成数据丢失。";
@@ -2845,40 +3289,59 @@ $lang->upgrade->fromVersions['5_3']      = '5.3';
 $lang->upgrade->fromVersions['5_3_1']    = '5.3.1';
 $lang->upgrade->fromVersions['5_3_2']    = '5.3.2';
 $lang->upgrade->fromVersions['5_3_3']    = '5.3.3';
+$lang->upgrade->fromVersions['5_3_4']    = '5.3.4';
+$lang->upgrade->fromVersions['5_4']      = '5.4';
+$lang->upgrade->fromVersions['5_4_1']    = '5.4.1';
+$lang->upgrade->fromVersions['5_5']      = '5.5';
+$lang->upgrade->fromVersions['5_6']      = '5.6';
+$lang->upgrade->fromVersions['5_7']      = '5.7';
+$lang->upgrade->fromVersions['6_0']      = '6.0';
+$lang->upgrade->fromVersions['6_1']      = '6.1';
+$lang->upgrade->fromVersions['6_2']      = '6.2';
+$lang->upgrade->fromVersions['6_3_beta'] = '6.3.beta';
+$lang->upgrade->fromVersions['6_4']      = '6.4';
+$lang->upgrade->fromVersions['6_4_1']    = '6.4.1';
+$lang->upgrade->fromVersions['6_5']      = '6.5';
+$lang->upgrade->fromVersions['6_6']      = '6.6';
+$lang->upgrade->fromVersions['6_6_1']    = '6.6.1';
+$lang->upgrade->fromVersions['6_7']      = '6.7';
+$lang->upgrade->fromVersions['6_7_1']    = '6.7.1';
 /* user */
 $lang->user->common    = '会员';
+$lang->user->setting   = '会员设置';
 
-$lang->user->id        = '编号';
-$lang->user->account   = '用户名';
-$lang->user->admin     = '管理员';
-$lang->user->oldPwd    = '原密码';
-$lang->user->password  = '密码';
-$lang->user->password2 = '请重复密码';
-$lang->user->realname  = '真实姓名';
-$lang->user->nickname  = '昵称';
-$lang->user->avatar    = '头像';
-$lang->user->birthyear = '出生年';
-$lang->user->birthday  = '出生月日';
-$lang->user->gender    = '性别';
-$lang->user->email     = '邮箱';
-$lang->user->msn       = 'MSN';
-$lang->user->qq        = 'QQ';
-$lang->user->yahoo     = '雅虎通';
-$lang->user->gtalk     = 'Gtalk';
-$lang->user->wangwang  = '旺旺';
-$lang->user->mobile    = '手机';
-$lang->user->phone     = '电话';
-$lang->user->company   = '公司/组织';
-$lang->user->address   = '通讯地址';
-$lang->user->zipcode   = '邮编';
-$lang->user->join      = '注册日期';
-$lang->user->visits    = '访问次数';
-$lang->user->ip        = '最后IP';
-$lang->user->last      = '最后登录';
-$lang->user->status    = '状态';
-$lang->user->captcha   = '验证码';
-$lang->user->alert     = '您的帐号已被禁用';
-$lang->user->privilege = '权限';
+$lang->user->id         = '编号';
+$lang->user->account    = '用户名';
+$lang->user->admin      = '管理员';
+$lang->user->oldPwd     = '原密码';
+$lang->user->password   = '密码';
+$lang->user->password2  = '请重复密码';
+$lang->user->realname   = '真实姓名';
+$lang->user->nickname   = '昵称';
+$lang->user->avatar     = '头像';
+$lang->user->birthyear  = '出生年';
+$lang->user->birthday   = '出生月日';
+$lang->user->gender     = '性别';
+$lang->user->email      = '邮箱';
+$lang->user->msn        = 'MSN';
+$lang->user->qq         = 'QQ';
+$lang->user->yahoo      = '雅虎通';
+$lang->user->gtalk      = 'Gtalk';
+$lang->user->wangwang   = '旺旺';
+$lang->user->mobile     = '手机';
+$lang->user->phone      = '电话';
+$lang->user->company    = '公司/组织';
+$lang->user->address    = '通讯地址';
+$lang->user->zipcode    = '邮编';
+$lang->user->join       = '注册日期';
+$lang->user->visits     = '访问次数';
+$lang->user->ip         = '最后IP';
+$lang->user->last       = '最后登录';
+$lang->user->status     = '状态';
+$lang->user->captcha    = '验证码';
+$lang->user->alert      = '您的帐号已被禁用';
+$lang->user->privilege  = '权限';
+$lang->user->certified  = '已认证';
 
 $lang->user->all             = '全部会员';
 $lang->user->list            = '会员列表';
@@ -2906,20 +3369,26 @@ $lang->user->pullWechatFans  = '更新微信会员数据';
 $lang->user->adminlog        = '登录日志';
 $lang->user->checkEmail      = '绑定邮箱';
 $lang->user->getEmailCode    = '获取邮箱验证码';
+$lang->user->getCertifyCode  = '获取验证码';
 $lang->user->setEmail        = '邮箱设置';
+$lang->user->setMobile       = '手机设置';
 $lang->user->newEmail        = '新邮箱';
 $lang->user->rank            = '等级积分';
-$lang->user->score           = '积分详情';
+$lang->user->score           = '消耗积分';
 $lang->user->myScore         = '当前积分';
 $lang->user->buyScore        = '积分充值';
 $lang->user->addScore        = '奖励积分';
 $lang->user->reduceScore     = '扣除积分';
-$lang->user->yangcongLogin   = '洋葱登录';
 $lang->user->bindAccount     = '绑定帐号';
 $lang->user->batchDelete     = '批量删除用户';
 $lang->user->deleteHistory   = '删除用户及历史数据';
 $lang->user->question        = '密保问题';
 $lang->user->answer          = '答案';
+$lang->user->checkContact    = '联系方式';
+$lang->user->certifyNow      = '立即认证';
+
+$lang->user->checkMobile        = '手机认证';
+$lang->user->checkMobileSuccess = '手机认证成功';
 
 $lang->user->type        = '账户类型';
 $lang->user->profile     = '个人信息';
@@ -2927,7 +3396,7 @@ $lang->user->editProfile = '编辑信息';
 $lang->user->thread      = '我的主题';
 $lang->user->messages    = '我的消息';
 $lang->user->reply       = '我的回贴';
-$lang->user->submittion  = '我的投稿';
+$lang->user->submission  = '我的投稿';
 
 $lang->user->userHistory       = "用户历史数据";
 $lang->user->threadHistory     = "发帖";
@@ -2936,7 +3405,7 @@ $lang->user->commentHistory    = "评论";
 $lang->user->messageHistory    = "留言";
 $lang->user->orderHistory      = "订单";
 $lang->user->addressHistory    = "地址";
-$lang->user->submittionHistory = "投稿";
+$lang->user->submissionHistory = "投稿";
 
 $lang->user->message = new stdclass();
 $lang->user->message->mine = "我的消息 <span class='label label-badge text-latin'>%s</span>";
@@ -2947,7 +3416,8 @@ $lang->user->inputAccountOrEmail = '请输入用户名或Email';
 $lang->user->inputPassword       = '请输入密码';
 $lang->user->searchUser          = '搜索';
 
-$lang->user->errorDeny         = "抱歉，您无权访问『<b>%s</b>』模块的『<b>%s</b>』功能。请联系管理员获取权限。点击后退返回上页。<br/> 5秒钟后将自动返回首页...";
+$lang->user->errorDeny         = "抱歉，您无权访问『<b>%s</b>』模块的『<b>%s</b>』功能。请联系管理员获取权限。<br/>点击后退返回上页。5秒钟后将自动返回首页...";
+$lang->user->noModuleDeny      = "抱歉，您所访问的网站没有开启『<b>%s</b>』模块，如有疑问，请联系网站管理员。<br/>点击后退返回上页。5秒钟后将自动返回首页...";
 $lang->user->loginFailed       = "登录失败，请检查您的用户名或密码是否填写正确。";
 $lang->user->identifyFailed    = "验证失败，请检查您的密码是否正确。";
 $lang->user->locked            = "用户已经被锁定，请%s后再重新尝试登录";
@@ -2976,15 +3446,15 @@ $lang->user->adminList['super']  = '超级管理员';
 $lang->user->adminList['common'] = '管理员';
 $lang->user->adminList['no']     = '普通会员';
 
-$lang->user->accountTypeList['no']      = '前台账号';
-$lang->user->accountTypeList['common']  = '后台账号';
+$lang->user->accountTypeList['no']      = '前台帐号';
+$lang->user->accountTypeList['common']  = '后台帐号';
 
 $lang->user->genderList = new stdclass();
 $lang->user->genderList->m = '男';
 $lang->user->genderList->f = '女';
 $lang->user->genderList->u = '';
 
-$lang->user->register  = new stdclass();
+$lang->user->register = new stdclass();
 $lang->user->register->common      = '注册';
 $lang->user->register->instant     = '立即注册';
 $lang->user->register->welcome     = '欢迎注册成为会员';
@@ -2993,12 +3463,14 @@ $lang->user->register->lblUserInfo = '用户信息';
 $lang->user->register->lblAccount  = '必须是三位以上的英文字母或数字';
 $lang->user->register->lblPassword = '数字和字母组成，六位以上';
 $lang->user->register->login       = '请登录';
-$lang->user->register->loginTip    = '已有账号';
+$lang->user->register->loginTip    = '已有帐号';
+$lang->user->register->agreement   = '注册协议';
+$lang->user->register->agree       = '我已经知晓并同意';
 
 $lang->user->notice = new stdclass();
 $lang->user->notice->password = '字母和数字组合，最少六位';
 
-$lang->user->login  = new stdclass();
+$lang->user->login = new stdclass();
 $lang->user->login->common  = "登录";
 $lang->user->login->welcome = '已有帐号';
 $lang->user->login->why     = '欢迎登陆，享用会员专属服务！';
@@ -3029,12 +3501,35 @@ $lang->user->oauth->qq = new stdclass();
 $lang->user->oauth->qq->clientID     = 'APP ID';
 $lang->user->oauth->qq->clientSecret = 'APP KEY';
 
-$lang->user->oauth->providers['qq']   = 'QQ';
-$lang->user->oauth->providers['sina'] = '新浪微博';
+$lang->user->oauth->github = new stdclass();
+$lang->user->oauth->github->clientID     = 'Client ID';
+$lang->user->oauth->github->clientSecret = 'Client Secret';
+
+$lang->user->oauth->twitter= new stdclass();
+$lang->user->oauth->twitter->clientID     = 'API ID';
+$lang->user->oauth->twitter->clientSecret = 'API Secret';
+
+$lang->user->oauth->facebook= new stdclass();
+$lang->user->oauth->facebook->clientID     = 'API ID';
+$lang->user->oauth->facebook->clientSecret = 'API Secret';
+
+$lang->user->oauth->google= new stdclass();
+$lang->user->oauth->google->clientID     = 'API ID';
+$lang->user->oauth->google->clientSecret = 'API Secret';
+
+$lang->user->oauth->providers['sina']   = '新浪微博';
+$lang->user->oauth->providers['qq']     = 'QQ';
+$lang->user->oauth->providers['github'] = 'Github';
+#$lang->user->oauth->providers['twitter'] = 'Twitter';
+$lang->user->oauth->providers['facebook'] = 'Facebook';
+#$lang->user->oauth->providers['google'] = 'Google';
 
 $lang->user->oauth->typeList['sina']   = '新浪微博会员';
 $lang->user->oauth->typeList['qq']     = 'QQ会员';
 $lang->user->oauth->typeList['wechat'] = '微信会员';
+$lang->user->oauth->typeList['github'] = 'Github';
+$lang->user->oauth->typeList['facebook'] = 'Facebook';
+#$lang->user->oauth->typeList['google'] = 'Google';
 
 $lang->user->oauth->lblWelcome       = '开放登录，快捷方便';
 $lang->user->oauth->lblOtherLogin    = '其他方式 : ';
@@ -3069,7 +3564,7 @@ $lang->user->control->menus['order']      = '<i class="icon-shopping-cart"></i> 
 $lang->user->control->menus['address']    = '<i class="icon-map-marker"> </i> 地址管理 <i class="icon-chevron-right"></i>|address|browse';
 $lang->user->control->menus['thread']     = '<i class="icon-comment"></i> 我的主题 <i class="icon-chevron-right"></i>|user|thread';
 $lang->user->control->menus['reply']      = '<i class="icon-reply"></i> 我的回帖 <i class="icon-chevron-right"></i>|user|reply';
-$lang->user->control->menus['submittion'] = '<i class="icon-envelope"></i> 我的投稿 <i class="icon-chevron-right"></i>|article|submittion'; 
+$lang->user->control->menus['submission'] = '<i class="icon-envelope"></i> 我的投稿 <i class="icon-chevron-right"></i>|article|submission'; 
 
 $lang->user->log = new stdclass();
 $lang->user->log->common = '日志';
@@ -3088,11 +3583,12 @@ $lang->user->locationDenied       = '登录地区受限，请按提示操作。'
 $lang->user->loginLocationChanged = '登录地址发生变化，请按提示操作。';
 $lang->user->verifyFail           = '请填写正确的验证码';
 $lang->user->confirmUnbind        = '您确定要解除绑定吗？';
-$lang->user->forceYangcong        = '已开启强制洋葱登录，普通登录需要进行验证。';
 
 $lang->user->placeholder = new stdclass();
 $lang->user->placeholder->password   = '请输入您的网站登录密码';
 $lang->user->placeholder->verifyCode = '请输入验证邮件里面收到的验证码';
+
+$lang->user->isSensitive = '用户名或者真实姓名不能含有敏感词，请修改后再提交';
 /* visual */
 $lang->visual->common      = "可视化编辑";
 $lang->visual->editLogo    = "编辑标志";
@@ -3219,6 +3715,7 @@ $lang->wechat->reply          = '回复';
 $lang->wechat->commitMenu     = '菜单';
 $lang->wechat->deleteMenu     = '删除菜单';
 $lang->wechat->messageList    = '消息';
+$lang->wechat->remind         = '消息提醒';
 
 $lang->wechat->typeList['subscribe'] = '订阅号';
 $lang->wechat->typeList['service']   = '服务号';
@@ -3309,10 +3806,16 @@ $lang->wechat->placeholder->name     = '公众号名称';
 $lang->wechat->placeholder->account  = '请输入gh_xxx 格式的原始ID';
 $lang->wechat->placeholder->token    = '必须为英文或数字，长度为3-32字符';
 
+$lang->wechat->mailSubject     = "来自%s的微信";
+$lang->wechat->remindUsers     = "给选中的人员发邮件";
+$lang->wechat->remindNotice    = "注：站点发信功能必须配置成功，并且所选人员的邮箱已经设置，否则无法收到邮件。";
+$lang->wechat->remindNoMail    = "站点发信功能没有开启，请到设置->接口->发信设置页面配置发信。";
 $lang->wechat->curlSSLRequired = "微信公众号功能需要curl模块，并支持ssl加密传输。";
+$lang->wechat->opensslRequired = "微信公众号功能需要openssl模块，请开启PHP该模块。";
 $lang->wechat->needCertified   = "此功能需要公众号认证后使用。";
 $lang->wechat->integrateInfo   = "请到微信的公众平台完成接入，以获取appID和appSecret信息。 <a href='http://api.chanzhi.org/goto.php?item=help_wechat' target='_blank'>帮助</a>";
 $lang->wechat->integrateDone   = "已完成接入";
+$lang->wechat->openUserModule  = "微信功能需要启用会员模块，确认开启？";
 /* widget */
 $lang->widget->common = '区块';
 $lang->widget->title  = '区块名称';
@@ -3359,7 +3862,7 @@ $lang->widget->default['3']['type']  = 'message';
 $lang->widget->default['3']['grid']  = 4;
 
 $lang->widget->default['4']['title'] = '最新投稿';
-$lang->widget->default['4']['type']  = 'submittion';
+$lang->widget->default['4']['type']  = 'submission';
 $lang->widget->default['4']['grid']  = 4;
 
 $lang->widget->default['5']['title'] = '快捷入口';
@@ -3375,11 +3878,7 @@ $lang->widget->typeList->latestOrder    = '最新订单';
 $lang->widget->typeList->latestThread   = '最新帖子';
 $lang->widget->typeList->message        = '反馈';
 $lang->widget->typeList->wechatMessage  = '微信留言';
-$lang->widget->typeList->submittion     = '最新投稿';
+$lang->widget->typeList->submission     = '最新投稿';
 $lang->widget->typeList->chanzhiDynamic = '蝉知动态';
-$lang->widget->typeList->html           = '自定义';
 $lang->widget->typeList->commonMenu     = '快捷入口';
-/* yangcong */
-$lang->yangcong = new stdclass();
-$lang->yangcong->qrcodeInfo   = "请用洋葱客户端扫描下方二维码";
-$lang->yangcong->scanFinished = "已完成扫描";
+$lang->widget->typeList->html           = '自定义';
