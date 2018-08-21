@@ -31,6 +31,7 @@ $lang->newVersion     = "Note: Zsite has released <span id='version'></span> on 
 $lang->execInfo       = "<span id='execInfoBar' class='hide'><span class='text-left'>SQL query：<b>%s</b> <br> Memory footprint: <b>%s</b><br> PHP E-time: <b>%s</b> s</span></span>";
 $lang->customCssError = "Fail to load the self-defined css file, if you are the administrator of this site, please reset the apperence of the site in the admin";
 $lang->redirecting    = "<span class='text-muted'>After <span id='countDown'>3</span> seconds, Redirecting to manage categories......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>Redirect</a>";
+$lang->badrequestTips = "<div><div style='padding:30px; margin:80px auto; width:600px; color:#29a8cd; background:#e5f9ff;'>The system has detected an abnormality in your behavior. Please try again later or contact administrator：<p>Tel：%s </p><p>Email: %s </p></div></div>";
 
 $lang->home             = 'Home';
 $lang->siteHome         = 'Home';
@@ -194,7 +195,7 @@ $lang->menu->block    = 'Widget|block|admin|';
 $lang->menu->slide    = 'Slide|slide|admin|';
 $lang->menu->others   = "Settings|ui|others|";
 $lang->menu->effect   = "Effect|ui|effect|";
-$lang->menu->visual   = "Visual Editor|visual|index|";
+$lang->menu->visual   = "Visual Editor|visual|design|";
 $lang->menu->edit     = "Custom|ui|edittemplate|";
 
 $lang->menu->site          = 'Site|site|setbasic|';
@@ -217,6 +218,12 @@ $lang->menuGroups->search  = 'site';
 $lang->menuGroups->company = 'company';
 $lang->menuGroups->score   = 'score';
 $lang->menuGroups->guarder = 'security';
+
+$lang->designMenus = new stdclass();
+$lang->designMenus->theme     = 'Theme|ui|settemplate|';
+$lang->designMenus->nav       = 'Nav|nav|admin|';
+$lang->designMenus->component = 'CMPT|ui|component|';
+$lang->designMenus->senior    = 'Senior|ui|editTemplate|';
 
 $lang->article = new stdclass();
 $lang->article->menu = new stdclass();
@@ -448,7 +455,7 @@ $lang->address->contact = 'Contact';
 $lang->address->browse = 'Address';
 $lang->address->create = 'Add';
 $lang->address->edit   = 'Edit';
-/* admin */ 
+/* admin */
 $lang->admin->common        = 'Admin';
 $lang->admin->index         = 'Home';
 $lang->admin->checked       = 'Checked';
@@ -757,6 +764,7 @@ $lang->block->logoPosition      = 'Logo';
 $lang->block->navPosition       = 'Navigation';
 $lang->block->searchbarPosition = 'Search bar';
 $lang->block->sloganPosition    = 'Slogan';
+$lang->block->childBlock        = 'Blocks';
 
 $lang->block->header = new stdclass();
 
@@ -1076,6 +1084,7 @@ $lang->file->editSource    = 'Edit';
 $lang->file->selectImage   = 'Select';
 $lang->file->fileList      = 'List';
 $lang->file->invalidFile   = 'Invalid File';
+$lang->file->batchSelect   = 'Batch select';
 
 $lang->file->setWatermark      = 'Set Watermark';
 $lang->file->watermark         = 'watermark';
@@ -1129,7 +1138,7 @@ $lang->file->invalidParameter = 'Invalid Parameter';
 $lang->file->unWritable       = 'The directory is not writable.';
 $lang->file->uploadForbidden  = 'Uploading is disabled';
 $lang->file->sizeLimit        = "<p class='text-danger'>File size should be <= %sM</p>";
-$lang->file->sameName         = "File with the same name has existed. Change failed.";
+$lang->file->sameName         = "File with the same name has existed. Change failed";
 $lang->file->nameEmpty        = "File name should not be blank.";
 $lang->file->copySuccess      = "Copy to clipboard";
 $lang->file->evilChar         = "Invalid Character";
@@ -1699,7 +1708,7 @@ $lang->order->paidSuccess    = 'Thank you for your payment!';
 $lang->order->submit         = 'Submit';
 $lang->order->cancel         = 'Cancel';
 $lang->order->pay            = 'Checkout';
-$lang->order->goToPay        = 'Order has been placed. Please continue with your payment.';
+$lang->order->goToPay        = 'Order has been placed. If paid, please go to My Order/My License to find your license.';
 $lang->order->editPrice      = 'Edit Price';
 $lang->order->return         = 'Collect';
 $lang->order->refund         = 'Refund';
@@ -1723,6 +1732,9 @@ $lang->order->settlement     = 'Checkout';
 $lang->order->check          = 'Settle Order';
 $lang->order->all            = 'All';
 $lang->order->applyRefund    = 'Apply Refund';
+$lang->order->wechatpay      = 'Wechat pay';
+$lang->order->scanCode       = 'Pay by wechat qrcode';
+$lang->order->wechatScan     = 'Please scan the qrcode <br> by wechat.';
 
 $lang->order->confirmLimit         = 'Receiving Cyle';
 $lang->order->expireLimit          = 'Order Expiration';
@@ -1736,21 +1748,36 @@ $lang->order->confirmLimitRequired = 'Set receiving cycle';
 $lang->order->finishWarning        = "Do you want to finish this order?";
 $lang->order->noProducts           = "No product in this order";
 $lang->order->lowStocks            = "<strong>%s</strong> is out of stock!";
+$lang->order->invokeWechatpay      = 'Invoking wechatpay.';
+
+$lang->order->alipayParam    = 'Params of alipay';
+$lang->order->wechatpayParam = 'Params of wechatpay';
 
 $lang->order->alipayPid   = 'Partner ID';
 $lang->order->alipayKey   = 'Partner KEY';
 $lang->order->alipayEmail = 'Alipay Email';
 
+$lang->order->wechatpayAppid     = 'APPID of wechat public';
+$lang->order->wechatpayMchid     = "Merchant's id";
+$lang->order->wechatpayApiKey    = "wechatpay's key";
+$lang->order->wechatpayAppSecret = "wechat public's key";
+$lang->order->wechatpayNote      = 'Please return and pay by other method, if wechat timeout';
+
 $lang->order->placeholder = new stdclass();
 $lang->order->placeholder->pid   = 'Corporate identity to ID, 16 number begin with 2088.';
 $lang->order->placeholder->key   = 'Security checking code, 32 characters of numbers and letters.';
 $lang->order->placeholder->email = 'Alipay Email';
+$lang->order->placeholder->appid     = 'ID of wechat public';
+$lang->order->placeholder->mchid     = 'Merchant id assigned by wechatpay';
+$lang->order->placeholder->apikey    = 'Key of wechatpay API';
+$lang->order->placeholder->appsecret = "wechat public's key";
 
 $lang->order->paymentList = array();
 $lang->order->paymentList['alipay']        = 'Alipay Payment';
 $lang->order->paymentList['alipaySecured'] = 'Alipay Secured';
 $lang->order->paymentList['COD']           = 'Cash on Delivery';
 $lang->order->paymentList['offlinepay']    = 'Offline Payment';
+$lang->order->paymentList['wechatpay']     = 'Wechatpay';
 
 $lang->order->statusList = array();
 $lang->order->statusList['not_paid']  = 'Not Paid';
@@ -1993,7 +2020,7 @@ $lang->product->placeholder->currency = "Please enter currency symbol, such as �
 
 $lang->product->listMode = new stdclass();
 $lang->product->listMode->card  = "<i class='icon icon-th-large'></i>";
-$lang->product->listMode->list  = "<i class='icon icon-list'></i>";
+$lang->product->listMode->list  = "<i class='icon icon-list-ul'></i>";
 
 $lang->product->currencyList['rmb']  = 'RMB';
 $lang->product->currencyList['usd']  = 'USD';
@@ -2078,7 +2105,7 @@ $lang->score->back        = 'Back';
 $lang->score->rankingList = 'Ranking';
 $lang->score->rule        = 'Rules';
 $lang->score->statement   = 'Points Statement';
-$lang->score->stateDesc   = 'Point Statement is generated per user based on the total points acquired a month ago.';
+$lang->score->stateDesc   = 'Point Statement is generated per user based on the total points acquired in last month.';
 
 $lang->score->id      = 'ID';
 $lang->score->account = 'Account';
@@ -2128,13 +2155,13 @@ $lang->score->methods['co']  = 'Partner';
 $lang->score->types['in']    = 'increase';
 $lang->score->types['out']   = 'decrease';
 
-$lang->score->getByThread = 'Post threads to get reward points.'; 
-$lang->score->getByReply  = 'Reply to get reward points.'; 
+$lang->score->getByThread = 'Post threads to get points.'; 
+$lang->score->getByReply  = 'Reply to get points.'; 
 
-$lang->score->lblTotal         = "You have %s points for consumption. The points for ranking is %s. ";
+$lang->score->lblTotal         = "You have %s points to use. Your points for ranking is %s. ";
 $lang->score->lblNoScore       = "Sorry, your points is insufficient.";
 $lang->score->lblNoScoreReason = "Sorry, your points is less than %s. You need <strong class='red'>%s</strong> Points. You have <strong class='red'>%s</strong> Points.";
-$lang->score->lblDetail        = "Please refer to<a href='http://www.zentao.net/thread-view-79915.html' target='_blank'>《如何获得积分》</a><br /><br />";
+$lang->score->lblDetail        = "Please refer to <a href='http://www.zentao.net/thread-view-79915.html' target='_blank'>《如何获得积分》</a><br /><br />";
 $lang->score->lblBuySocre      = "Purchase Points %s";
 $lang->score->lblStateSuccess  = 'Point statement is generated.';
 
@@ -2144,9 +2171,9 @@ $lang->score->amountUnit  = 'Dollar';
 $lang->score->minAmount   = 'Minimum refill';
 $lang->score->buyWaring   = " Minimum refill is %s dollar，1 dollar=%s Points";
 $lang->score->errorAmount = "Refill amount should be more than %s Dollars.";
-$lang->score->alipay      = "Use AliPay right now!";
+$lang->score->alipay      = "Use PayPal right now!";
 $lang->score->paySuccess  = 'Thank you for your payment!';
-$lang->score->payFail     = 'Sorry, there is a problem with your payment. Contact us if any questions.';
+$lang->score->payFail     = 'Sorry, there is something wrong with your payment. Contact us if any questions.';
 $lang->score->viewHistory = 'Payment History';
 
 $lang->score->awardRule  = 'Reward Rules';
@@ -2763,6 +2790,7 @@ $lang->tree->adminLinks->product = 'Manage products|product|admin|';
 /* ui */
 $lang->ui->common = "UI";
 
+$lang->ui->component       = 'Component';
 $lang->ui->clientDesktop   = 'Desktop';
 $lang->ui->clientMobile    = 'Mobile';
 $lang->ui->logo            = 'Logo';
@@ -2773,6 +2801,7 @@ $lang->ui->manageTemplate  = 'Manage Template';
 $lang->ui->manageTheme     = 'Manage Theme';
 $lang->ui->installTemplate = 'Import Template';
 $lang->ui->exportTheme     = 'Export Theme';
+$lang->ui->addTheme        = 'Add Theme';
 $lang->ui->setTheme        = 'Theme Settings';
 $lang->ui->setDevice       = 'Device Settings';
 $lang->ui->setFavicon      = "Favicon Settings";
@@ -2800,12 +2829,14 @@ $lang->ui->editTemplate    = "Edit current template";
 $lang->ui->installedThemes = "Installed Themes";
 $lang->ui->enableTheme     = "Apply this theme";
 $lang->ui->industry        = "Industry";
+$lang->ui->byIndustry      = "By industry";
 $lang->ui->offcial         = "Official";
 $lang->ui->score           = "score";
 $lang->ui->reset           = "Reset";
 $lang->ui->themePackage    = "Theme Package";
 $lang->ui->refreshPage     = "Refresh";
 $lang->ui->mobileBottomNav = 'Bottom Nav of mobile';
+$lang->ui->searchTheme     = 'Search Installed Theme';
 
 $lang->ui->uploadLogo             = "Upload Logo";
 $lang->ui->uploadFavicon          = "Upload Favicon";
@@ -2828,6 +2859,9 @@ $lang->ui->packagePathTip         = 'Please upload the zip file to %s, then inst
 $lang->ui->gdHelp                 = 'How to install';
 $lang->ui->gdTip                  = 'Image watermark features need PHP-gd extension.';
 $lang->ui->effectError            = 'Import effects fails, check your effects are normal. View the address: http://www.chanzhi.org/effect';
+$lang->ui->errorGetEffect         = 'Get effect failed. Please check your network and your effect. View the address: http://www.chanzhi.org/effect';
+$lang->ui->deleteFaviconFail      = 'Delete %s fail.';
+$lang->ui->lengthOverflow         = 'The content length is %s bytes. Keep it be less than 65535 bytes, or part of content can not be saved.';
 
 $lang->ui->deviceList = new stdclass();
 $lang->ui->deviceList->desktop = "<i class='icon icon-desktop'></i> Desktop";
@@ -2895,6 +2929,8 @@ $lang->ui->blocks2Create = "New";
 
 $lang->ui->theme = new stdclass();
 $lang->ui->theme->reset                                = 'Set as Default';
+$lang->ui->theme->upgrade                              = 'Upgrade';
+$lang->ui->theme->installed                            = 'Installed';
 $lang->ui->theme->online                               = 'Online Themes';
 $lang->ui->theme->default                              = 'Default';
 $lang->ui->theme->all                                  = 'All';
@@ -3193,6 +3229,7 @@ unset($this->lang->ui->files->mobile->forum['reply/reply']);
 
 if(!isset($lang->effect)) $lang->effect = new stdclass();
 
+$lang->effect->common      = 'Effect';
 $lang->effect->category    = 'Category';
 $lang->effect->name        = 'Name';
 $lang->effect->account     = 'Designer';
@@ -3213,6 +3250,7 @@ $lang->effect->newBlock      = 'Import Widget';
 $lang->effect->obtan         = 'Get effect';
 $lang->effect->imported      = 'Imported';
 $lang->effect->importSuccess = 'Imported';
+$lang->effect->noEffect      = '<code>%s</code> Can not write! Please check the directory permissions, or can not be imported';
 $lang->effect->noWritable    = '<code>%s</code> Can not write! Please check the directory permissions, or can not be imported';
 $lang->effect->bindCommunity = 'Please bind the account of Zsite before get effect';
 $lang->effect->noRsults      = "You have no effect, please login the platform of Zsite <a href='http://www.zsite.net/effect.html' target='_blank'>get effect</a>。";
@@ -3319,6 +3357,9 @@ $lang->upgrade->fromVersions['6_6']      = '6.6';
 $lang->upgrade->fromVersions['6_6_1']    = '6.6.1';
 $lang->upgrade->fromVersions['6_7']      = '6.7';
 $lang->upgrade->fromVersions['6_7_1']    = '6.7.1';
+$lang->upgrade->fromVersions['7_0']      = '7.0';
+$lang->upgrade->fromVersions['7_0_1']    = '7.0.1';
+$lang->upgrade->fromVersions['7_1']      = '7.1';
 /* user */
 $lang->user->common    = 'User';
 $lang->user->setting   = 'User Setting';
@@ -3354,7 +3395,7 @@ $lang->user->status    = 'Status';
 $lang->user->captcha   = 'Verification Code';
 $lang->user->alert     = 'Your account has been disabled.';
 $lang->user->privilege = 'Privilege';
-$lang->user->certified = 'Certified';
+$lang->user->certified = 'Verified';
 
 $lang->user->all             = 'All Users';
 $lang->user->list            = 'User List';
@@ -3368,7 +3409,7 @@ $lang->user->recoverPassword = "Forgot Password";
 $lang->user->newPassword     = "New Password";
 $lang->user->update          = "Edit Users";
 $lang->user->browse          = "View Users";
-$lang->user->deny            = "Access denied.";
+$lang->user->deny            = "You access is denied.";
 $lang->user->confirmDelete   = "Do you want to delete it?";
 $lang->user->confirmActivate = "Do you want to activate it?";
 $lang->user->relogin         = "Login again";
@@ -3378,30 +3419,30 @@ $lang->user->allUsers        = 'All Users';
 $lang->user->submit          = "Submit";
 $lang->user->forbid          = 'Disable';
 $lang->user->activate        = 'Activate';
-$lang->user->pullWechatFans  = 'Update wechat fans data';
+$lang->user->pullWechatFans  = 'Update Wechat fans data';
 $lang->user->adminlog        = 'Admin Log';
-$lang->user->checkEmail      = 'Email Binding';
+$lang->user->checkEmail      = 'Bind Your Email';
 $lang->user->getEmailCode    = 'Get verification code';
-$lang->user->getCertifyCode  = 'Get certification code';
+$lang->user->getCertifyCode  = 'Send Now';
 $lang->user->setEmail        = 'Change Email';
 $lang->user->setMobile       = 'Configure Mobile';
 $lang->user->newEmail        = 'Email';
-$lang->user->rank            = 'Ranking';
-$lang->user->score           = 'Points';
-$lang->user->myScore         = 'Points';
-$lang->user->buyScore        = 'Refill Points';
+$lang->user->rank            = 'Rank';
+$lang->user->score           = 'Cost';
+$lang->user->myScore         = 'My Points';
+$lang->user->buyScore        = 'Buy Points';
 $lang->user->addScore        = 'Reward';
 $lang->user->reduceScore     = 'Deduct';
-$lang->user->bindAccount     = 'Account Binding';
+$lang->user->bindAccount     = 'Bind Your Account';
 $lang->user->batchDelete     = 'Batch Delete';
-$lang->user->deleteHistory   = 'Delete account and history';
-$lang->user->question        = 'Security Question';
+$lang->user->deleteHistory   = 'Delete the account and its history';
+$lang->user->question        = 'Security Questions';
 $lang->user->answer          = 'Answer';
 $lang->user->checkContact    = 'Contact';
-$lang->user->certifyNow      = 'Certify';
+$lang->user->certifyNow      = 'Verify Now';
 
-$lang->user->checkMobile        = 'Check mobile';
-$lang->user->checkMobileSuccess = 'Check mobile successfully.';
+$lang->user->checkMobile        = 'Verify Your Mobile';
+$lang->user->checkMobileSuccess = 'Your mobile is veridied.';
 
 $lang->user->type        = 'Type';
 $lang->user->profile     = 'Profile';
@@ -3425,7 +3466,7 @@ $lang->user->message->mine = "Message <span class='label label-badge text-latin'
 $lang->user->message->from = 'from';
 
 $lang->user->inputUserName       = 'Enter user name';
-$lang->user->inputAccountOrEmail = 'Enter account or Email';
+$lang->user->inputAccountOrEmail = 'Enter your account or Email';
 $lang->user->inputPassword       = 'Enter Password';
 $lang->user->searchUser          = 'Search';
 
@@ -3440,7 +3481,7 @@ $lang->user->forbidSuccess     = 'Deactivated!';
 $lang->user->forbidFail        = 'Deactivation failed.';
 $lang->user->activateSuccess   = 'Activated!';
 $lang->user->activateFail      = 'Activation failed.';
-$lang->user->pullSuccess       = 'Get wetchar user successfully';
+$lang->user->pullSuccess       = 'Get wetchat user successfully';
 $lang->user->wrongPwd          = 'Wrong Password';
 $lang->user->checkEmailSuccess = 'Done!';
 $lang->user->sendRecoverEmail  = 'Send reset Email.';
@@ -3470,8 +3511,8 @@ $lang->user->genderList->u = 'unknown';
 $lang->user->register  = new stdclass();
 $lang->user->register->common      = 'Register';
 $lang->user->register->instant     = 'Register Now';
-$lang->user->register->welcome     = 'Welcome to register!';
-$lang->user->register->why         = 'Register with us to enjoy more!';
+$lang->user->register->welcome     = 'Welcome to register in Ziste!';
+$lang->user->register->why         = 'Register to enjoy more!';
 $lang->user->register->lblUserInfo = 'User Profile';
 $lang->user->register->lblAccount  = 'must be a combination of letter and numbers, 3 charaters at least.';
 $lang->user->register->lblPassword = 'must be a combination of letter and numbers, 6 charaters at least.';
@@ -3530,12 +3571,22 @@ $lang->user->oauth->google= new stdclass();
 $lang->user->oauth->google->clientID     = 'API ID';
 $lang->user->oauth->google->clientSecret = 'API Secret';
 
+$lang->user->oauth->wechat = new stdclass();
+$lang->user->oauth->wechat->clientID     = 'AppID';
+$lang->user->oauth->wechat->clientSecret = 'AppSecret';
+$lang->user->oauth->wechat->autoLogin    = 'Automatic Login';
+
+$lang->user->oauth->wechat->autoLoginList = array();
+$lang->user->oauth->wechat->autoLoginList['on']  = 'On';
+$lang->user->oauth->wechat->autoLoginList['off'] = 'Off';
+
 $lang->user->oauth->providers['sina'] = 'Weibo';
 $lang->user->oauth->providers['qq']   = 'QQ';
 $lang->user->oauth->providers['github'] = 'Github';
 #$lang->user->oauth->providers['twitter'] = 'Twitter';
 $lang->user->oauth->providers['facebook'] = 'Facebook';
 #$lang->user->oauth->providers['google'] = 'Google';
+$lang->user->oauth->providers['wechat']   = 'Wechat';
 
 $lang->user->oauth->typeList['sina']   = 'Weibo User';
 $lang->user->oauth->typeList['qq']     = 'QQ User';
@@ -3649,6 +3700,10 @@ $lang->visual->js->alreadyFirstSlide = 'First Silde';
 $lang->visual->js->slideOrder        = 'Play Order';
 $lang->visual->js->gridWidth         = 'Grid Width';
 $lang->visual->js->pageLayoutPrefix  = 'Current Only';
+$lang->visual->js->deleteConfirm     = 'Confirm to delete the block “{0}”?';
+$lang->visual->js->changeLayout      = 'Change Layout';
+$lang->visual->js->setColumns        = 'Set Columns';
+$lang->visual->js->addRegionAlert    = 'Not allowed to add Region block to “{0}”.';
 $lang->visual->js->actions           = array('edit' => 'Edit', 'delete' => 'Delete', 'move' => 'Move', 'add' => 'Add');
 
 $lang->visual->setting = new stdclass();
@@ -3698,6 +3753,26 @@ $lang->visual->setting->boards                             = array('name' => 'Bo
 $lang->visual->setting->boards['actions']['add']           = array('text' => 'Board Admin');
 $lang->visual->setting->thread                             = array('name' => 'Thread', 'actions' => array());
 $lang->visual->setting->thread['actions']['edit']          = array('text' => 'Transfer');
+
+$lang->visual->design                 = new stdclass();
+$lang->visual->design->pageTemplate   = 'Page Template';
+$lang->visual->design->currentTheme   = 'Current Theme:';
+$lang->visual->design->layout         = 'Layout';
+$lang->visual->design->block          = 'Block';
+$lang->visual->design->skin           = 'Skin';
+$lang->visual->design->code           = 'Code';
+$lang->visual->design->hidePageTmpl   = 'Toggle show/hide Page Template Menu';
+$lang->visual->design->dragAndAdd     = 'Drag and Drop to Add Block';
+$lang->visual->design->noBlockTip     = 'No block in current category.';
+$lang->visual->design->setColumns     = 'Set Columns';
+
+$lang->visual->design->placeholders                = array();
+$lang->visual->design->placeholders['main']        = 'Main Content';
+$lang->visual->design->placeholders['page_header'] = 'Page Header';
+$lang->visual->design->placeholders['page_footer'] = 'Page Footer';
+$lang->visual->design->placeholders['breadcrumb']  = 'Breadcrumb Menu';
+$lang->visual->design->placeholders['article']     = 'Article Content';
+$lang->visual->design->placeholders['category']    = 'Category Content';
 /* wechat */
 $lang->wechat->common = 'Wechat';
 
@@ -3847,7 +3922,7 @@ $lang->widget->create    = 'Add a Widget';
 $lang->widget->hidden    = 'Hide';
 $lang->widget->lblWidget = 'Widgets';
 $lang->widget->lblRss    = 'RSS';
-$lang->widget->lblNum    = 'No. od Entries';
+$lang->widget->lblNum    = 'No. of Entries';
 $lang->widget->content   = 'Content';
 
 $lang->widget->params = new stdclass();

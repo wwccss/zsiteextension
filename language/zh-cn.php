@@ -31,6 +31,7 @@ $lang->newVersion     = "提示：蝉知系统已于 <span id='releaseDate'></sp
 $lang->execInfo       = "<span id='execInfoBar' class='hide'><span class='text-left'>SQL查询：<b>%s</b> 次<br>内存占用：<b>%s</b><br> PHP 执行时间：<b>%s</b> 秒</span></span>";
 $lang->customCssError = "不能生成样式文件，如果您是网站管理员，请到网站后台外观管理重新设置样式文件";
 $lang->redirecting    = "<span class='text-muted'><span id='countDown'>3</span>秒后跳转到类目管理页面......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>立即跳转</a>";
+$lang->badrequestTips = "<div><div style='padding:30px; margin:80px auto; width:600px; color:#29a8cd; background:#e5f9ff;'>系统检测到您的行为存在异常，请稍后再试，或者联系管理员：<p>电话：%s</p><p>Email: %s</p></div></div>";
 
 $lang->home             = '首页';
 $lang->siteHome         = '网站首页';
@@ -194,7 +195,7 @@ $lang->menu->block    = '区块|block|admin|';
 $lang->menu->slide    = '幻灯片|slide|admin|';
 $lang->menu->others   = "设置|ui|others|";
 $lang->menu->effect   = "特效|ui|effect|";
-$lang->menu->visual   = "可视化|visual|index|";
+$lang->menu->visual   = "可视化|visual|design|";
 $lang->menu->edit     = "编辑模板|ui|edittemplate|";
 
 $lang->menu->site          = '站点|site|setbasic|';
@@ -217,6 +218,12 @@ $lang->menuGroups->search  = 'site';
 $lang->menuGroups->company = 'company';
 $lang->menuGroups->score   = 'score';
 $lang->menuGroups->guarder = 'security';
+
+$lang->designMenus = new stdclass();
+$lang->designMenus->theme     = '主题|ui|settemplate|';
+$lang->designMenus->nav       = '导航|nav|admin|';
+$lang->designMenus->component = '组件|ui|component|';
+$lang->designMenus->senior    = '高级|ui|editTemplate|';
 
 $lang->article = new stdclass();
 $lang->article->menu = new stdclass();
@@ -295,8 +302,9 @@ $lang->security->menu->log         = '登录日志|user|adminlog|';
 
 $lang->interface = new stdclass();
 $lang->interface->menu = new stdclass();
-$lang->interface->menu->oauth  = '开放登录|site|setoauth|';
-$lang->interface->menu->mail   = array('link' => '发信设置|mail|admin|', 'alias' => 'detect,edit,save,test');
+$lang->interface->menu->oauth    = '开放登录|site|setoauth|';
+$lang->interface->menu->mail     = array('link' => '发信设置|mail|admin|', 'alias' => 'detect,edit,save,test');
+$lang->interface->menu->wxapplet = '微信小程序|site|setwxapplet';
 
 $lang->score->menu = new stdclass();
 $lang->score->menu->score     = '积分规则|score|setcounts|';
@@ -353,7 +361,7 @@ $lang->error->IP           = '<strong>%s</strong>应当为合法的IP。';
 $lang->error->date         = '<strong>%s</strong>应当为合法的日期。';
 $lang->error->account      = '<strong>%s</strong>应当为字母和数字的组合，至少三位';
 $lang->error->passwordsame = '两次密码应当相等。';
-$lang->error->passwordrule = '密码应该符合规则，长度至少为六位。';
+$lang->error->passwordrule = '密码应该符合规则，长度至少为六位，并且不能含有中文字符。';
 $lang->error->captcha      = '请输入正确的验证码。';
 $lang->error->noWritable   = '%s 可能不可写，请修改权限！';
 $lang->error->fingerprint  = '身份认证过期，请重试！';
@@ -757,6 +765,7 @@ $lang->block->logoPosition      = 'Logo';
 $lang->block->navPosition       = '导航';
 $lang->block->searchbarPosition = '搜索框';
 $lang->block->sloganPosition    = '站点口号';
+$lang->block->childBlock        = '子区块';
 
 $lang->block->header = new stdclass();
 
@@ -1054,7 +1063,7 @@ $lang->file->label         = '标题：';
 $lang->file->lblInfo       = '<i>(类型：%s, 大小：%s, 添加于：%s，下载%s次)</i>';
 $lang->file->limit         = "(<span class='text-danger'>%sM以内</span>)";
 $lang->file->source        = '素材';
-$lang->file->sourceList    = '素材列表';
+$lang->file->sourceList    = '素材库';
 $lang->file->uploadSource  = '上传素材';
 $lang->file->sourceURI     = '地址';
 $lang->file->deleteSource  = '删除素材';
@@ -1062,6 +1071,7 @@ $lang->file->editSource    = '编辑素材';
 $lang->file->selectImage   = '选择素材';
 $lang->file->fileList      = '文件列表';
 $lang->file->invalidFile   = '无效文件';
+$lang->file->batchSelect   = '批量选择';
 
 $lang->file->setWatermark      = '设置图片水印';
 $lang->file->watermark         = '图片水印';
@@ -1115,7 +1125,7 @@ $lang->file->invalidParameter = '参数无效。';
 $lang->file->unWritable       = '目录不可写或不存在。';
 $lang->file->uploadForbidden  = '附件上传功能已禁用。';
 $lang->file->sizeLimit        = "<p class='text-danger'>附件大小不能大于%sM</p>";
-$lang->file->sameName         = "已存在同名文件，更改失败。";
+$lang->file->sameName         = "已存在同名文件，更改失败";
 $lang->file->nameEmpty        = "文件名不能为空";
 $lang->file->copySuccess      = "已复制到剪贴板";
 $lang->file->evilChar         = "包含非法字符";
@@ -1709,6 +1719,9 @@ $lang->order->settlement     = '去结算';
 $lang->order->check          = '订单结算';
 $lang->order->all            = '所有';
 $lang->order->applyRefund    = '申请退款';
+$lang->order->wechatpay      = '微信支付';
+$lang->order->scanCode       = '微信扫码支付';
+$lang->order->wechatScan     = '请使用微信扫一扫<br>扫描二维码支付';
 
 $lang->order->confirmLimit         = '确认收货周期';
 $lang->order->expireLimit          = '订单过期时间';
@@ -1722,21 +1735,36 @@ $lang->order->confirmLimitRequired = '需要设定确认收货周期';
 $lang->order->finishWarning        = "确认完成订单？";
 $lang->order->noProducts           = "订单中没有产品";
 $lang->order->lowStocks            = "<strong>%s</strong> 库存不足";
+$lang->order->invokeWechatpay      = '正在调用微信支付';
+
+$lang->order->alipayParam    = '支付宝参数';
+$lang->order->wechatpayParam = '微信支付参数';
 
 $lang->order->alipayPid   = '合作者ID';
 $lang->order->alipayKey   = '合作者KEY';
 $lang->order->alipayEmail = '支付宝邮箱';
 
+$lang->order->wechatpayAppid     = '公众号APPID';
+$lang->order->wechatpayMchid     = '商户号';
+$lang->order->wechatpayApiKey    = '支付密钥';
+$lang->order->wechatpayAppSecret = '公众号密钥';
+$lang->order->wechatpayNote      = '如果微信长时间未打开，建议您返回选择其他方式';
+
 $lang->order->placeholder = new stdclass();
-$lang->order->placeholder->pid   = '合作身份者id，以2088开头的16位纯数字';
-$lang->order->placeholder->key   = '安全检验码，以数字和字母组成的32位字符';
-$lang->order->placeholder->email = '支付宝商家邮箱';
+$lang->order->placeholder->pid       = '合作身份者id，以2088开头的16位纯数字';
+$lang->order->placeholder->key       = '安全检验码，以数字和字母组成的32位字符';
+$lang->order->placeholder->email     = '支付宝商家邮箱';
+$lang->order->placeholder->appid     = '微信分配的公众账号ID';
+$lang->order->placeholder->mchid     = '微信支付分配的商户号';
+$lang->order->placeholder->apikey    = '微信支付API安全密钥';
+$lang->order->placeholder->appsecret = '微信公众号密钥';
 
 $lang->order->paymentList = array();
 $lang->order->paymentList['alipay']        = '支付宝即时到帐';
 $lang->order->paymentList['alipaySecured'] = '支付宝担保交易';
 $lang->order->paymentList['COD']           = '货到付款';
 $lang->order->paymentList['offlinepay']    = '线下支付';
+$lang->order->paymentList['wechatpay']     = '微信支付';
 
 $lang->order->statusList = array();
 $lang->order->statusList['not_paid']  = '待付款';
@@ -1979,7 +2007,7 @@ $lang->product->placeholder->currency = "请填写产品价格的货币符号，
 
 $lang->product->listMode = new stdclass();
 $lang->product->listMode->card  = "<i class='icon icon-th-large'></i>";
-$lang->product->listMode->list  = "<i class='icon icon-list'></i>";
+$lang->product->listMode->list  = "<i class='icon icon-list-ul'></i>";
 
 $lang->product->currencyList['rmb']  = '人民币';
 $lang->product->currencyList['usd']  = '美元';
@@ -2240,6 +2268,7 @@ $lang->site->setStat       = "流量统计设置";
 $lang->site->setHomeMenu   = "首页菜单";
 $lang->site->openModule    = "开启模块";
 $lang->site->setAgreement  = "设置注册协议";
+$lang->site->setWxApplet   = "微信小程序设置";
 $lang->site->isVertified   = "已认证";
 
 $lang->site->typeList = new stdclass();
@@ -2360,6 +2389,10 @@ $lang->site->moduleAvailable->score = array();
 $lang->site->moduleAvailable->score['search'] = '搜索';
 $lang->site->moduleAvailable->score['stat']   = '统计';
 
+$lang->site->wxApplet = new stdclass();
+$lang->site->wxApplet->appID       = 'AppID';
+$lang->site->wxApplet->projectName = '项目名称';
+
 $lang->site->metaHolder       = '可放置<meta><script><style>和<link>标签。';
 $lang->site->fileAllowedRole  = '多个后缀名之间请用 "," 隔开';
 $lang->site->domainTip        = '所有网站访问跳转到该域名，请确保主域名解析正确，该值为空时不进行跳转。';
@@ -2437,8 +2470,8 @@ $lang->sitemap->bookArticles    = '手册文章列表';
 $lang->sitemap->pages           = '页面';
 $lang->sitemap->xmlVersion      = '访问XML版';
 /* slide */
-$lang->slide->common     = '幻灯片';
-$lang->slide->group      = '幻灯片分组';
+$lang->slide->common     = '轮播图';
+$lang->slide->group      = '轮播图分组';
 $lang->slide->title      = '标题';
 $lang->slide->groupName  = '分组名称';
 $lang->slide->titleColor = '标题颜色';
@@ -2468,10 +2501,10 @@ $lang->slide->buttonColor = '颜色';
 $lang->slide->sourceImage = '素材库图片';
 
 $lang->slide->sort        = '排序';
-$lang->slide->admin       = '幻灯片设置';
-$lang->slide->browse      = '浏览幻灯片';
-$lang->slide->create      = '添加幻灯片';
-$lang->slide->edit        = '编辑幻灯片';
+$lang->slide->admin       = '轮播图设置';
+$lang->slide->browse      = '浏览轮播图';
+$lang->slide->create      = '添加轮播图';
+$lang->slide->edit        = '编辑轮播图';
 $lang->slide->createGroup = '添加分组';
 $lang->slide->editGroup   = '编辑分组';
 $lang->slide->removeGroup = '删除分组';
@@ -2750,6 +2783,7 @@ $lang->tree->adminLinks->product = '返回产品列表|product|admin|';
 /* ui */
 $lang->ui->common = "界面";
 
+$lang->ui->component       = '常用组件';
 $lang->ui->clientDesktop   = '桌面';
 $lang->ui->clientMobile    = '移动';
 $lang->ui->logo            = 'Logo';
@@ -2760,6 +2794,7 @@ $lang->ui->manageTemplate  = '模板管理';
 $lang->ui->manageTheme     = '主题管理';
 $lang->ui->installTemplate = '导入模板';
 $lang->ui->exportTheme     = '导出主题';
+$lang->ui->addTheme        = '添加主题';
 $lang->ui->setTheme        = '主题设置';
 $lang->ui->setDevice       = '设备设置';
 $lang->ui->setFavicon      = "Favicon设置";
@@ -2787,12 +2822,14 @@ $lang->ui->editTemplate    = "编辑模板";
 $lang->ui->installedThemes = "已安装主题";
 $lang->ui->enableTheme     = "使用此主题";
 $lang->ui->industry        = "行业";
+$lang->ui->byIndustry      = "行业筛选";
 $lang->ui->offcial         = "官方";
 $lang->ui->score           = "积分";
 $lang->ui->reset           = "重置为默认";
-$lang->ui->themePackage    = "主题包";
+$lang->ui->themePackage    = "待导入主题包";
 $lang->ui->refreshPage     = "刷新页面";
 $lang->ui->mobileBottomNav = '移动版底部导航';
+$lang->ui->searchTheme     = '搜索已安装主题';
 
 $lang->ui->uploadLogo             = "上传Logo";
 $lang->ui->uploadFavicon          = "上传小图标";
@@ -2815,6 +2852,9 @@ $lang->ui->packagePathTip         = '请将主题包的zip文件上传至 %s 目
 $lang->ui->gdHelp                 = '查看安装方式';
 $lang->ui->gdTip                  = '蝉知图片水印功能需要安装php-gd扩展才能使用。';
 $lang->ui->effectError            = '导入特效失败，请检查您的特效是否正常，查看地址：http://www.chanzhi.org/effect';
+$lang->ui->errorGetEffect         = '获取特效失败，可能是网络方面的原因，请检查您的特效是否正常，查看地址：http://www.chanzhi.org/effect';
+$lang->ui->deleteFaviconFail      = '删除 %s 失败。';
+$lang->ui->lengthOverflow         = '内容长度 %s 字节。请保持长度不超过65535字节，否则会导致部分内容丢失。';
 
 $lang->ui->deviceList = new stdclass();
 $lang->ui->deviceList->desktop = "<i class='icon icon-desktop'></i> 桌面";
@@ -2882,6 +2922,8 @@ $lang->ui->blocks2Create = "新创建区块";
 
 $lang->ui->theme = new stdclass();
 $lang->ui->theme->reset                                = '重置';
+$lang->ui->theme->upgrade                              = '升级';
+$lang->ui->theme->installed                            = '已安装';
 $lang->ui->theme->online                               = '在线主题';
 $lang->ui->theme->default                              = '默认';
 $lang->ui->theme->all                                  = '全部';
@@ -3180,6 +3222,7 @@ unset($this->lang->ui->files->mobile->forum['reply/reply']);
 
 if(!isset($lang->effect)) $lang->effect = new stdclass();
 
+$lang->effect->common      = '特效';
 $lang->effect->category    = '分类';
 $lang->effect->name        = '名称';
 $lang->effect->account     = '设计师';
@@ -3200,6 +3243,7 @@ $lang->effect->newBlock      = '导入新区块';
 $lang->effect->obtan         = '获取特效';
 $lang->effect->imported      = '已导入';
 $lang->effect->importSuccess = '导入成功';
+$lang->effect->noEffect      = "<code>%s</code> 不可写！请检查该目录权限，否则无法导入。";
 $lang->effect->noWritable    = "<code>%s</code> 不可写！请检查该目录权限，否则无法导入。";
 $lang->effect->bindCommunity = '蝉知特效只对蝉知社区认证用户开放，请先注册并绑定蝉知社区账号后，获取蝉知特效。';
 $lang->effect->noRsults      = "你还没有任何特效，请登录蝉知特效平台，<a href='http://www.chanzhi.org/effect.html' target='_blank'>获取特效</a>。";
@@ -3306,6 +3350,9 @@ $lang->upgrade->fromVersions['6_6']      = '6.6';
 $lang->upgrade->fromVersions['6_6_1']    = '6.6.1';
 $lang->upgrade->fromVersions['6_7']      = '6.7';
 $lang->upgrade->fromVersions['6_7_1']    = '6.7.1';
+$lang->upgrade->fromVersions['7_0']      = '7.0';
+$lang->upgrade->fromVersions['7_0_1']    = '7.0.1';
+$lang->upgrade->fromVersions['7_1']      = '7.1';
 /* user */
 $lang->user->common    = '会员';
 $lang->user->setting   = '会员设置';
@@ -3517,12 +3564,22 @@ $lang->user->oauth->google= new stdclass();
 $lang->user->oauth->google->clientID     = 'API ID';
 $lang->user->oauth->google->clientSecret = 'API Secret';
 
+$lang->user->oauth->wechat = new stdclass();
+$lang->user->oauth->wechat->clientID     = 'AppID';
+$lang->user->oauth->wechat->clientSecret = 'AppSecret';
+$lang->user->oauth->wechat->autoLogin    = '自动登录';
+
+$lang->user->oauth->wechat->autoLoginList = array();
+$lang->user->oauth->wechat->autoLoginList['on']  = '打开';
+$lang->user->oauth->wechat->autoLoginList['off'] = '关闭';
+
 $lang->user->oauth->providers['sina']   = '新浪微博';
 $lang->user->oauth->providers['qq']     = 'QQ';
 $lang->user->oauth->providers['github'] = 'Github';
 #$lang->user->oauth->providers['twitter'] = 'Twitter';
 $lang->user->oauth->providers['facebook'] = 'Facebook';
 #$lang->user->oauth->providers['google'] = 'Google';
+$lang->user->oauth->providers['wechat']   = '微信';
 
 $lang->user->oauth->typeList['sina']   = '新浪微博会员';
 $lang->user->oauth->typeList['qq']     = 'QQ会员';
@@ -3636,6 +3693,10 @@ $lang->visual->js->alreadyFirstSlide = '已是第一张';
 $lang->visual->js->slideOrder        = '当前播放顺序';
 $lang->visual->js->gridWidth         = '栅格宽度';
 $lang->visual->js->pageLayoutPrefix  = '仅当前';
+$lang->visual->js->deleteConfirm     = '确定从布局中删除【{0}】？';
+$lang->visual->js->changeLayout      = '更改布局';
+$lang->visual->js->setColumns        = '分栏设置';
+$lang->visual->js->addRegionAlert    = '不允许将布局区块添加到【{0}】。';
 $lang->visual->js->actions           = array('edit' => '编辑', 'delete' => '删除', 'move' => '移动', 'add' => '添加');
 
 $lang->visual->setting = new stdclass();
@@ -3685,6 +3746,26 @@ $lang->visual->setting->boards                             = array('name' => '�
 $lang->visual->setting->boards['actions']['add']           = array('text' => '板块管理');
 $lang->visual->setting->thread                             = array('name' => '帖子', 'actions' => array());
 $lang->visual->setting->thread['actions']['edit']          = array('text' => '转移');
+
+$lang->visual->design                 = new stdclass();
+$lang->visual->design->pageTemplate   = '页面模板';
+$lang->visual->design->currentTheme   = '当前主题：';
+$lang->visual->design->layout         = '布局';
+$lang->visual->design->block          = '区块';
+$lang->visual->design->skin           = '外观';
+$lang->visual->design->code           = '代码';
+$lang->visual->design->hidePageTmpl   = '切换显示/隐藏页面模版';
+$lang->visual->design->dragAndAdd     = '拖到布局中添加';
+$lang->visual->design->noBlockTip     = '此类目下没有可用区块。';
+$lang->visual->design->setColumns     = '分栏设置';
+
+$lang->visual->design->placeholders                = array();
+$lang->visual->design->placeholders['main']        = '主要内容';
+$lang->visual->design->placeholders['page_header'] = '页面头部';
+$lang->visual->design->placeholders['page_footer'] = '页面底部';
+$lang->visual->design->placeholders['breadcrumb']  = '面包屑导航';
+$lang->visual->design->placeholders['article']     = '正文内容';
+$lang->visual->design->placeholders['category']    = '目录';
 /* wechat */
 $lang->wechat->common = '微信';
 
