@@ -304,7 +304,7 @@ $lang->interface = new stdclass();
 $lang->interface->menu = new stdclass();
 $lang->interface->menu->oauth = '开放登录|site|setoauth|';
 $lang->interface->menu->mail  = array('link' => '发信设置|mail|admin|', 'alias' => 'detect,edit,save,test');
-$lang->interface->menu->wmp   = '微信小程序|site|setwmp|';
+$lang->interface->menu->wmp   = '微信小程序|wmp|setting|';
 
 $lang->score->menu = new stdclass();
 $lang->score->menu->score     = '积分规则|score|setcounts|';
@@ -2268,8 +2268,6 @@ $lang->site->setStat       = "流量统计设置";
 $lang->site->setHomeMenu   = "首页菜单";
 $lang->site->openModule    = "开启模块";
 $lang->site->setAgreement  = "设置注册协议";
-$lang->site->setWmp        = "微信小程序设置";
-$lang->site->downloadWmp   = "下载小程序包";
 $lang->site->isVertified   = "已认证";
 
 $lang->site->typeList = new stdclass();
@@ -2389,11 +2387,6 @@ $lang->site->moduleAvailable->mall['product'] = '产品';
 $lang->site->moduleAvailable->score = array();
 $lang->site->moduleAvailable->score['search'] = '搜索';
 $lang->site->moduleAvailable->score['stat']   = '统计';
-
-$lang->site->wmp = new stdclass();
-$lang->site->wmp->appID       = 'AppID';
-$lang->site->wmp->projectName = '项目名称';
-$lang->site->wmp->description = '蝉知项目配置文件';
 
 $lang->site->metaHolder       = '可放置<meta><script><style>和<link>标签。';
 $lang->site->fileAllowedRole  = '多个后缀名之间请用 "," 隔开';
@@ -3965,3 +3958,10 @@ $lang->widget->typeList->submission     = '最新投稿';
 $lang->widget->typeList->chanzhiDynamic = '蝉知动态';
 $lang->widget->typeList->commonMenu     = '快捷入口';
 $lang->widget->typeList->html           = '自定义';
+/* wmp */
+$lang->wmp = new stdclass();
+$lang->wmp->setting  = "微信小程序设置";
+$lang->wmp->download = "下载小程序包";
+
+$lang->wmp->appID       = 'AppID';
+$lang->wmp->projectName = '项目名称';
