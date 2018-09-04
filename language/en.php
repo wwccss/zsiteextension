@@ -304,7 +304,6 @@ $lang->interface = new stdclass();
 $lang->interface->menu = new stdclass();
 $lang->interface->menu->oauth = 'Social Login|site|setoauth|';
 $lang->interface->menu->mail  = array('link' => 'Email|mail|admin|', 'alias' => 'detect,edit,save,test');
-$lang->interface->menu->wmp   = 'Wechat Applet|wmp|setting|';
 
 $lang->score->menu = new stdclass();
 $lang->score->menu->score     = 'Point Rules|score|setcounts|';
@@ -3361,6 +3360,7 @@ $lang->upgrade->fromVersions['6_7_1']    = '6.7.1';
 $lang->upgrade->fromVersions['7_0']      = '7.0';
 $lang->upgrade->fromVersions['7_0_1']    = '7.0.1';
 $lang->upgrade->fromVersions['7_1']      = '7.1';
+$lang->upgrade->fromVersions['7_2']      = '7.2';
 /* user */
 $lang->user->common    = 'User';
 $lang->user->setting   = 'User Setting';
@@ -3972,10 +3972,3 @@ $lang->widget->typeList->submission     = 'Latest Submission';
 //$lang->widget->typeList->chanzhiDynamic = 'Zsite Dynamic';
 $lang->widget->typeList->commonMenu     = 'Quick Entry';
 $lang->widget->typeList->html           = 'Custom';
-/* wmp */
-$lang->wmp = new stdclass();
-$lang->wmp->setting  = "Wechat Applet Setting";
-$lang->wmp->download = "Download";
-
-$lang->wmp->appID       = 'AppID';
-$lang->wmp->projectName = 'Project Name';

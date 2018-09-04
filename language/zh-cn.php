@@ -304,7 +304,6 @@ $lang->interface = new stdclass();
 $lang->interface->menu = new stdclass();
 $lang->interface->menu->oauth = '开放登录|site|setoauth|';
 $lang->interface->menu->mail  = array('link' => '发信设置|mail|admin|', 'alias' => 'detect,edit,save,test');
-$lang->interface->menu->wmp   = '微信小程序|wmp|setting|';
 
 $lang->score->menu = new stdclass();
 $lang->score->menu->score     = '积分规则|score|setcounts|';
@@ -3348,6 +3347,7 @@ $lang->upgrade->fromVersions['6_7_1']    = '6.7.1';
 $lang->upgrade->fromVersions['7_0']      = '7.0';
 $lang->upgrade->fromVersions['7_0_1']    = '7.0.1';
 $lang->upgrade->fromVersions['7_1']      = '7.1';
+$lang->upgrade->fromVersions['7_2']      = '7.2';
 /* user */
 $lang->user->common    = '会员';
 $lang->user->setting   = '会员设置';
@@ -3958,10 +3958,3 @@ $lang->widget->typeList->submission     = '最新投稿';
 $lang->widget->typeList->chanzhiDynamic = '蝉知动态';
 $lang->widget->typeList->commonMenu     = '快捷入口';
 $lang->widget->typeList->html           = '自定义';
-/* wmp */
-$lang->wmp = new stdclass();
-$lang->wmp->setting  = "微信小程序设置";
-$lang->wmp->download = "下载小程序包";
-
-$lang->wmp->appID       = 'AppID';
-$lang->wmp->projectName = '项目名称';
