@@ -204,6 +204,7 @@ $lang->menu->company       = '公司|company|setbasic|';
 $lang->menu->score         = '积分|score|setcounts|';
 $lang->menu->interface     = '接口|site|setoauth|';
 $lang->menu->wechatSetting = '微信设置|wechat|admin|';
+$lang->menu->bear          = '熊掌号|bear|setting|';
 
 $lang->menu->package    = '插件|package|browse|';
 $lang->menu->themestore = '主题|ui|themestore|';
@@ -221,6 +222,7 @@ $lang->menuGroups->guarder = 'security';
 
 $lang->designMenus = new stdclass();
 $lang->designMenus->theme     = '主题|ui|settemplate|';
+$lang->designMenus->block     = '区块|block|admin|';
 $lang->designMenus->nav       = '导航|nav|admin|';
 $lang->designMenus->component = '组件|ui|component|';
 $lang->designMenus->senior    = '高级|ui|editTemplate|';
@@ -303,6 +305,7 @@ $lang->security->menu->log         = '登录日志|user|adminlog|';
 $lang->interface = new stdclass();
 $lang->interface->menu = new stdclass();
 $lang->interface->menu->oauth = '开放登录|site|setoauth|';
+$lang->interface->menu->bear  = array('link' => '熊掌号|bear|setting|', 'alias' => 'log,sync');
 $lang->interface->menu->mail  = array('link' => '发信设置|mail|admin|', 'alias' => 'detect,edit,save,test');
 
 $lang->score->menu = new stdclass();
@@ -338,6 +341,12 @@ $lang->stat->menu->keywords = '关键词|stat|keywords|';
 $lang->stat->menu->client   = '用户终端|stat|client|type=browser';
 $lang->stat->menu->page     = '点击排行|stat|page|';
 $lang->stat->menu->setStat  = '设置|stat|setting|';
+
+$lang->bear = new stdclass();
+$lang->bear->menu = new stdclass;
+$lang->bear->menu->setting = '设置|bear|setting|';
+$lang->bear->menu->sync    = '同步|bear|sync|';
+$lang->bear->menu->log     = '日志|bear|log|';
 
 $lang->error = new stdclass();
 $lang->error->length       = array('<strong>%s</strong>长度错误，应当为<strong>%s</strong>', '<strong>%s</strong>长度应当不超过<strong>%s</strong>，且不小于<strong>%s</strong>。');

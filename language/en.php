@@ -221,6 +221,7 @@ $lang->menuGroups->guarder = 'security';
 
 $lang->designMenus = new stdclass();
 $lang->designMenus->theme     = 'Theme|ui|settemplate|';
+$lang->designMenus->block     = 'Widget|block|admin|';
 $lang->designMenus->nav       = 'Nav|nav|admin|';
 $lang->designMenus->component = 'CMPT|ui|component|';
 $lang->designMenus->senior    = 'Senior|ui|editTemplate|';
