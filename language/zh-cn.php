@@ -1730,6 +1730,7 @@ $lang->order->applyRefund    = '申请退款';
 $lang->order->wechatpay      = '微信支付';
 $lang->order->scanCode       = '微信扫码支付';
 $lang->order->wechatScan     = '请使用微信扫一扫<br>扫描二维码支付';
+$lang->order->isWechat       = '注意：微信浏览器不支持支付宝支付，如需使用支付宝支付，请复制本站网址到其他浏览器进行操作'
 
 $lang->order->confirmLimit         = '确认收货周期';
 $lang->order->expireLimit          = '订单过期时间';

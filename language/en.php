@@ -1736,6 +1736,7 @@ $lang->order->applyRefund    = 'Apply Refund';
 $lang->order->wechatpay      = 'Wechat pay';
 $lang->order->scanCode       = 'Pay by wechat qrcode';
 $lang->order->wechatScan     = 'Please scan the qrcode <br> by wechat.';
+$lang->order->isWechat       = 'Tips: WeChat browser does not support Alipay. If you have to use Alipay, copy the URL to others browsers and then pay there.';
 
 $lang->order->confirmLimit         = 'Receiving Cyle';
 $lang->order->expireLimit          = 'Order Expiration';
