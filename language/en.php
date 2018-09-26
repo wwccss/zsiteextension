@@ -220,11 +220,11 @@ $lang->menuGroups->score   = 'score';
 $lang->menuGroups->guarder = 'security';
 
 $lang->designMenus = new stdclass();
-$lang->designMenus->theme     = 'Theme|ui|settemplate|';
-$lang->designMenus->block     = 'Widget|block|admin|';
-$lang->designMenus->nav       = 'Nav|nav|admin|';
-$lang->designMenus->component = 'CMPT|ui|component|';
-$lang->designMenus->senior    = 'Senior|ui|editTemplate|';
+$lang->designMenus->theme     = array('link' => 'Theme|ui|settemplate|', 'alias' => 'themestore');
+$lang->designMenus->block     = array('link' => 'Widget|block|admin|', 'alias' => 'create');
+$lang->designMenus->nav       = array('link' => 'Nav|nav|admin|');
+$lang->designMenus->component = array('link' => 'CMPT|ui|component|', 'alias' => 'effect,browsesource');
+$lang->designMenus->senior    = array('link' => 'Senior|ui|editTemplate|');
 
 $lang->article = new stdclass();
 $lang->article->menu = new stdclass();
@@ -3697,7 +3697,9 @@ $lang->visual->js->createBlock       = 'Add Widget';
 $lang->visual->js->addSubRegion      = 'Add Child';
 $lang->visual->js->addBlock          = 'Add an existing Widget';
 $lang->visual->js->subRegion         = 'Child Widget';
+$lang->visual->js->randomRegion      = 'Random Widget';
 $lang->visual->js->subRegionDesc     = 'Child Details';
+$lang->visual->js->randomRegionDesc  = 'Random Details';
 $lang->visual->js->alreadyLastSlide  = 'Last Silde';
 $lang->visual->js->alreadyFirstSlide = 'First Silde';
 $lang->visual->js->slideOrder        = 'Play Order';

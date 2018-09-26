@@ -221,11 +221,11 @@ $lang->menuGroups->score   = 'score';
 $lang->menuGroups->guarder = 'security';
 
 $lang->designMenus = new stdclass();
-$lang->designMenus->theme     = '主题|ui|settemplate|';
-$lang->designMenus->block     = '区块|block|admin|';
-$lang->designMenus->nav       = '导航|nav|admin|';
-$lang->designMenus->component = '组件|ui|component|';
-$lang->designMenus->senior    = '高级|ui|editTemplate|';
+$lang->designMenus->theme     = array('link' => '主题|ui|settemplate|', 'alias' => 'themestore');
+$lang->designMenus->block     = array('link' => '区块|block|admin|', 'alias' => 'create');
+$lang->designMenus->nav       = array('link' => '导航|nav|admin|');
+$lang->designMenus->component = array('link' => '组件|ui|component|', 'alias' => 'effect,browsesource');
+$lang->designMenus->senior    = array('link' => '高级|ui|editTemplate|');
 
 $lang->article = new stdclass();
 $lang->article->menu = new stdclass();
@@ -1177,6 +1177,7 @@ $lang->forum->setting    = '论坛设置';
 $lang->forum->postReview = '发帖审核';
 $lang->forum->allBoards  = '所有版块';
 $lang->forum->index      = '首页';
+$lang->forum->bindWechat = '发帖绑定微信';
 
 $lang->forum->updateDesc    = '该更新操作会重新计算每个版块的发帖数据。';
 $lang->forum->successUpdate = '更新数据成功';
@@ -1185,6 +1186,10 @@ $lang->forum->indexModeOptions = array();
 $lang->forum->indexModeOptions['board']  = '版块浏览';
 $lang->forum->indexModeOptions['latest'] = '最新主题';
 $lang->forum->indexModeOptions['stick']  = '置顶主题';
+
+$lang->forum->bindWechatOptions = array();
+$lang->forum->bindWechatOptions['open']  = '开启';
+$lang->forum->bindWechatOptions['close'] = '关闭';
 
 $lang->pager->noRecord      = '';
 $lang->pager->digest        = str_replace('记录', '主题', $lang->pager->digest);
@@ -1730,7 +1735,7 @@ $lang->order->applyRefund    = '申请退款';
 $lang->order->wechatpay      = '微信支付';
 $lang->order->scanCode       = '微信扫码支付';
 $lang->order->wechatScan     = '请使用微信扫一扫<br>扫描二维码支付';
-$lang->order->isWechat       = '注意：微信浏览器不支持支付宝支付，如需使用支付宝支付，请复制本站网址到其他浏览器进行操作'
+$lang->order->isWechat       = '注意：微信浏览器不支持支付宝支付，如需使用支付宝支付，请复制本站网址到其他浏览器进行操作';
 
 $lang->order->confirmLimit         = '确认收货周期';
 $lang->order->expireLimit          = '订单过期时间';
@@ -3078,8 +3083,8 @@ $lang->js->importTip     = "只导入主题的风格和样式";
 $lang->js->fullImportTip = "将会导入测试数据以及替换站点文章、产品等数据";
 
 $lang->ui->importTypes = new stdclass();
-$lang->ui->importTypes->theme = '只导入主题';
-$lang->ui->importTypes->full  = '完整导入';
+$lang->ui->importTypes->theme = '导入样式';
+$lang->ui->importTypes->full  = '导入样式和数据';
 
 $lang->ui->theme->encryptTip = new stdclass();
 $lang->ui->theme->encryptTip->common    = '提示：';
@@ -3691,8 +3696,10 @@ $lang->visual->js->addContentTo      = '添加内容到 【{0}】';
 $lang->visual->js->createBlock       = '创建新区块';
 $lang->visual->js->addSubRegion      = '添加布局区块';
 $lang->visual->js->addBlock          = '添加已有区块';
-$lang->visual->js->subRegion         = '布局区块';
+$lang->visual->js->subRegion         = '子布局区块';
+$lang->visual->js->randomRegion      = '随机布局区块';
 $lang->visual->js->subRegionDesc     = '可以包含其他区块';
+$lang->visual->js->randomRegionDesc  = '包含的区块随机显示';
 $lang->visual->js->alreadyLastSlide  = '已是最后一张';
 $lang->visual->js->alreadyFirstSlide = '已是第一张';
 $lang->visual->js->slideOrder        = '当前播放顺序';
