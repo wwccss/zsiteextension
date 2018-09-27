@@ -1181,6 +1181,7 @@ $lang->forum->bindWechat = '发帖绑定微信';
 
 $lang->forum->updateDesc    = '该更新操作会重新计算每个版块的发帖数据。';
 $lang->forum->successUpdate = '更新数据成功';
+$lang->forum->bindWechatTip = '发帖功能设置了绑定微信的限制，请先绑定微信会员。';
 
 $lang->forum->indexModeOptions = array();
 $lang->forum->indexModeOptions['board']  = '版块浏览';
@@ -3598,10 +3599,12 @@ $lang->user->oauth->typeList['github'] = 'Github';
 $lang->user->oauth->typeList['facebook'] = 'Facebook';
 #$lang->user->oauth->typeList['google'] = 'Google';
 
+$lang->user->oauth->bindUser         = '绑定用户';
 $lang->user->oauth->lblWelcome       = '开放登录，快捷方便';
 $lang->user->oauth->lblOtherLogin    = '其他方式 : ';
 $lang->user->oauth->lblProfile       = "注册新用户";
 $lang->user->oauth->lblBind          = "绑定已有用户";
+$lang->user->oauth->lblBindCurrent   = "<p>当前登录用户为 %s</p><a href='%s' class='btn btn-success'>直接绑定</a>";
 $lang->user->oauth->lblUnbind        = "解除绑定";
 $lang->user->oauth->lblUnbindSuccess = "解除绑定成功！";
 $lang->user->oauth->lblUnbindFailed  = "解除绑定失败！";
