@@ -66,6 +66,7 @@ $lang->custom           = '自定义';
 $lang->productMenu      = '产品';
 $lang->history          = '历史记录';
 $lang->reverse          = '切换顺序';
+$lang->transfer         = '转发';
 
 $lang->reset          = '重置';
 $lang->edit           = '编辑';
@@ -542,8 +543,9 @@ $lang->article->css        = 'CSS';
 $lang->article->js         = 'JS';
 $lang->article->layout     = '布局';
 
-$lang->article->forward2Blog     = '转至博客';
-$lang->article->forward2Forum    = '转至论坛';
+$lang->article->forward2Blog     = '博客';
+$lang->article->forward2Forum    = '论坛';
+$lang->article->forward2Baidu    = '百度';
 $lang->article->selectCategories = '选择类目';
 $lang->article->selectBoard      = '选择版块';
 $lang->article->confirmReject    = '确认驳回这篇投稿？';
@@ -706,6 +708,46 @@ $lang->backup->error->backupTemplate = "模板备份失败，错误：%s";
 
 $lang->js->backuping = '备份中...';
 $lang->js->restoring = '还原中...';
+/* bear */
+$lang->bear->common     = '熊掌号';
+$lang->bear->setting    = '熊掌号设置';
+$lang->bear->name       = '熊掌号名称';
+$lang->bear->type       = '类型';
+$lang->bear->appID      = 'appID';
+$lang->bear->token      = 'Token';
+$lang->bear->autoSync   = '自动同步';
+$lang->bear->submitType = '推送类型';
+
+$lang->bear->submit        = '提交资源';
+$lang->bear->batchSubmit   = '批量提交资源';
+$lang->bear->submitSuccess = '资源提交成功';
+$lang->bear->submitFail    = '资源提交失败';
+$lang->bear->submitResult  = "提交成功，新提交<span class='text-success'> %s </span> 条记录；";
+
+$lang->bear->notices = array();
+$lang->bear->notices['not_same_site'] = "%s不是本站的url。";
+$lang->bear->notices['not_valid']     = "不合法的url列表。";
+
+$lang->bear->submitTypes = array();
+$lang->bear->submitTypes['realtime'] = '新增';
+$lang->bear->submitTypes['batch']    = '历史';
+
+$lang->bear->syncObjects = new stdclass;
+$lang->bear->syncObjects->article = '文章';
+$lang->bear->syncObjects->product = '产品';
+$lang->bear->syncObjects->blog    = '博客';
+$lang->bear->syncObjects->page    = '单页';
+
+$lang->bear->placeholder = new stdclass;
+$lang->bear->placeholder->appID = '您的熊掌号唯一识别ID';
+$lang->bear->placeholder->token = '在搜索资源平台申请的推送用的准入密钥';
+
+$lang->bear->typeList = array();
+$lang->bear->typeList[1] = '个人';
+$lang->bear->typeList[2] = '媒体';
+$lang->bear->typeList[3] = '企业';
+$lang->bear->typeList[4] = '政府';
+$lang->bear->typeList[5] = '其他组织';
 /* block */
 $lang->block->common          = '区块布局';
 $lang->block->id              = '编号';
@@ -767,6 +809,7 @@ $lang->block->saveLayoutAs    = '复制布局：%s';
 $lang->block->defaultPlan     = '默认方案';
 $lang->block->image           = '图片';
 $lang->block->uploadImage     = '上传图片';
+$lang->block->all             = '所有区块';
 
 $lang->block->layout            = '布局';
 $lang->block->logoPosition      = 'Logo';
@@ -1993,6 +2036,7 @@ $lang->product->setting      = '设置';
 $lang->product->soldout      = '已售罄';
 $lang->product->layout       = '布局';
 $lang->product->contact      = '联系我们';
+$lang->product->forward2Baidu = '提交到百度';
 
 $lang->product->orderBy = new stdclass();
 $lang->product->orderBy->time = '时间';
@@ -2818,6 +2862,7 @@ $lang->ui->execInfo        = "运行信息";
 $lang->ui->templateName    = "模板";
 $lang->ui->currentTheme    = '当前主题';
 $lang->ui->internalTheme   = '内置主题';
+$lang->ui->uploadPackage   = '上传主题包';
 $lang->ui->uploadTheme     = '导入主题';
 $lang->ui->installTheme    = '导入主题';
 $lang->ui->importedBlocks  = '导入区块';
@@ -2870,13 +2915,13 @@ $lang->ui->deviceList = new stdclass();
 $lang->ui->deviceList->desktop = "<i class='icon icon-desktop'></i> 桌面";
 $lang->ui->deviceList->mobile  = "<i class='icon icon-tablet'></i> 移动";
 
-$lang->ui->productViewList[1] = '显示'; 
-$lang->ui->productViewList[0] = '不显示'; 
+$lang->ui->productViewList[1] = '显示';
+$lang->ui->productViewList[0] = '不显示';
 
-$lang->ui->QRCodeList[1] = '显示'; 
-$lang->ui->QRCodeList[0] = '不显示'; 
+$lang->ui->QRCodeList[1] = '显示';
+$lang->ui->QRCodeList[0] = '不显示';
 
-$lang->ui->execInfoOptions['show'] = '显示'; 
+$lang->ui->execInfoOptions['show'] = '显示';
 $lang->ui->execInfoOptions['hide'] = '不显示';
 
 $lang->ui->logoList['current'] = '当前主题';
@@ -3604,7 +3649,8 @@ $lang->user->oauth->lblWelcome       = '开放登录，快捷方便';
 $lang->user->oauth->lblOtherLogin    = '其他方式 : ';
 $lang->user->oauth->lblProfile       = "注册新用户";
 $lang->user->oauth->lblBind          = "绑定已有用户";
-$lang->user->oauth->lblBindCurrent   = "<p>当前登录用户为 %s</p><a href='%s' class='btn btn-success'>直接绑定</a>";
+$lang->user->oauth->directBind       = "直接绑定";
+$lang->user->oauth->lblBindCurrent   = "当前登录蝉知用户为 %s，微信用户为 %s";
 $lang->user->oauth->lblUnbind        = "解除绑定";
 $lang->user->oauth->lblUnbindSuccess = "解除绑定成功！";
 $lang->user->oauth->lblUnbindFailed  = "解除绑定失败！";

@@ -759,6 +759,7 @@ $lang->block->saveLayoutAs    = 'Copy Layout %s';
 $lang->block->defaultPlan     = 'Default';
 $lang->block->image           = 'Image';
 $lang->block->uploadImage     = 'Upload image';
+$lang->block->all             = 'All Blocks';
 
 $lang->block->layout            = 'Layout';
 $lang->block->logoPosition      = 'Logo';
@@ -2818,6 +2819,7 @@ $lang->ui->templateName    = "Template";
 $lang->ui->currentTheme    = 'Current Theme';
 $lang->ui->internalTheme   = 'Built-in Theme';
 $lang->ui->uploadTheme     = 'Import Theme';
+$lang->ui->uploadPackage   = 'Upload Theme';
 $lang->ui->installTheme    = 'Install Theme';
 $lang->ui->importedBlocks  = 'Import Widget';
 $lang->ui->matchedBlock    = 'Match Widget';
@@ -2869,13 +2871,13 @@ $lang->ui->deviceList = new stdclass();
 $lang->ui->deviceList->desktop = "<i class='icon icon-desktop'></i> Desktop";
 $lang->ui->deviceList->mobile  = "<i class='icon icon-tablet'></i> Mobile";
 
-$lang->ui->productViewList[1] = 'On'; 
-$lang->ui->productViewList[0] = 'Off'; 
+$lang->ui->productViewList[1] = 'On';
+$lang->ui->productViewList[0] = 'Off';
 
-$lang->ui->QRCodeList[1] = 'On'; 
-$lang->ui->QRCodeList[0] = 'Off'; 
+$lang->ui->QRCodeList[1] = 'On';
+$lang->ui->QRCodeList[0] = 'Off';
 
-$lang->ui->execInfoOptions['show'] = 'On'; 
+$lang->ui->execInfoOptions['show'] = 'On';
 $lang->ui->execInfoOptions['hide'] = 'Off';
 
 $lang->ui->logoList['current'] = 'Current Theme';
