@@ -345,9 +345,9 @@ $lang->stat->menu->setStat  = '设置|stat|setting|';
 
 $lang->bear = new stdclass();
 $lang->bear->menu = new stdclass;
-$lang->bear->menu->setting = '设置|bear|setting|';
-$lang->bear->menu->sync    = '同步|bear|sync|';
-$lang->bear->menu->log     = '日志|bear|log|';
+$lang->bear->menu->setting     = '设置|bear|setting|';
+$lang->bear->menu->batchSubmit = '批量提交|bear|batchsubmit|';
+$lang->bear->menu->log         = '日志|bear|log|';
 
 $lang->error = new stdclass();
 $lang->error->length       = array('<strong>%s</strong>长度错误，应当为<strong>%s</strong>', '<strong>%s</strong>长度应当不超过<strong>%s</strong>，且不小于<strong>%s</strong>。');
