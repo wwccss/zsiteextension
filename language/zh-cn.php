@@ -718,14 +718,25 @@ $lang->bear->token      = 'Token';
 $lang->bear->autoSync   = '自动同步';
 $lang->bear->submitType = '推送类型';
 
+$lang->bear->id       = '编号';
+$lang->bear->time     = '提交时间';
+$lang->bear->url      = '资源地址';
+$lang->bear->auto     = '资源地址';
+$lang->bear->status   = '状态';
+$lang->bear->response = '提交结果';
+$lang->bear->account  = '提交人';
+
+$lang->bear->begin         = '开始时间';
+$lang->bear->end           = '结束时间';
 $lang->bear->submit        = '提交资源';
+$lang->bear->log           = '提交日志';
 $lang->bear->batchSubmit   = '批量提交资源';
 $lang->bear->submitSuccess = '资源提交成功';
 $lang->bear->submitFail    = '资源提交失败';
 $lang->bear->submitResult  = "提交成功，新提交<span class='text-success'> %s </span> 条记录；";
 
 $lang->bear->notices = array();
-$lang->bear->notices['not_same_site'] = "%s不是本站的url。";
+$lang->bear->notices['not_same_site'] = " %s 不是熊掌号绑定的域名。";
 $lang->bear->notices['not_valid']     = "不合法的url列表。";
 
 $lang->bear->submitTypes = array();
@@ -748,6 +759,16 @@ $lang->bear->typeList[2] = '媒体';
 $lang->bear->typeList[3] = '企业';
 $lang->bear->typeList[4] = '政府';
 $lang->bear->typeList[5] = '其他组织';
+
+$lang->bear->logModes = new stdclass();
+$lang->bear->logModes->yestoday = '昨日';
+$lang->bear->logModes->today    = '今日';
+$lang->bear->logModes->weekly   = '最近一周';
+$lang->bear->logModes->monthly  = '最近30天';
+
+$lang->bear->submitStatusList = array();
+$lang->bear->submitStatusList['success'] = '成功';
+$lang->bear->submitStatusList['fail']    = '失败';
 /* block */
 $lang->block->common          = '区块布局';
 $lang->block->id              = '编号';
@@ -2147,6 +2168,7 @@ $lang->reply->noReply['readonly'] = '板块状态为只读，禁止回帖';
 $lang->reply->noEdit = array();
 $lang->reply->noEdit['readonly']  = '板块状态为只读，禁止编辑';
 
+$lang->reply->bindEmail = '请先绑定邮箱';
 /* score */
 $lang->score->back        = '返回';
 $lang->score->rankingList = '积分排行榜';
@@ -2738,6 +2760,7 @@ $lang->thread->viewReplies     = '查看回帖内容';
 $lang->thread->stayCurrent     = '留在当前页面';
 $lang->thread->quoteTitle      = "<div class='quote-title'>原帖由 %s 于 %s 发表</div>";    
 $lang->thread->replyFloor      = "回复<strong>#%s</strong>";    
+$lang->thread->bindEmail       = '请绑定邮箱';
 
 $lang->thread->score    = '奖励积分';
 $lang->thread->scoreSum = "<i class='text-warning icon icon-plus'><b>%s</b></i> ";
@@ -2754,6 +2777,7 @@ if(!isset($lang->pager->settedInForum))
     $lang->pager->noRecord = '';
     $lang->pager->digest   = str_replace('记录', '回帖', $lang->pager->digest);
 }
+
 /* tree */
 $lang->tree->add         = "添加";
 $lang->tree->edit        = "编辑";
