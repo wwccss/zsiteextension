@@ -2826,6 +2826,7 @@ $lang->ui->matchedBlock    = 'Match Widget';
 $lang->ui->createBlock     = 'Add Widget';
 $lang->ui->useOldBlock     = 'Use existing Widget';
 $lang->ui->themeStore      = 'Theme Store';
+$lang->ui->themeList       = 'Theme List';
 $lang->ui->help            = "Help";
 $lang->ui->deleteLogo      = "Delete Logo";
 $lang->ui->setCode         = "Code";
@@ -3364,7 +3365,7 @@ $lang->upgrade->fromVersions['6_7_1']    = '6.7.1';
 $lang->upgrade->fromVersions['7_0']      = '7.0';
 $lang->upgrade->fromVersions['7_0_1']    = '7.0.1';
 $lang->upgrade->fromVersions['7_1']      = '7.1';
-$lang->upgrade->fromVersions['7_2']      = '7.2';
+$lang->upgrade->fromVersions['7_3']      = '7.3';
 /* user */
 $lang->user->common    = 'User';
 $lang->user->setting   = 'User Setting';

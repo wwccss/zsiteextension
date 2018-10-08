@@ -2894,6 +2894,7 @@ $lang->ui->matchedBlock    = '对应区块';
 $lang->ui->createBlock     = '导入新区块';
 $lang->ui->useOldBlock     = '使用已有区块';
 $lang->ui->themeStore      = '主题市场';
+$lang->ui->themeList       = '主题列表';
 $lang->ui->help            = "帮助";
 $lang->ui->deleteLogo      = "删除Logo";
 $lang->ui->setCode         = "代码";
@@ -3433,6 +3434,7 @@ $lang->upgrade->fromVersions['7_0']      = '7.0';
 $lang->upgrade->fromVersions['7_0_1']    = '7.0.1';
 $lang->upgrade->fromVersions['7_1']      = '7.1';
 $lang->upgrade->fromVersions['7_2']      = '7.2';
+$lang->upgrade->fromVersions['7_3']      = '7.3';
 /* user */
 $lang->user->common    = '会员';
 $lang->user->setting   = '会员设置';
