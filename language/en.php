@@ -66,6 +66,7 @@ $lang->custom           = 'Custom';
 $lang->productMenu      = 'Product';
 $lang->history          = 'History';
 $lang->reverse          = 'Reverse';
+$lang->transfer         = 'Transfer';
 
 $lang->reset          = 'Reset';
 $lang->edit           = 'Edit';
@@ -161,7 +162,7 @@ $lang->groups->shop     = array('title' => 'Mall', 'link' => 'order|admin|',    
 $lang->groups->user     = array('title' => 'User', 'link' => 'user|admin|',                'icon' => 'group');
 $lang->groups->promote  = array('title' => 'SEO', 'link' => 'stat|traffic|',              'icon' => 'volume-up');
 $lang->groups->design   = array('title' => 'UI', 'link' => 'ui|settemplate|',            'icon' => 'paint-brush');
-//$lang->groups->open     = array('title' => 'Open', 'link' => 'package|browse|',            'icon' => 'cloud');
+$lang->groups->open     = array('title' => 'Open', 'link' => 'package|browse|',            'icon' => 'cloud');
 $lang->groups->setting  = array('title' => 'Set', 'link' => 'site|setbasic|',             'icon' => 'cog');
 
 $lang->menu = new stdclass();
@@ -204,6 +205,7 @@ $lang->menu->company       = 'Company|company|setbasic|';
 $lang->menu->score         = 'Points|score|setcounts|';
 $lang->menu->interface     = 'API|site|setoauth|';
 $lang->menu->wechatSetting = 'Wechat Setting|wechat|admin|';
+$lang->menu->bear          = 'Bear|bear|setting|';
 
 $lang->menu->package    = 'Extensions|package|browse|';
 $lang->menu->themestore = 'Themes|ui|themestore|';
@@ -304,6 +306,7 @@ $lang->security->menu->log         = 'Login Log|user|adminlog|';
 $lang->interface = new stdclass();
 $lang->interface->menu = new stdclass();
 $lang->interface->menu->oauth = 'Social Login|site|setoauth|';
+$lang->interface->menu->bear  = array('link' => 'Bear|bear|setting|', 'alias' => 'log,sync');
 $lang->interface->menu->mail  = array('link' => 'Email|mail|admin|', 'alias' => 'detect,edit,save,test');
 
 $lang->score->menu = new stdclass();
@@ -339,6 +342,12 @@ $lang->stat->menu->keywords = 'Keywords|stat|keywords|';
 $lang->stat->menu->client   = 'Clients|stat|client|type=browser';
 $lang->stat->menu->page     = 'Page Clicks|stat|page|';
 $lang->stat->menu->setStat  = 'Settings|stat|setting|';
+
+$lang->bear = new stdclass();
+$lang->bear->menu = new stdclass;
+$lang->bear->menu->setting     = 'Setting|bear|setting|';
+$lang->bear->menu->batchSubmit = 'Batch Submit|bear|batchsubmit|';
+$lang->bear->menu->log         = 'Log|bear|log|';
 
 $lang->error = new stdclass();
 $lang->error->length       = array('<strong>%s</strong> Length Error. It should be <strong>%s</strong>', '<strong>%s</strong> should be <= <strong>%s</strong> and >= <strong>%s</strong>。');
@@ -536,6 +545,7 @@ $lang->article->layout     = 'Layout';
 
 $lang->article->forward2Blog     = 'To Blog';
 $lang->article->forward2Forum    = 'To Forum';
+$lang->article->forward2Baidu    = 'To Baidu';
 $lang->article->selectCategories = 'Select Category';
 $lang->article->selectBoard      = 'Select Board';
 $lang->article->confirmReject    = 'Do you want to reject it?';
@@ -1184,14 +1194,20 @@ $lang->forum->setting    = 'Forum Settings';
 $lang->forum->postReview = 'Post Review';
 $lang->forum->allBoards  = 'All Boards';
 $lang->forum->index      = 'Index';
+$lang->forum->bindWechat = 'Bind Wechat';
 
 $lang->forum->updateDesc    = 'Number of threads on each board will be updated.';
 $lang->forum->successUpdate = 'Done!';
+$lang->forum->bindWechatTip = 'Posting function sets the limit for binding WeChat, please bind to WeChat member first.';
 
 $lang->forum->indexModeOptions = array();
 $lang->forum->indexModeOptions['board']  = 'Boards';
 $lang->forum->indexModeOptions['latest'] = 'Latest Thread';
 $lang->forum->indexModeOptions['stick']  = 'Sticky Thread';
+
+$lang->forum->bindWechatOptions = array();
+$lang->forum->bindWechatOptions['open']  = 'Open';
+$lang->forum->bindWechatOptions['close'] = 'Close';
 
 $lang->pager->noRecord      = '';
 $lang->pager->digest        = str_replace('Record', 'Theme', $lang->pager->digest);
@@ -1737,7 +1753,7 @@ $lang->order->applyRefund    = 'Apply Refund';
 $lang->order->wechatpay      = 'Wechat pay';
 $lang->order->scanCode       = 'Pay by wechat qrcode';
 $lang->order->wechatScan     = 'Please scan the qrcode <br> by wechat.';
-$lang->order->isWechat       = 'Tips: WeChat browser does not support Alipay. If you have to use Alipay, copy the URL to others browsers and then pay there.';
+$lang->order->inWechatTip    = 'Tips: WeChat browser does not support Alipay. If you have to use Alipay, copy the URL to others browsers and then pay there.';
 
 $lang->order->confirmLimit         = 'Receiving Cyle';
 $lang->order->expireLimit          = 'Order Expiration';
@@ -1987,13 +2003,14 @@ $lang->product->setjs        = 'JS Settings';
 $lang->product->files        = 'File';
 $lang->product->images       = 'Image';
 $lang->product->addToCart    = "<i class='icon icon-shopping-cart'></i> Add to Cart";
-$lang->product->count        = 'Count';
-$lang->product->comments     = 'Comment';
-$lang->product->detail       = 'Details';
-$lang->product->setting      = 'Settings';
-$lang->product->soldout      = 'Out of Stock!';
-$lang->product->layout       = 'Layout';
-$lang->product->contact      = 'Contact';
+$lang->product->count         = 'Count';
+$lang->product->comments      = 'Comment';
+$lang->product->detail        = 'Details';
+$lang->product->setting       = 'Settings';
+$lang->product->soldout       = 'Out of Stock!';
+$lang->product->layout        = 'Layout';
+$lang->product->contact       = 'Contact';
+$lang->product->forward2Baidu = 'Submit to Baidu';
 
 $lang->product->orderBy = new stdclass();
 $lang->product->orderBy->time = 'Time';
@@ -2694,6 +2711,7 @@ $lang->thread->viewReplies     = 'View your reply';
 $lang->thread->stayCurrent     = 'Stay on the current page';
 $lang->thread->quoteTitle      = "<div class='quote-title'>Post by %s on %s</div>";    
 $lang->thread->replyFloor      = "Reply <strong>#%s</strong>";    
+$lang->thread->bindEmail       = 'Please bind Email';
 
 $lang->thread->score    = 'Points';
 $lang->thread->scoreSum = "<i class='text-warning icon icon-plus'><b>%s</b></i> ";
@@ -2818,7 +2836,6 @@ $lang->ui->execInfo        = "Operating Information";
 $lang->ui->templateName    = "Template";
 $lang->ui->currentTheme    = 'Current Theme';
 $lang->ui->internalTheme   = 'Built-in Theme';
-$lang->ui->uploadTheme     = 'Import Theme';
 $lang->ui->uploadPackage   = 'Upload Theme';
 $lang->ui->installTheme    = 'Install Theme';
 $lang->ui->importedBlocks  = 'Import Widget';
@@ -3365,6 +3382,7 @@ $lang->upgrade->fromVersions['6_7_1']    = '6.7.1';
 $lang->upgrade->fromVersions['7_0']      = '7.0';
 $lang->upgrade->fromVersions['7_0_1']    = '7.0.1';
 $lang->upgrade->fromVersions['7_1']      = '7.1';
+$lang->upgrade->fromVersions['7_2']      = '7.2';
 $lang->upgrade->fromVersions['7_3']      = '7.3';
 /* user */
 $lang->user->common    = 'User';
@@ -3601,10 +3619,13 @@ $lang->user->oauth->typeList['github'] = 'Github';
 $lang->user->oauth->typeList['facebook'] = 'Facebook';
 #$lang->user->oauth->typeList['google'] = 'Google';
 
+$lang->user->oauth->bindUser         = '绑定用户';
 $lang->user->oauth->lblWelcome       = 'Open Login';
 $lang->user->oauth->lblOtherLogin    = 'Other Login';
 $lang->user->oauth->lblProfile       = "Register a User";
 $lang->user->oauth->lblBind          = "User Binding";
+$lang->user->oauth->directBind       = "Direct Bind";
+$lang->user->oauth->lblBindCurrent   = "The current login user is %s，wechat user is %s";
 $lang->user->oauth->lblUnbind        = "Remove Binding";
 $lang->user->oauth->lblUnbindSuccess = "Binding removed!";
 $lang->user->oauth->lblUnbindFailed  = "Remove bnding failed!";
@@ -3966,9 +3987,9 @@ $lang->widget->default['5']['title'] = 'Quick Entry';
 $lang->widget->default['5']['type']  = 'commonMenu';
 $lang->widget->default['5']['grid']  = 4;
 
-//$lang->widget->default['6']['title'] = 'Zsite Dynamic';
-//$lang->widget->default['6']['type']  = 'chanzhiDynamic';
-//$lang->widget->default['6']['grid']  = 4;
+$lang->widget->default['6']['title'] = 'Zsite Dynamic';
+$lang->widget->default['6']['type']  = 'chanzhiDynamic';
+$lang->widget->default['6']['grid']  = 4;
 
 $lang->widget->typeList = new stdclass();
 $lang->widget->typeList->latestOrder    = 'Latest Order';

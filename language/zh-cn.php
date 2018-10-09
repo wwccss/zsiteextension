@@ -227,6 +227,7 @@ $lang->designMenus->block     = array('link' => '区块|block|admin|', 'alias' =
 $lang->designMenus->nav       = array('link' => '导航|nav|admin|');
 $lang->designMenus->component = array('link' => '组件|ui|component|', 'alias' => 'effect,browsesource');
 $lang->designMenus->senior    = array('link' => '高级|ui|editTemplate|');
+$lang->designMenus->others    = array('link' => '设置|ui|others|');
 
 $lang->article = new stdclass();
 $lang->article->menu = new stdclass();
@@ -306,7 +307,6 @@ $lang->security->menu->log         = '登录日志|user|adminlog|';
 $lang->interface = new stdclass();
 $lang->interface->menu = new stdclass();
 $lang->interface->menu->oauth = '开放登录|site|setoauth|';
-$lang->interface->menu->bear  = array('link' => '熊掌号|bear|setting|', 'alias' => 'log,sync');
 $lang->interface->menu->mail  = array('link' => '发信设置|mail|admin|', 'alias' => 'detect,edit,save,test');
 
 $lang->score->menu = new stdclass();
@@ -1800,7 +1800,7 @@ $lang->order->applyRefund    = '申请退款';
 $lang->order->wechatpay      = '微信支付';
 $lang->order->scanCode       = '微信扫码支付';
 $lang->order->wechatScan     = '请使用微信扫一扫<br>扫描二维码支付';
-$lang->order->isWechat       = '注意：微信浏览器不支持支付宝支付，如需使用支付宝支付，请复制本站网址到其他浏览器进行操作';
+$lang->order->inWechatTip    = '提示：微信浏览器不支持支付宝支付，如需使用支付宝支付，请复制本页网址到其他浏览器进行操作';
 
 $lang->order->confirmLimit         = '确认收货周期';
 $lang->order->expireLimit          = '订单过期时间';
@@ -2777,7 +2777,6 @@ if(!isset($lang->pager->settedInForum))
     $lang->pager->noRecord = '';
     $lang->pager->digest   = str_replace('记录', '回帖', $lang->pager->digest);
 }
-
 /* tree */
 $lang->tree->add         = "添加";
 $lang->tree->edit        = "编辑";
@@ -2887,7 +2886,6 @@ $lang->ui->templateName    = "模板";
 $lang->ui->currentTheme    = '当前主题';
 $lang->ui->internalTheme   = '内置主题';
 $lang->ui->uploadPackage   = '上传主题包';
-$lang->ui->uploadTheme     = '导入主题';
 $lang->ui->installTheme    = '导入主题';
 $lang->ui->importedBlocks  = '导入区块';
 $lang->ui->matchedBlock    = '对应区块';
