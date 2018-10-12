@@ -721,7 +721,7 @@ $lang->bear->submitType = '推送类型';
 $lang->bear->id       = '编号';
 $lang->bear->time     = '提交时间';
 $lang->bear->url      = '资源地址';
-$lang->bear->auto     = '资源地址';
+$lang->bear->auto     = '自动同步';
 $lang->bear->status   = '状态';
 $lang->bear->response = '提交结果';
 $lang->bear->account  = '提交人';
@@ -761,7 +761,7 @@ $lang->bear->typeList[4] = '政府';
 $lang->bear->typeList[5] = '其他组织';
 
 $lang->bear->logModes = new stdclass();
-$lang->bear->logModes->yestoday = '昨日';
+$lang->bear->logModes->yesterday = '昨日';
 $lang->bear->logModes->today    = '今日';
 $lang->bear->logModes->weekly   = '最近一周';
 $lang->bear->logModes->monthly  = '最近30天';
@@ -2650,7 +2650,7 @@ $lang->stat->itemList->desktop = '桌面设备';
 $lang->stat->itemList->mobile  = '移动设备';
 
 $lang->stat->trafficModes = new stdclass();
-$lang->stat->trafficModes->yestoday = '昨日';
+$lang->stat->trafficModes->yesterday = '昨日';
 $lang->stat->trafficModes->today    = '今日';
 $lang->stat->trafficModes->weekly   = '最近一周';
 $lang->stat->trafficModes->monthly  = '最近30天';
@@ -3184,6 +3184,12 @@ $lang->ui->folderList->order   = '订单';
 $lang->ui->folderList->user    = '会员';
 $lang->ui->folderList->message = '评论留言';
 $lang->ui->folderList->forum   = '论坛';
+
+$lang->ui->folderAlias = new stdclass();
+$lang->ui->folderAlias->blog   = 'article';
+$lang->ui->folderAlias->page   = 'article';
+$lang->ui->folderAlias->thread = 'forum';
+$lang->ui->folderAlias->reply  = 'forum';
 
 $lang->ui->settingList['display']   = '显示设置';
 $lang->ui->settingList['browse']    = '列表设置';

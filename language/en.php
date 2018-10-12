@@ -227,6 +227,7 @@ $lang->designMenus->block     = array('link' => 'Widget|block|admin|', 'alias' =
 $lang->designMenus->nav       = array('link' => 'Nav|nav|admin|');
 $lang->designMenus->component = array('link' => 'CMPT|ui|component|', 'alias' => 'effect,browsesource');
 $lang->designMenus->senior    = array('link' => 'Senior|ui|editTemplate|');
+$lang->designMenus->others    = array('link' => 'Setting|ui|others|');
 
 $lang->article = new stdclass();
 $lang->article->menu = new stdclass();
@@ -306,7 +307,6 @@ $lang->security->menu->log         = 'Login Log|user|adminlog|';
 $lang->interface = new stdclass();
 $lang->interface->menu = new stdclass();
 $lang->interface->menu->oauth = 'Social Login|site|setoauth|';
-$lang->interface->menu->bear  = array('link' => 'Bear|bear|setting|', 'alias' => 'log,sync');
 $lang->interface->menu->mail  = array('link' => 'Email|mail|admin|', 'alias' => 'detect,edit,save,test');
 
 $lang->score->menu = new stdclass();
@@ -708,6 +708,67 @@ $lang->backup->error->backupTemplate = "Template backup failed. Error %s";
 
 $lang->js->backuping = 'Backing up...';
 $lang->js->restoring = 'Restoring...';
+/* bear */
+$lang->bear->common     = 'Baidu bear';
+$lang->bear->setting    = 'Bear setting';
+$lang->bear->name       = 'Bear name';
+$lang->bear->type       = 'Type';
+$lang->bear->appID      = 'appID';
+$lang->bear->token      = 'Token';
+$lang->bear->autoSync   = 'Auto Submit';
+$lang->bear->submitType = 'Submit type';
+
+$lang->bear->id       = 'ID';
+$lang->bear->time     = 'Submit Time';
+$lang->bear->url      = 'Url';
+$lang->bear->auto     = 'Auto';
+$lang->bear->status   = 'Status';
+$lang->bear->response = 'Response';
+$lang->bear->account  = 'Submit by';
+
+$lang->bear->begin         = 'Start Date';
+$lang->bear->end           = 'End Date';
+$lang->bear->submit        = 'Submit';
+$lang->bear->log           = 'Submit log';
+$lang->bear->batchSubmit   = 'Batch Submit';
+$lang->bear->submitSuccess = 'Successfully Submit';
+$lang->bear->submitFail    = 'Submit Fail';
+$lang->bear->submitResult  = "Success，Add <span class='text-success'> %s </span> records；";
+
+$lang->bear->notices = array();
+$lang->bear->notices['not_same_site'] = " %s domain error.";
+$lang->bear->notices['not_valid']     = "Not valid url.";
+
+$lang->bear->submitTypes = array();
+$lang->bear->submitTypes['realtime'] = 'New';
+$lang->bear->submitTypes['batch']    = 'history';
+
+$lang->bear->syncObjects = new stdclass;
+$lang->bear->syncObjects->article = 'article';
+$lang->bear->syncObjects->product = 'product';
+$lang->bear->syncObjects->blog    = 'blog';
+$lang->bear->syncObjects->page    = 'page';
+
+$lang->bear->placeholder = new stdclass;
+$lang->bear->placeholder->appID = 'The ID of baidu bear';
+$lang->bear->placeholder->token = 'Key for Push Application on Baidu Bear';
+
+$lang->bear->typeList = array();
+$lang->bear->typeList[1] = 'personal';
+$lang->bear->typeList[2] = 'media';
+$lang->bear->typeList[3] = 'enterprise';
+$lang->bear->typeList[4] = 'government';
+$lang->bear->typeList[5] = 'other';
+
+$lang->bear->logModes = new stdclass();
+$lang->bear->logModes->yesterday = 'yesterday';
+$lang->bear->logModes->today     = 'today';
+$lang->bear->logModes->weekly    = 'In 7 days';
+$lang->bear->logModes->monthly   = 'In 30 days';
+
+$lang->bear->submitStatusList = array();
+$lang->bear->submitStatusList['success'] = 'success';
+$lang->bear->submitStatusList['fail']    = 'fail';
 /* block */
 $lang->block->common          = 'Widget';
 $lang->block->id              = 'ID';
@@ -2120,6 +2181,8 @@ $lang->reply->noReply['readonly'] = 'Can not reply in readonly board';
 
 $lang->reply->noEdit = array();
 $lang->reply->noEdit['readonly']  = 'Can not edit in readonly board';
+
+$lang->reply->bindEmail = 'Please bind email first.';
 /* score */
 $lang->score->back        = 'Back';
 $lang->score->rankingList = 'Ranking';
@@ -2601,7 +2664,7 @@ $lang->stat->itemList->desktop = 'Desktop';
 $lang->stat->itemList->mobile  = 'Mobile';
 
 $lang->stat->trafficModes = new stdclass();
-$lang->stat->trafficModes->yestoday = 'Yesterday';
+$lang->stat->trafficModes->yesterday = 'Yesterday';
 $lang->stat->trafficModes->today    = 'Today';
 $lang->stat->trafficModes->weekly   = 'Last 7 Days';
 $lang->stat->trafficModes->monthly  = 'Last 30 Days';
@@ -3135,6 +3198,12 @@ $lang->ui->folderList->order   = 'Order';
 $lang->ui->folderList->user    = 'User';
 $lang->ui->folderList->message = 'Message';
 $lang->ui->folderList->forum   = 'Forum';
+
+$lang->ui->folderAlias = new stdclass();
+$lang->ui->folderAlias->blog   = 'article';
+$lang->ui->folderAlias->page   = 'article';
+$lang->ui->folderAlias->thread = 'forum';
+$lang->ui->folderAlias->reply  = 'forum';
 
 $lang->ui->settingList['display']   = 'Display';
 $lang->ui->settingList['browse']    = 'Browse Page';
