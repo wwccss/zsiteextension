@@ -1827,6 +1827,7 @@ $lang->order->wechatpayAppid     = '公众号APPID';
 $lang->order->wechatpayMchid     = '商户号';
 $lang->order->wechatpayApiKey    = '支付密钥';
 $lang->order->wechatpayAppSecret = '公众号密钥';
+$lang->order->wechatpayH5Status  = 'H5支付';
 $lang->order->wechatpayNote      = '如果微信长时间未打开，建议您返回选择其他方式';
 
 $lang->order->placeholder = new stdclass();
@@ -2132,6 +2133,10 @@ $lang->product->browseOptions['list'] = '列表模式';
 $lang->product->stockOptions = array();
 $lang->product->stockOptions[0] = '关闭';
 $lang->product->stockOptions[1] = '开启';
+
+$lang->product->h5payStatus = array();
+$lang->product->h5payStatus[1] = '关闭';
+$lang->product->h5payStatus[2] = '开启';
 
 $lang->product->viewsOptions = array();
 $lang->product->viewsOptions[1] = '显示';

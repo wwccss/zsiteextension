@@ -1841,6 +1841,7 @@ $lang->order->wechatpayAppid     = 'APPID of wechat public';
 $lang->order->wechatpayMchid     = "Merchant's id";
 $lang->order->wechatpayApiKey    = "wechatpay's key";
 $lang->order->wechatpayAppSecret = "wechat public's key";
+$lang->order->wechatpayH5Status  = 'wechat H5 payment';
 $lang->order->wechatpayNote      = 'Please return and pay by other method, if wechat timeout';
 
 $lang->order->placeholder = new stdclass();
@@ -2146,6 +2147,10 @@ $lang->product->browseOptions['list'] = 'List Mode';
 $lang->product->stockOptions = array();
 $lang->product->stockOptions[0] = 'Off';
 $lang->product->stockOptions[1] = 'On';
+
+$lang->product->h5payStatus = array();
+$lang->product->h5payStatus[1] = 'Off';
+$lang->product->h5payStatus[2] = 'On';
 
 $lang->product->viewsOptions = array();
 $lang->product->viewsOptions[1] = 'Show';
