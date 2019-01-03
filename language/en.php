@@ -2148,9 +2148,9 @@ $lang->product->stockOptions = array();
 $lang->product->stockOptions[0] = 'Off';
 $lang->product->stockOptions[1] = 'On';
 
-$lang->product->h5payStatus = array();
-$lang->product->h5payStatus[1] = 'Off';
-$lang->product->h5payStatus[2] = 'On';
+$lang->product->h5api = array();
+$lang->product->h5api['close'] = 'Off';
+$lang->product->h5api['open']  = 'On';
 
 $lang->product->viewsOptions = array();
 $lang->product->viewsOptions[1] = 'Show';

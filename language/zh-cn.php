@@ -2134,9 +2134,9 @@ $lang->product->stockOptions = array();
 $lang->product->stockOptions[0] = '关闭';
 $lang->product->stockOptions[1] = '开启';
 
-$lang->product->h5payStatus = array();
-$lang->product->h5payStatus[1] = '关闭';
-$lang->product->h5payStatus[2] = '开启';
+$lang->product->h5api = array();
+$lang->product->h5api['close'] = '关闭';
+$lang->product->h5api['open']  = '开启';
 
 $lang->product->viewsOptions = array();
 $lang->product->viewsOptions[1] = '显示';
