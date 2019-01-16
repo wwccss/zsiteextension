@@ -462,9 +462,13 @@ $lang->address->phone   = '联系电话';
 $lang->address->zipcode = '邮政编码';
 $lang->address->contact = '联系人';
 
-$lang->address->browse = '地址列表';
-$lang->address->create = '添加新地址';
-$lang->address->edit   = '编辑地址';
+$lang->address->browse     = '收货地址';
+$lang->address->create     = '添加新地址';
+$lang->address->edit       = '编辑地址';
+$lang->address->default    = '默认';
+$lang->address->manage     = '管理';
+$lang->address->manageDone = '完成';
+
 /* admin */ 
 $lang->admin->common        = '后台管理';
 $lang->admin->index         = '首页';
@@ -2041,6 +2045,7 @@ $lang->product->stock     = '库存';
 $lang->product->negotiate = '面议';
 
 $lang->product->list         = '产品列表';
+$lang->product->view         = '产品详情';
 $lang->product->hot          = '热门产品';
 $lang->product->admin        = '维护产品';
 $lang->product->create       = '添加产品';
@@ -2050,7 +2055,7 @@ $lang->product->setcss       = '设置CSS';
 $lang->product->setjs        = '设置JS';
 $lang->product->files        = '附件';
 $lang->product->images       = '图片';
-$lang->product->addToCart    = "<i class='icon icon-shopping-cart'></i> 加入购物车";
+$lang->product->addToCart    = '加入购物车';
 $lang->product->count        = '数量';
 $lang->product->comments     = '评论';
 $lang->product->detail       = '查看详情';

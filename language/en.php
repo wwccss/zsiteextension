@@ -462,9 +462,13 @@ $lang->address->phone   = 'Phone';
 $lang->address->zipcode = 'zip code';
 $lang->address->contact = 'Contact';
 
-$lang->address->browse = 'Address';
-$lang->address->create = 'Add';
-$lang->address->edit   = 'Edit';
+$lang->address->browse     = 'Address';
+$lang->address->create     = 'Add';
+$lang->address->edit       = 'Edit';
+$lang->address->default    = 'Default';
+$lang->address->manage     = 'Manage';
+$lang->address->manageDone = 'Done';
+
 /* admin */
 $lang->admin->common        = 'Admin';
 $lang->admin->index         = 'Home';
@@ -2055,6 +2059,7 @@ $lang->product->stock     = 'Inventory';
 $lang->product->negotiate = 'Negotiate';
 
 $lang->product->list         = 'Products';
+$lang->product->view         = 'View';
 $lang->product->hot          = 'Hot';
 $lang->product->admin        = 'Manage';
 $lang->product->create       = 'Add';
@@ -2064,7 +2069,7 @@ $lang->product->setcss       = 'CSS Settings';
 $lang->product->setjs        = 'JS Settings';
 $lang->product->files        = 'File';
 $lang->product->images       = 'Image';
-$lang->product->addToCart    = "<i class='icon icon-shopping-cart'></i> Add to Cart";
+$lang->product->addToCart    = 'Add to Cart';
 $lang->product->count         = 'Count';
 $lang->product->comments      = 'Comment';
 $lang->product->detail        = 'Details';
