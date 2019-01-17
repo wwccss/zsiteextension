@@ -468,6 +468,8 @@ $lang->address->edit       = '编辑地址';
 $lang->address->default    = '默认';
 $lang->address->manage     = '管理';
 $lang->address->manageDone = '完成';
+$lang->address->allDelete  = '全选';
+$lang->address->deleteEmptyIDs  = '未选择删除项';
 
 /* admin */ 
 $lang->admin->common        = '后台管理';
