@@ -1654,7 +1654,7 @@ $lang->comment->common       = 'Comment';
 $lang->comment->id           = 'ID';
 $lang->comment->type         = 'Type';
 $lang->comment->from         = 'From';
-$lang->comment->content      = 'Text';
+$lang->comment->content      = 'Add Message';
 $lang->comment->phone        = 'Content';
 $lang->comment->mobile       = 'Mobile';
 $lang->comment->qq           = 'QQ';
@@ -1686,6 +1686,10 @@ $lang->comment->confirmPassPre      = 'Do you want to pass previous comments? ';
 
 $lang->comment->statusList[0] = 'Not Reviewed';
 $lang->comment->statusList[1] = 'Reviewed';
+
+$lang->comment->defaultNickname = 'Anonymity';
+$lang->comment->submit = 'Submit';
+$lang->comment->submitting = 'Submitting';
 
 $lang->message->replyItem   = "<dd><strong>%s</strong> replied on <em>%s</em> about %s</dd>";
 $lang->comment->replyItem   = "<dd><strong>%s</strong> replied on <em>%s</em> about %s</dd>";
@@ -1803,6 +1807,7 @@ $lang->order->submit         = 'Submit';
 $lang->order->cancel         = 'Cancel';
 $lang->order->pay            = 'Checkout';
 $lang->order->goToPay        = 'Order has been placed. If paid, please go to My Order/My License to find your license.';
+$lang->order->goToCart       = 'Back to cart';
 $lang->order->editPrice      = 'Edit Price';
 $lang->order->return         = 'Collect';
 $lang->order->refund         = 'Refund';
@@ -3285,6 +3290,15 @@ $lang->ui->files->default->article['blog/footer'] = 'Blog Bottom';
 
 $lang->ui->files->default->article['page/view'] = 'Pages';
 
+$lang->ui->files->default->blog = array();
+$lang->ui->files->default->blog['header'] = 'Blog Header';
+$lang->ui->files->default->blog['index']  = 'Blog List';
+$lang->ui->files->default->blog['view']   = 'Blog Details';
+$lang->ui->files->default->blog['footer'] = 'Blog Bottom';
+
+$lang->ui->files->default->page = array();
+$lang->ui->files->default->page['view'] = 'Pages';
+
 $lang->ui->files->default->product = array();
 $lang->ui->files->default->product['browse']      = 'Products';
 $lang->ui->files->default->product['browse.card'] = 'View Card';
@@ -3501,6 +3515,13 @@ $lang->user->thread      = 'Thread';
 $lang->user->messages    = 'Message';
 $lang->user->reply       = 'Reply';
 $lang->user->submission  = 'Submission';
+
+$lang->user->noLogged       = "NO LOGIN";
+$lang->user->clickLogin     = "click login";
+$lang->user->myScore        = "my score";
+$lang->user->totalScore     = "total score";
+$lang->user->levelScore     = "level score";
+$lang->user->scoreRecharge  = "score recharge";
 
 $lang->user->userHistory       = "User History";
 $lang->user->threadHistory     = "Post";

@@ -99,6 +99,7 @@ $lang->noResultsMatch = '没有匹配的选项';
 $lang->alias          = '搜索引擎优化使用，可使用英文或数字';
 $lang->keywordsHolder = '多个关键字中间用逗号隔开';
 $lang->autoUpgrade    = '自动升级';
+$lang->detail         = '详情';
 
 $lang->setOkFile = <<<EOT
 <h5>请按照下面的步骤操作以确认您的管理员身份。</h5>
@@ -1640,7 +1641,7 @@ $lang->comment->common       = '评论';
 $lang->comment->id           = '编号';
 $lang->comment->type         = '类型';
 $lang->comment->from         = '称呼';
-$lang->comment->content      = '内容';
+$lang->comment->content      = '添加你的评论';
 $lang->comment->phone        = '电话';
 $lang->comment->mobile       = '手机';
 $lang->comment->qq           = 'QQ';
@@ -1672,6 +1673,10 @@ $lang->comment->confirmPassPre      = '您确定要通过之前的评论吗？';
 
 $lang->comment->statusList[0] = '未审核';
 $lang->comment->statusList[1] = '已审核';
+
+$lang->comment->defaultNickname = '匿名';
+$lang->comment->submit = '发表评论';
+$lang->comment->submitting = '稍后';
 
 $lang->message->replyItem   = "<dd><strong>%s</strong> 于 <em>%s</em> 回复：%s</dd>";
 $lang->comment->replyItem   = "<dd><strong>%s</strong> 于 <em>%s</em> 回复：%s</dd>";
@@ -1789,6 +1794,7 @@ $lang->order->submit         = '提交订单';
 $lang->order->cancel         = '取消';
 $lang->order->pay            = '支付';
 $lang->order->goToPay        = '订单创建成功，请到支付页面完成付款。';
+$lang->order->goToCart       = '返回购物车';
 $lang->order->editPrice      = '改价';
 $lang->order->return         = '收款';
 $lang->order->refund         = '退款';
@@ -1806,7 +1812,7 @@ $lang->order->track          = '物流';
 $lang->order->life           = '订单跟踪';
 $lang->order->days           = '天';
 $lang->order->deliveryInfo   = '查看详情';
-$lang->order->backToCart     = '返回购物车修改';
+$lang->order->backToCart     = '修改';
 $lang->order->paid           = '我已付款';
 $lang->order->products       = '订单产品';
 $lang->order->selectPayment  = '选择支付方式';
@@ -3273,6 +3279,15 @@ $lang->ui->files->default->article['blog/footer'] = '博客底部';
 
 $lang->ui->files->default->article['page/view'] = '单页';
 
+$lang->ui->files->default->blog = array();
+$lang->ui->files->default->blog['header'] = '博客头部';
+$lang->ui->files->default->blog['index']  = '博客列表';
+$lang->ui->files->default->blog['view']   = '博客详情';
+$lang->ui->files->default->blog['footer'] = '博客底部';
+
+$lang->ui->files->default->page = array();
+$lang->ui->files->default->page['view'] = '单页';
+
 $lang->ui->files->default->product = array();
 $lang->ui->files->default->product['browse']      = '产品列表';
 $lang->ui->files->default->product['browse.card'] = '卡片视图';
@@ -3482,13 +3497,19 @@ $lang->user->certifyNow      = '立即认证';
 $lang->user->checkMobile        = '手机认证';
 $lang->user->checkMobileSuccess = '手机认证成功';
 
-$lang->user->type        = '账户类型';
-$lang->user->profile     = '个人信息';
-$lang->user->editProfile = '编辑信息';
-$lang->user->thread      = '我的主题';
-$lang->user->messages    = '我的消息';
-$lang->user->reply       = '我的回贴';
-$lang->user->submission  = '我的投稿';
+$lang->user->type           = '账户类型';
+$lang->user->profile        = '个人信息';
+$lang->user->editProfile    = '编辑信息';
+$lang->user->thread         = '我的主题';
+$lang->user->messages       = '我的消息';
+$lang->user->reply          = '我的回贴';
+$lang->user->submission     = '我的投稿';
+$lang->user->noLogged       = "未登录";
+$lang->user->clickLogin     = "点击登录";
+$lang->user->myScore        = "我的积分";
+$lang->user->totalScore     = "共有消耗积分";
+$lang->user->levelScore     = "等级积分";
+$lang->user->scoreRecharge  = "积分充值";
 
 $lang->user->userHistory       = "用户历史数据";
 $lang->user->threadHistory     = "发帖";
