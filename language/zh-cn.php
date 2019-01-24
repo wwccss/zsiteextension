@@ -395,8 +395,12 @@ $lang->pager->nextPage     = "下一页";
 $lang->pager->summery      = "第 <strong>%s-%s</strong> 项，共 <strong>%s</strong> 项";
 
 $lang->date = new stdclass();
-$lang->date->minute = '分钟';
-$lang->date->day    = '天';
+$lang->date->minute       = '分钟';
+$lang->date->day          = '天';
+$lang->date->oneMinuteAgo = '1分钟前';
+$lang->date->minutesAgo   = '分钟前';
+$lang->date->oneHourAgo   = '1小时前';
+$lang->date->hoursAgo     = '小时前';
 
 if(!defined('DT_DATETIME1'))  define('DT_DATETIME1',  'Y-m-d H:i:s');
 if(!defined('DT_DATETIME2'))  define('DT_DATETIME2',  'y-m-d H:i');
@@ -414,7 +418,10 @@ $lang->k .= '蝉知建站系统，开源免费的CMS系统;';
 $lang->k .= 'cms系统，首选蝉知cms;';
 $lang->k .= '企业建站，就用蝉知cms;';
 $lang->k .= '蝉知企业建站系统，开源免费的php CMS系统';
-/* action */
+
+$lang->label = new stdclass();
+$lang->label->hot    = '热';
+$lang->label->latest = '新';/* action */
 $lang->action->common = '系统日志';
 
 $lang->action->objectType = '对象类型';
@@ -463,15 +470,14 @@ $lang->address->phone   = '联系电话';
 $lang->address->zipcode = '邮政编码';
 $lang->address->contact = '联系人';
 
-$lang->address->browse     = '收货地址';
-$lang->address->create     = '添加新地址';
-$lang->address->edit       = '编辑地址';
-$lang->address->default    = '默认';
-$lang->address->manage     = '管理';
-$lang->address->manageDone = '完成';
-$lang->address->allDelete  = '全选';
-$lang->address->deleteEmptyIDs  = '未选择删除项';
-
+$lang->address->browse         = '收货地址';
+$lang->address->create         = '添加新地址';
+$lang->address->edit           = '编辑地址';
+$lang->address->default        = '默认';
+$lang->address->manage         = '管理';
+$lang->address->manageDone     = '完成';
+$lang->address->allDelete      = '全选';
+$lang->address->deleteEmptyIDs = '未选择删除项';
 /* admin */ 
 $lang->admin->common        = '后台管理';
 $lang->admin->index         = '首页';
@@ -679,14 +685,6 @@ $lang->article->browseImage->positionList['right'] = '居右';
 
 $lang->article->browseImage->sizeList['small']  = '小图';
 $lang->article->browseImage->sizeList['middle'] = '中图';
-
-$lang->article->hot   = '热';
-$lang->article->views = '阅读';
-
-$lang->article->oneMinuteAgo = '1分钟前';
-$lang->article->minutesAgo = '分钟前';
-$lang->article->oneHourAgo = '1小时前';
-$lang->article->hoursAgo = '小时前';
 /* backup */
 $lang->backup->common   = '备份';
 $lang->backup->index    = '备份首页';
@@ -1641,7 +1639,7 @@ $lang->comment->common       = '评论';
 $lang->comment->id           = '编号';
 $lang->comment->type         = '类型';
 $lang->comment->from         = '称呼';
-$lang->comment->content      = '添加你的评论';
+$lang->comment->content      = '内容';
 $lang->comment->phone        = '电话';
 $lang->comment->mobile       = '手机';
 $lang->comment->qq           = 'QQ';
@@ -1654,17 +1652,18 @@ $lang->comment->viewComment  = '评论';
 $lang->comment->needCheck    = '评论通过审核后显示。';
 $lang->comment->receiveEmail = '接收邮件提醒';
 
-$lang->comment->submit        = '提交';
-$lang->comment->pass          = '通过';
-$lang->comment->reply         = '回复';
-$lang->comment->replyAt       = '回复于';
-$lang->comment->manage        = '评论管理';
-$lang->comment->delete        = '删除';
-$lang->comment->passPre       = '通过之前';
-$lang->comment->deletePre     = '删除之前';
-$lang->comment->commentTo     = '发表于';
-$lang->comment->commentAt     = '发表于';
-$lang->comment->deletedObject = '已删除项目';
+$lang->comment->inputPlaceholder        = '添加你的评论';
+$lang->comment->submit                  = '提交';
+$lang->comment->pass                    = '通过';
+$lang->comment->reply                   = '回复';
+$lang->comment->replyAt                 = '回复于';
+$lang->comment->manage                  = '评论管理';
+$lang->comment->delete                  = '删除';
+$lang->comment->passPre                 = '通过之前';
+$lang->comment->deletePre               = '删除之前';
+$lang->comment->commentTo               = '发表于';
+$lang->comment->commentAt               = '发表于';
+$lang->comment->deletedObject           = '已删除项目';
 
 $lang->comment->confirmDeleteSingle = '您确定要删除该评论吗？';
 $lang->comment->confirmDeletePre    = '您确定要删除之前的评论吗？';
@@ -1675,8 +1674,8 @@ $lang->comment->statusList[0] = '未审核';
 $lang->comment->statusList[1] = '已审核';
 
 $lang->comment->defaultNickname = '匿名';
-$lang->comment->submit = '发表评论';
-$lang->comment->submitting = '稍后';
+$lang->comment->submit          = '发表评论';
+$lang->comment->submitting      = '稍后';
 
 $lang->message->replyItem   = "<dd><strong>%s</strong> 于 <em>%s</em> 回复：%s</dd>";
 $lang->comment->replyItem   = "<dd><strong>%s</strong> 于 <em>%s</em> 回复：%s</dd>";
@@ -3504,7 +3503,7 @@ $lang->user->thread         = '我的主题';
 $lang->user->messages       = '我的消息';
 $lang->user->reply          = '我的回贴';
 $lang->user->submission     = '我的投稿';
-$lang->user->noLogged       = "未登录";
+$lang->user->unlogin        = "未登录";
 $lang->user->clickLogin     = "点击登录";
 $lang->user->myScore        = "我的积分";
 $lang->user->totalScore     = "共有消耗积分";
@@ -3682,15 +3681,16 @@ $lang->user->navGroups->user    = '个人信息';
 $lang->user->navGroups->order   = '订单信息';
 $lang->user->navGroups->message = '主题消息';
 
-$lang->user->control->menus['profile']    = '<i class="icon-user"></i> 个人信息 <i class="icon-chevron-right"></i>|user|profile';
-$lang->user->control->menus['message']    = '<i class="icon-comments-alt"></i> 我的消息 <i class="icon-chevron-right"></i>|user|message';
-$lang->user->control->menus['score']      = '<i class="icon-sun"></i> 积分详情 <i class="icon-chevron-right"></i>|user|score';
-$lang->user->control->menus['recharge']   = '<i class="icon-bolt"></i> 积分充值 <i class="icon-chevron-right"></i>|score|buyscore';
-$lang->user->control->menus['order']      = '<i class="icon-shopping-cart"></i> 我的订单 <i class="icon-chevron-right"></i>|order|browse';
-$lang->user->control->menus['address']    = '<i class="icon-map-marker"> </i> 地址管理 <i class="icon-chevron-right"></i>|address|browse';
-$lang->user->control->menus['thread']     = '<i class="icon-comment"></i> 我的主题 <i class="icon-chevron-right"></i>|user|thread';
-$lang->user->control->menus['reply']      = '<i class="icon-reply"></i> 我的回帖 <i class="icon-chevron-right"></i>|user|reply';
-$lang->user->control->menus['submission'] = '<i class="icon-envelope"></i> 我的投稿 <i class="icon-chevron-right"></i>|article|submission'; 
+$lang->user->control->menus['profile']    = '<i class="icon-user text-info"></i> 个人信息 <i class="icon-chevron-right"></i>|user|profile';
+$lang->user->control->menus['message']    = '<i class="icon-comment text-info"></i> 我的消息 <i class="icon-chevron-right"></i>|user|message';
+$lang->user->control->menus['score']      = '<i class="icon-sun text-info"></i> 积分详情 <i class="icon-chevron-right"></i>|user|score';
+$lang->user->control->menus['recharge']   = '<i class="icon-bolt text-success"></i> 积分充值 <i class="icon-chevron-right"></i>|score|buyscore';
+$lang->user->control->menus['order']      = '<i class="icon-th-list text-info"></i> 我的订单 <i class="icon-chevron-right"></i>|order|browse';
+$lang->user->control->menus['address']    = '<i class="icon-map-marker text-warning"> </i> 地址管理 <i class="icon-chevron-right"></i>|address|browse';
+$lang->user->control->menus['thread']     = '<i class="icon-th-large text-success"></i> 我的主题 <i class="icon-chevron-right"></i>|user|thread';
+$lang->user->control->menus['reply']      = '<i class="icon-reply text-info"></i> 我的回帖 <i class="icon-chevron-right"></i>|user|reply';
+$lang->user->control->menus['submission'] = '<i class="icon-envelope text-warning"></i> 我的投稿 <i class="icon-chevron-right"></i>|article|submission'; 
+$lang->user->control->menus['cart'] = '<i class="icon-shopping-cart text-danger"></i> 购物车 <i class="icon-chevron-right"></i>|cart|browse'; 
 
 $lang->user->log = new stdclass();
 $lang->user->log->common = '日志';

@@ -24,7 +24,7 @@ $lang->thanks = 'Thanks';
 
 $lang->chanzhiEPS     = 'Zsite';
 $lang->chanzhiEPSx    = 'ZSite';
-$lang->agreement      = "I have read and understood<a href='http://zpl.pub/page/zplv12.html' target='_blank'>《Z PUBLIC LICENSE 1.2》</a>. <span class='text-danger'>If not authorized, any signs/links of Zsite shouldn't be removed, hidden or covered.</span>";
+$lang->agreement      = "I have read and agreed tod<a href='http://zpl.pub/page/zplv12.html' target='_blank'> Z PUBLIC LICENSE 1.2</a>. <span class='text-danger'>If not authorized, any signs/links of Zsite shouldn't be removed, hidden or covered.</span>";
 $lang->poweredBy      = "<a href='http://www.zsite.net/?v=%s' target='_blank' title='%s'>%s</a>";
 $lang->poweredByAdmin = "<span id='poweredBy'> is powered by <a href='http://www.zsite.net/?v=%s' target='_blank' title='%s'>Zsite CMS %s</a></span>";
 $lang->newVersion     = "Note: Zsite has released <span id='version'></span> on <span id='releaseDate'></span>. <a href='' target='_blank' id='upgradeLink'>Download it NOW!</a>";
@@ -96,8 +96,8 @@ $lang->sendSuccess    = 'Done';
 $lang->deleteSuccess  = 'Deleted';
 $lang->fail           = 'Failed';
 $lang->noResultsMatch = 'No match found!';
-$lang->alias          = 'For SEO, use letters and numbers.';
-$lang->keywordsHolder = 'Use commas to separate keywords.';
+$lang->alias          = 'For SEO, enter letters and numbers.';
+$lang->keywordsHolder = 'Use commas to separate tags.';
 $lang->autoUpgrade    = 'Auto upgrade';
 
 $lang->setOkFile = <<<EOT
@@ -140,7 +140,7 @@ $lang->js->continue         = 'Continue';
 
 $lang->company = new stdclass();
 $lang->company->contactUs = 'Contact Us';
-$lang->company->contacts  = 'Contacts';
+$lang->company->contacts  = 'Contact';
 $lang->company->address   = 'Address';
 $lang->company->phone     = 'Phone';
 $lang->company->email     = 'Email';
@@ -186,7 +186,7 @@ $lang->menu->submission   = 'Submission|article|admin|type=submission&tab=user';
 $lang->menu->wechat       = 'Wechat|wechat|message|mode=replied&replied=0';
 
 $lang->menu->stat    = 'Stats|stat|traffic|';
-$lang->menu->tag     = 'Keywords|tag|admin|';
+$lang->menu->tag     = 'Tags|tag|admin|';
 $lang->menu->links   = 'Links|links|admin|';
 
 $lang->menu->ui       = 'UI|ui|settemplate|';
@@ -207,8 +207,8 @@ $lang->menu->interface     = 'API|site|setoauth|';
 $lang->menu->wechatSetting = 'Wechat Setting|wechat|admin|';
 $lang->menu->bear          = 'Bear|bear|setting|';
 
-$lang->menu->package    = 'Extensions|package|browse|';
-$lang->menu->themestore = 'Themes|ui|themestore|';
+$lang->menu->package    = 'Extension|package|browse|';
+$lang->menu->themestore = 'Theme|ui|themestore|';
 $lang->menu->community  = 'Community|admin|register|';
 
 $lang->menuGroups = new stdclass();
@@ -231,11 +231,11 @@ $lang->designMenus->others    = array('link' => 'Setting|ui|others|');
 
 $lang->article = new stdclass();
 $lang->article->menu = new stdclass();
-$lang->article->menu->browse       = 'Articles|article|admin|';
+$lang->article->menu->browse       = 'Article|article|admin|';
 
 $lang->blog = new stdclass();
 $lang->blog->menu = new stdclass();
-$lang->blog->menu->browse       = 'Blogs|article|admin|type=blog';
+$lang->blog->menu->browse       = 'Blog|article|admin|type=blog';
 
 $lang->page = new stdclass();
 
@@ -338,7 +338,7 @@ $lang->stat->menu->traffic  = 'Traffic|stat|traffic|';
 $lang->stat->menu->from     = 'Source|stat|from|';
 $lang->stat->menu->domains  = array('link' => 'Domain|stat|domainlist|', 'alias' => 'domaintrend,domainpage');
 $lang->stat->menu->search   = 'Search Engine|stat|search|';
-$lang->stat->menu->keywords = 'Keywords|stat|keywords|';
+$lang->stat->menu->keywords = 'Tags|stat|keywords|';
 $lang->stat->menu->client   = 'Clients|stat|client|type=browser';
 $lang->stat->menu->page     = 'Page Clicks|stat|page|';
 $lang->stat->menu->setStat  = 'Settings|stat|setting|';
@@ -394,8 +394,12 @@ $lang->pager->nextPage     = "Next";
 $lang->pager->summery      = "<strong>%s-%s</strong> of <strong>%s</strong>.";
 
 $lang->date = new stdclass();
-$lang->date->minute = 'min';
-$lang->date->day    = 'day';
+$lang->date->minute       = 'min';
+$lang->date->day          = 'day';
+$lang->date->oneMinuteAgo = '1 minute ago';
+$lang->date->minutesAgo   = 'minutes ago';
+$lang->date->oneHourAgo   = '1 hour ago';
+$lang->date->hoursAgo     = 'hours ago';
 
 if(!defined('DT_DATETIME1'))  define('DT_DATETIME1',  'Y-m-d H:i:s');
 if(!defined('DT_DATETIME2'))  define('DT_DATETIME2',  'y-m-d H:i');
@@ -413,6 +417,10 @@ $lang->k .= 'Zsite, free and open source CMS;';
 $lang->k .= 'Zsite, your #1 Choice;';
 $lang->k .= 'Website building, choose Zsite;';
 $lang->k .= 'Zsite, free and open source php CMS.';
+
+$lang->label = new stdclass();
+$lang->label->hot    = 'Hot';
+$lang->label->latest = 'New';
 /* action */
 $lang->action->common  = 'Logs';
 
@@ -448,30 +456,28 @@ $lang->action->label->paid              = 'Paid';
 $lang->action->label->savedpayment      = 'Saved';
 $lang->action->label->applyRefunded     = 'Refund';
 $lang->action->label->refunded          = 'Refunded';
-$lang->action->label->deliveried        = 'Dliveried';
+$lang->action->label->deliveried        = 'Deliveried';
 $lang->action->label->confirmedDelivery = 'Confirmed';
 $lang->action->label->edited            = 'Edited';
-$lang->action->label->finished          = 'Dinished';
+$lang->action->label->finished          = 'Finished';
 $lang->action->label->canceled          = 'Canceled';
 $lang->action->label->deleted           = 'Deleted';
 $lang->action->label->space             = '　';
 /* address */
 $lang->address->common  = 'Address';
 $lang->address->address = 'Address';
-$lang->address->phone   = 'Phone';
+$lang->address->phone   = 'CellPhone';
 $lang->address->zipcode = 'zip code';
 $lang->address->contact = 'Contact';
 
-$lang->address->browse     = 'Address';
-$lang->address->create     = 'Add';
-$lang->address->edit       = 'Edit';
-$lang->address->default    = 'Default';
-$lang->address->manage     = 'Manage';
-$lang->address->manageDone = 'Done';
-$lang->address->allDelete  = 'All';
-$lang->address->deleteEmptyIDs  = 'No Selected';
-
-
+$lang->address->browse         = 'Address';
+$lang->address->create         = 'Add';
+$lang->address->edit           = 'Edit';
+$lang->address->default        = 'Default';
+$lang->address->manage         = 'Manage';
+$lang->address->manageDone     = 'Done';
+$lang->address->allDelete      = 'All';
+$lang->address->deleteEmptyIDs = 'None Selected';
 /* admin */
 $lang->admin->common        = 'Admin';
 $lang->admin->index         = 'Home';
@@ -479,22 +485,22 @@ $lang->admin->checked       = 'Checked';
 
 $lang->admin->shortcuts = new stdclass();
 $lang->admin->shortcuts->common             = 'Shortcuts';
-$lang->admin->shortcuts->articleCategories  = 'Categories';
-$lang->admin->shortcuts->article            = 'Articles';
-$lang->admin->shortcuts->product            = 'Products';
+$lang->admin->shortcuts->articleCategories  = 'Category';
+$lang->admin->shortcuts->article            = 'Article';
+$lang->admin->shortcuts->product            = 'Product';
 $lang->admin->shortcuts->feedback           = 'Feedback';
 $lang->admin->shortcuts->site               = 'Settings';
 $lang->admin->shortcuts->logo               = 'Logo';
 $lang->admin->shortcuts->company            = 'Company';
-$lang->admin->shortcuts->contact            = 'Contacts';
+$lang->admin->shortcuts->contact            = 'Contact';
 
-$lang->admin->thread       = 'New Threads';
-$lang->admin->order        = 'New Orders';
+$lang->admin->thread       = 'New Thread';
+$lang->admin->order        = 'New Order';
 $lang->admin->feedback     = 'New Feedback';
 
 $lang->admin->adminEntry     = 'Warning! The admin entry is admin.php. Please rename it for security reasons.';
 
-$lang->admin->connectApiFail = "Can't connect to the chanzhi community, please <a href='javascritp:loaction.reload()'>retry</a> after check the internet connection.";
+$lang->admin->connectApiFail = "It cannot be connected to the Zsite community. Please <a href='javascritp:loaction.reload()'>retry</a> after check the internet connection.";
 $lang->admin->registerInfo   = "The site has binded to Zsite %s, %s";
 $lang->admin->registerPage   = 'Register Page';
 $lang->admin->rebind         = "Rebind";
@@ -503,18 +509,18 @@ $lang->admin->bindedInfo     = 'ZSite Account';
 $lang->js->confirmRebind = "Are you sure to rebind the account of Zsite?";
 
 $lang->admin->register = new stdclass();
-$lang->admin->register->common     = 'The page is to register with Zsite.';
+$lang->admin->register->common     = 'The page is to register in Zsite.';
 $lang->admin->register->caption    = 'Register';
-$lang->admin->register->lblAccount = 'Only letters and numbers are allowed. ';
-$lang->admin->register->lblPasswd  = 'Only letters and numbers are allowed. ';
+$lang->admin->register->lblAccount = 'letters and numbers only ';
+$lang->admin->register->lblPasswd  = 'letters and numbers only ';
 $lang->admin->register->submit     = 'Submit';
-$lang->admin->register->success    = "Submitted.";
+$lang->admin->register->success    = "Submitted";
 $lang->admin->register->update     = "Update information";
 
 $lang->admin->bind = new stdclass();
 $lang->admin->bind->caption = 'Zsite Account';
 $lang->admin->bind->submit  = 'Bind account';
-$lang->admin->bind->success = "Bind account successfully";
+$lang->admin->bind->success = "Binding account is done.";
 /* article */
 $lang->article->common      = 'Article';
 $lang->article->setting     = 'Basic Settings';
@@ -532,7 +538,7 @@ $lang->article->content    = 'Text';
 $lang->article->source     = 'Source';
 $lang->article->copySite   = 'Site';
 $lang->article->copyURL    = 'URL';
-$lang->article->keywords   = 'Keywords';
+$lang->article->keywords   = 'Tags';
 $lang->article->summary    = 'Summary';
 $lang->article->author     = 'Author';
 $lang->article->editor     = 'Edit';
@@ -540,7 +546,7 @@ $lang->article->addedDate  = 'Publish On';
 $lang->article->editedDate = 'Edit On';
 $lang->article->status     = 'Status';
 $lang->article->type       = 'Type';
-$lang->article->views      = 'Views';
+$lang->article->views      = 'View';
 $lang->article->comments   = 'Comment';
 $lang->article->stick      = 'Sticky';
 $lang->article->order      = 'Ranking';
@@ -560,7 +566,7 @@ $lang->article->confirmReject    = 'Do you want to reject it?';
 $lang->submission= new stdclass();
 $lang->submission->common  = 'Submit';
 $lang->submission->check   = 'Review';
-$lang->submission->list    = 'Submissions';
+$lang->submission->list    = 'Submission';
 $lang->submission->publish = 'Pass';
 $lang->submission->reject  = 'Reject';
 
@@ -577,7 +583,7 @@ $lang->submission->typeList['book']    = 'Book';
 $lang->article->onlyBody = 'Display body only (for custom).';
 
 $lang->article->list          = 'List';
-$lang->article->admin         = 'Maintain';
+$lang->article->admin         = 'Manage';
 $lang->article->create        = 'Add Article';
 $lang->article->setcss        = 'CSS Settings';
 $lang->article->setjs         = 'JS Settings';
@@ -587,7 +593,7 @@ $lang->article->images        = 'Image';
 
 $lang->article->submission     = 'Submit';
 $lang->article->submissionTime = 'Submit On';
-$lang->article->noSubmission   = 'You have no submissions yet. Submit and earn points NOW!';
+$lang->article->noSubmission   = 'You have no submissions yet. Submit and earn points!';
 
 $lang->article->orderBy = new stdclass();
 $lang->article->orderBy->time = 'Time';
@@ -655,9 +661,9 @@ $lang->article->forwardFrom = 'Repost from';
 $lang->article->noCategoriesTip = 'You have not added the categories, please add the categories at first';
 
 $lang->article->noCategories = array();
-$lang->article->noCategories['article'] = 'You have not added the categories for article, please add the categories at first.';
-$lang->article->noCategories['blog']    = 'You have not added the categories for blog, please add the categories at first.';
-$lang->article->noCategories['video']   = 'You have not added the categories for video, please add the categories at first.';
+$lang->article->noCategories['article'] = 'You have not added the categories for article. Please add the categories at first.';
+$lang->article->noCategories['blog']    = 'You have not added the categories for blog. Please add the categories at first.';
+$lang->article->noCategories['video']   = 'You have not added the categories for video. Please add the categories at first.';
 
 $lang->article->blog = new stdclass();
 $lang->article->blog->category                   = 'Category';
@@ -678,16 +684,7 @@ $lang->article->browseImage->positionList['left']  = 'Left';
 $lang->article->browseImage->positionList['right'] = 'Right';
 
 $lang->article->browseImage->sizeList['small']  = 'Small';
-$lang->article->browseImage->sizeList['middle'] = 'Middle';
-
-$lang->article->oneMinuteAgo = '1 minute ago';
-$lang->article->minutesAgo = 'minutes ago';
-$lang->article->oneHourAgo = '1 hour ago';
-$lang->article->hoursAgo = 'hours ago';
-
-$lang->article->hot   = 'Hot';
-$lang->article->views = 'Views';
-/* backup */
+$lang->article->browseImage->sizeList['middle'] = 'Middle';/* backup */
 $lang->backup->common   = 'Backup';
 $lang->backup->index    = 'Home';
 $lang->backup->history  = 'Bachup History';
@@ -707,7 +704,7 @@ $lang->backup->size  = 'Size';
 $lang->backup->waitting       = '<span id="backupType"></span>Processing. Please wait...';
 $lang->backup->confirmDelete  = 'Do you want to delete the backup?';
 $lang->backup->confirmRestore = 'Do you want to restore the backup?';
-$lang->backup->holdDays       = ' backup last %s days';
+$lang->backup->holdDays       = ' back up last %s days';
 
 $lang->backup->success = new stdclass();
 $lang->backup->success->backup  = 'Done!';
@@ -734,7 +731,7 @@ $lang->bear->autoSync   = 'Auto Submit';
 $lang->bear->submitType = 'Submit type';
 
 $lang->bear->id       = 'ID';
-$lang->bear->time     = 'Submit Time';
+$lang->bear->time     = 'Submit on';
 $lang->bear->url      = 'Url';
 $lang->bear->auto     = 'Auto';
 $lang->bear->status   = 'Status';
@@ -746,13 +743,13 @@ $lang->bear->end           = 'End Date';
 $lang->bear->submit        = 'Submit';
 $lang->bear->log           = 'Submit log';
 $lang->bear->batchSubmit   = 'Batch Submit';
-$lang->bear->submitSuccess = 'Successfully Submit';
-$lang->bear->submitFail    = 'Submit Fail';
-$lang->bear->submitResult  = "Success，Add <span class='text-success'> %s </span> records；";
+$lang->bear->submitSuccess = 'Submitted.';
+$lang->bear->submitFail    = 'Submitting failed.';
+$lang->bear->submitResult  = "Dine. Added <span class='text-success'> %s </span> records；";
 
 $lang->bear->notices = array();
 $lang->bear->notices['not_same_site'] = " %s domain error.";
-$lang->bear->notices['not_valid']     = "Not valid url.";
+$lang->bear->notices['not_valid']     = "Not valid URL.";
 
 $lang->bear->submitTypes = array();
 $lang->bear->submitTypes['realtime'] = 'New';
@@ -837,7 +834,7 @@ $lang->block->customStyleTip  = 'Custom color and backgroud of the block HERE';
 $lang->block->style           = 'Style';
 $lang->block->sort            = 'Sort';
 $lang->block->class           = 'CSS Class';
-$lang->block->subRegion       = 'SubLayout';
+$lang->block->subRegion       = 'Sub Layout';
 $lang->block->currentLayout   = 'Current Layout is %s';
 $lang->block->renameLayout    = 'Rename Plan';
 $lang->block->planName        = 'Plan Name';
@@ -904,7 +901,7 @@ $lang->block->addChild     = "Child";
 $lang->block->addRandom    = "Random";
 $lang->block->template     = "Template";
 $lang->block->create       = 'Add';
-$lang->block->browseBlocks = 'Widgets';
+$lang->block->browseBlocks = 'Widget';
 $lang->block->browseRegion = 'Layout Settings';
 $lang->block->edit         = 'Edit';
 $lang->block->view         = 'View';
@@ -1073,7 +1070,7 @@ $lang->book->editor      = 'Editor';
 $lang->book->addedDate   = 'Added On';
 $lang->book->editedDate  = 'Edited On';
 $lang->book->title       = 'Title';
-$lang->book->keywords    = 'Keywords';
+$lang->book->keywords    = 'Tags';
 $lang->book->summary     = 'Summary';
 $lang->book->content     = 'Content';
 $lang->book->alias       = 'Alias';
@@ -1118,7 +1115,7 @@ $lang->book->note->link      = 'Enter the link here. External link is OK.';
 $lang->cart->common = 'Shopping Cart';
 $lang->cart->browse = 'My Cart';
 
-$lang->cart->noProducts     = "Your shopping cart is Empty.";
+$lang->cart->noProducts     = "Your shopping cart is empty.";
 $lang->cart->pickProducts   = "Keep Shopping";
 $lang->cart->goAccount      = "Check Out";
 $lang->cart->goHome         = "Homepage";
@@ -1203,11 +1200,11 @@ $lang->file->size      = 'Size';
 $lang->file->addedBy   = 'Uploaded By';
 $lang->file->addedDate = 'Uploaded On';
 $lang->file->public    = 'Anonymous Download';
-$lang->file->downloads = 'Downloads';
+$lang->file->downloads = 'Download';
 $lang->file->score     = 'Points Required';
 $lang->file->setScore  = 'Points Settings';
 $lang->file->lblInfo   = 'Your points is <strong class="red">%s</strong>';
-$lang->file->confirm   = 'It costs you %s points to download this Plug-in.';
+$lang->file->confirm   = 'It costs you %s points to download this plug-in.';
 
 $lang->file->publics[0] = 'Please login';
 $lang->file->publics[1] = 'Enable';
@@ -1231,13 +1228,13 @@ $lang->file->nameEmpty        = "File name should not be blank.";
 $lang->file->copySuccess      = "Copy to clipboard";
 $lang->file->evilChar         = "Invalid Character";
 $lang->file->rebuildThumbs    = "%s has been finished.";
-$lang->file->noFlashTip       = "Flash extension is forbidden，please do the paste manually";
+$lang->file->noFlashTip       = "Flash extension is forbidden. Please do the paste manually";
 $lang->file->fontNotDownload  = "Download Font faild";
-$lang->file->fontPosition     = 'To build watermark need font file in %s path。';
+$lang->file->fontPosition     = 'To build watermark requires font file in %s path。';
 
 $lang->file->updateInvalidFiles = 'Update Invalid List';
 $lang->file->clearAllInvalid    = 'Delete All Invalid Files';
-$lang->file->fileTip            = 'Tips: Red represent the file has been deleted while there is data in database';
+$lang->file->fileTip            = 'Tips: Red means the file has been deleted with data in database';
 $lang->file->productTip         = 'Please upload the images they have the same aspect ratio.';
 
 $lang->file->dragFile      = 'Please drag files here';
@@ -1274,10 +1271,10 @@ $lang->forum->bindWechat = 'Bind Wechat';
 
 $lang->forum->updateDesc    = 'Number of threads on each board will be updated.';
 $lang->forum->successUpdate = 'Done!';
-$lang->forum->bindWechatTip = 'Posting function sets the limit for binding WeChat, please bind to WeChat member first.';
+$lang->forum->bindWechatTip = 'Posting sets the limit for binding WeChat. Please bind WeChat user first.';
 
 $lang->forum->indexModeOptions = array();
-$lang->forum->indexModeOptions['board']  = 'Boards';
+$lang->forum->indexModeOptions['board']  = 'Board';
 $lang->forum->indexModeOptions['latest'] = 'Latest Thread';
 $lang->forum->indexModeOptions['stick']  = 'Sticky Thread';
 
@@ -1296,7 +1293,7 @@ $lang->forum->postReviewOptions->close = 'Off';
 $lang->group->common             = 'Privilege';
 $lang->group->allGroups          = 'All Privileges';
 $lang->group->browse             = 'Group List';
-$lang->group->create             = 'Create a Group';
+$lang->group->create             = 'Create Group';
 $lang->group->edit               = 'Edit';
 $lang->group->copy               = 'Copy';
 $lang->group->delete             = 'Delete';
@@ -1357,9 +1354,9 @@ $lang->guarder->placeholder    = 'numbers/letters';
 $lang->guarder->password       = 'Password';
 $lang->guarder->passwordHolder = 'Enter current account password';
 $lang->guarder->identityTip    = 'Enter IP, Email, account, or sensitive words.';
-$lang->guarder->captchaTip     = 'Once security qyestions are set, the front will only call those questions at random.';
+$lang->guarder->captchaTip     = 'Once security questions are set, the front will only call those questions at random.';
 
-$lang->guarder->verify        = 'Current action requires admin verification for securities.';
+$lang->guarder->verify        = 'Current action requires admin verification for security reasons.';
 $lang->guarder->okFile        = 'File Mode';
 $lang->guarder->created       = 'Created and Continue';
 $lang->guarder->email         = 'Email verification';
@@ -1368,19 +1365,19 @@ $lang->guarder->captcha       = 'Verification Code';
 $lang->guarder->needVerify    = 'Admin verification is required.';
 $lang->guarder->emailFail     = 'Please enter correct verification code.';
 $lang->guarder->questionFail  = 'Please enter correct answers to security question.';
-$lang->guarder->verifySuccess = 'Verified! Please continue.';
+$lang->guarder->verifySuccess = 'Verified! Continue.';
 $lang->guarder->noConfigure   = "Email settings cannot be found.";
 $lang->guarder->noEmail       = "No Email address entered";
 $lang->guarder->noQuestion    = "No security questions set up.";
 $lang->guarder->noCaptcha     = "Email verification is disabled.";
-$lang->guarder->okFileVerify  = "Please create <span class='red'>%s</span> on your server. If this file exists already, reopen it and save again.";
+$lang->guarder->okFileVerify  = "Please create <span class='red'>%s</span> on your server. If this file exists, reopen it and save again.";
 $lang->guarder->sendSuccess   = 'Verification code has been sent to %s';
 $lang->guarder->options       = 'Verification';
 
 $lang->guarder->blacklistModes['all']      = 'All';
 $lang->guarder->blacklistModes['ip']       = 'IP';
 $lang->guarder->blacklistModes['account']  = 'Account';
-$lang->guarder->blacklistModes['keywords'] = 'Keywords';
+$lang->guarder->blacklistModes['keywords'] = 'Tags';
 $lang->guarder->blacklistModes['guard']    = 'Website';
 $lang->guarder->blacklistModes['email']    = 'Email';
 
@@ -1457,20 +1454,20 @@ $lang->index->contact = 'Contact Us';
 /* install */
 $lang->install->common  = 'Install';
 $lang->install->next    = 'Next';
-$lang->install->pre     = 'Return';
+$lang->install->pre     = 'Back';
 $lang->install->reload  = 'Refresh';
 $lang->install->error   = 'Error';
 
 $lang->install->start            = 'Install';
 $lang->install->keepInstalling   = 'Continue installation';
-$lang->install->welcome          = 'Thank you for choosing Zsite, the most powerful portal system!';
+$lang->install->welcome          = 'Thank you for choosing Zsite, the powerful CMS!';
 $lang->install->license          = 'License';
 $lang->install->desc             = <<<EOT
 <p>With Zsite, you can do</p>
 <blockquote>
   <ul>
     <li><strong>Branding</strong>: build official website and promote your brand to the world.</li>
-    <li><strong>Marketing</strong>: SEO, email, wechat, weibo, etc.</li>
+    <li><strong>Marketing</strong>: SEO, Email, Wechat, weibo, etc.</li>
     <li><strong>E-commerce</strong>: product demonstration and online sales.</li>
     <li><strong>CRM</strong>: aftersales support and maintain clients.</li>
   </ul>
@@ -1509,20 +1506,20 @@ $lang->install->chmod        = '"%s" must be writable. Command for Linux: <br />
 
 $lang->install->settingDB      = 'Database Settings';
 $lang->install->dbHost         = 'Database Host';
-$lang->install->dbHostNote     = 'If you have no access to 127.0.0.1, please try localhost.';
+$lang->install->dbHostNote     = 'If you have no access to 127.0.0.1, try localhost.';
 $lang->install->dbPort         = 'Database Port';
 $lang->install->dbUser         = 'Database User';
 $lang->install->dbPassword     = 'Database Password';
 $lang->install->dbName         = 'Database Name';
 $lang->install->dbPrefix       = 'Table Prefix';
 $lang->install->createDB       = 'Auto Create Database';
-$lang->install->clearDB        = 'Clear data if tables already exist.';
+$lang->install->clearDB        = 'Clear data if tables exist.';
 $lang->install->importDemoData = 'Import demo data';
 
 $lang->install->errorDBName        = "'.' is not allowed in database name.";
 $lang->install->errorConnectDB     = 'Database connection failed. ';
 $lang->install->errorCreateDB      = 'Database creation failed.';
-$lang->install->errorDBExists      = 'Database exists.  Go back and check the "Clear Data", then try it again.';
+$lang->install->errorDBExists      = 'Database exists. Go back and check the "Clear Data", then try it again.';
 $lang->install->errorCreateTable   = 'Table creation failed.';
 
 $lang->install->setConfig  = 'Database Config';
@@ -1590,7 +1587,7 @@ $lang->mail->sending        = "Sending an Email to %s. Please wait...";
 $lang->mail->successSended  = 'Email has been sent to %s.';
 $lang->mail->needConfigure  = 'Eamil configuration is not found. Please configure first.';
 $lang->mail->error          = 'Email address error. Please enter your Email address correcrly.'; 
-$lang->mail->trySendlater   = 'Try to send it again 3 mins later.'; 
+$lang->mail->trySendlater   = 'Try to send it again 3 minutes later.'; 
 
 $lang->mail->captcha     = 'Verification Code';
 $lang->mail->sendContent = <<<EOT
@@ -1654,7 +1651,7 @@ $lang->comment->common       = 'Comment';
 $lang->comment->id           = 'ID';
 $lang->comment->type         = 'Type';
 $lang->comment->from         = 'From';
-$lang->comment->content      = 'Add Message';
+$lang->comment->content      = 'Content';
 $lang->comment->phone        = 'Content';
 $lang->comment->mobile       = 'Mobile';
 $lang->comment->qq           = 'QQ';
@@ -1667,17 +1664,18 @@ $lang->comment->viewComment  = 'Comment';
 $lang->comment->needCheck    = 'Comment will be posted once reviewed.';
 $lang->comment->receiveEmail = 'Email notification';
 
-$lang->comment->submit        = 'Submit';
-$lang->comment->pass          = 'Pass';
-$lang->comment->reply         = 'Reply';
-$lang->comment->replyAt       = 'Replied on';
-$lang->comment->manage        = 'Manange Comments';
-$lang->comment->delete        = 'Delete';
-$lang->comment->passPre       = 'Pass Prev';
-$lang->comment->deletePre     = 'Delete Prev';
-$lang->comment->commentTo     = 'Commented on';
-$lang->comment->commentAt     = 'Commented on';
-$lang->comment->deletedObject = 'Deleted Comments';
+$lang->comment->inputPlaceholder        = 'Add Comment';
+$lang->comment->submit                  = 'Submit';
+$lang->comment->pass                    = 'Pass';
+$lang->comment->reply                   = 'Reply';
+$lang->comment->replyAt                 = 'Reply on';
+$lang->comment->manage                  = 'Manange Comment';
+$lang->comment->delete                  = 'Delete';
+$lang->comment->passPre                 = 'Pass Prev';
+$lang->comment->deletePre               = 'Delete Prev';
+$lang->comment->commentTo               = 'Comment on';
+$lang->comment->commentAt               = 'Comment on';
+$lang->comment->deletedObject           = 'Deleted Comment';
 
 $lang->comment->confirmDeleteSingle = 'Do you want to delete this comment?';
 $lang->comment->confirmDeletePre    = 'Do you want to delete previous comments?';
@@ -1687,9 +1685,9 @@ $lang->comment->confirmPassPre      = 'Do you want to pass previous comments? ';
 $lang->comment->statusList[0] = 'Not Reviewed';
 $lang->comment->statusList[1] = 'Reviewed';
 
-$lang->comment->defaultNickname = 'Anonymity';
-$lang->comment->submit = 'Submit';
-$lang->comment->submitting = 'Submitting';
+$lang->comment->defaultNickname = 'Anonymous';
+$lang->comment->submit          = 'Submit';
+$lang->comment->submitting      = 'Submitting';
 
 $lang->message->replyItem   = "<dd><strong>%s</strong> replied on <em>%s</em> about %s</dd>";
 $lang->comment->replyItem   = "<dd><strong>%s</strong> replied on <em>%s</em> about %s</dd>";
@@ -1704,7 +1702,7 @@ $lang->misc->support     = 'Technical Support';
 $lang->misc->userbook    = 'User Manual';
 $lang->misc->forum       = 'Forum';
 
-$lang->misc->thanksTitle      = 'Zsite is built on top of outstanding open source projects.';
+$lang->misc->thanksTitle      = 'Zsite is built on a outstanding open source projects.';
 $lang->misc->thanksFooter     = 'Thank %s for security check.';
 $lang->misc->thanksObjectName = 'http://www.zzsec.com/';
 /* nav */
@@ -1761,7 +1759,7 @@ $lang->order->productInfo       = 'Details';
 $lang->order->account           = 'Account';
 $lang->order->address           = 'Shipping Address';
 $lang->order->price             = 'Price';
-$lang->order->score             = 'Score';
+$lang->order->score             = 'Point';
 $lang->order->count             = 'Count';
 $lang->order->amount            = 'Amount';
 $lang->order->sn                = 'TSN';
@@ -1801,12 +1799,12 @@ $lang->order->view           = 'Details';
 $lang->order->setting        = 'System Settings';
 $lang->order->browse         = 'My Order';
 $lang->order->bought         = 'Purchased';
-$lang->order->createdSuccess = 'Order has been placed!';
+$lang->order->createdSuccess = 'Your order has been placed!';
 $lang->order->paidSuccess    = 'Thank you for your payment!';
 $lang->order->submit         = 'Submit';
 $lang->order->cancel         = 'Cancel';
 $lang->order->pay            = 'Checkout';
-$lang->order->goToPay        = 'Order has been placed. If paid, please go to My Order/My License to find your license.';
+$lang->order->goToPay        = 'Your order has been placed. If paid, please go to My Order/My License to find your license.';
 $lang->order->goToCart       = 'Back to cart';
 $lang->order->editPrice      = 'Edit Price';
 $lang->order->return         = 'Collect';
@@ -1830,7 +1828,7 @@ $lang->order->selectPayment  = 'Choose payment';
 $lang->order->settlement     = 'Checkout';
 $lang->order->check          = 'Settle Order';
 $lang->order->all            = 'All';
-$lang->order->applyRefund    = 'Apply Refund';
+$lang->order->applyRefund    = 'Apply for Refund';
 $lang->order->wechatpay      = 'Wechat pay';
 $lang->order->scanCode       = 'Pay by wechat qrcode';
 $lang->order->wechatScan     = 'Please scan the qrcode <br> by wechat.';
@@ -1858,11 +1856,11 @@ $lang->order->alipayKey   = 'Partner KEY';
 $lang->order->alipayEmail = 'Alipay Email';
 
 $lang->order->wechatpayAppid     = 'APPID of wechat public';
-$lang->order->wechatpayMchid     = "Merchant's id";
-$lang->order->wechatpayApiKey    = "wechatpay's key";
-$lang->order->wechatpayAppSecret = "wechat public's key";
+$lang->order->wechatpayMchid     = "Merchant ID";
+$lang->order->wechatpayApiKey    = "wechatpay key";
+$lang->order->wechatpayAppSecret = "wechat publicmkey";
 $lang->order->wechatpayH5Status  = 'wechat H5 payment';
-$lang->order->wechatpayNote      = 'Please return and pay by other method, if wechat timeout';
+$lang->order->wechatpayNote      = 'Please return and pay by other method, if wechat is timeout';
 
 $lang->order->placeholder = new stdclass();
 $lang->order->placeholder->pid   = 'Corporate identity to ID, 16 number begin with 2088.';
@@ -1925,8 +1923,8 @@ $lang->package->common        = 'Extension';
 $lang->package->browse        = 'View Extensions';
 $lang->package->install       = 'Install';
 $lang->package->installAuto   = 'Auto Install';
-$lang->package->installForce  = 'Mandatory Install';
-$lang->package->uninstall     = 'Uninstal';
+$lang->package->installForce  = 'Force Install';
+$lang->package->uninstall     = 'Uninstall';
 $lang->package->activate      = 'Activate';
 $lang->package->deactivate    = 'Disable';
 $lang->package->obtain        = 'Get Extensions';
@@ -1958,7 +1956,7 @@ $lang->package->abstract    = 'Introduction';
 $lang->package->site        = 'Official Website';
 $lang->package->addedTime   = 'Added On';
 $lang->package->updatedTime = 'Last Updated';
-$lang->package->downloads   = 'Downloads';
+$lang->package->downloads   = 'Download';
 $lang->package->public      = 'Public Download';
 $lang->package->compatible  = 'Compatibility';
 $lang->package->grade       = 'Rate';
@@ -1979,8 +1977,8 @@ $lang->package->byIndustry    = 'By Industry';
 $lang->package->byColor       = 'By Theme';
 
 $lang->package->installFailed            = '%s failed. Error is as below';
-$lang->package->uninstallFailed          = 'Uninstal is failed. Error is as below';
-$lang->package->confirmUninstall         = 'Uninstal a plug-in will delete/modify related database. Do you want to unistal it?';
+$lang->package->uninstallFailed          = 'Uninstall is failed. Error is as below';
+$lang->package->confirmUninstall         = 'Uninstall a plug-in will delete/modify related database. Do you want to unistal it?';
 $lang->package->noticeBackupDB           = 'Please backup your databse before uninstal!';
 $lang->package->installFinished          = 'The plug-in is %sed!';
 $lang->package->refreshPage              = 'Refresh';
@@ -1992,12 +1990,12 @@ $lang->package->unremovedFiles           = 'Some files can not be delteted. Plea
 $lang->package->executeCommands          = '<h3> Execute the followings to fix the problem,</h3>';
 $lang->package->successDownloadedPackage = 'Plug-in is downloaded.';
 $lang->package->successUploadedPackage   = 'Plug-in is uploaded.';
-$lang->package->successCopiedFiles       = 'Files is copied.';
-$lang->package->successInstallDB         = 'Databse is installed.';
+$lang->package->successCopiedFiles       = 'File is copied.';
+$lang->package->successInstallDB         = 'Database is installed.';
 $lang->package->viewInstalled            = 'View installed Extensions.';
 $lang->package->viewAvailable            = 'View available Extensions';
 $lang->package->viewDeactivated          = 'View deactivated Extensions.';
-$lang->package->backDBFile               = 'Relavant plug-in data has been backed up to %s ！';
+$lang->package->backDBFile               = 'Relavant plug-in data is backed up to %s ！';
 
 $lang->package->upgradeExt     = 'Upgrade';
 $lang->package->installExt     = 'Install';
@@ -2033,8 +2031,8 @@ $lang->package->errorUninstallDepends        = '“%s” is dependent on this pl
 
 $lang->theme->common = 'Theme';
 /* product */
-$lang->product->common = 'Products';
-$lang->product->home   = 'Products';
+$lang->product->common = 'Product';
+$lang->product->home   = 'Product';
 
 $lang->product->id         = 'ID';
 $lang->product->category   = 'Category';
@@ -2051,7 +2049,7 @@ $lang->product->unit       = 'Unit';
 $lang->product->price      = 'Price';
 $lang->product->promotion  = 'On Sale';
 $lang->product->amount     = 'Quantity';
-$lang->product->keywords   = 'Keywords';
+$lang->product->keywords   = 'Tags';
 $lang->product->desc       = 'Introduction';
 $lang->product->content    = 'Details';
 $lang->product->author     = 'Author';
@@ -2065,7 +2063,7 @@ $lang->product->stick      = 'Sticky';
 $lang->product->order      = 'ID';
 $lang->product->unsaleable = 'Not for sale';
 $lang->product->attribute  = 'More';
-$lang->product->custom     = 'Keywords';
+$lang->product->custom     = 'Tags';
 $lang->product->sales      = 'Price';
 $lang->product->css        = 'CSS';
 $lang->product->js         = 'JS';
@@ -2074,7 +2072,7 @@ $lang->product->currency  = 'Currency';
 $lang->product->stock     = 'Inventory';
 $lang->product->negotiate = 'Negotiate';
 
-$lang->product->list         = 'Products';
+$lang->product->list         = 'Product';
 $lang->product->view         = 'View';
 $lang->product->hot          = 'Hot';
 $lang->product->admin        = 'Manage';
@@ -2185,7 +2183,7 @@ $lang->product->namePositionOptions = array();
 $lang->product->namePositionOptions['left']   = 'Left';
 $lang->product->namePositionOptions['center'] = 'Center';
 
-$lang->product->noCategoriesTip = 'You have not added the categories, please add the categories at first.';
+$lang->product->noCategoriesTip = 'You have not added any categories. Please add a category at first.';
 /* reply */
 $lang->reply = new stdclass();
 $lang->reply->common    = 'Reply';
@@ -2213,8 +2211,8 @@ $lang->reply->bindEmail = 'Please bind email first.';
 $lang->score->back        = 'Back';
 $lang->score->rankingList = 'Ranking';
 $lang->score->rule        = 'Rules';
-$lang->score->statement   = 'Points Statement';
-$lang->score->stateDesc   = 'Point Statement is generated per user based on the total points acquired in last month.';
+$lang->score->statement   = 'Point Statement';
+$lang->score->stateDesc   = 'Point Statement is generated per user and based on the total points acquired in last month.';
 
 $lang->score->id      = 'ID';
 $lang->score->account = 'Account';
@@ -2299,7 +2297,7 @@ $lang->search->buildResult       = "Created! Added <span class='text-success'> %
 $lang->site->common        = "Site";
 
 $lang->site->type            = 'Site Type';
-$lang->site->tidy            = 'Tiny Html';
+$lang->site->tidy            = 'Tidy Html';
 $lang->site->requestType     = 'Request Type';
 $lang->site->status          = 'Site Status';
 $lang->site->pauseTip        = 'Message';
@@ -2309,8 +2307,8 @@ $lang->site->lang            = 'Site Language';
 $lang->site->defaultLang     = 'Default Language';
 $lang->site->domain          = 'Domain';
 $lang->site->allowedDomain   = 'Allowed Domain';
-$lang->site->keywords        = 'Keywords';
-$lang->site->indexKeywords   = 'Homepage Keywords';
+$lang->site->keywords        = 'Tags';
+$lang->site->indexKeywords   = 'Homepage Tags';
 $lang->site->meta            = 'Meta Tags';
 $lang->site->desc            = 'Description';
 $lang->site->icpSN           = 'ICP SN';
@@ -3445,14 +3443,14 @@ $lang->user->msn       = 'MSN';
 $lang->user->qq        = 'QQ';
 $lang->user->yahoo     = 'Yahoo';
 $lang->user->gtalk     = 'Gtalk';
-$lang->user->wangwang  = '旺旺';
+$lang->user->wangwang  = 'Wangwang';
 $lang->user->mobile    = 'Mobile';
 $lang->user->phone     = 'Phone';
 $lang->user->company   = 'Company';
 $lang->user->address   = 'Address';
 $lang->user->zipcode   = 'Zip Code';
 $lang->user->join      = 'Join Date';
-$lang->user->visits    = 'Visits';
+$lang->user->visits    = 'Visit';
 $lang->user->ip        = 'IP';
 $lang->user->last      = 'Last Login';
 $lang->user->status    = 'Status';
@@ -3464,21 +3462,21 @@ $lang->user->certified = 'Verified';
 $lang->user->all             = 'All Users';
 $lang->user->list            = 'User List';
 $lang->user->view            = "User Profile";
-$lang->user->create          = "Add a User";
+$lang->user->create          = "Add User";
 $lang->user->edit            = "Edit";
 $lang->user->operate         = 'Action';
 $lang->user->changePassword  = "Change Password";
 $lang->user->changeEmail     = "Email Settings";
 $lang->user->recoverPassword = "Forgot Password";
 $lang->user->newPassword     = "New Password";
-$lang->user->update          = "Edit Users";
-$lang->user->browse          = "View Users";
+$lang->user->update          = "Edit User";
+$lang->user->browse          = "View User";
 $lang->user->deny            = "You access is denied.";
 $lang->user->confirmDelete   = "Do you want to delete it?";
 $lang->user->confirmActivate = "Do you want to activate it?";
 $lang->user->relogin         = "Login again";
-$lang->user->asGuest         = "Guest Visit";
-$lang->user->goback          = "Return";
+$lang->user->asGuest         = "Guest Login";
+$lang->user->goback          = "Back";
 $lang->user->allUsers        = 'All Users';
 $lang->user->submit          = "Submit";
 $lang->user->forbid          = 'Disable';
@@ -3493,8 +3491,8 @@ $lang->user->setMobile       = 'Configure Mobile';
 $lang->user->newEmail        = 'Email';
 $lang->user->rank            = 'Rank';
 $lang->user->score           = 'Cost';
-$lang->user->myScore         = 'My Points';
-$lang->user->buyScore        = 'Buy Points';
+$lang->user->myScore         = 'My Point';
+$lang->user->buyScore        = 'Buy Point';
 $lang->user->addScore        = 'Reward';
 $lang->user->reduceScore     = 'Deduct';
 $lang->user->bindAccount     = 'Bind Your Account';
@@ -3516,12 +3514,12 @@ $lang->user->messages    = 'Message';
 $lang->user->reply       = 'Reply';
 $lang->user->submission  = 'Submission';
 
-$lang->user->noLogged       = "NO LOGIN";
-$lang->user->clickLogin     = "click login";
-$lang->user->myScore        = "my score";
-$lang->user->totalScore     = "total score";
-$lang->user->levelScore     = "level score";
-$lang->user->scoreRecharge  = "score recharge";
+$lang->user->unlogin        = "UN LOGIN";
+$lang->user->clickLogin     = "Click to login";
+$lang->user->myScore        = "My Point";
+$lang->user->totalScore     = "Total Point";
+$lang->user->levelScore     = "Level Point";
+$lang->user->scoreRecharge  = "Buy Point";
 
 $lang->user->userHistory       = "User History";
 $lang->user->threadHistory     = "Post";
@@ -3541,18 +3539,18 @@ $lang->user->inputAccountOrEmail = 'Enter your account or Email';
 $lang->user->inputPassword       = 'Enter Password';
 $lang->user->searchUser          = 'Search';
 
-$lang->user->errorDeny         = "Sorry, you have no access to『<b>%s</b>』->『<b>%s</b>』. Please contact your Admin. <br/> You will be directed to Homepage in 5 sec...";
-$lang->user->noModuleDeny      = "Sorry, the site which you are visiting has not enabled 『<b>%s</b>』module, Please contact your Admin. <br/> You will be directed to Homepage in 5 sec...";
-$lang->user->loginFailed       = "Login failed. Please check your user name and password.";
+$lang->user->errorDeny         = "Sorry, you have no access to『<b>%s</b>』->『<b>%s</b>』. Please contact your Admin. <br/> You will be directed to Homepage in 5 seconds...";
+$lang->user->noModuleDeny      = "Sorry, the site which you are visiting has not been enabled 『<b>%s</b>』module. Please contact your Admin. <br/> You will be directed to Homepage in 5 seconds...";
+$lang->user->loginFailed       = "Login failed. Please check your username and password.";
 $lang->user->identifyFailed    = "Verification failed. Please check your password.";
 $lang->user->locked            = "Account has been locked. Please try to login in %s.";
 $lang->user->lockedForEver     = "Account has been permanently deactivated.";
-$lang->user->lblRegistered     = 'Congrats! You have registered with us!';
+$lang->user->lblRegistered     = 'Congrats! You have registered in Zsite!';
 $lang->user->forbidSuccess     = 'Deactivated!';
 $lang->user->forbidFail        = 'Deactivation failed.';
 $lang->user->activateSuccess   = 'Activated!';
 $lang->user->activateFail      = 'Activation failed.';
-$lang->user->pullSuccess       = 'Get wetchat user successfully';
+$lang->user->pullSuccess       = 'Wetchat user data is done';
 $lang->user->wrongPwd          = 'Wrong Password';
 $lang->user->checkEmailSuccess = 'Done!';
 $lang->user->sendRecoverEmail  = 'Send reset Email.';
@@ -3585,15 +3583,15 @@ $lang->user->register->instant     = 'Register Now';
 $lang->user->register->welcome     = 'Welcome to register in Ziste!';
 $lang->user->register->why         = 'Register to enjoy more!';
 $lang->user->register->lblUserInfo = 'User Profile';
-$lang->user->register->lblAccount  = 'must be a combination of letter and numbers, 3 charaters at least.';
-$lang->user->register->lblPassword = 'must be a combination of letter and numbers, 6 charaters at least.';
+$lang->user->register->lblAccount  = 'must be letters and numbers, 3 charaters at least.';
+$lang->user->register->lblPassword = 'must be letters and numbers, 6 charaters at least.';
 $lang->user->register->login       = 'Login';
-$lang->user->register->loginTip    = 'Already have an Account';
+$lang->user->register->loginTip    = 'Already registered?';
 $lang->user->register->agreement   = 'Agreement';
 $lang->user->register->agree       = 'I have read and accept';
 
 $lang->user->notice = new stdclass();
-$lang->user->notice->password = 'must be a combination of letter and numbers, 6 charaters at least.';
+$lang->user->notice->password = 'must be letters and numbers, 6 charaters at least.';
 
 $lang->user->login  = new stdclass();
 $lang->user->login->common  = "Login";
@@ -3608,8 +3606,8 @@ $lang->user->resetPassword->failed  = "Wrong security Email address. Please ente
 $lang->user->resetMail = new stdclass();
 $lang->user->resetMail->subject  = 'Reset Password';
 $lang->user->resetMail->account  = 'Hello,'; 
-$lang->user->resetMail->resetUrl = 'You have requested to reset your password at %s（%s）. Pleae click the link belwo and reset your passwor.'; 
-$lang->user->resetMail->notice   = 'This is automatically set by the sysytem. Please do not reply.(Ignore this Email, if you do not do anthing.)';
+$lang->user->resetMail->resetUrl = 'You have requested to reset your password at %s（%s）. Pleae click the link below and reset your password.'; 
+$lang->user->resetMail->notice   = 'This is automatically sent by Zsite. Do not reply.(Ignore this Email, if you do not want to do anthing.)';
 
 $lang->user->oauth = new stdclass();
 $lang->user->oauth->common       = 'Open Login';
@@ -3666,13 +3664,13 @@ $lang->user->oauth->typeList['github'] = 'Github';
 $lang->user->oauth->typeList['facebook'] = 'Facebook';
 #$lang->user->oauth->typeList['google'] = 'Google';
 
-$lang->user->oauth->bindUser         = '绑定用户';
+$lang->user->oauth->bindUser         = 'Bind User';
 $lang->user->oauth->lblWelcome       = 'Open Login';
 $lang->user->oauth->lblOtherLogin    = 'Other Login';
-$lang->user->oauth->lblProfile       = "Register a User";
+$lang->user->oauth->lblProfile       = "Register User";
 $lang->user->oauth->lblBind          = "User Binding";
 $lang->user->oauth->directBind       = "Direct Bind";
-$lang->user->oauth->lblBindCurrent   = "The current login user is %s，wechat user is %s";
+$lang->user->oauth->lblBindCurrent   = "The current login user is %s，Wechat username is %s";
 $lang->user->oauth->lblUnbind        = "Remove Binding";
 $lang->user->oauth->lblUnbindSuccess = "Binding removed!";
 $lang->user->oauth->lblUnbindFailed  = "Remove bnding failed!";
@@ -3726,7 +3724,7 @@ $lang->user->placeholder = new stdclass();
 $lang->user->placeholder->password   = 'Please enter your password.';
 $lang->user->placeholder->verifyCode = 'Please enter verification code received by Email.';
 
-$lang->user->isSensitive = 'Username can not be sensitive, please change it';
+$lang->user->isSensitive = 'Username can not be sensitive words. Please change it';
 /* visual */
 $lang->visual->common      = "Visual Editor";
 $lang->visual->editLogo    = "Edit Logo";
