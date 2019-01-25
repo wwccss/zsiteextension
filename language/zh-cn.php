@@ -138,6 +138,7 @@ $lang->js->continueShopping = '继续购物';
 $lang->js->required         = '必填';
 $lang->js->back             = '返回';
 $lang->js->continue         = '继续';
+$lang->js->bindWechatTip    = '发帖功能设置了绑定微信的限制，请先绑定微信会员。';
 
 $lang->company = new stdclass();
 $lang->company->contactUs = '联系我们';
@@ -421,7 +422,8 @@ $lang->k .= '蝉知企业建站系统，开源免费的php CMS系统';
 
 $lang->label = new stdclass();
 $lang->label->hot    = '热';
-$lang->label->latest = '新';/* action */
+$lang->label->latest = '新';
+/* action */
 $lang->action->common = '系统日志';
 
 $lang->action->objectType = '对象类型';
@@ -1681,7 +1683,11 @@ $lang->message->replyItem   = "<dd><strong>%s</strong> 于 <em>%s</em> 回复：
 $lang->comment->replyItem   = "<dd><strong>%s</strong> 于 <em>%s</em> 回复：%s</dd>";
 $lang->message->messageItem = "<dd><strong>%s</strong> 于 <em>%s</em> 发表：%s</dd>";
 
-$lang->message->replySubject = '%s管理员的回复';
+$lang->message->replySubject            = '%s管理员的回复';
+$lang->message->submit                  = '发表留言';
+$lang->message->inputPlaceholder        = '添加你的留言';
+
+
 /* misc */
 if(!isset($lang->misc)) $lang->misc = new stdclass();
 $lang->misc->version     = '版本%s';
