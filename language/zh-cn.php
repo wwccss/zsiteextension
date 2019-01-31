@@ -2069,7 +2069,7 @@ $lang->product->stock     = '库存';
 $lang->product->negotiate = '面议';
 
 $lang->product->list         = '产品列表';
-$lang->product->view         = '产品详情';
+$lang->product->view         = '详情';
 $lang->product->hot          = '热门产品';
 $lang->product->admin        = '维护产品';
 $lang->product->create       = '添加产品';
