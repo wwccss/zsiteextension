@@ -2210,6 +2210,7 @@ $lang->score->rule        = '积分规则';
 $lang->score->statement   = '积分结算';
 $lang->score->stateDesc   = '积分结算会将一个月之前的所有收入积分按照每个用户结算为总积分。以减少记录数。';
 
+$lang->score->score   = '积分';
 $lang->score->id      = '编号';
 $lang->score->account = '用户';
 $lang->score->method  = '方式';
@@ -3487,7 +3488,7 @@ $lang->user->setMobile       = '手机设置';
 $lang->user->newEmail        = '新邮箱';
 $lang->user->rank            = '等级积分';
 $lang->user->score           = '消耗积分';
-$lang->user->myScore         = '当前积分';
+$lang->user->details         = '积分详情';
 $lang->user->buyScore        = '积分充值';
 $lang->user->addScore        = '奖励积分';
 $lang->user->reduceScore     = '扣除积分';
