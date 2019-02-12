@@ -1030,10 +1030,11 @@ $lang->blog->home      = '博客首页';
 $lang->blog->siteHome  = '网站首页';
 $lang->blog->subscribe = '订阅博客';
 /* book */
-$lang->book->common       = '手册';
-$lang->book->list         = '手册列表';
-$lang->book->articles     = '文档导航';
-$lang->book->backtolist   = '返回手册列表';
+$lang->book->common             = '手册';
+$lang->book->list               = '手册列表';
+$lang->book->articles           = '文档导航';
+$lang->book->backtolist         = '返回手册列表';
+$lang->book->articleAmount      = '文章';
 
 $lang->book->admin      = '手册列表';
 $lang->book->info       = '手册介绍';
@@ -1811,6 +1812,7 @@ $lang->order->selectProducts = "选择了 <strong class='text-danger'>%s</strong
 $lang->order->totalToPay     = "共计：<strong id='amount' class='text-lg text-danger'>%s</strong>";
 $lang->order->cartProducts   = "共<strong>%s</strong> 件商品";
 $lang->order->statistics     = "<strong class='text-danger'>%s</strong> 件商品共计:<strong id='amount' class='text-lg text-danger'>%s</strong>";
+$lang->order->orderProducts  = "共<strong class='text-danger'>%s</strong> 件商品, 共计: <strong class='text-danger'>%s%s</strong>";
 $lang->order->payInfo        = "%s %s 商品订单";
 $lang->order->goToBank       = "请在线支付您的订单。";
 $lang->order->track          = '物流';
@@ -3529,6 +3531,7 @@ $lang->user->submissionHistory = "投稿";
 $lang->user->message = new stdclass();
 $lang->user->message->mine = "我的消息 <span class='label label-badge text-latin'>%s</span>";
 $lang->user->message->from = '来自';
+$lang->user->message->unread = '条未读消息';
 
 $lang->user->inputUserName       = '请输入用户名';
 $lang->user->inputAccountOrEmail = '请输入用户名或Email';
