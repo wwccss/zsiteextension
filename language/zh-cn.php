@@ -2740,6 +2740,7 @@ $lang->thread->content     = '内容';
 $lang->thread->file        = '附件: ';
 $lang->thread->postedDate  = '发表于';
 $lang->thread->replies     = '回帖';
+$lang->thread->number      = '回帖数';
 $lang->thread->views       = '阅读';
 $lang->thread->lastReply   = '最后回帖';
 $lang->thread->isLink      = '跳转';
@@ -3692,7 +3693,7 @@ $lang->user->navGroups->order   = '订单信息';
 $lang->user->navGroups->message = '主题消息';
 
 $lang->user->control->menus['profile']    = '<i class="icon-user text-info"></i> 个人信息 <i class="icon-chevron-right"></i>|user|profile';
-$lang->user->control->menus['message']    = '<i class="icon-comment text-info"></i> 我的消息 <i class="icon-chevron-right"></i>|user|message';
+$lang->user->control->menus['message']    = '<i class="icon-comment text-info"></i> 我的消息 <i class="icon-chevron-right"></i>|user|message|recTotal=&recPerPage&pageID=&source=user';
 $lang->user->control->menus['score']      = '<i class="icon-sun text-info"></i> 积分详情 <i class="icon-chevron-right"></i>|user|score';
 $lang->user->control->menus['recharge']   = '<i class="icon-bolt text-success"></i> 积分充值 <i class="icon-chevron-right"></i>|score|buyscore';
 $lang->user->control->menus['order']      = '<i class="icon-th-list text-info"></i> 我的订单 <i class="icon-chevron-right"></i>|order|browse';
@@ -3700,7 +3701,7 @@ $lang->user->control->menus['address']    = '<i class="icon-map-marker text-warn
 $lang->user->control->menus['thread']     = '<i class="icon-th-large text-success"></i> 我的主题 <i class="icon-chevron-right"></i>|user|thread';
 $lang->user->control->menus['reply']      = '<i class="icon-reply text-info"></i> 我的回帖 <i class="icon-chevron-right"></i>|user|reply';
 $lang->user->control->menus['submission'] = '<i class="icon-envelope text-warning"></i> 我的投稿 <i class="icon-chevron-right"></i>|article|submission'; 
-$lang->user->control->menus['cart'] = '<i class="icon-shopping-cart text-danger"></i> 购物车 <i class="icon-chevron-right"></i>|cart|browse'; 
+$lang->user->control->menus['cart']       = '<i class="icon-shopping-cart text-danger"></i> 购物车 <i class="icon-chevron-right"></i>|cart|browse'; 
 
 $lang->user->log = new stdclass();
 $lang->user->log->common = '日志';
@@ -3878,6 +3879,7 @@ $lang->wechat->commitMenu     = '菜单';
 $lang->wechat->deleteMenu     = '删除菜单';
 $lang->wechat->messageList    = '消息';
 $lang->wechat->remind         = '消息提醒';
+$lang->wechat->unsupported    = '暂不支持 %s 消息显示';
 
 $lang->wechat->typeList['subscribe'] = '订阅号';
 $lang->wechat->typeList['service']   = '服务号';

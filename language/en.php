@@ -3882,6 +3882,7 @@ $lang->wechat->commitMenu     = 'Menu';
 $lang->wechat->deleteMenu     = 'Delete Menu';
 $lang->wechat->messageList    = 'Messages';
 $lang->wechat->remind         = 'Remind';
+$lang->wechat->unsupported    = 'Can not display %s message';
 
 $lang->wechat->typeList['subscribe'] = 'Subscribe';
 $lang->wechat->typeList['service']   = 'Service';
