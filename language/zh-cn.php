@@ -1607,6 +1607,7 @@ $lang->message->readed            = '已读';
 $lang->message->captcha           = '验证码';
 $lang->message->list              = '留言列表';
 $lang->message->post              = '发表留言';
+$lang->message->inputPlaceholder  = '添加你的留言';
 $lang->message->viewArticle       = '正文';
 $lang->message->viewComment       = '留言';
 $lang->message->noSelectedMessage = '您没有选择任何留言。';
@@ -1614,6 +1615,7 @@ $lang->message->needCheck         = '留言通过审核后显示。';
 $lang->message->showDetail        = '显示全部';
 $lang->message->hideDetail        = '收起';
 $lang->message->submit            = '提交';
+$lang->message->submitting        = '稍后';
 
 $lang->message->admin          = '后台首页';
 $lang->message->pass           = '通过';
@@ -1659,6 +1661,7 @@ $lang->comment->receiveEmail = '接收邮件提醒';
 
 $lang->comment->inputPlaceholder        = '添加你的评论';
 $lang->comment->submit                  = '提交';
+$lang->comment->submitting              = '稍后';
 $lang->comment->pass                    = '通过';
 $lang->comment->reply                   = '回复';
 $lang->comment->replyAt                 = '回复于';
@@ -1679,18 +1682,19 @@ $lang->comment->statusList[0] = '未审核';
 $lang->comment->statusList[1] = '已审核';
 
 $lang->comment->defaultNickname = '匿名';
-$lang->comment->submit          = '发表评论';
-$lang->comment->submitting      = '稍后';
 
 $lang->message->replyItem   = "<dd><strong>%s</strong> 于 <em>%s</em> 回复：%s</dd>";
 $lang->comment->replyItem   = "<dd><strong>%s</strong> 于 <em>%s</em> 回复：%s</dd>";
 $lang->message->messageItem = "<dd><strong>%s</strong> 于 <em>%s</em> 发表：%s</dd>";
 
-$lang->message->replySubject            = '%s管理员的回复';
-$lang->message->submit                  = '发表留言';
-$lang->message->inputPlaceholder        = '添加你的留言';
+$lang->message->replySubject = '%s管理员的回复';
 
-
+$lang->thread = new stdclass();
+$lang->thread->list             = '回帖列表';
+$lang->thread->post             = '发表回帖';
+$lang->thread->submitting       = '稍后';
+$lang->thread->inputPlaceholder = '添加你的回帖';
+$lang->thread->moreReplies      = '查看全部<span class="more-replies-amount"></span>条评论';
 /* misc */
 if(!isset($lang->misc)) $lang->misc = new stdclass();
 $lang->misc->version     = '版本%s';
