@@ -476,7 +476,7 @@ $lang->address->create         = 'Add';
 $lang->address->edit           = 'Edit';
 $lang->address->default        = 'Default';
 $lang->address->manage         = 'Manage';
-$lang->address->manageDone     = 'Done';
+$lang->address->complete     = 'Done';
 $lang->address->allSelect      = 'All';
 $lang->address->deleteEmptyIDs = 'None Selected';
 /* admin */
@@ -509,14 +509,14 @@ $lang->admin->bindedInfo     = 'ZSite Account';
 
 $lang->js->confirmRebind = "Are you sure to rebind the account of Zsite?";
 
-$lang->admin->register = new stdclass();
-$lang->admin->register->common     = 'The page is to register in Zsite.';
-$lang->admin->register->caption    = 'Register';
-$lang->admin->register->lblAccount = 'letters and numbers only ';
-$lang->admin->register->lblPasswd  = 'letters and numbers only ';
-$lang->admin->register->submit     = 'Submit';
-$lang->admin->register->success    = "Submitted";
-$lang->admin->register->update     = "Update information";
+$lang->admin->community = new stdclass();
+$lang->admin->community->common     = 'The page is to register in Zsite.';
+$lang->admin->community->caption    = 'Register';
+$lang->admin->community->lblAccount = 'letters and numbers only ';
+$lang->admin->community->lblPasswd  = 'letters and numbers only ';
+$lang->admin->community->submit     = 'Submit';
+$lang->admin->community->success    = "Submitted";
+$lang->admin->community->update     = "Update information";
 
 $lang->admin->bind = new stdclass();
 $lang->admin->bind->caption = 'Zsite Account';
@@ -1041,11 +1041,11 @@ $lang->blog->home      = 'Blog Home';
 $lang->blog->siteHome  = 'Homepage';
 $lang->blog->subscribe = 'Subscribe';
 /* book */
-$lang->book->common             = 'Book';
-$lang->book->list               = 'Books';
-$lang->book->articles           = 'Articles';
-$lang->book->backtolist         = 'Back';
-$lang->book->articleAmount      = 'Articles';
+$lang->book->common        = 'Book';
+$lang->book->list          = 'Books';
+$lang->book->articles      = 'Articles';
+$lang->book->backtolist    = 'Back';
+$lang->book->articleAmount = '%dArticles';
 
 $lang->book->admin      = 'Books';
 $lang->book->info       = 'Book Info';
@@ -1629,6 +1629,7 @@ $lang->message->submitting        = 'Submitting';
 $lang->message->admin          = 'Backend Home';
 $lang->message->pass           = 'Pass';
 $lang->message->reply          = 'Reply';
+$lang->message->moreReplies    = 'More <span class="more-replies-amount"></span> Replies';
 $lang->message->view           = 'View';
 $lang->message->manage         = 'Message Admin';
 $lang->message->delete         = 'Delete';
@@ -1668,19 +1669,20 @@ $lang->comment->viewComment  = 'Comment';
 $lang->comment->needCheck    = 'Comment will be posted once reviewed.';
 $lang->comment->receiveEmail = 'Email notification';
 
-$lang->comment->inputPlaceholder        = 'Add Comment';
-$lang->comment->submit                  = 'Submit';
-$lang->comment->submitting              = 'Submitting';
-$lang->comment->pass                    = 'Pass';
-$lang->comment->reply                   = 'Reply';
-$lang->comment->replyAt                 = 'Reply on';
-$lang->comment->manage                  = 'Manange Comment';
-$lang->comment->delete                  = 'Delete';
-$lang->comment->passPre                 = 'Pass Prev';
-$lang->comment->deletePre               = 'Delete Prev';
-$lang->comment->commentTo               = 'Comment on';
-$lang->comment->commentAt               = 'Comment on';
-$lang->comment->deletedObject           = 'Deleted Comment';
+$lang->comment->inputPlaceholder = 'Add Comment';
+$lang->comment->submit           = 'Submit';
+$lang->comment->submitting       = 'Submitting';
+$lang->comment->pass             = 'Pass';
+$lang->comment->reply            = 'Reply';
+$lang->comment->moreReplies      = 'More <span class="more-replies-amount"></span> Replies';
+$lang->comment->replyAt          = 'Reply on';
+$lang->comment->manage           = 'Manange Comment';
+$lang->comment->delete           = 'Delete';
+$lang->comment->passPre          = 'Pass Prev';
+$lang->comment->deletePre        = 'Delete Prev';
+$lang->comment->commentTo        = 'Comment on';
+$lang->comment->commentAt        = 'Comment on';
+$lang->comment->deletedObject    = 'Deleted Comment';
 
 $lang->comment->confirmDeleteSingle = 'Do you want to delete this comment?';
 $lang->comment->confirmDeletePre    = 'Do you want to delete previous comments?';
@@ -1697,13 +1699,6 @@ $lang->comment->replyItem   = "<dd><strong>%s</strong> replied on <em>%s</em> ab
 $lang->message->messageItem = "<dd><strong>%s</strong> posted on <em>%s</em> about %s</dd>";
 
 $lang->message->replySubject = 'Admin %s replied.';
-
-$lang->thread = new stdclass();
-$lang->thread->list             = 'Reply List';
-$lang->thread->submit           = 'Reply';
-$lang->thread->submitting       = 'Replying';
-$lang->thread->inputPlaceholder = 'Add Reply';
-$lang->thread->moreReplies      = 'More <span class="more-replies-amount"></span> Replies';
 /* misc */
 if(!isset($lang->misc)) $lang->misc = new stdclass();
 $lang->misc->version     = 'Version %s';

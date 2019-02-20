@@ -478,14 +478,17 @@ $lang->address->selected       = '选择地址';
 $lang->address->edit           = '编辑地址';
 $lang->address->default        = '默认';
 $lang->address->manage         = '管理';
-$lang->address->manageBtn      = '管理收货地址';
-$lang->address->manageDone     = '完成';
+$lang->address->manageAddress  = '管理收货地址';
+$lang->address->complete       = '完成';
 $lang->address->allSelect      = '全选';
 $lang->address->deleteEmptyIDs = '未选择删除项';
 /* admin */ 
 $lang->admin->common        = '后台管理';
 $lang->admin->index         = '首页';
 $lang->admin->checked       = '已认证';
+
+$lang->admin->getEmailCodeByApi  = '获取邮箱验证码';
+$lang->admin->getMobileCodeByApi = '获取手机验证码';
 
 $lang->admin->shortcuts = new stdclass();
 $lang->admin->shortcuts->common             = '快捷入口';
@@ -512,14 +515,14 @@ $lang->admin->bindedInfo     = '蝉知社区账号信息';
 
 $lang->js->confirmRebind = "确认要重新绑定蝉知账号？";
 
-$lang->admin->register = new stdclass();
-$lang->admin->register->common     = '蝉知社区';
-$lang->admin->register->caption    = '没有蝉知社区账号？马上注册一个!';
-$lang->admin->register->lblAccount = '请设置您的用户名，英文字母和数字的组合，三位以上。';
-$lang->admin->register->lblPasswd  = '请设置您的密码。数字和字母的组合，六位以上。';
-$lang->admin->register->submit     = '注册';
-$lang->admin->register->success    = "注册账户成功";
-$lang->admin->register->update     = "更新资料";
+$lang->admin->community = new stdclass();
+$lang->admin->community->common     = '蝉知社区';
+$lang->admin->community->caption    = '没有蝉知社区账号？马上注册一个!';
+$lang->admin->community->lblAccount = '请设置您的用户名，英文字母和数字的组合，三位以上。';
+$lang->admin->community->lblPasswd  = '请设置您的密码。数字和字母的组合，六位以上。';
+$lang->admin->community->submit     = '注册';
+$lang->admin->community->success    = "注册账户成功";
+$lang->admin->community->update     = "更新资料";
 
 $lang->admin->bind = new stdclass();
 $lang->admin->bind->caption = '已有蝉知社区账号，输入用户名密码进行绑定！';
@@ -1032,11 +1035,11 @@ $lang->blog->home      = '博客首页';
 $lang->blog->siteHome  = '网站首页';
 $lang->blog->subscribe = '订阅博客';
 /* book */
-$lang->book->common             = '手册';
-$lang->book->list               = '手册列表';
-$lang->book->articles           = '文档导航';
-$lang->book->backtolist         = '返回手册列表';
-$lang->book->articleAmount      = '文章';
+$lang->book->common        = '手册';
+$lang->book->list          = '手册列表';
+$lang->book->articles      = '文档导航';
+$lang->book->backtolist    = '返回手册列表';
+$lang->book->articleAmount = '%d文章';
 
 $lang->book->admin      = '手册列表';
 $lang->book->info       = '手册介绍';
@@ -1620,6 +1623,7 @@ $lang->message->submitting        = '稍后';
 $lang->message->admin          = '后台首页';
 $lang->message->pass           = '通过';
 $lang->message->reply          = '回复';
+$lang->message->moreReplies    = '查看全部<span class="more-replies-amount"></span>条评论';
 $lang->message->view           = '查看';
 $lang->message->manage         = '留言管理';
 $lang->message->delete         = '删除';
@@ -1659,19 +1663,20 @@ $lang->comment->viewComment  = '评论';
 $lang->comment->needCheck    = '评论通过审核后显示。';
 $lang->comment->receiveEmail = '接收邮件提醒';
 
-$lang->comment->inputPlaceholder        = '添加你的评论';
-$lang->comment->submit                  = '提交';
-$lang->comment->submitting              = '稍后';
-$lang->comment->pass                    = '通过';
-$lang->comment->reply                   = '回复';
-$lang->comment->replyAt                 = '回复于';
-$lang->comment->manage                  = '评论管理';
-$lang->comment->delete                  = '删除';
-$lang->comment->passPre                 = '通过之前';
-$lang->comment->deletePre               = '删除之前';
-$lang->comment->commentTo               = '发表于';
-$lang->comment->commentAt               = '发表于';
-$lang->comment->deletedObject           = '已删除项目';
+$lang->comment->inputPlaceholder = '添加你的评论';
+$lang->comment->submit           = '提交';
+$lang->comment->submitting       = '稍后';
+$lang->comment->pass             = '通过';
+$lang->comment->reply            = '回复';
+$lang->comment->moreReplies      = '查看全部<span class="more-replies-amount"></span>条评论';
+$lang->comment->replyAt          = '回复于';
+$lang->comment->manage           = '评论管理';
+$lang->comment->delete           = '删除';
+$lang->comment->passPre          = '通过之前';
+$lang->comment->deletePre        = '删除之前';
+$lang->comment->commentTo        = '发表于';
+$lang->comment->commentAt        = '发表于';
+$lang->comment->deletedObject    = '已删除项目';
 
 $lang->comment->confirmDeleteSingle = '您确定要删除该评论吗？';
 $lang->comment->confirmDeletePre    = '您确定要删除之前的评论吗？';
@@ -1688,13 +1693,6 @@ $lang->comment->replyItem   = "<dd><strong>%s</strong> 于 <em>%s</em> 回复：
 $lang->message->messageItem = "<dd><strong>%s</strong> 于 <em>%s</em> 发表：%s</dd>";
 
 $lang->message->replySubject = '%s管理员的回复';
-
-$lang->thread = new stdclass();
-$lang->thread->list             = '回帖列表';
-$lang->thread->post             = '发表回帖';
-$lang->thread->submitting       = '稍后';
-$lang->thread->inputPlaceholder = '添加你的回帖';
-$lang->thread->moreReplies      = '查看全部<span class="more-replies-amount"></span>条评论';
 /* misc */
 if(!isset($lang->misc)) $lang->misc = new stdclass();
 $lang->misc->version     = '版本%s';
@@ -1840,7 +1838,6 @@ $lang->order->wechatpay       = '微信支付';
 $lang->order->scanCode        = '微信扫码支付';
 $lang->order->wechatScan      = '请使用微信扫一扫<br>扫描二维码支付';
 $lang->order->inWechatTip     = '提示：微信浏览器不支持支付宝支付，如需使用支付宝支付，请复制本页网址到其他浏览器进行操作';
-$lang->order->notePlaceholder = '选填：填写内容已和卖家协商确认';
 
 $lang->order->confirmLimit         = '确认收货周期';
 $lang->order->expireLimit          = '订单过期时间';
@@ -1878,6 +1875,7 @@ $lang->order->placeholder->appid     = '微信分配的公众账号ID';
 $lang->order->placeholder->mchid     = '微信支付分配的商户号';
 $lang->order->placeholder->apikey    = '微信支付API安全密钥';
 $lang->order->placeholder->appsecret = '微信公众号密钥';
+$lang->order->placeholder->note      = '选填：填写内容已和卖家协商确认';
 
 $lang->order->paymentList = array();
 $lang->order->paymentList['alipay']        = '支付宝即时到帐';
