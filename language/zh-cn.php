@@ -2225,7 +2225,7 @@ $lang->score->rule        = '积分规则';
 $lang->score->statement   = '积分结算';
 $lang->score->stateDesc   = '积分结算会将一个月之前的所有收入积分按照每个用户结算为总积分。以减少记录数。';
 
-$lang->score->score   = '积分';
+$lang->score->common   = '积分';
 $lang->score->id      = '编号';
 $lang->score->account = '用户';
 $lang->score->method  = '方式';
@@ -2753,7 +2753,7 @@ $lang->thread->content     = '内容';
 $lang->thread->file        = '附件: ';
 $lang->thread->postedDate  = '发表于';
 $lang->thread->replies     = '回帖';
-$lang->thread->number      = '回帖数';
+$lang->thread->replyCount  = '回帖数';
 $lang->thread->views       = '阅读';
 $lang->thread->lastReply   = '最后回帖';
 $lang->thread->isLink      = '跳转';
@@ -3545,7 +3545,7 @@ $lang->user->submissionHistory = "投稿";
 $lang->user->message = new stdclass();
 $lang->user->message->mine = "我的消息 <span class='label label-badge text-latin'>%s</span>";
 $lang->user->message->from = '来自';
-$lang->user->message->unread = '条未读消息';
+$lang->user->message->unread = '%s条未读消息';
 
 $lang->user->inputUserName       = '请输入用户名';
 $lang->user->inputAccountOrEmail = '请输入用户名或Email';
