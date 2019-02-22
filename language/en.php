@@ -99,6 +99,7 @@ $lang->noResultsMatch = 'No match found!';
 $lang->alias          = 'For SEO, enter letters and numbers.';
 $lang->keywordsHolder = 'Use commas to separate tags.';
 $lang->autoUpgrade    = 'Auto upgrade';
+$lang->detail         = 'Detail';
 
 $lang->setOkFile = <<<EOT
 <h5>Please confirm your admin account by following steps below.</h5>
@@ -473,16 +474,24 @@ $lang->address->contact = 'Contact';
 
 $lang->address->browse         = 'Address';
 $lang->address->create         = 'Add';
+$lang->address->selected       = 'Select';
 $lang->address->edit           = 'Edit';
 $lang->address->default        = 'Default';
 $lang->address->manage         = 'Manage';
-$lang->address->complete     = 'Done';
+<<<<<<< HEAD
+=======
+$lang->address->manageAddress  = 'Manage Address';
+>>>>>>> 3b62591cad98b1d8221822bbc77dde8af5fe8e77
+$lang->address->complete       = 'Done';
 $lang->address->allSelect      = 'All';
 $lang->address->deleteEmptyIDs = 'None Selected';
 /* admin */
 $lang->admin->common        = 'Admin';
 $lang->admin->index         = 'Home';
 $lang->admin->checked       = 'Checked';
+
+$lang->admin->getEmailCodeByApi  = 'Get email code';
+$lang->admin->getMobileCodeByApi = 'Get mobile code';
 
 $lang->admin->shortcuts = new stdclass();
 $lang->admin->shortcuts->common             = 'Shortcuts';
@@ -1637,7 +1646,7 @@ $lang->message->deleteSelected = 'Delete';
 $lang->message->passPre        = 'Pass Prev';
 $lang->message->deletePre      = 'Delete Prev';
 $lang->message->commentAt      = 'Posted on';
-$lang->message->deletedObject  = 'Deleted';
+$lang->message->deletedObject  = 'Deleted object';
 $lang->message->contactHidden  = "such as phone and email. Only Admin can see your contact.";
 
 $lang->message->confirmDeleteSingle = 'Do you want to delete this message?';
@@ -1682,7 +1691,7 @@ $lang->comment->passPre          = 'Pass Prev';
 $lang->comment->deletePre        = 'Delete Prev';
 $lang->comment->commentTo        = 'Comment on';
 $lang->comment->commentAt        = 'Comment on';
-$lang->comment->deletedObject    = 'Deleted Comment';
+$lang->comment->deletedObject    = 'Deleted object';
 
 $lang->comment->confirmDeleteSingle = 'Do you want to delete this comment?';
 $lang->comment->confirmDeletePre    = 'Do you want to delete previous comments?';
@@ -1794,6 +1803,8 @@ $lang->order->zipcode           = 'Zipcode';
 $lang->order->deliveryStatus    = 'Status';
 $lang->order->last              = 'Last Action';
 $lang->order->comment           = 'Comment';
+$lang->order->manage            = 'Manage';
+$lang->order->finish            = 'Done';
 
 $lang->order->deliverList['not_send']  = 'Pending';
 $lang->order->deliverList['send']      = 'Delivered';
@@ -1820,6 +1831,10 @@ $lang->order->finish         = 'Finish';
 $lang->order->confirm        = 'Confirmation';
 $lang->order->selectProducts = "You have <strong class='text-danger'>%s</strong> in your cart. ";
 $lang->order->totalToPay     = "Total <strong id='amount' class='text-danger'>%s</strong>";
+$lang->order->amountToPay     = "Total：<strong id='total' class='text-lg text-danger'>%s</strong>";
+$lang->order->cartProducts    = "<strong>%s</strong> products";
+$lang->order->statistics      = "<strong class='text-danger'>%s</strong> products, total:<strong id='amount' class='text-lg text-danger'>%s</strong>";
+$lang->order->orderProducts   = "<strong class='text-danger'>%s</strong> products, total: <strong class='text-danger'>%s%s</strong>";
 $lang->order->payInfo        = "%s %s order";
 $lang->order->goToBank       = "Please pay online.";
 $lang->order->track          = 'View Shipment';
@@ -1875,6 +1890,7 @@ $lang->order->placeholder->appid     = 'ID of wechat public';
 $lang->order->placeholder->mchid     = 'Merchant id assigned by wechatpay';
 $lang->order->placeholder->apikey    = 'Key of wechatpay API';
 $lang->order->placeholder->appsecret = "wechat public's key";
+$lang->order->placeholder->note      = 'Optional，leave a message for seller.';
 
 $lang->order->paymentList = array();
 $lang->order->paymentList['alipay']        = 'Alipay Payment';
@@ -2224,6 +2240,7 @@ $lang->score->rule        = 'Rules';
 $lang->score->statement   = 'Point Statement';
 $lang->score->stateDesc   = 'Point Statement is generated per user and based on the total points acquired in last month.';
 
+$lang->score->common  = 'Score';
 $lang->score->id      = 'ID';
 $lang->score->account = 'Account';
 $lang->score->method  = 'How';
@@ -2751,6 +2768,7 @@ $lang->thread->content     = 'Text';
 $lang->thread->file        = 'File: ';
 $lang->thread->postedDate  = 'Created On';
 $lang->thread->replies     = 'Reply';
+$lang->thread->replyCount  = 'Replies';
 $lang->thread->views       = 'View';
 $lang->thread->lastReply   = 'Last Reply';
 $lang->thread->isLink      = 'Link';
@@ -3501,7 +3519,7 @@ $lang->user->setMobile       = 'Configure Mobile';
 $lang->user->newEmail        = 'Email';
 $lang->user->rank            = 'Rank';
 $lang->user->score           = 'Cost';
-$lang->user->myScore         = 'My Point';
+$lang->user->details         = 'Detail';
 $lang->user->buyScore        = 'Buy Point';
 $lang->user->addScore        = 'Reward';
 $lang->user->reduceScore     = 'Deduct';
@@ -3516,14 +3534,13 @@ $lang->user->certifyNow      = 'Verify Now';
 $lang->user->checkMobile        = 'Verify Your Mobile';
 $lang->user->checkMobileSuccess = 'Your mobile is veridied.';
 
-$lang->user->type        = 'Type';
-$lang->user->profile     = 'Profile';
-$lang->user->editProfile = 'Edit';
-$lang->user->thread      = 'Thread';
-$lang->user->messages    = 'Message';
-$lang->user->reply       = 'Reply';
-$lang->user->submission  = 'Submission';
-
+$lang->user->type           = 'Type';
+$lang->user->profile        = 'Profile';
+$lang->user->editProfile    = 'Edit';
+$lang->user->thread         = 'Thread';
+$lang->user->messages       = 'Message';
+$lang->user->reply          = 'Reply';
+$lang->user->submission     = 'Submission';
 $lang->user->unlogin        = "Not Login";
 $lang->user->clickLogin     = "Click to login";
 $lang->user->myScore        = "My Point";
@@ -3541,8 +3558,9 @@ $lang->user->addressHistory    = "Address";
 $lang->user->submissionHistory = "Submission";
 
 $lang->user->message = new stdclass();
-$lang->user->message->mine = "Message <span class='label label-badge text-latin'>%s</span>";
-$lang->user->message->from = 'from';
+$lang->user->message->mine   = "Message <span class='label label-badge text-latin'>%s</span>";
+$lang->user->message->from   = 'from';
+$lang->user->message->unread = '%s unread';
 
 $lang->user->inputUserName       = 'Enter user name';
 $lang->user->inputAccountOrEmail = 'Enter your account or Email';
@@ -3710,7 +3728,8 @@ $lang->user->control->menus['order']      = '<i class="icon-shopping-cart"></i> 
 $lang->user->control->menus['address']    = '<i class="icon-map-marker"> </i> Address <i class="icon-chevron-right"></i>|address|browse';
 $lang->user->control->menus['thread']     = '<i class="icon-comment"></i> Thread <i class="icon-chevron-right"></i>|user|thread';
 $lang->user->control->menus['reply']      = '<i class="icon-reply"></i> Reply <i class="icon-chevron-right"></i>|user|reply';
-$lang->user->control->menus['submission'] = '<i class="icon-envelope"></i> Submission <i class="icon-chevron-right"></i>|article|submission'; 
+$lang->user->control->menus['submission'] = '<i class="icon-envelope"></i> Submission <i class="icon-chevron-right"></i>|article|submission';
+$lang->user->control->menus['cart']       = '<i class="icon-shopping-cart text-danger"></i> Cart <i class="icon-chevron-right"></i>|cart|browse';
 
 $lang->user->log = new stdclass();
 $lang->user->log->common = 'Log';
@@ -3989,7 +4008,6 @@ $lang->wechat->needCertified   = "This feature requires the account to be verifi
 $lang->wechat->integrateInfo   = "Please integrate in the wechat control panel.";
 $lang->wechat->integrateDone   = "I have integrated with wechat server";
 $lang->wechat->openUserModule  = "You should switch on User module first. Switch it on now?";
-$lang->wechat->userDisabled    = "Wechat requires to open uesr module.";
 /* widget */
 $lang->widget->common = 'Widget';
 $lang->widget->title  = 'Name';

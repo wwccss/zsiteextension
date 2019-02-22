@@ -1875,7 +1875,7 @@ $lang->order->placeholder->appid     = '微信分配的公众账号ID';
 $lang->order->placeholder->mchid     = '微信支付分配的商户号';
 $lang->order->placeholder->apikey    = '微信支付API安全密钥';
 $lang->order->placeholder->appsecret = '微信公众号密钥';
-$lang->order->placeholder->note      = '选填：填写内容已和卖家协商确认';
+$lang->order->placeholder->note      = '选填，给卖家留言';
 
 $lang->order->paymentList = array();
 $lang->order->paymentList['alipay']        = '支付宝即时到帐';
@@ -2225,7 +2225,7 @@ $lang->score->rule        = '积分规则';
 $lang->score->statement   = '积分结算';
 $lang->score->stateDesc   = '积分结算会将一个月之前的所有收入积分按照每个用户结算为总积分。以减少记录数。';
 
-$lang->score->common   = '积分';
+$lang->score->common  = '积分';
 $lang->score->id      = '编号';
 $lang->score->account = '用户';
 $lang->score->method  = '方式';
@@ -3526,12 +3526,12 @@ $lang->user->thread         = '我的主题';
 $lang->user->messages       = '我的消息';
 $lang->user->reply          = '我的回贴';
 $lang->user->submission     = '我的投稿';
-$lang->user->unlogin        = "未登录";
-$lang->user->clickLogin     = "点击登录";
-$lang->user->myScore        = "我的积分";
-$lang->user->totalScore     = "共有消耗积分";
-$lang->user->levelScore     = "等级积分";
-$lang->user->scoreRecharge  = "积分充值";
+$lang->user->unlogin        = '未登录';
+$lang->user->clickLogin     = '点击登录';
+$lang->user->myScore        = '我的积分';
+$lang->user->totalScore     = '共有消耗积分';
+$lang->user->levelScore     = '等级积分';
+$lang->user->scoreRecharge  = '积分充值';
 
 $lang->user->userHistory       = "用户历史数据";
 $lang->user->threadHistory     = "发帖";
