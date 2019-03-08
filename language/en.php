@@ -24,7 +24,7 @@ $lang->thanks = 'Thanks';
 
 $lang->chanzhiEPS     = 'Zsite';
 $lang->chanzhiEPSx    = 'ZSite';
-$lang->agreement      = "I have read and agreed tod<a href='http://zpl.pub/page/zplv12.html' target='_blank'> Z PUBLIC LICENSE 1.2</a>. <span class='text-danger'>If not authorized, any signs/links of Zsite shouldn't be removed, hidden or covered.</span>";
+$lang->agreement      = "I have read and agreed to<a href='http://zpl.pub/page/zplv12.html' target='_blank'> Z PUBLIC LICENSE 1.2</a>. <span class='text-danger'>If not authorized, any logos/links of Zsite should not be removed, hidden or covered.</span>";
 $lang->poweredBy      = "<a href='http://www.zsite.net/?v=%s' target='_blank' title='%s'>%s</a>";
 $lang->poweredByAdmin = "<span id='poweredBy'> is powered by <a href='http://www.zsite.net/?v=%s' target='_blank' title='%s'>Zsite CMS %s</a></span>";
 $lang->newVersion     = "Note: Zsite has released <span id='version'></span> on <span id='releaseDate'></span>. <a href='' target='_blank' id='upgradeLink'>Download it NOW!</a>";
@@ -39,7 +39,7 @@ $lang->welcome          = 'Welcome to Zsite, <strong>%s</strong>!';
 $lang->messages         = "<strong><i class='icon-comment-alt'></i> %s</strong>";
 $lang->todayIs          = 'Today is %s，';
 $lang->aboutUs          = 'About Us';
-$lang->link             = 'Links';
+$lang->link             = 'Link';
 $lang->frontHome        = 'Front';
 $lang->forumHome        = 'Forum';
 $lang->bookHome         = 'Book';
@@ -97,8 +97,8 @@ $lang->deleteSuccess  = 'Deleted';
 $lang->fail           = 'Failed';
 $lang->noResultsMatch = 'No match found!';
 $lang->alias          = 'For SEO, enter letters and numbers.';
-$lang->keywordsHolder = 'Use commas to separate tags.';
-$lang->autoUpgrade    = 'Auto upgrade';
+$lang->keywordsHolder = 'use comma to separate tags';
+$lang->autoUpgrade    = 'Auto update';
 $lang->detail         = 'Detail';
 
 $lang->setOkFile = <<<EOT
@@ -185,11 +185,11 @@ $lang->menu->forum        = 'Forum|forum|admin|';
 $lang->menu->thread       = 'Thread|forum|admin|';
 $lang->menu->forumreply   = 'Post|reply|admin|';
 $lang->menu->submission   = 'Submission|article|admin|type=submission&tab=user';
-$lang->menu->wechat       = 'Wechat|wechat|message|mode=replied&replied=0';
+$lang->menu->wechat       = 'WeChat|wechat|message|mode=replied&replied=0';
 
 $lang->menu->stat    = 'Stats|stat|traffic|';
-$lang->menu->tag     = 'Tags|tag|admin|';
-$lang->menu->links   = 'Links|links|admin|';
+$lang->menu->tag     = 'Tag|tag|admin|';
+$lang->menu->links   = 'Link|links|admin|';
 
 $lang->menu->ui       = 'UI|ui|settemplate|';
 $lang->menu->logo     = 'Logo|ui|setlogo|';
@@ -206,7 +206,7 @@ $lang->menu->security      = 'Security|site|setsecurity|';
 $lang->menu->company       = 'Company|company|setbasic|';
 $lang->menu->score         = 'Points|score|setcounts|';
 $lang->menu->interface     = 'API|site|setoauth|';
-$lang->menu->wechatSetting = 'Wechat Setting|wechat|admin|';
+$lang->menu->wechatSetting = 'WeChat Setting|wechat|admin|';
 $lang->menu->bear          = 'Bear|bear|setting|';
 
 $lang->menu->package    = 'Extension|package|browse|';
@@ -3604,7 +3604,6 @@ $lang->user->genderList = new stdclass();
 $lang->user->genderList->m = 'Male';
 $lang->user->genderList->f = 'Female';
 $lang->user->genderList->u = 'unknown';
-
 $lang->user->register  = new stdclass();
 $lang->user->register->common      = 'Register';
 $lang->user->register->instant     = 'Register Now';
@@ -3619,7 +3618,7 @@ $lang->user->register->agreement   = 'Agreement';
 $lang->user->register->agree       = 'I have read and accept';
 
 $lang->user->notice = new stdclass();
-$lang->user->notice->password = 'must be letters and numbers, 6 charaters at least.';
+$lang->user->notice->password = '>=6 letters and numbers';
 
 $lang->user->login  = new stdclass();
 $lang->user->login->common  = "Login";
