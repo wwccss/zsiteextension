@@ -41,6 +41,11 @@ $lang->todayIs          = 'Today is %s，';
 $lang->aboutUs          = 'About Us';
 $lang->link             = 'Link';
 $lang->frontHome        = 'Front';
+$lang->create           = 'Create';
+$lang->shortcuts        = 'Shortcuts';
+$lang->proServices      = 'Pro Services';
+$lang->settings         = 'Settings';
+$lang->notifications    = 'Notifications';
 $lang->forumHome        = 'Forum';
 $lang->bookHome         = 'Book';
 $lang->dashboard        = 'Dashboard';
@@ -69,6 +74,7 @@ $lang->reverse          = 'Reverse';
 $lang->transfer         = 'Transfer';
 
 $lang->reset          = 'Reset';
+$lang->add            = 'Add';
 $lang->edit           = 'Edit';
 $lang->copy           = 'Copy';
 $lang->hide           = 'Hide';
@@ -487,7 +493,7 @@ $lang->address->allSelect      = 'All';
 $lang->address->deleteEmptyIDs = 'None Selected';
 /* admin */
 $lang->admin->common        = 'Admin';
-$lang->admin->index         = 'Home';
+$lang->admin->index         = 'Dashboard';
 $lang->admin->checked       = 'Checked';
 
 $lang->admin->getEmailCodeByApi  = 'Get email code';
@@ -4073,3 +4079,13 @@ $lang->widget->typeList->submission     = 'Latest Submission';
 //$lang->widget->typeList->chanzhiDynamic = 'Zsite Dynamic';
 $lang->widget->typeList->commonMenu     = 'Quick Entry';
 $lang->widget->typeList->html           = 'Custom';
+
+$lang->widget->stat = new stdclass();
+$lang->widget->stat->article = 'Article quantity';
+$lang->widget->stat->blog    = 'Blog quantity';
+$lang->widget->stat->product = 'Product quantity';
+$lang->widget->stat->thread  = 'Thread quantity';
+$lang->widget->stat->user    = 'User quantity';
+$lang->widget->stat->pv      = 'PV';
+$lang->widget->stat->uv      = 'UV';
+$lang->widget->stat->ip      = 'IP';

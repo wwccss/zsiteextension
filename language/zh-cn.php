@@ -41,6 +41,11 @@ $lang->todayIs          = '今天是%s，';
 $lang->aboutUs          = '关于我们';
 $lang->link             = '友情链接';
 $lang->frontHome        = '前台';
+$lang->create           = '新建';
+$lang->shortcuts        = '快捷入口';
+$lang->proServices      = '增值服务';
+$lang->settings         = '设置';
+$lang->notifications    = '通知';
 $lang->forumHome        = '论坛';
 $lang->bookHome         = '手册';
 $lang->dashboard        = '用户中心';
@@ -69,6 +74,7 @@ $lang->reverse          = '切换顺序';
 $lang->transfer         = '转发';
 
 $lang->reset          = '重置';
+$lang->add            = '新增';
 $lang->edit           = '编辑';
 $lang->copy           = '复制';
 $lang->hide           = '隐藏';
@@ -482,9 +488,9 @@ $lang->address->manageAddress  = '管理收货地址';
 $lang->address->complete       = '完成';
 $lang->address->allSelect      = '全选';
 $lang->address->deleteEmptyIDs = '未选择删除项';
-/* admin */ 
+/* admin */
 $lang->admin->common        = '后台管理';
-$lang->admin->index         = '首页';
+$lang->admin->index         = '控制台';
 $lang->admin->checked       = '已认证';
 
 $lang->admin->getEmailCodeByApi  = '获取邮箱验证码';
@@ -4059,3 +4065,19 @@ $lang->widget->typeList->submission     = '最新投稿';
 $lang->widget->typeList->chanzhiDynamic = '蝉知动态';
 $lang->widget->typeList->commonMenu     = '快捷入口';
 $lang->widget->typeList->html           = '自定义';
+
+$lang->widget->stat = new stdclass();
+$lang->widget->stat->article = '文章数';
+$lang->widget->stat->blog    = '博客数';
+$lang->widget->stat->product = '产品数';
+$lang->widget->stat->thread  = '主题帖';
+$lang->widget->stat->user    = '会员数';
+$lang->widget->stat->pv      = '浏览量(PV)';
+$lang->widget->stat->uv      = '访客数(UV)';
+$lang->widget->stat->ip      = 'IP数量';
+
+$lang->widget->process = array();
+$lang->widget->process[0] = array('基本信息','站点设置','社区账号');
+$lang->widget->process[1] = array('站点设计','主题设置','布局管理');
+$lang->widget->process[2] = array('内容管理','发布内容','添加产品');
+$lang->widget->process[3] = array('推广引流','内容推广','会员推广');
