@@ -139,7 +139,7 @@ $lang->js->doing            = '处理中';
 $lang->js->loading          = '加载中';
 $lang->js->updating         = '更新中...';
 $lang->js->timeout          = '网络超时,请重试';
-$lang->js->errorThrown      = '<h4>执行出错：</h4>';
+$lang->js->errorThrown      = '执行出错：';
 $lang->js->continueShopping = '继续购物';
 $lang->js->required         = '必填';
 $lang->js->back             = '返回';
@@ -218,6 +218,14 @@ $lang->menu->bear          = '熊掌号|bear|setting|';
 $lang->menu->package    = '插件|package|browse|';
 $lang->menu->themestore = '主题|ui|themestore|';
 $lang->menu->community  = '社区|admin|register|';
+
+$lang->menu->articleCreate  = '发布文章|article|create|';
+$lang->menu->productCreate  = '添加产品|product|create|';
+$lang->menu->feedback       = '处理反馈|message|admin|';
+$lang->menu->siteSetting    = '站点设置|site|setBasic|';
+$lang->menu->companyInfo    = '公司信息|company|setBasic|';
+$lang->menu->contact        = '联系方式|company|setContact|';
+
 
 $lang->menuGroups = new stdclass();
 $lang->menuGroups->mail    = 'interface';
@@ -4032,31 +4040,41 @@ $lang->widget->dynamic     = '最新动态';
 $lang->widget->dynamicInfo = "%s, %s <em>%s</em> %s <a href='%s'>%s</a>。";
 
 $lang->widget->default = array();
-$lang->widget->default['1']['title'] = '最新订单';
-$lang->widget->default['1']['type']  = 'latestOrder';
-$lang->widget->default['1']['grid']  = 4;
+$lang->widget->default['1']['title'] = '';
+$lang->widget->default['1']['type']  = 'process';
+$lang->widget->default['1']['grid']  = 8;
 
-$lang->widget->default['2']['title'] = '最新帖子';
-$lang->widget->default['2']['type']  = 'latestThread';
-$lang->widget->default['2']['grid']  = 4;
+$lang->widget->default['2']['title'] = '概览';
+$lang->widget->default['2']['type']  = 'stat';
+$lang->widget->default['2']['grid']  = 8;
 
-$lang->widget->default['3']['title'] = '反馈';
-$lang->widget->default['3']['type']  = 'message';
+$lang->widget->default['3']['title'] = '最新订单';
+$lang->widget->default['3']['type']  = 'latestOrder';
 $lang->widget->default['3']['grid']  = 4;
 
-$lang->widget->default['4']['title'] = '最新投稿';
-$lang->widget->default['4']['type']  = 'submission';
+$lang->widget->default['4']['title'] = '最新帖子';
+$lang->widget->default['4']['type']  = 'latestThread';
 $lang->widget->default['4']['grid']  = 4;
 
-$lang->widget->default['5']['title'] = '快捷入口';
-$lang->widget->default['5']['type']  = 'commonMenu';
+$lang->widget->default['5']['title'] = '反馈';
+$lang->widget->default['5']['type']  = 'message';
 $lang->widget->default['5']['grid']  = 4;
 
-$lang->widget->default['6']['title'] = '蝉知动态';
-$lang->widget->default['6']['type']  = 'chanzhiDynamic';
+$lang->widget->default['6']['title'] = '最新投稿';
+$lang->widget->default['6']['type']  = 'submission';
 $lang->widget->default['6']['grid']  = 4;
 
+$lang->widget->default['7']['title'] = '快捷入口';
+$lang->widget->default['7']['type']  = 'commonMenu';
+$lang->widget->default['7']['grid']  = 4;
+
+$lang->widget->default['8']['title'] = '蝉知动态';
+$lang->widget->default['8']['type']  = 'chanzhiDynamic';
+$lang->widget->default['8']['grid']  = 4;
+
 $lang->widget->typeList = new stdclass();
+$lang->widget->typeList->process        = '流程图';
+$lang->widget->typeList->stat           = '概览';
 $lang->widget->typeList->latestOrder    = '最新订单';
 $lang->widget->typeList->latestThread   = '最新帖子';
 $lang->widget->typeList->message        = '反馈';

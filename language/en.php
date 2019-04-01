@@ -139,7 +139,7 @@ $lang->js->doing            = 'Doing';
 $lang->js->loading          = 'Loading';
 $lang->js->updating         = 'Updating';
 $lang->js->timeout          = 'Timeout. Please try it again.';
-$lang->js->errorThrown      = '<h4> Error </h4>';
+$lang->js->errorThrown      = 'Error : ';
 $lang->js->continueShopping = 'Continue shopping';
 $lang->js->required         = 'Required';
 $lang->js->back             = 'Back';
@@ -218,6 +218,13 @@ $lang->menu->bear          = 'Bear|bear|setting|';
 $lang->menu->package    = 'Extension|package|browse|';
 $lang->menu->themestore = 'Theme|ui|themestore|';
 $lang->menu->community  = 'Community|admin|register|';
+
+$lang->menu->articleCreate  = 'Article|article|create|';
+$lang->menu->productCreate  = 'Product|product|create|';
+$lang->menu->feedback       = 'Feedback|message|admin|';
+$lang->menu->siteSetting    = 'Site|site|setBasic|';
+$lang->menu->companyInfo    = 'Company|company|setBasic|';
+$lang->menu->contact        = 'Contact|company|setContact|';
 
 $lang->menuGroups = new stdclass();
 $lang->menuGroups->mail    = 'interface';
@@ -4046,31 +4053,41 @@ $lang->widget->dynamic     = 'Dynamic';
 $lang->widget->dynamicInfo = "%s, %s <em>%s</em> %s <a href='%s'>%s</a>。";
 
 $lang->widget->default = array();
-$lang->widget->default['1']['title'] = 'Latest Order';
-$lang->widget->default['1']['type']  = 'latestOrder';
-$lang->widget->default['1']['grid']  = 4;
+$lang->widget->default['1']['title'] = '';
+$lang->widget->default['1']['type']  = 'process';
+$lang->widget->default['1']['grid']  = 8;
 
-$lang->widget->default['2']['title'] = 'Latest Thread';
-$lang->widget->default['2']['type']  = 'latestThread';
-$lang->widget->default['2']['grid']  = 4;
+$lang->widget->default['2']['title'] = 'Stat';
+$lang->widget->default['2']['type']  = 'stat';
+$lang->widget->default['2']['grid']  = 8;
 
-$lang->widget->default['3']['title'] = 'Feedback';
-$lang->widget->default['3']['type']  = 'message';
+$lang->widget->default['3']['title'] = 'Latest Order';
+$lang->widget->default['3']['type']  = 'latestOrder';
 $lang->widget->default['3']['grid']  = 4;
 
-$lang->widget->default['4']['title'] = 'Latest Submission';
-$lang->widget->default['4']['type']  = 'submission';
+$lang->widget->default['4']['title'] = 'Latest Thread';
+$lang->widget->default['4']['type']  = 'latestThread';
 $lang->widget->default['4']['grid']  = 4;
 
-$lang->widget->default['5']['title'] = 'Quick Entry';
-$lang->widget->default['5']['type']  = 'commonMenu';
+$lang->widget->default['5']['title'] = 'Feedback';
+$lang->widget->default['5']['type']  = 'message';
 $lang->widget->default['5']['grid']  = 4;
 
-$lang->widget->default['6']['title'] = 'Zsite Dynamic';
-$lang->widget->default['6']['type']  = 'chanzhiDynamic';
+$lang->widget->default['6']['title'] = 'Latest Submission';
+$lang->widget->default['6']['type']  = 'submission';
 $lang->widget->default['6']['grid']  = 4;
 
+$lang->widget->default['7']['title'] = 'Quick Entry';
+$lang->widget->default['7']['type']  = 'commonMenu';
+$lang->widget->default['7']['grid']  = 4;
+
+$lang->widget->default['8']['title'] = 'Zsite Dynamic';
+$lang->widget->default['8']['type']  = 'chanzhiDynamic';
+$lang->widget->default['8']['grid']  = 4;
+
 $lang->widget->typeList = new stdclass();
+$lang->widget->typeList->process        = 'Process';
+$lang->widget->typeList->stat           = 'Stat';
 $lang->widget->typeList->latestOrder    = 'Latest Order';
 $lang->widget->typeList->latestThread   = 'Latest Thread';
 $lang->widget->typeList->message        = 'Feedback';
