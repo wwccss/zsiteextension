@@ -42,8 +42,8 @@ $lang->aboutUs          = 'About Us';
 $lang->link             = 'Link';
 $lang->frontHome        = 'Front';
 $lang->create           = 'Create';
-$lang->shortcuts        = 'Shortcuts';
-$lang->proServices      = 'Pro Services';
+$lang->shortcuts        = 'Shortcut';
+$lang->proServices      = 'Pro Service';
 $lang->settings         = 'Settings';
 $lang->notifications    = 'Notifications';
 $lang->forumHome        = 'Forum';
@@ -164,14 +164,13 @@ $lang->sitemap = new stdclass();
 $lang->sitemap->common = 'Sitemap';
 
 $lang->groups = new stdclass();
-$lang->groups->home     = array('title' => 'Zsite', 'link' => 'admin|index|',               'icon' => 'home');
-$lang->groups->content  = array('title' => 'CMS', 'link' => 'article|admin|type=article', 'icon' => 'edit');
-$lang->groups->shop     = array('title' => 'Mall', 'link' => 'order|admin|',               'icon' => 'shopping-cart');
-$lang->groups->user     = array('title' => 'User', 'link' => 'user|admin|',                'icon' => 'group');
-$lang->groups->promote  = array('title' => 'SEO', 'link' => 'stat|traffic|',              'icon' => 'volume-up');
-$lang->groups->design   = array('title' => 'UI', 'link' => 'ui|settemplate|',            'icon' => 'paint-brush');
-$lang->groups->open     = array('title' => 'Open', 'link' => 'package|browse|',            'icon' => 'cloud');
-$lang->groups->setting  = array('title' => 'Set', 'link' => 'site|setbasic|',             'icon' => 'cog');
+$lang->groups->content  = array('title' => 'CMS', 'link' => 'article|admin|type=article', 'icon' => 'content');
+$lang->groups->shop     = array('title' => 'Mall', 'link' => 'order|admin|',               'icon' => 'shopping');
+$lang->groups->user     = array('title' => 'User', 'link' => 'user|admin|',                'icon' => 'verify');
+$lang->groups->promote  = array('title' => 'SEO', 'link' => 'stat|traffic|',              'icon' => 'horn');
+$lang->groups->design   = array('title' => 'UI', 'link' => 'ui|settemplate|',            'icon' => 'design');
+$lang->groups->open     = array('title' => 'Open', 'link' => 'package|browse|',            'icon' => 'site');
+$lang->groups->setting  = array('title' => 'Set', 'link' => 'site|setbasic|',             'icon' => 'link-sign');
 
 $lang->menu = new stdclass();
 $lang->menu->admin      = 'Home|admin|index|';
@@ -258,8 +257,8 @@ $lang->express = new stdclass();
 
 $lang->orderSetting = new stdclass();
 $lang->orderSetting->menu = new stdclass();
-$lang->orderSetting->menu->orderSetting = 'Settings|product|setting|';
-$lang->orderSetting->menu->express      = 'Shipping Carrier|tree|browse|type=express';
+$lang->orderSetting->menu->transaction = 'Transaction Settings|product|setting|';
+$lang->orderSetting->menu->express     = 'Express|tree|browse|type=express';
 
 $lang->product = new stdclass();
 $lang->product->menu = new stdclass();
@@ -295,7 +294,7 @@ $lang->site->menu->request   = 'Request Type|site|seturltype|';
 $lang->site->menu->domain    = 'Domain Settings|site|setdomain|';
 $lang->site->menu->cdn       = 'CDN Settings|site|setcdn|';
 $lang->site->menu->cache     = 'Cache Settings|site|setcache|';
-$lang->site->menu->home      = 'Home Menu|site|sethomemenu|';
+$lang->site->menu->shortcuts = 'Shortcuts|site|sethomemenu|';
 $lang->site->menu->search    = 'Full Text Retrieval|search|buildindex|';
 $lang->site->menu->backup    = 'Backup/Restore|backup|index|';
 $lang->site->menu->agreement = 'Agreement|site|setagreement|';
@@ -315,7 +314,7 @@ $lang->security->menu->whitelist   = 'Whitelist|guarder|setwhitelist|';
 $lang->security->menu->sensitive   = 'Sensitive Words|site|setsensitive|';
 $lang->security->menu->captcha     = 'Security Questions|guarder|setcaptcha|';
 $lang->security->menu->upload      = 'File Upload|site|setupload|';
-$lang->security->menu->admin       = 'Administrators|user|admin|admin=1';
+$lang->security->menu->admin       = 'Administrator|user|admin|admin=1';
 $lang->security->menu->group       = array('link' => 'Group Privilege|group|browse|', 'alias' => 'managepriv,managemember');
 $lang->security->menu->log         = 'Login Log|user|adminlog|';
 
@@ -353,9 +352,9 @@ $lang->stat->menu->traffic  = 'Traffic|stat|traffic|';
 $lang->stat->menu->from     = 'Source|stat|from|';
 $lang->stat->menu->domains  = array('link' => 'Domain|stat|domainlist|', 'alias' => 'domaintrend,domainpage');
 $lang->stat->menu->search   = 'Search Engine|stat|search|';
-$lang->stat->menu->keywords = 'Tags|stat|keywords|';
-$lang->stat->menu->client   = 'Clients|stat|client|type=browser';
-$lang->stat->menu->page     = 'Page Clicks|stat|page|';
+$lang->stat->menu->keywords = 'Tag|stat|keywords|';
+$lang->stat->menu->client   = 'Client|stat|client|type=browser';
+$lang->stat->menu->page     = 'Page Click|stat|page|';
 $lang->stat->menu->setStat  = 'Settings|stat|setting|';
 
 $lang->bear = new stdclass();
@@ -2425,6 +2424,7 @@ $lang->site->useLocation   = "Use <span>%s</span>";
 $lang->site->changeSetting = "Change Settings";
 $lang->site->setStat       = "Traffic Report";
 $lang->site->setHomeMenu   = "Homepage Menu";
+$lang->site->setShortcuts  = "Shortcuts Settings";
 $lang->site->openModule    = "Open module";
 $lang->site->setAgreement  = "Set Agreement";
 $lang->site->isVertified   = "Vertified";
@@ -4057,37 +4057,32 @@ $lang->widget->default['1']['title'] = '';
 $lang->widget->default['1']['type']  = 'process';
 $lang->widget->default['1']['grid']  = 8;
 
-$lang->widget->default['2']['title'] = 'Stat';
+$lang->widget->default['2']['title'] = 'Overview';
 $lang->widget->default['2']['type']  = 'stat';
 $lang->widget->default['2']['grid']  = 8;
 
-$lang->widget->default['3']['title'] = 'Latest Order';
-$lang->widget->default['3']['type']  = 'latestOrder';
-$lang->widget->default['3']['grid']  = 4;
+$lang->widget->default['3']['title'] = 'To-do list';
+$lang->widget->default['3']['type']  = 'untreatedList';
+$lang->widget->default['3']['grid']  = 5;
 
-$lang->widget->default['4']['title'] = 'Latest Thread';
-$lang->widget->default['4']['type']  = 'latestThread';
-$lang->widget->default['4']['grid']  = 4;
+$lang->widget->default['4']['title'] = 'Trend map';
+$lang->widget->default['4']['type']  = 'trendMap';
+$lang->widget->default['4']['grid']  = 6;
 
-$lang->widget->default['5']['title'] = 'Feedback';
-$lang->widget->default['5']['type']  = 'message';
+$lang->widget->default['5']['title'] = 'Operation log';
+$lang->widget->default['5']['type']  = 'operationLog';
 $lang->widget->default['5']['grid']  = 4;
 
-$lang->widget->default['6']['title'] = 'Latest Submission';
-$lang->widget->default['6']['type']  = 'submission';
+$lang->widget->default['6']['title'] = 'Zsite Dynamic';
+$lang->widget->default['6']['type']  = 'chanzhiDynamic';
 $lang->widget->default['6']['grid']  = 4;
-
-$lang->widget->default['7']['title'] = 'Quick Entry';
-$lang->widget->default['7']['type']  = 'commonMenu';
-$lang->widget->default['7']['grid']  = 4;
-
-$lang->widget->default['8']['title'] = 'Zsite Dynamic';
-$lang->widget->default['8']['type']  = 'chanzhiDynamic';
-$lang->widget->default['8']['grid']  = 4;
 
 $lang->widget->typeList = new stdclass();
 $lang->widget->typeList->process        = 'Process';
 $lang->widget->typeList->stat           = 'Stat';
+$lang->widget->typeList->untreatedList  = 'To-do List';
+$lang->widget->typeList->trendMap       = 'Trend Map';
+$lang->widget->typeList->operationLog   = 'Operation Log';
 $lang->widget->typeList->latestOrder    = 'Latest Order';
 $lang->widget->typeList->latestThread   = 'Latest Thread';
 $lang->widget->typeList->message        = 'Feedback';
@@ -4106,3 +4101,21 @@ $lang->widget->stat->user    = 'User quantity';
 $lang->widget->stat->pv      = 'PV';
 $lang->widget->stat->uv      = 'UV';
 $lang->widget->stat->ip      = 'IP';
+
+$lang->widget->process = array();
+$lang->widget->process[0] = array('Site','Setting','Account');
+$lang->widget->process[1] = array('Design','Theme','Typeset');
+$lang->widget->process[2] = array('Content','Publish','Product');
+$lang->widget->process[3] = array('SEO','Content','Member');
+
+$lang->widget->todoList = new stdclass();
+$lang->widget->todoList->verifyProcess        = 'Review';
+$lang->widget->todoList->orderProcess         = 'Order';
+$lang->widget->todoList->replenishmentProcess = 'Replenishment';
+$lang->widget->todoList->needVerifyFeedBack   = 'Pending Review Feedback';
+$lang->widget->todoList->needVerifyContribute = 'Pending Review Submission';
+$lang->widget->todoList->needVerifyThread     = 'Pending Review Thread';
+$lang->widget->todoList->needDeliveryOrder    = 'Pending Delivery';
+$lang->widget->todoList->needRetrunOrder      = 'Pending Return';
+$lang->widget->todoList->needReceivingOrder   = 'Pending Delivery';
+$lang->widget->todoList->needAddProduct       = 'Pending Replenishment';

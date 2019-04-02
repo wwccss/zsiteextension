@@ -164,14 +164,13 @@ $lang->sitemap = new stdclass();
 $lang->sitemap->common = '站点地图';
 
 $lang->groups = new stdclass();
-$lang->groups->home     = array('title' => '蝉知', 'link' => 'admin|index|',               'icon' => 'home');
-$lang->groups->content  = array('title' => '内容', 'link' => 'article|admin|type=article', 'icon' => 'edit');
-$lang->groups->shop     = array('title' => '商城', 'link' => 'order|admin|',               'icon' => 'shopping-cart');
-$lang->groups->user     = array('title' => '会员', 'link' => 'user|admin|',                'icon' => 'group');
-$lang->groups->promote  = array('title' => '推广', 'link' => 'stat|traffic|',              'icon' => 'volume-up');
-$lang->groups->design   = array('title' => '设计', 'link' => 'ui|settemplate|',            'icon' => 'paint-brush');
-$lang->groups->open     = array('title' => '平台', 'link' => 'package|browse|',            'icon' => 'cloud');
-$lang->groups->setting  = array('title' => '设置', 'link' => 'site|setbasic|',             'icon' => 'cog');
+$lang->groups->content  = array('title' => '内容', 'link' => 'article|admin|type=article', 'icon' => 'content');
+$lang->groups->shop     = array('title' => '商城', 'link' => 'order|admin|',               'icon' => 'shopping');
+$lang->groups->user     = array('title' => '会员', 'link' => 'user|admin|',                'icon' => 'verify');
+$lang->groups->promote  = array('title' => '推广', 'link' => 'stat|traffic|',              'icon' => 'horn');
+$lang->groups->design   = array('title' => '设计', 'link' => 'ui|settemplate|',            'icon' => 'design');
+$lang->groups->open     = array('title' => '平台', 'link' => 'package|browse|',            'icon' => 'site');
+$lang->groups->setting  = array('title' => '设置', 'link' => 'site|setbasic|',             'icon' => 'link-sign');
 
 $lang->menu = new stdclass();
 $lang->menu->admin      = '首页|admin|index|';
@@ -247,11 +246,11 @@ $lang->designMenus->others    = array('link' => '设置|ui|others|');
 
 $lang->article = new stdclass();
 $lang->article->menu = new stdclass();
-$lang->article->menu->browse = '文章列表|article|admin|';
+$lang->article->menu->browse = '文章类目|article|admin|';
 
 $lang->blog = new stdclass();
 $lang->blog->menu = new stdclass();
-$lang->blog->menu->browse = '博客列表|article|admin|type=blog';
+$lang->blog->menu->browse = '博客类目|article|admin|type=blog';
 
 $lang->page = new stdclass();
 
@@ -259,8 +258,8 @@ $lang->express = new stdclass();
 
 $lang->orderSetting = new stdclass();
 $lang->orderSetting->menu = new stdclass();
-$lang->orderSetting->menu->orderSetting = '设置|product|setting|';
-$lang->orderSetting->menu->express      = '快递|tree|browse|type=express';
+$lang->orderSetting->menu->transaction = '交易设置|product|setting|';
+$lang->orderSetting->menu->express     = '快递设置|tree|browse|type=express';
 
 $lang->product = new stdclass();
 $lang->product->menu = new stdclass();
@@ -296,7 +295,7 @@ $lang->site->menu->request   = '地址类型|site|seturltype|';
 $lang->site->menu->domain    = '域名设置|site|setdomain|';
 $lang->site->menu->cdn       = 'CDN设置|site|setcdn|';
 $lang->site->menu->cache     = '缓存设置|site|setcache|';
-$lang->site->menu->home      = '首页菜单|site|sethomemenu|';
+$lang->site->menu->shortcuts = '快捷入口|site|sethomemenu|';
 $lang->site->menu->search    = '全文检索|search|buildindex|';
 $lang->site->menu->backup    = '备份还原|backup|index|';
 $lang->site->menu->agreement = '注册协议|site|setagreement|';
@@ -2411,6 +2410,7 @@ $lang->site->useLocation   = "使用当前登录地址: <span>%s</span>";
 $lang->site->changeSetting = "更改设置";
 $lang->site->setStat       = "流量统计设置";
 $lang->site->setHomeMenu   = "首页菜单";
+$lang->site->setShortcuts  = "快捷入口";
 $lang->site->openModule    = "开启模块";
 $lang->site->setAgreement  = "设置注册协议";
 $lang->site->isVertified   = "已认证";
@@ -4048,33 +4048,28 @@ $lang->widget->default['2']['title'] = '概览';
 $lang->widget->default['2']['type']  = 'stat';
 $lang->widget->default['2']['grid']  = 8;
 
-$lang->widget->default['3']['title'] = '最新订单';
-$lang->widget->default['3']['type']  = 'latestOrder';
-$lang->widget->default['3']['grid']  = 4;
+$lang->widget->default['3']['title'] = '待办事项';
+$lang->widget->default['3']['type']  = 'untreatedList';
+$lang->widget->default['3']['grid']  = 5;
 
-$lang->widget->default['4']['title'] = '最新帖子';
-$lang->widget->default['4']['type']  = 'latestThread';
-$lang->widget->default['4']['grid']  = 4;
+$lang->widget->default['4']['title'] = '趋势图';
+$lang->widget->default['4']['type']  = 'trendMap';
+$lang->widget->default['4']['grid']  = 6;
 
-$lang->widget->default['5']['title'] = '反馈';
-$lang->widget->default['5']['type']  = 'message';
+$lang->widget->default['5']['title'] = '操作日志';
+$lang->widget->default['5']['type']  = 'operationLog';
 $lang->widget->default['5']['grid']  = 4;
 
-$lang->widget->default['6']['title'] = '最新投稿';
-$lang->widget->default['6']['type']  = 'submission';
+$lang->widget->default['6']['title'] = '蝉知动态';
+$lang->widget->default['6']['type']  = 'chanzhiDynamic';
 $lang->widget->default['6']['grid']  = 4;
-
-$lang->widget->default['7']['title'] = '快捷入口';
-$lang->widget->default['7']['type']  = 'commonMenu';
-$lang->widget->default['7']['grid']  = 4;
-
-$lang->widget->default['8']['title'] = '蝉知动态';
-$lang->widget->default['8']['type']  = 'chanzhiDynamic';
-$lang->widget->default['8']['grid']  = 4;
 
 $lang->widget->typeList = new stdclass();
 $lang->widget->typeList->process        = '流程图';
 $lang->widget->typeList->stat           = '概览';
+$lang->widget->typeList->untreatedList  = '待办事项';
+$lang->widget->typeList->trendMap       = '趋势图';
+$lang->widget->typeList->operationLog   = '操作日志';
 $lang->widget->typeList->latestOrder    = '最新订单';
 $lang->widget->typeList->latestThread   = '最新帖子';
 $lang->widget->typeList->message        = '反馈';
@@ -4099,3 +4094,15 @@ $lang->widget->process[0] = array('基本信息','站点设置','社区账号');
 $lang->widget->process[1] = array('站点设计','主题设置','布局管理');
 $lang->widget->process[2] = array('内容管理','发布内容','添加产品');
 $lang->widget->process[3] = array('推广引流','内容推广','会员推广');
+
+$lang->widget->todoList = new stdclass();
+$lang->widget->todoList->verifyProcess        = '审核处理';
+$lang->widget->todoList->orderProcess         = '订单处理';
+$lang->widget->todoList->replenishmentProcess = '补货处理';
+$lang->widget->todoList->needVerifyFeedBack   = '待审核反馈';
+$lang->widget->todoList->needVerifyContribute = '待审核投稿';
+$lang->widget->todoList->needVerifyThread     = '待审核主帖';
+$lang->widget->todoList->needDeliveryOrder    = '待发货订单';
+$lang->widget->todoList->needRetrunOrder      = '待退货订单';
+$lang->widget->todoList->needReceivingOrder   = '待收货订单';
+$lang->widget->todoList->needAddProduct       = '待补货产品';
