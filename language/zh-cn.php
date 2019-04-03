@@ -164,13 +164,14 @@ $lang->sitemap = new stdclass();
 $lang->sitemap->common = '站点地图';
 
 $lang->groups = new stdclass();
-$lang->groups->content  = array('title' => '内容', 'link' => 'article|admin|type=article', 'icon' => 'content');
-$lang->groups->shop     = array('title' => '商城', 'link' => 'order|admin|',               'icon' => 'shopping');
-$lang->groups->user     = array('title' => '会员', 'link' => 'user|admin|',                'icon' => 'verify');
-$lang->groups->promote  = array('title' => '推广', 'link' => 'stat|traffic|',              'icon' => 'horn');
-$lang->groups->design   = array('title' => '设计', 'link' => 'ui|settemplate|',            'icon' => 'design');
-$lang->groups->open     = array('title' => '平台', 'link' => 'package|browse|',            'icon' => 'site');
-$lang->groups->setting  = array('title' => '设置', 'link' => 'site|setbasic|',             'icon' => 'link-sign');
+$lang->groups->content    = array('title' => '内容', 'link' => 'article|admin|type=article', 'icon' => 'content');
+$lang->groups->statistics = array('title' => '统计', 'link' => 'stat|summary',               'icon' => 'statistics');
+$lang->groups->promote    = array('title' => '推广', 'link' => 'tag|admin|',                 'icon' => 'horn');
+$lang->groups->shop       = array('title' => '商城', 'link' => 'order|admin|',               'icon' => 'shopping');
+$lang->groups->user       = array('title' => '会员', 'link' => 'user|admin|',                'icon' => 'verify');
+$lang->groups->site       = array('title' => '站点', 'link' => 'site|setbasic|',             'icon' => 'site');
+$lang->groups->design     = array('title' => '设计', 'link' => 'ui|settemplate|',            'icon' => 'design');
+$lang->groups->open       = array('title' => '插件', 'link' => 'package|browse|',            'icon' => 'link-sign');
 
 $lang->menu = new stdclass();
 $lang->menu->admin      = '首页|admin|index|';
@@ -192,7 +193,12 @@ $lang->menu->forumreply   = '回帖|reply|admin|';
 $lang->menu->submission   = '投稿|article|admin|type=submission&tab=user';
 $lang->menu->wechat       = '微信|wechat|message|mode=replied&replied=0';
 
-$lang->menu->stat    = '统计|stat|traffic|';
+$lang->menu->summary     = '统计概况|stat|summary|';
+$lang->menu->traffic     = '流量|stat|from|';
+$lang->menu->visitor     = '访客|stat|client|';
+$lang->menu->ranking     = '排行|stat|page|';
+$lang->menu->statSetting = '设置|stat|setting|';
+
 $lang->menu->tag     = '关键词|tag|admin|';
 $lang->menu->links   = '友情链接|links|admin|';
 
@@ -206,7 +212,7 @@ $lang->menu->effect   = "特效|ui|effect|";
 $lang->menu->visual   = "可视化|visual|design|";
 $lang->menu->edit     = "编辑模板|ui|edittemplate|";
 
-$lang->menu->site          = '站点|site|setbasic|';
+$lang->menu->site          = '系统|site|sethomemenu|';
 $lang->menu->security      = '安全|site|setsecurity|';
 $lang->menu->company       = '公司|company|setbasic|';
 $lang->menu->score         = '积分|score|setcounts|';
@@ -225,15 +231,14 @@ $lang->menu->siteSetting    = '站点设置|site|setBasic|';
 $lang->menu->companyInfo    = '公司信息|company|setBasic|';
 $lang->menu->contact        = '联系方式|company|setContact|';
 
-
 $lang->menuGroups = new stdclass();
-$lang->menuGroups->mail    = 'interface';
+$lang->menuGroups->mail    = 'site';
 $lang->menuGroups->wechat  = 'wechatSetting';
 $lang->menuGroups->group   = 'security';
 $lang->menuGroups->tree    = 'article';
 $lang->menuGroups->search  = 'site';
 $lang->menuGroups->company = 'company';
-$lang->menuGroups->score   = 'score';
+$lang->menuGroups->score   = 'site';
 $lang->menuGroups->guarder = 'security';
 
 $lang->designMenus = new stdclass();
@@ -243,6 +248,14 @@ $lang->designMenus->nav       = array('link' => '导航|nav|admin|');
 $lang->designMenus->component = array('link' => '组件|ui|component|', 'alias' => 'effect,browsesource');
 $lang->designMenus->senior    = array('link' => '高级|ui|editTemplate|');
 $lang->designMenus->others    = array('link' => '设置|ui|others|');
+
+$lang->siteMenus = new stdclass();
+//$lang->siteMenus->setting = array('link' => '基本设置|site|setbasic|', 'alias' => 'siteSetting');
+//$lang->siteMenus->block   = array('link' => '功能模块|block|admin|', 'alias' => 'create');
+//$lang->siteMenus->set     = array('link' => 'SEO设置|nav|admin|');
+//$lang->siteMenus->network = array('link' => '网络设置|ui|component|', 'alias' => 'effect,browsesource');
+//$lang->siteMenus->wechat  = array('link' => '微信设置|ui|editTemplate|');
+//$lang->siteMenus->more    = array('link' => '更多设置|ui|others|');
 
 $lang->article = new stdclass();
 $lang->article->menu = new stdclass();
@@ -263,7 +276,8 @@ $lang->orderSetting->menu->express     = '快递设置|tree|browse|type=express'
 
 $lang->product = new stdclass();
 $lang->product->menu = new stdclass();
-$lang->product->menu->browse = array('link' => '所有产品|product|admin|', 'alias' => 'create, edit');
+$lang->product->menu->browse   = array('link' => '所有产品|product|admin|', 'alias' => 'create, edit');
+$lang->product->menu->category = array('link' => '分类目录|product|admin|', 'alias' => 'create, category');
 
 $lang->ui = new stdclass();
 
@@ -289,16 +303,16 @@ $lang->forum->menu->setting = '论坛设置|forum|setting|';
 
 $lang->site = new stdclass();
 $lang->site->menu = new stdclass();
-$lang->site->menu->basic     = '站点设置|site|setbasic|';
-$lang->site->menu->langs     = '语言设置|site|setlanguage|';
-$lang->site->menu->request   = '地址类型|site|seturltype|';
-$lang->site->menu->domain    = '域名设置|site|setdomain|';
-$lang->site->menu->cdn       = 'CDN设置|site|setcdn|';
+$lang->site->menu->shortcuts = '首页菜单|site|sethomemenu|';
 $lang->site->menu->cache     = '缓存设置|site|setcache|';
-$lang->site->menu->shortcuts = '快捷入口|site|sethomemenu|';
 $lang->site->menu->search    = '全文检索|search|buildindex|';
 $lang->site->menu->backup    = '备份还原|backup|index|';
 $lang->site->menu->agreement = '注册协议|site|setagreement|';
+$lang->site->menu->score     = '积分规则|score|setcounts|';
+$lang->site->menu->stateinfo = '积分结算|score|showstateinfo|';
+$lang->site->menu->mail      = array('link' => '邮箱设置|mail|admin|', 'alias' => 'detect,edit,save,test');
+$lang->site->menu->oauth     = '第三方登录|site|setoauth|';
+
 //$lang->site->menu->api    = 'API|site|setapi|';
 
 if(!isset($lang->company)) $lang->company = new stdclass();
@@ -319,15 +333,6 @@ $lang->security->menu->admin       = array('link' => '管理员|user|admin|admin
 $lang->security->menu->group       = array('link' => '分组权限|group|browse|', 'alias' => 'managepriv,managemember');
 $lang->security->menu->log         = '登录日志|user|adminlog|';
 
-$lang->interface = new stdclass();
-$lang->interface->menu = new stdclass();
-$lang->interface->menu->oauth = '开放登录|site|setoauth|';
-$lang->interface->menu->mail  = array('link' => '发信设置|mail|admin|', 'alias' => 'detect,edit,save,test');
-
-$lang->score->menu = new stdclass();
-$lang->score->menu->score     = '积分规则|score|setcounts|';
-$lang->score->menu->stateinfo = '积分结算|score|showstateinfo|';
-
 $lang->cart    = new stdclass();
 $lang->order   = new stdclass();
 $lang->address = new stdclass();
@@ -347,16 +352,17 @@ $lang->group->menu = $lang->security->menu;
 
 $lang->package = new stdclass();
 
-$lang->stat = new stdclass();
-$lang->stat->menu = new stdclass();
-$lang->stat->menu->traffic  = '流量概况|stat|traffic|';
-$lang->stat->menu->from     = '来源分类|stat|from|';
-$lang->stat->menu->domains  = array('link' => '来路域名|stat|domainlist|', 'alias' => 'domaintrend,domainpage');
-$lang->stat->menu->search   = '搜索引擎|stat|search|';
-$lang->stat->menu->keywords = '关键词|stat|keywords|';
-$lang->stat->menu->client   = '用户终端|stat|client|type=browser';
-$lang->stat->menu->page     = '点击排行|stat|page|';
-$lang->stat->menu->setStat  = '设置|stat|setting|';
+$lang->traffic = new stdclass();
+$lang->traffic->menu = new stdclass();
+$lang->traffic->menu->from     = '来源分类|stat|from|';
+$lang->traffic->menu->domains  = array('link' => '来路域名|stat|domainlist|', 'alias' => 'domaintrend,domainpage');
+$lang->traffic->menu->search   = '搜索引擎|stat|search|';
+$lang->traffic->menu->keywords = '关键词|stat|keywords|';
+
+$lang->visitor = new stdclass();
+$lang->visitor->menu = new stdclass();
+$lang->visitor->menu->client  = '用户终端|stat|client|type=browser';
+$lang->visitor->menu->setStat = '设置|stat|setting|';
 
 $lang->bear = new stdclass();
 $lang->bear->menu = new stdclass;
@@ -399,10 +405,10 @@ $lang->pager = new stdclass();
 $lang->pager->noRecord     = "暂时没有记录";
 $lang->pager->digest       = "共 <strong>%s</strong> 条记录，%s <strong>%s/%s</strong> &nbsp; ";
 $lang->pager->recPerPage   = "每页 <strong>%s</strong> 条";
-$lang->pager->first        = "<i class='icon-step-backward' title='首页'></i>";
-$lang->pager->pre          = "<i class='icon icon-play icon-rotate-180' title='上一页'></i>";
-$lang->pager->next         = "<i class='icon-play' title='下一页'></i>";
-$lang->pager->last         = "<i class='icon-step-forward' title='末页'></i>";
+$lang->pager->first        = "<i class='icon-page-first icon-lg' title='首页'></i>";
+$lang->pager->pre          = "<i class='icon icon-angle-left icon-lg' title='上一页'></i>";
+$lang->pager->next         = "<i class='icon-angle-right icon-lg' title='下一页'></i>";
+$lang->pager->last         = "<i class='icon-page-last icon-lg' title='末页'></i>";
 $lang->pager->locate       = "GO!";
 $lang->pager->previousPage = "上一页";
 $lang->pager->nextPage     = "下一页";
@@ -542,12 +548,13 @@ $lang->admin->bind->caption = '已有蝉知社区账号，输入用户名密码�
 $lang->admin->bind->submit  = '绑定账号';
 $lang->admin->bind->success = "关联账户成功";
 /* article */
-$lang->article->common      = '文章';
-$lang->article->setting     = '文章设置';
-$lang->article->createDraft = '保存草稿';
-$lang->article->post        = '我要投稿';
-$lang->article->check       = '审核投稿';
-$lang->article->reject      = '驳回投稿';
+$lang->article->common                = '文章';
+$lang->article->setting               = '文章设置';
+$lang->article->createDraft           = '保存草稿';
+$lang->article->post                  = '我要投稿';
+$lang->article->check                 = '审核投稿';
+$lang->article->reject                = '驳回投稿';
+$lang->article->searchPlaceholder     = '请输入文章标题';
 
 $lang->article->id         = '编号';
 $lang->article->category   = '类目';
@@ -1917,8 +1924,8 @@ $lang->order->payStatusList['refunding'] = '待退款';
 $lang->order->payStatusList['refunded']  = '已退款';
 
 $lang->order->types = array();
-$lang->order->types['shop']  = '商品';
-$lang->order->types['score'] = '积分';
+$lang->order->types['shop']  = '商品订单';
+$lang->order->types['score'] = '积分订单';
 
 $lang->order->abbr = new stdclass();
 $lang->order->abbr->paidDate       = '付款';
@@ -4090,10 +4097,10 @@ $lang->widget->stat->uv      = '访客数(UV)';
 $lang->widget->stat->ip      = 'IP数量';
 
 $lang->widget->process = array();
-$lang->widget->process[0] = array('基本信息','站点设置','社区账号');
-$lang->widget->process[1] = array('站点设计','主题设置','布局管理');
-$lang->widget->process[2] = array('内容管理','发布内容','添加产品');
-$lang->widget->process[3] = array('推广引流','内容推广','会员推广');
+$lang->widget->process[0] = array('top' => '基本信息','site' => '站点设置','heart-sign' => '社区账号');
+$lang->widget->process[1] = array('top' => '站点设计','palette' => '主题设置','layout' => '布局管理');
+$lang->widget->process[2] = array('top' => '内容管理','send' => '发布内容','promote' => '添加产品');
+$lang->widget->process[3] = array('top' => '推广引流','horn' => '内容推广','verify' => '会员推广');
 
 $lang->widget->todoList = new stdclass();
 $lang->widget->todoList->verifyProcess        = '审核处理';

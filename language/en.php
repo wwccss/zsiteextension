@@ -164,15 +164,16 @@ $lang->sitemap = new stdclass();
 $lang->sitemap->common = 'Sitemap';
 
 $lang->groups = new stdclass();
-$lang->groups->content  = array('title' => 'CMS', 'link' => 'article|admin|type=article', 'icon' => 'content');
-$lang->groups->shop     = array('title' => 'Mall', 'link' => 'order|admin|',               'icon' => 'shopping');
-$lang->groups->user     = array('title' => 'User', 'link' => 'user|admin|',                'icon' => 'verify');
-$lang->groups->promote  = array('title' => 'SEO', 'link' => 'stat|traffic|',              'icon' => 'horn');
-$lang->groups->design   = array('title' => 'UI', 'link' => 'ui|settemplate|',            'icon' => 'design');
-$lang->groups->open     = array('title' => 'Open', 'link' => 'package|browse|',            'icon' => 'site');
-$lang->groups->setting  = array('title' => 'Set', 'link' => 'site|setbasic|',             'icon' => 'link-sign');
+$lang->groups->content    = array('title' => 'CMS', 'link' => 'article|admin|type=article', 'icon' => 'content');
+$lang->groups->statistics = array('title' => 'Statistics', 'link' => 'stat|summary',        'icon' => 'statistics');
+$lang->groups->promote    = array('title' => 'SEO', 'link' => 'tag|admin|',                 'icon' => 'horn');
+$lang->groups->shop       = array('title' => 'Mall', 'link' => 'order|admin|',              'icon' => 'shopping');
+$lang->groups->user       = array('title' => 'User', 'link' => 'user|admin|',               'icon' => 'verify');
+$lang->groups->site       = array('title' => 'Site', 'link' => 'site|setbasic|',            'icon' => 'site');
+$lang->groups->design     = array('title' => 'UI', 'link' => 'ui|settemplate|',             'icon' => 'design');
+$lang->groups->open       = array('title' => 'Plugin', 'link' => 'package|browse|',         'icon' => 'link-sign');
 
-$lang->menu = new stdclass();
+    $lang->menu = new stdclass();
 $lang->menu->admin      = 'Home|admin|index|';
 $lang->menu->article    = 'Article|article|admin|type=article';
 $lang->menu->blog       = 'Blog|article|admin|type=blog';
@@ -192,7 +193,12 @@ $lang->menu->forumreply   = 'Post|reply|admin|';
 $lang->menu->submission   = 'Submission|article|admin|type=submission&tab=user';
 $lang->menu->wechat       = 'WeChat|wechat|message|mode=replied&replied=0';
 
-$lang->menu->stat    = 'Stats|stat|traffic|';
+$lang->menu->summary     = 'Summary|stat|summary|';
+$lang->menu->traffic     = 'Traffic|stat|from|';
+$lang->menu->visitor     = 'Visitor|stat|client|';
+$lang->menu->ranking     = 'Ranking|stat|page|';
+$lang->menu->statSetting = 'Settings|stat|setting|';
+
 $lang->menu->tag     = 'Tag|tag|admin|';
 $lang->menu->links   = 'Link|links|admin|';
 
@@ -243,6 +249,14 @@ $lang->designMenus->component = array('link' => 'CMPT|ui|component|', 'alias' =>
 $lang->designMenus->senior    = array('link' => 'Senior|ui|editTemplate|');
 $lang->designMenus->others    = array('link' => 'Setting|ui|others|');
 
+$lang->siteMenus = new stdclass();
+//$lang->siteMenus->setting = array('link' => 'Settings|site|setbasic|', 'alias' => 'siteSetting');
+//$lang->siteMenus->block   = array('link' => 'Block|block|admin|', 'alias' => 'create');
+//$lang->siteMenus->set     = array('link' => 'SEO|nav|admin|');
+//$lang->siteMenus->network = array('link' => 'Network|ui|component|', 'alias' => 'effect,browsesource');
+//$lang->siteMenus->wechat  = array('link' => 'Wechat|ui|editTemplate|');
+//$lang->siteMenus->more    = array('link' => 'More|ui|others|');
+
 $lang->article = new stdclass();
 $lang->article->menu = new stdclass();
 $lang->article->menu->browse       = 'Article|article|admin|';
@@ -262,7 +276,8 @@ $lang->orderSetting->menu->express     = 'Express|tree|browse|type=express';
 
 $lang->product = new stdclass();
 $lang->product->menu = new stdclass();
-$lang->product->menu->browse = array('link' => 'Product|product|admin|', 'alias' => 'create, edit');
+$lang->product->menu->browse   = array('link' => 'Product|product|admin|', 'alias' => 'create, edit');
+$lang->product->menu->category = array('link' => 'Category|product|admin|', 'alias' => 'create, category');
 
 $lang->ui = new stdclass();
 
@@ -314,7 +329,7 @@ $lang->security->menu->whitelist   = 'Whitelist|guarder|setwhitelist|';
 $lang->security->menu->sensitive   = 'Sensitive Words|site|setsensitive|';
 $lang->security->menu->captcha     = 'Security Questions|guarder|setcaptcha|';
 $lang->security->menu->upload      = 'File Upload|site|setupload|';
-$lang->security->menu->admin       = 'Administrator|user|admin|admin=1';
+$lang->security->menu->admin       = array('link' => 'Administrator|user|admin|admin=1', 'alias' => 'delete,batchdelete');
 $lang->security->menu->group       = array('link' => 'Group Privilege|group|browse|', 'alias' => 'managepriv,managemember');
 $lang->security->menu->log         = 'Login Log|user|adminlog|';
 
@@ -346,16 +361,17 @@ $lang->group->menu = $lang->security->menu;
 
 $lang->package = new stdclass();
 
-$lang->stat = new stdclass();
-$lang->stat->menu = new stdclass();
-$lang->stat->menu->traffic  = 'Traffic|stat|traffic|';
-$lang->stat->menu->from     = 'Source|stat|from|';
-$lang->stat->menu->domains  = array('link' => 'Domain|stat|domainlist|', 'alias' => 'domaintrend,domainpage');
-$lang->stat->menu->search   = 'Search Engine|stat|search|';
-$lang->stat->menu->keywords = 'Tag|stat|keywords|';
-$lang->stat->menu->client   = 'Client|stat|client|type=browser';
-$lang->stat->menu->page     = 'Page Click|stat|page|';
-$lang->stat->menu->setStat  = 'Settings|stat|setting|';
+$lang->traffic = new stdclass();
+$lang->traffic->menu = new stdclass();
+$lang->traffic->menu->from     = 'Source|stat|from|';
+$lang->traffic->menu->domains  = array('link' => 'Domain|stat|domainlist|', 'alias' => 'domaintrend,domainpage');
+$lang->traffic->menu->search   = 'Search Engine|stat|search|';
+$lang->traffic->menu->keywords = 'Tag|stat|keywords|';
+
+$lang->visitor = new stdclass();
+$lang->visitor->menu = new stdclass();
+$lang->visitor->menu->client  = 'Client|stat|client|type=browser';
+$lang->visitor->menu->setStat = 'Settings|stat|setting|';
 
 $lang->bear = new stdclass();
 $lang->bear->menu = new stdclass;
@@ -398,10 +414,10 @@ $lang->pager = new stdclass();
 $lang->pager->noRecord     = "No record found!";
 $lang->pager->digest       = "<strong>%s</strong> Records found. %s <strong>%s/%s</strong> &nbsp; ";
 $lang->pager->recPerPage   = "<strong>%s</strong> Records per Page";
-$lang->pager->first        = "<i class='icon-step-backward' title='Home'></i>";
-$lang->pager->pre          = "<i class='icon icon-play icon-rotate-180' title='Previous'></i>";
-$lang->pager->next         = "<i class='icon-play' title='Next'></i>";
-$lang->pager->last         = "<i class='icon-step-forward' title='last page'></i>";
+$lang->pager->first        = "<i class='icon-page-first icon-lg' title='Home'></i>";
+$lang->pager->pre          = "<i class='icon angle-left icon-lg' title='Previous'></i>";
+$lang->pager->next         = "<i class='icon-angle-right icon-lg' title='Next'></i>";
+$lang->pager->last         = "<i class='icon-page-last icon-lg' title='last page'></i>";
 $lang->pager->locate       = "GO!";
 $lang->pager->previousPage = "Previous";
 $lang->pager->nextPage     = "Next";
@@ -544,12 +560,13 @@ $lang->admin->bind->caption = 'Zsite Account';
 $lang->admin->bind->submit  = 'Bind account';
 $lang->admin->bind->success = "Binding account is done.";
 /* article */
-$lang->article->common      = 'Article';
-$lang->article->setting     = 'Basic Settings';
-$lang->article->createDraft = 'Save the draft';
-$lang->article->post        = 'Submit';
-$lang->article->check       = 'Review';
-$lang->article->reject      = 'Reject';
+$lang->article->common                = 'Article';
+$lang->article->setting               = 'Basic Settings';
+$lang->article->createDraft           = 'Save the draft';
+$lang->article->post                  = 'Submit';
+$lang->article->check                 = 'Review';
+$lang->article->reject                = 'Reject';
+$lang->article->searchPlaceholder     = 'Input article title to search';
 
 $lang->article->id         = 'ID';
 $lang->article->category   = 'Category';
