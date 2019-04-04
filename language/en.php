@@ -165,7 +165,7 @@ $lang->sitemap->common = 'Sitemap';
 
 $lang->groups = new stdclass();
 $lang->groups->content    = array('title' => 'CMS', 'link' => 'article|admin|type=article', 'icon' => 'content');
-$lang->groups->statistics = array('title' => 'Statistics', 'link' => 'stat|summary',        'icon' => 'statistics');
+$lang->groups->statistics = array('title' => 'Stats', 'link' => 'stat|summary',        'icon' => 'statistics');
 $lang->groups->promote    = array('title' => 'SEO', 'link' => 'tag|admin|',                 'icon' => 'horn');
 $lang->groups->shop       = array('title' => 'Mall', 'link' => 'order|admin|',              'icon' => 'shopping');
 $lang->groups->user       = array('title' => 'User', 'link' => 'user|admin|',               'icon' => 'verify');
@@ -202,15 +202,23 @@ $lang->menu->statSetting = 'Settings|stat|setting|';
 $lang->menu->tag     = 'Tag|tag|admin|';
 $lang->menu->links   = 'Link|links|admin|';
 
-$lang->menu->ui       = 'UI|ui|settemplate|';
-$lang->menu->logo     = 'Logo|ui|setlogo|';
-$lang->menu->nav      = 'Navigation|nav|admin|';
-$lang->menu->block    = 'Widget|block|admin|';
-$lang->menu->slide    = 'Slide|slide|admin|';
-$lang->menu->others   = "Settings|ui|others|";
-$lang->menu->effect   = "Effect|ui|effect|";
-$lang->menu->visual   = "Visual Editor|visual|design|";
-$lang->menu->edit     = "Custom|ui|edittemplate|";
+$lang->menu->ui           = 'UI|ui|settemplate|';
+$lang->menu->logo         = 'Logo|ui|setlogo|';
+$lang->menu->nav          = 'Navigation|nav|admin|';
+$lang->menu->block        = 'Widget|block|admin|';
+$lang->menu->slide        = 'Slide|slide|admin|';
+$lang->menu->others       = "Settings|ui|others|";
+$lang->menu->effect       = "Effect|ui|effect|";
+$lang->menu->visual       = "Visual Editor|visual|design|";
+$lang->menu->edit         = "Custom|ui|edittemplate|";
+$lang->menu->setTemplate  = 'My Theme|ui|settemplate|';
+$lang->menu->themeStore   = 'Theme Store|ui|themeStore|';
+$lang->menu->desktopTop   = 'Index Top|nav|admin|type=desktop_top';
+$lang->menu->desktopBlog  = 'Blog Top|nav|admin|type=desktop_blog';
+$lang->menu->mobileTop    = 'Index Top|nav|admin|type=mobile_top';
+$lang->menu->mobileBlog   = 'Blog Top|nav|admin|type=mobile_blog';
+$lang->menu->component    = 'Component|ui|component|';
+$lang->menu->browsesource = 'Browse Source|file|browsesource|';
 
 $lang->menu->site          = 'Site|site|setbasic|';
 $lang->menu->security      = 'Security|site|setsecurity|';
@@ -221,7 +229,6 @@ $lang->menu->wechatSetting = 'WeChat Setting|wechat|admin|';
 $lang->menu->bear          = 'Bear|bear|setting|';
 
 $lang->menu->package    = 'Extension|package|browse|';
-$lang->menu->themestore = 'Theme|ui|themestore|';
 $lang->menu->community  = 'Community|admin|register|';
 
 $lang->menu->articleCreate  = 'Article|article|create|';
@@ -332,15 +339,6 @@ $lang->security->menu->upload      = 'File Upload|site|setupload|';
 $lang->security->menu->admin       = array('link' => 'Administrator|user|admin|admin=1', 'alias' => 'delete,batchdelete');
 $lang->security->menu->group       = array('link' => 'Group Privilege|group|browse|', 'alias' => 'managepriv,managemember');
 $lang->security->menu->log         = 'Login Log|user|adminlog|';
-
-$lang->interface = new stdclass();
-$lang->interface->menu = new stdclass();
-$lang->interface->menu->oauth = 'Social Login|site|setoauth|';
-$lang->interface->menu->mail  = array('link' => 'Email|mail|admin|', 'alias' => 'detect,edit,save,test');
-
-$lang->score->menu = new stdclass();
-$lang->score->menu->score     = 'Point Rules|score|setcounts|';
-$lang->score->menu->stateinfo = 'Point Info|score|showstateinfo|';
 
 $lang->cart    = new stdclass();
 $lang->order   = new stdclass();
@@ -2603,24 +2601,24 @@ $lang->site->api->ip     = 'IP List';
 $lang->site->api->allip  = 'No Restrictions';
 $lang->site->api->ipTip  = 'Use comma to separate IPs allowed to visit. IP segment is OK, such as 192.168.1.*';
 
-$lang->site->menus = array();
-$lang->site->menus['order']      = 'Order';
-$lang->site->menus['message']    = 'Message';
-$lang->site->menus['thread']     = 'Thread';
-$lang->site->menus['forumreply'] = 'Reply';
-$lang->site->menus['article']    = 'Article';
-$lang->site->menus['page']       = 'Page';
-$lang->site->menus['blog']       = 'Blog';
-$lang->site->menus['book']       = 'Book';
-$lang->site->menus['submission'] = 'Submission';
-$lang->site->menus['product']    = 'Product';
-$lang->site->menus['user']       = 'User';
-$lang->site->menus['wechat']     = 'Wechat';
-$lang->site->menus['stat']       = 'Stats';
-$lang->site->menus['tag']        = 'Tags';
-$lang->site->menus['links']      = 'Links';
-$lang->site->menus['site']       = 'Site';
-$lang->site->menus['security']   = 'Security';
+$lang->site->shortcuts = array();
+$lang->site->shortcuts['order']      = 'Order';
+$lang->site->shortcuts['message']    = 'Message';
+$lang->site->shortcuts['thread']     = 'Thread';
+$lang->site->shortcuts['forumreply'] = 'Reply';
+$lang->site->shortcuts['article']    = 'Article';
+$lang->site->shortcuts['page']       = 'Page';
+$lang->site->shortcuts['blog']       = 'Blog';
+$lang->site->shortcuts['book']       = 'Book';
+$lang->site->shortcuts['submission'] = 'Submission';
+$lang->site->shortcuts['product']    = 'Product';
+$lang->site->shortcuts['user']       = 'User';
+$lang->site->shortcuts['wechat']     = 'Wechat';
+$lang->site->shortcuts['stat']       = 'Stats';
+$lang->site->shortcuts['tag']        = 'Tags';
+$lang->site->shortcuts['links']      = 'Links';
+$lang->site->shortcuts['site']       = 'Site';
+$lang->site->shortcuts['security']   = 'Security';
 
 $lang->site->fileAuthority = 'You have to edit the privilege to write the file. In Linux, run the command <code>%s</code>.';
 $lang->site->fileRequired  = 'You have to to create the file. In Linux, run the command<code>%s</code>.';
