@@ -340,8 +340,12 @@ $lang->security->menu->admin       = array('link' => 'Administrator|user|admin|a
 $lang->security->menu->group       = array('link' => 'Group Privilege|group|browse|', 'alias' => 'managepriv,managemember');
 $lang->security->menu->log         = 'Login Log|user|adminlog|';
 
-$lang->cart    = new stdclass();
 $lang->order   = new stdclass();
+$lang->order->menu = new stdclass();
+$lang->order->menu->product = '商品订单|order|admin|type=shop&mode=all';
+$lang->order->menu->score   = '积分订单|order|admin|type=score&mode=all';
+
+$lang->cart    = new stdclass();
 $lang->address = new stdclass();
 
 $lang->tree = new stdclass();
