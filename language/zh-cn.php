@@ -516,6 +516,8 @@ $lang->address->deleteEmptyIDs = '未选择删除项';
 $lang->admin->common        = '后台管理';
 $lang->admin->index         = '控制台';
 $lang->admin->checked       = '已认证';
+$lang->admin->adminLog      = '后台动态';
+$lang->admin->frontLog      = '前台动态';
 
 $lang->admin->getEmailCodeByApi  = '获取邮箱验证码';
 $lang->admin->getMobileCodeByApi = '获取手机验证码';
@@ -1569,6 +1571,8 @@ $lang->links->common  = '友情链接';
 $lang->links->index   = '首页链接';
 $lang->links->admin   = '友链管理';
 $lang->links->all     = '所有链接';
+/* log */
+$lang->log->switch = '切换';
 /* mail */
 $lang->mail->common = '发信设置';
 $lang->mail->index  = '首页';
@@ -2317,6 +2321,7 @@ $lang->score->lblStateSuccess  = '积分结算成功！';
 
 $lang->score->setAmount   = '充值金额';
 $lang->score->getScore    = '获取积分';
+$lang->score->usableScore = '可用积分';
 $lang->score->amountUnit  = '元';
 $lang->score->minAmount   = '最小充值';
 $lang->score->buyWaring   = "最小充值%s元，1元=%s积分";
@@ -2999,7 +3004,7 @@ $lang->ui->noJsTag                = "请填写全局JS代码，不需要&lt;scri
 $lang->ui->setLogoFailed          = "设置Logo失败";
 $lang->ui->noSelectedFile         = "获取上传图片失败，可能是图片大小超出上传限制";
 $lang->ui->notAlloweFileType      = "请选择正确的%s文件";
-$lang->ui->suitableLogoSize       = '最佳高度范围：%s，最佳宽度范围：%s';
+$lang->ui->suitableLogoSize       = '最佳高度：%s，最佳宽度：%s';
 $lang->ui->faviconHelp            = "请上传.ico图标文件。<a href='%s' target='_blank'>帮助</a>";
 $lang->ui->exportedSuccess        = '导出成功';
 $lang->ui->deleteThemeSuccess     = '删除主题成功';
@@ -3018,8 +3023,8 @@ $lang->ui->deleteFaviconFail      = '删除 %s 失败。';
 $lang->ui->lengthOverflow         = '内容长度 %s 字节。请保持长度不超过65535字节，否则会导致部分内容丢失。';
 
 $lang->ui->deviceList = new stdclass();
-$lang->ui->deviceList->desktop = "<i class='icon icon-desktop'></i> 桌面";
-$lang->ui->deviceList->mobile  = "<i class='icon icon-tablet'></i> 移动";
+$lang->ui->deviceList->desktop = "桌面";
+$lang->ui->deviceList->mobile  = "移动";
 
 $lang->ui->productViewList[1] = '显示';
 $lang->ui->productViewList[0] = '不显示';
@@ -3169,9 +3174,9 @@ $lang->ui->groups->footer = '页脚';
 
 $lang->ui->color          = '颜色';
 $lang->ui->colorset       = '配色';
-$lang->ui->pageBackground = '页面背景';
-$lang->ui->pageText       = '页面文字';
-$lang->ui->aLink          = '普通链接';
+$lang->ui->pageBackground = '背景';
+$lang->ui->pageText       = '文字';
+$lang->ui->aLink          = '链接';
 $lang->ui->aVisited       = '已访问链接';
 $lang->ui->aHover         = '高亮链接';
 $lang->ui->underline      = '下划线';
@@ -3194,7 +3199,7 @@ $lang->ui->body          = '主体';
 $lang->ui->background    = '背景';
 $lang->ui->button        = '按钮';
 $lang->ui->text          = '文字';
-$lang->ui->column        = '分栏';
+$lang->ui->column        = '侧边栏';
 $lang->ui->sideFloat     = '侧边栏布局';
 $lang->ui->sideGrid      = '侧边栏宽度';
 $lang->ui->height        = '高度';
@@ -3202,7 +3207,7 @@ $lang->ui->height        = '高度';
 $lang->ui->primaryColor    = '基色';
 $lang->ui->backcolor       = '背景色';
 $lang->ui->forecolor       = '前景色';
-$lang->ui->backgroundImage = '背景图片';
+$lang->ui->backgroundImage = '背景图';
 $lang->ui->repeat          = '重复方式';
 $lang->ui->position        = '位置';
 $lang->ui->style           = '样式';
@@ -3772,7 +3777,7 @@ $lang->user->placeholder->verifyCode = '请输入验证邮件里面收到的验�
 
 $lang->user->isSensitive = '用户名或者真实姓名不能含有敏感词，请修改后再提交';
 /* visual */
-$lang->visual->common      = "可视化编辑";
+$lang->visual->common      = "预览编辑";
 $lang->visual->editLogo    = "编辑标志";
 $lang->visual->editSlogan  = "编辑口号";
 $lang->visual->appendBlock = "插入区块";
@@ -3784,6 +3789,7 @@ $lang->visual->preview         = "预览";
 $lang->visual->exit            = "退出";
 $lang->visual->exitVisualEdit  = "关闭编辑模式";
 $lang->visual->customTheme     = "自定义主题";
+$lang->visual->saveAsTheme     = "主题另存为";
 $lang->visual->admin           = "后台";
 $lang->visual->reload          = '刷新';
 $lang->visual->createBlock     = '创建区块';
@@ -3885,6 +3891,17 @@ $lang->visual->design->hidePageTmpl   = '切换显示/隐藏页面模版';
 $lang->visual->design->dragAndAdd     = '拖到布局中添加';
 $lang->visual->design->noBlockTip     = '此类目下没有可用区块。';
 $lang->visual->design->setColumns     = '分栏设置';
+
+$lang->visual->design->structure    = '结构';
+$lang->visual->design->function     = '功能';
+$lang->visual->design->spread       = '推广';
+$lang->visual->design->article      = '文章';
+$lang->visual->design->forum        = '论坛';
+$lang->visual->design->book         = '手册';
+$lang->visual->design->page         = '单页';
+$lang->visual->design->blog         = '博客';
+$lang->visual->design->product      = '产品';
+$lang->visual->design->custom       = '自定义';
 
 $lang->visual->design->placeholders                = array();
 $lang->visual->design->placeholders['main']        = '主要内容';
@@ -4058,7 +4075,7 @@ $lang->widget->dynamic     = '最新动态';
 $lang->widget->dynamicInfo = "%s, %s <em>%s</em> %s <a href='%s'>%s</a>。";
 
 $lang->widget->default = array();
-$lang->widget->default['1']['title'] = '';
+$lang->widget->default['1']['title'] = '新手引导';
 $lang->widget->default['1']['type']  = 'process';
 $lang->widget->default['1']['grid']  = 8;
 
@@ -4083,7 +4100,7 @@ $lang->widget->default['6']['type']  = 'chanzhiDynamic';
 $lang->widget->default['6']['grid']  = 4;
 
 $lang->widget->typeList = new stdclass();
-$lang->widget->typeList->process        = '流程图';
+$lang->widget->typeList->process        = '新手引导';
 $lang->widget->typeList->stat           = '概览';
 $lang->widget->typeList->untreatedList  = '待办事项';
 $lang->widget->typeList->trendMap       = '趋势图';
@@ -4127,3 +4144,12 @@ $lang->widget->todoList->needDeliveryOrder    = '待发货订单';
 $lang->widget->todoList->needRetrunOrder      = '待退货订单';
 $lang->widget->todoList->needReceivingOrder   = '待收货订单';
 $lang->widget->todoList->needAddProduct       = '待补货产品';
+
+$lang->widget->operationLog = new stdclass();
+$lang->widget->operationLog->today = '今天';
+
+$lang->widget->operationLog->admin = new stdclass();
+$lang->widget->operationLog->admin->login = '登录了后台';
+$lang->widget->operationLog->front = new stdclass();
+$lang->widget->operationLog->front->login = '登录了前台';
+

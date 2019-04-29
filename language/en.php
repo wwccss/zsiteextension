@@ -508,14 +508,10 @@ $lang->address->selected       = 'Select';
 $lang->address->edit           = 'Edit';
 $lang->address->default        = 'Default';
 $lang->address->manage         = 'Manage';
-<<<<<<< HEAD
-=======
 $lang->address->manageAddress  = 'Manage Address';
->>>>>>> 3b62591cad98b1d8221822bbc77dde8af5fe8e77
 $lang->address->complete       = 'Done';
 $lang->address->allSelect      = 'All';
-$lang->address->deleteEmptyIDs = 'None Selected';
-/* admin */
+$lang->address->deleteEmptyIDs = 'None Selected';/* admin */
 $lang->admin->common        = 'Admin';
 $lang->admin->index         = 'Dashboard';
 $lang->admin->checked       = 'Checked';
@@ -2332,6 +2328,7 @@ $lang->score->lblStateSuccess  = 'Point statement is generated.';
 
 $lang->score->setAmount   = 'Refill Amount';
 $lang->score->getScore    = 'Refill Points';
+$lang->score->usableScore = 'Score';
 $lang->score->amountUnit  = 'Dollar';
 $lang->score->minAmount   = 'Minimum refill';
 $lang->score->buyWaring   = " Minimum refill is %s dollar，1 dollar=%s Points";
