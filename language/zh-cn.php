@@ -249,7 +249,7 @@ $lang->menuGroups->score   = 'site';
 $lang->menuGroups->guarder = 'security';
 
 $lang->designMenus = new stdclass();
-$lang->designMenus->theme     = array('link' => '主题|ui|settemplate|', 'alias' => 'themestore');
+$lang->designMenus->theme     = array('link' => '主题|ui|settemplate|', 'alias' => 'themestore,design,customtheme');
 $lang->designMenus->block     = array('link' => '区块|block|admin|', 'alias' => 'create');
 $lang->designMenus->nav       = array('link' => '导航|nav|admin|');
 $lang->designMenus->component = array('link' => '组件|ui|component|', 'alias' => 'effect,browsesource');

@@ -249,7 +249,7 @@ $lang->menuGroups->score   = 'score';
 $lang->menuGroups->guarder = 'security';
 
 $lang->designMenus = new stdclass();
-$lang->designMenus->theme     = array('link' => 'Theme|ui|settemplate|', 'alias' => 'themestore');
+$lang->designMenus->theme     = array('link' => 'Theme|ui|settemplate|', 'alias' => 'themestore,design,customtheme');
 $lang->designMenus->block     = array('link' => 'Widget|block|admin|', 'alias' => 'create');
 $lang->designMenus->nav       = array('link' => 'Nav|nav|admin|');
 $lang->designMenus->component = array('link' => 'CMPT|ui|component|', 'alias' => 'effect,browsesource');
