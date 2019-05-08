@@ -702,6 +702,13 @@ $lang->article->noCategories['article'] = 'You have not added the categories for
 $lang->article->noCategories['blog']    = 'You have not added the categories for blog. Please add the categories at first.';
 $lang->article->noCategories['video']   = 'You have not added the categories for video. Please add the categories at first.';
 
+$lang->article->stateList = array();
+$lang->article->stateList['all']        = 'All(%d)';
+$lang->article->stateList['normal']     = 'Normal(%d)';
+$lang->article->stateList['timed']      = 'Timed(%d)';
+$lang->article->stateList['draft']      = 'Draft(%d)';
+$lang->article->stateList['submission'] = 'Submission(%d)';
+
 $lang->article->blog = new stdclass();
 $lang->article->blog->category                   = 'Category';
 $lang->article->blog->categoryLevel              = 'Level';
@@ -721,7 +728,8 @@ $lang->article->browseImage->positionList['left']  = 'Left';
 $lang->article->browseImage->positionList['right'] = 'Right';
 
 $lang->article->browseImage->sizeList['small']  = 'Small';
-$lang->article->browseImage->sizeList['middle'] = 'Middle';/* backup */
+$lang->article->browseImage->sizeList['middle'] = 'Middle';
+/* backup */
 $lang->backup->common   = 'Backup';
 $lang->backup->index    = 'Home';
 $lang->backup->history  = 'Bachup History';
@@ -2878,7 +2886,7 @@ $lang->tree->edit        = "Edit";
 $lang->tree->addChild    = "Add Child";
 $lang->tree->delete      = "Delete";
 $lang->tree->browse      = "Category";
-$lang->tree->manage      = "Manage Category";
+$lang->tree->manage      = "Manage";
 $lang->tree->fix         = "Fix Data";
 $lang->tree->children    = "Child";
 $lang->tree->layout      = 'Layout';

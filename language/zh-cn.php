@@ -705,6 +705,13 @@ $lang->article->noCategories['article'] = '您还没有为文章添加类目，�
 $lang->article->noCategories['blog']    = '您还没有为博客添加类目，请添加类目。';
 $lang->article->noCategories['video']   = '您还没有为视频添加类目，请添加类目。';
 
+$lang->article->stateList = array();
+$lang->article->stateList['all']        = '全部(%d)';
+$lang->article->stateList['normal']     = '已发布(%d)';
+$lang->article->stateList['timed']      = '定时发布(%d)';
+$lang->article->stateList['draft']      = '草稿(%d)';
+$lang->article->stateList['submission'] = '投稿(%d)';
+
 $lang->article->blog = new stdclass();
 $lang->article->blog->category                   = '博客列表类目';
 $lang->article->blog->categoryLevel              = '级别';
