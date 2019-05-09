@@ -256,14 +256,6 @@ $lang->designMenus->component = array('link' => 'CMPT|ui|component|', 'alias' =>
 $lang->designMenus->senior    = array('link' => 'Senior|ui|editTemplate|');
 $lang->designMenus->others    = array('link' => 'Setting|ui|others|');
 
-$lang->siteMenus = new stdclass();
-//$lang->siteMenus->setting = array('link' => 'Settings|site|setbasic|', 'alias' => 'siteSetting');
-//$lang->siteMenus->block   = array('link' => 'Block|block|admin|', 'alias' => 'create');
-//$lang->siteMenus->set     = array('link' => 'SEO|nav|admin|');
-//$lang->siteMenus->network = array('link' => 'Network|ui|component|', 'alias' => 'effect,browsesource');
-//$lang->siteMenus->wechat  = array('link' => 'Wechat|ui|editTemplate|');
-//$lang->siteMenus->more    = array('link' => 'More|ui|others|');
-
 $lang->article = new stdclass();
 $lang->article->menu = new stdclass();
 $lang->article->menu->browse       = 'Article|article|admin|';
@@ -342,8 +334,8 @@ $lang->security->menu->log         = 'Login Log|user|adminlog|';
 
 $lang->order   = new stdclass();
 $lang->order->menu = new stdclass();
-$lang->order->menu->product = '商品订单|order|admin|type=shop&mode=all';
-$lang->order->menu->score   = '积分订单|order|admin|type=score&mode=all';
+$lang->order->menu->product = 'Goods Order|order|admin|type=shop&mode=all';
+$lang->order->menu->score   = 'Score Order|order|admin|type=score&mode=all';
 
 $lang->cart    = new stdclass();
 $lang->address = new stdclass();
@@ -564,7 +556,7 @@ $lang->article->createDraft           = 'Save the draft';
 $lang->article->post                  = 'Submit';
 $lang->article->check                 = 'Review';
 $lang->article->reject                = 'Reject';
-$lang->article->searchPlaceholder     = 'Input article title to search';
+$lang->article->searchPlaceholder     = 'Input keywords to search';
 
 $lang->article->id         = 'ID';
 $lang->article->category   = 'Category';

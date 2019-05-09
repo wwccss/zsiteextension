@@ -256,14 +256,6 @@ $lang->designMenus->component = array('link' => '组件|ui|component|', 'alias' 
 $lang->designMenus->senior    = array('link' => '高级|ui|editTemplate|');
 $lang->designMenus->others    = array('link' => '设置|ui|others|');
 
-$lang->siteMenus = new stdclass();
-//$lang->siteMenus->setting = array('link' => '基本设置|site|setbasic|', 'alias' => 'siteSetting');
-//$lang->siteMenus->block   = array('link' => '功能模块|block|admin|', 'alias' => 'create');
-//$lang->siteMenus->set     = array('link' => 'SEO设置|nav|admin|');
-//$lang->siteMenus->network = array('link' => '网络设置|ui|component|', 'alias' => 'effect,browsesource');
-//$lang->siteMenus->wechat  = array('link' => '微信设置|ui|editTemplate|');
-//$lang->siteMenus->more    = array('link' => '更多设置|ui|others|');
-
 $lang->article = new stdclass();
 $lang->article->menu = new stdclass();
 $lang->article->menu->browse = '文章类目|article|admin|';
@@ -567,7 +559,7 @@ $lang->article->createDraft           = '保存草稿';
 $lang->article->post                  = '我要投稿';
 $lang->article->check                 = '审核投稿';
 $lang->article->reject                = '驳回投稿';
-$lang->article->searchPlaceholder     = '请输入文章标题';
+$lang->article->searchPlaceholder     = '请输入关键字';
 
 $lang->article->id         = '编号';
 $lang->article->category   = '类目';
