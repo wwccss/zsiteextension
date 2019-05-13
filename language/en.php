@@ -117,7 +117,8 @@ $lang->colorTip    = 'hexadecimal colors';
 $lang->colorPlates = '333333|000000|CA1407|45872B|148D00|F25D03|2286D2|D92958|A63268|04BFAD|D1270A|FF9400|299182|63731A|3D4DBE|7382D9|754FB9|F2E205|B1C502|364245|C05036|8A342A|E0DDA2|B3D465|EEEEEE|FFD0E5|D0FFFD|FFFF84|F4E6AE|E5E5E5|F1F1F1|FFFFFF';
 
 $lang->score = new stdclass();
-$lang->score->common = 'Points';
+$lang->score->common      = 'Points';
+$lang->score->getScoreURL = 'https://www.chanzhi.org/thread/1338.html';
 
 $lang->community = new stdclass();
 $lang->community->common  = 'Community';
@@ -505,7 +506,7 @@ $lang->address->complete       = 'Done';
 $lang->address->allSelect      = 'All';
 $lang->address->deleteEmptyIDs = 'None Selected';/* admin */
 $lang->admin->common        = 'Admin';
-$lang->admin->index         = 'Dashboard';
+$lang->admin->Dashboard         = 'Dashboard';
 $lang->admin->checked       = 'Checked';
 
 $lang->admin->getEmailCodeByApi  = 'Get email code';
@@ -658,6 +659,10 @@ $lang->article->sourceList['article']       = 'Repost';
 $lang->article->statusList['normal']      = 'Normal';
 $lang->article->statusList['draft']       = 'Draft';
 
+$lang->article->releaseStatusList['normal'] = 'Released';
+$lang->article->releaseStatusList['draft']  = 'Last modification';
+$lang->article->releaseStatusList['timed']  = 'Timed';
+
 $lang->article->sticks[0] = 'No Sticky';
 $lang->article->sticks[1] = 'Categorical';
 $lang->article->sticks[2] = 'Global';
@@ -696,9 +701,10 @@ $lang->article->forwardFrom = 'Repost from';
 $lang->article->noCategoriesTip = 'You have not added the categories, please add the categories at first';
 
 $lang->article->noCategories = array();
-$lang->article->noCategories['article'] = 'You have not added the categories for article. Please add the categories at first.';
-$lang->article->noCategories['blog']    = 'You have not added the categories for blog. Please add the categories at first.';
-$lang->article->noCategories['video']   = 'You have not added the categories for video. Please add the categories at first.';
+$lang->article->noCategories['article'] = 'You have not added the categories for article. <a href="/admin.php?m=tree&f=browse&type=article">Please add the categories at first</a>.';
+$lang->article->noCategories['blog']    = 'You have not added the categories for blog. <a href="/admin.php?m=tree&f=browse&type=blog">Please add the categories at first</a>.';
+$lang->article->noCategories['video']   = 'You have not added the categories for video. <a href="/admin.php?m=tree&f=browse&type=video">Please add the categories at first</a>.';
+$lang->article->noCategories['forum']   = 'You have not added the categories for forum. <a href="/admin.php?m=tree&f=browse&type=forum">Please add the categories at first</a>.';
 
 $lang->article->stateList = array();
 $lang->article->stateList['all']        = 'All(%d)';

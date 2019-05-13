@@ -117,7 +117,8 @@ $lang->colorTip    = '十六进制颜色值';
 $lang->colorPlates = '333333|000000|CA1407|45872B|148D00|F25D03|2286D2|D92958|A63268|04BFAD|D1270A|FF9400|299182|63731A|3D4DBE|7382D9|754FB9|F2E205|B1C502|364245|C05036|8A342A|E0DDA2|B3D465|EEEEEE|FFD0E5|D0FFFD|FFFF84|F4E6AE|E5E5E5|F1F1F1|FFFFFF';
 
 $lang->score = new stdclass();
-$lang->score->common = '积分';
+$lang->score->common      = '积分';
+$lang->score->getScoreURL = 'https://www.chanzhi.org/thread/1338.html';
 
 $lang->community = new stdclass();
 $lang->community->common  = '社区';
@@ -506,7 +507,7 @@ $lang->address->allSelect      = '全选';
 $lang->address->deleteEmptyIDs = '未选择删除项';
 /* admin */
 $lang->admin->common        = '后台管理';
-$lang->admin->index         = '控制台';
+$lang->admin->Dashboard         = '控制台';
 $lang->admin->checked       = '已认证';
 $lang->admin->adminLog      = '后台动态';
 $lang->admin->frontLog      = '前台动态';
@@ -661,6 +662,10 @@ $lang->article->sourceList['article']       = '转自文章';
 $lang->article->statusList['normal']      = '正常';
 $lang->article->statusList['draft']       = '草稿';
 
+$lang->article->releaseStatusList['normal'] = '已发布';
+$lang->article->releaseStatusList['draft']  = '最后修改';
+$lang->article->releaseStatusList['timed']  = '定时发送';
+
 $lang->article->sticks[0] = '不置顶';
 $lang->article->sticks[1] = '类目置顶';
 $lang->article->sticks[2] = '全局置顶';
@@ -699,9 +704,10 @@ $lang->article->forwardFrom = '转发自';
 $lang->article->noCategoriesTip = '您还没有添加类目，请添加类目。';
 
 $lang->article->noCategories = array();
-$lang->article->noCategories['article'] = '您还没有为文章添加类目，请添加类目。';
-$lang->article->noCategories['blog']    = '您还没有为博客添加类目，请添加类目。';
-$lang->article->noCategories['video']   = '您还没有为视频添加类目，请添加类目。';
+$lang->article->noCategories['article'] = '您还没有为文章添加类目，请<a href="/admin.php?m=tree&f=browse&type=article">添加类目</a>。';
+$lang->article->noCategories['blog']    = '您还没有为博客添加类目，请<a href="/admin.php?m=tree&f=browse&type=blog">添加类目</a>。';
+$lang->article->noCategories['video']   = '您还没有为视频添加类目，请<a href="/admin.php?m=tree&f=browse&type=video">添加类目</a>。';
+$lang->article->noCategories['forum']   = '您还没有为论坛添加板块，请<a href="/admin.php?m=tree&f=browse&type=forum">添加类目</a>。';
 
 $lang->article->stateList = array();
 $lang->article->stateList['all']        = '全部(%d)';
