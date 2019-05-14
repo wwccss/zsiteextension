@@ -407,7 +407,7 @@ $lang->error->idcard       = '<strong>%s</strong>应当为合法的身份证号�
 
 $lang->pager = new stdclass();
 $lang->pager->noRecord     = "暂时没有记录";
-$lang->pager->digest       = "共 <strong>%s</strong> 条记录，%s <strong>%s/%s</strong> &nbsp; ";
+$lang->pager->digest       = "共 <strong>%s</strong> 条记录，%s &nbsp; ";
 $lang->pager->recPerPage   = "每页 <strong>%s</strong> 条";
 $lang->pager->first        = "<i class='icon-page-first icon-lg' title='首页'></i>";
 $lang->pager->pre          = "<i class='icon icon-angle-left icon-lg' title='上一页'></i>";

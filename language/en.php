@@ -407,7 +407,7 @@ $lang->error->idcard       = '<strong>%s</strong> should be valid idcard.';
 
 $lang->pager = new stdclass();
 $lang->pager->noRecord     = "No record found!";
-$lang->pager->digest       = "<strong>%s</strong> Records found. %s <strong>%s/%s</strong> &nbsp; ";
+$lang->pager->digest       = "<strong>%s</strong> Records found. %s &nbsp; ";
 $lang->pager->recPerPage   = "<strong>%s</strong> Records per Page";
 $lang->pager->first        = "<i class='icon-page-first icon-lg' title='Home'></i>";
 $lang->pager->pre          = "<i class='icon angle-left icon-lg' title='Previous'></i>";
