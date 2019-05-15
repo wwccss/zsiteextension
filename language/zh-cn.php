@@ -73,39 +73,40 @@ $lang->history          = '历史记录';
 $lang->reverse          = '切换顺序';
 $lang->transfer         = '转发';
 
-$lang->reset          = '重置';
-$lang->add            = '新增';
-$lang->edit           = '编辑';
-$lang->copy           = '复制';
-$lang->hide           = '隐藏';
-$lang->delete         = '删除';
-$lang->close          = '关闭';
-$lang->save           = '保存';
-$lang->confirm        = '确认';
-$lang->addToBlacklist = '加黑';
-$lang->send           = '发送';
-$lang->preview        = '预览';
-$lang->goback         = '返回';
-$lang->more           = '更多';
-$lang->refresh        = '刷新';
-$lang->actions        = '操作';
-$lang->feature        = '未来';
-$lang->year           = '年';
-$lang->selectAll      = '全选';
-$lang->selectReverse  = '反选';
-$lang->loading        = '稍候...';
-$lang->sending        = '发送中...';
-$lang->saveSuccess    = '保存成功';
-$lang->setSuccess     = '设置成功';
-$lang->createSuccess  = '创建成功';
-$lang->sendSuccess    = '发送成功';
-$lang->deleteSuccess  = '删除成功';
-$lang->fail           = '失败';
-$lang->noResultsMatch = '没有匹配的选项';
-$lang->alias          = '搜索引擎优化使用，可使用英文或数字';
-$lang->keywordsHolder = '多个关键字中间用逗号隔开';
-$lang->autoUpgrade    = '自动升级';
-$lang->detail         = '详情';
+$lang->reset             = '重置';
+$lang->add               = '新增';
+$lang->edit              = '编辑';
+$lang->copy              = '复制';
+$lang->hide              = '隐藏';
+$lang->delete            = '删除';
+$lang->close             = '关闭';
+$lang->save              = '保存';
+$lang->confirm           = '确认';
+$lang->addToBlacklist    = '加黑';
+$lang->send              = '发送';
+$lang->preview           = '预览';
+$lang->goback            = '返回';
+$lang->more              = '更多';
+$lang->refresh           = '刷新';
+$lang->actions           = '操作';
+$lang->feature           = '未来';
+$lang->year              = '年';
+$lang->selectAll         = '全选';
+$lang->selectReverse     = '反选';
+$lang->loading           = '稍候...';
+$lang->sending           = '发送中...';
+$lang->saveSuccess       = '保存成功';
+$lang->setSuccess        = '设置成功';
+$lang->createSuccess     = '创建成功';
+$lang->sendSuccess       = '发送成功';
+$lang->deleteSuccess     = '删除成功';
+$lang->fail              = '失败';
+$lang->noResultsMatch    = '没有匹配的选项';
+$lang->alias             = '搜索引擎优化使用，可使用英文或数字';
+$lang->keywordsHolder    = '多个关键字中间用逗号隔开';
+$lang->autoUpgrade       = '自动升级';
+$lang->detail            = '详情';
+$lang->searchPlaceholder = '请输入关键字';
 
 $lang->setOkFile = <<<EOT
 <h5>请按照下面的步骤操作以确认您的管理员身份。</h5>
@@ -456,6 +457,8 @@ $lang->action->actor      = '操作者';
 $lang->action->action     = '动作';
 $lang->action->date       = '日期';
 
+$lang->action->switch = '切换';
+
 $lang->action->objectTypes['order'] = '订单';
 
 $lang->action->desc = new stdclass();
@@ -507,7 +510,7 @@ $lang->address->allSelect      = '全选';
 $lang->address->deleteEmptyIDs = '未选择删除项';
 /* admin */
 $lang->admin->common        = '后台管理';
-$lang->admin->Dashboard         = '控制台';
+$lang->admin->dashboard     = '控制台';
 $lang->admin->checked       = '已认证';
 $lang->admin->adminLog      = '后台动态';
 $lang->admin->frontLog      = '前台动态';
@@ -560,7 +563,6 @@ $lang->article->createDraft           = '保存草稿';
 $lang->article->post                  = '我要投稿';
 $lang->article->check                 = '审核投稿';
 $lang->article->reject                = '驳回投稿';
-$lang->article->searchPlaceholder     = '请输入关键字';
 
 $lang->article->id          = '编号';
 $lang->article->category    = '类目';
@@ -587,6 +589,7 @@ $lang->article->comments    = '评论';
 $lang->article->stick       = '置顶';
 $lang->article->order       = '排序';
 $lang->article->isLink      = '跳转';
+$lang->article->transfer    = '转至';
 $lang->article->link        = '链接';
 $lang->article->css         = 'CSS';
 $lang->article->js          = 'JS';
@@ -594,6 +597,7 @@ $lang->article->layout      = '布局';
 $lang->article->viewCount   = '阅读 : %d';
 $lang->article->tobeAudited = '待审核 : %d';
 $lang->article->audited     = '已发布 : %d';
+$lang->article->publish     = '发布';
 
 $lang->article->forward2Blog     = '博客';
 $lang->article->forward2Forum    = '论坛';
@@ -664,7 +668,7 @@ $lang->article->statusList['draft']       = '草稿';
 
 $lang->article->releaseStatusList['normal'] = '已发布';
 $lang->article->releaseStatusList['draft']  = '最后修改';
-$lang->article->releaseStatusList['timed']  = '定时发送';
+$lang->article->releaseStatusList['timed']  = '定时发布';
 
 $lang->article->sticks[0] = '不置顶';
 $lang->article->sticks[1] = '类目置顶';
@@ -707,7 +711,7 @@ $lang->article->noCategories = array();
 $lang->article->noCategories['article'] = '您还没有为文章添加类目，请<a href="/admin.php?m=tree&f=browse&type=article">添加类目</a>。';
 $lang->article->noCategories['blog']    = '您还没有为博客添加类目，请<a href="/admin.php?m=tree&f=browse&type=blog">添加类目</a>。';
 $lang->article->noCategories['video']   = '您还没有为视频添加类目，请<a href="/admin.php?m=tree&f=browse&type=video">添加类目</a>。';
-$lang->article->noCategories['forum']   = '您还没有为论坛添加板块，请<a href="/admin.php?m=tree&f=browse&type=forum">添加类目</a>。';
+$lang->article->noCategories['forum']   = '您还没有为论坛添加板块，请<a href="/admin.php?m=tree&f=browse&type=forum">添加板块</a>。';
 
 $lang->article->stateList = array();
 $lang->article->stateList['all']        = '全部(%d)';
@@ -715,6 +719,7 @@ $lang->article->stateList['normal']     = '已发布(%d)';
 $lang->article->stateList['timed']      = '定时发布(%d)';
 $lang->article->stateList['draft']      = '草稿(%d)';
 $lang->article->stateList['submission'] = '投稿(%d)';
+$lang->article->stateList['stick']      = '置顶(%d)';
 
 $lang->article->blog = new stdclass();
 $lang->article->blog->category                   = '博客列表类目';
@@ -1582,8 +1587,6 @@ $lang->links->common  = '友情链接';
 $lang->links->index   = '首页链接';
 $lang->links->admin   = '友链管理';
 $lang->links->all     = '所有链接';
-/* log */
-$lang->log->switch = '切换';
 /* mail */
 $lang->mail->common = '发信设置';
 $lang->mail->index  = '首页';

@@ -73,39 +73,40 @@ $lang->history          = 'History';
 $lang->reverse          = 'Reverse';
 $lang->transfer         = 'Transfer';
 
-$lang->reset          = 'Reset';
-$lang->add            = 'Add';
-$lang->edit           = 'Edit';
-$lang->copy           = 'Copy';
-$lang->hide           = 'Hide';
-$lang->delete         = 'Delete';
-$lang->close          = 'Close';
-$lang->save           = 'Save';
-$lang->confirm        = 'Confirm';
-$lang->addToBlacklist = 'Block';
-$lang->send           = 'Send';
-$lang->preview        = 'Preview';
-$lang->goback         = 'Back';
-$lang->more           = 'More';
-$lang->refresh        = 'Refresh';
-$lang->actions        = 'Action';
-$lang->feature        = 'Feature';
-$lang->year           = 'Year';
-$lang->selectAll      = 'Select All';
-$lang->selectReverse  = 'Select Reverse';
-$lang->loading        = 'Loading...';
-$lang->sending        = 'Sending...';
-$lang->saveSuccess    = 'Done';
-$lang->setSuccess     = 'Done';
-$lang->createSuccess  = 'Done';
-$lang->sendSuccess    = 'Done';
-$lang->deleteSuccess  = 'Deleted';
-$lang->fail           = 'Failed';
-$lang->noResultsMatch = 'No match found!';
-$lang->alias          = 'For SEO, enter letters and numbers.';
-$lang->keywordsHolder = 'use comma to separate tags';
-$lang->autoUpgrade    = 'Auto update';
-$lang->detail         = 'Detail';
+$lang->reset             = 'Reset';
+$lang->add               = 'Add';
+$lang->edit              = 'Edit';
+$lang->copy              = 'Copy';
+$lang->hide              = 'Hide';
+$lang->delete            = 'Delete';
+$lang->close             = 'Close';
+$lang->save              = 'Save';
+$lang->confirm           = 'Confirm';
+$lang->addToBlacklist    = 'Block';
+$lang->send              = 'Send';
+$lang->preview           = 'Preview';
+$lang->goback            = 'Back';
+$lang->more              = 'More';
+$lang->refresh           = 'Refresh';
+$lang->actions           = 'Action';
+$lang->feature           = 'Feature';
+$lang->year              = 'Year';
+$lang->selectAll         = 'Select All';
+$lang->selectReverse     = 'Select Reverse';
+$lang->loading           = 'Loading...';
+$lang->sending           = 'Sending...';
+$lang->saveSuccess       = 'Done';
+$lang->setSuccess        = 'Done';
+$lang->createSuccess     = 'Done';
+$lang->sendSuccess       = 'Done';
+$lang->deleteSuccess     = 'Deleted';
+$lang->fail              = 'Failed';
+$lang->noResultsMatch    = 'No match found!';
+$lang->alias             = 'For SEO, enter letters and numbers.';
+$lang->keywordsHolder    = 'use comma to separate tags';
+$lang->autoUpgrade       = 'Auto update';
+$lang->detail            = 'Detail';
+$lang->searchPlaceholder = 'Input keywords to search';
 
 $lang->setOkFile = <<<EOT
 <h5>Please confirm your admin account by following steps below.</h5>
@@ -456,6 +457,8 @@ $lang->action->actor      = 'Account';
 $lang->action->action     = 'Action';
 $lang->action->date       = 'Date';
 
+$lang->action->switch = 'Switch';
+
 $lang->action->objectTypes['order'] = 'Order';
 
 $lang->action->desc = new stdclass();
@@ -506,8 +509,10 @@ $lang->address->complete       = 'Done';
 $lang->address->allSelect      = 'All';
 $lang->address->deleteEmptyIDs = 'None Selected';/* admin */
 $lang->admin->common        = 'Admin';
-$lang->admin->Dashboard         = 'Dashboard';
+$lang->admin->dashboard     = 'Dashboard';
 $lang->admin->checked       = 'Checked';
+$lang->admin->adminLog      = 'Admin';
+$lang->admin->frontLog      = 'Front';
 
 $lang->admin->getEmailCodeByApi  = 'Get email code';
 $lang->admin->getMobileCodeByApi = 'Get mobile code';
@@ -557,7 +562,6 @@ $lang->article->createDraft           = 'Save the draft';
 $lang->article->post                  = 'Submit';
 $lang->article->check                 = 'Review';
 $lang->article->reject                = 'Reject';
-$lang->article->searchPlaceholder     = 'Input keywords to search';
 
 $lang->article->id          = 'ID';
 $lang->article->category    = 'Category';
@@ -584,6 +588,7 @@ $lang->article->comments    = 'Comment';
 $lang->article->stick       = 'Sticky';
 $lang->article->order       = 'Ranking';
 $lang->article->isLink      = 'Link';
+$lang->article->transfer    = 'Transfer';
 $lang->article->link        = 'Link';
 $lang->article->css         = 'CSS';
 $lang->article->js          = 'JS';
@@ -591,6 +596,7 @@ $lang->article->layout      = 'Layout';
 $lang->article->viewCount   = 'views:%d';
 $lang->article->tobeAudited = 'Un Audited:%d';
 $lang->article->audited     = 'Audited:%d';
+$lang->article->publish     = 'Publish';
 
 $lang->article->forward2Blog     = 'To Blog';
 $lang->article->forward2Forum    = 'To Forum';
@@ -712,6 +718,7 @@ $lang->article->stateList['normal']     = 'Normal(%d)';
 $lang->article->stateList['timed']      = 'Timed(%d)';
 $lang->article->stateList['draft']      = 'Draft(%d)';
 $lang->article->stateList['submission'] = 'Submission(%d)';
+$lang->article->stateList['stick']      = 'Stick(%d)';
 
 $lang->article->blog = new stdclass();
 $lang->article->blog->category                   = 'Category';
@@ -4130,6 +4137,9 @@ $lang->widget->stat->pv      = 'PV';
 $lang->widget->stat->uv      = 'UV';
 $lang->widget->stat->ip      = 'IP';
 
+$lang->widget->stat->statLeft  = array('article' => 'article', 'blog' => 'article', 'product' => 'product', 'thread' => 'thread', 'user' => 'user');
+$lang->widget->stat->statRight = array('pv' => 'stat', 'uv' => 'stat', 'ip' => 'stat');
+
 $lang->widget->process = array();
 $lang->widget->process[0] = array('Site','Setting','Account');
 $lang->widget->process[1] = array('Design','Theme','Typeset');
@@ -4147,3 +4157,11 @@ $lang->widget->todoList->needDeliveryOrder    = 'Pending Delivery';
 $lang->widget->todoList->needRetrunOrder      = 'Pending Return';
 $lang->widget->todoList->needReceivingOrder   = 'Pending Delivery';
 $lang->widget->todoList->needAddProduct       = 'Pending Replenishment';
+
+$lang->widget->operationLog = new stdclass();
+$lang->widget->operationLog->today = 'Today';
+
+$lang->widget->operationLog->admin = new stdclass();
+$lang->widget->operationLog->admin->login = 'login.';
+$lang->widget->operationLog->front = new stdclass();
+$lang->widget->operationLog->front->login = 'login.';
