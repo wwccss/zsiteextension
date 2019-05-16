@@ -233,7 +233,7 @@ $lang->menu->bear          = '熊掌号|bear|setting|';
 $lang->menu->package    = '插件|package|browse|';
 $lang->menu->community  = '社区|admin|register|';
 
-$lang->menu->articleCreate  = '发布文章|article|create|';
+$lang->menu->articleCreate  = '发布文章|article|create|type=article';
 $lang->menu->productCreate  = '添加产品|product|create|';
 $lang->menu->feedback       = '处理反馈|message|admin|';
 $lang->menu->siteSetting    = '站点设置|site|setBasic|';
