@@ -594,8 +594,8 @@ $lang->article->css         = 'CSS';
 $lang->article->js          = 'JS';
 $lang->article->layout      = 'Layout';
 $lang->article->viewCount   = 'views:%d';
-$lang->article->tobeAudited = 'Un Audited:%d';
-$lang->article->audited     = 'Audited:%d';
+$lang->article->underReview = 'UnderReview:%d';
+$lang->article->reviewed    = 'Reviewed:%d';
 $lang->article->publish     = 'Publish';
 
 $lang->article->forward2Blog     = 'To Blog';
@@ -665,9 +665,9 @@ $lang->article->sourceList['article']       = 'Repost';
 $lang->article->statusList['normal']      = 'Normal';
 $lang->article->statusList['draft']       = 'Draft';
 
-$lang->article->releaseStatusList['normal'] = 'Released';
-$lang->article->releaseStatusList['draft']  = 'Last modification';
-$lang->article->releaseStatusList['timed']  = 'Timed';
+$lang->article->releaseStatusList['normal'] = 'Published';
+$lang->article->releaseStatusList['draft']  = 'Edited';
+$lang->article->releaseStatusList['timed']  = 'Scheduled';
 
 $lang->article->sticks[0] = 'No Sticky';
 $lang->article->sticks[1] = 'Categorical';
@@ -714,8 +714,8 @@ $lang->article->noCategories['forum']   = 'You have not added the categories for
 
 $lang->article->stateList = array();
 $lang->article->stateList['all']        = 'All(%d)';
-$lang->article->stateList['normal']     = 'Normal(%d)';
-$lang->article->stateList['timed']      = 'Timed(%d)';
+$lang->article->stateList['normal']     = 'Published(%d)';
+$lang->article->stateList['timed']      = 'Scheduled(%d)';
 $lang->article->stateList['draft']      = 'Draft(%d)';
 $lang->article->stateList['submission'] = 'Submission(%d)';
 $lang->article->stateList['stick']      = 'Stick(%d)';

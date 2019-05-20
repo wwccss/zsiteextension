@@ -595,8 +595,8 @@ $lang->article->css         = 'CSS';
 $lang->article->js          = 'JS';
 $lang->article->layout      = '布局';
 $lang->article->viewCount   = '阅读 : %d';
-$lang->article->tobeAudited = '待审核 : %d';
-$lang->article->audited     = '已发布 : %d';
+$lang->article->underReview = '待审核 : %d';
+$lang->article->reviewed    = '已发布 : %d';
 $lang->article->publish     = '发布';
 
 $lang->article->forward2Blog     = '博客';
