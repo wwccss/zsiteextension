@@ -1130,6 +1130,8 @@ $lang->book->images      = '图片';
 $lang->book->chapterList = '目录';
 $lang->book->articleList = '文章';
 $lang->book->fullScreen  = '全屏显示';
+$lang->book->fullShow    = '全部展示';
+$lang->book->fullHide    = '全部隐藏';
 
 $lang->book->typeList['book']    = '手册';
 $lang->book->typeList['chapter'] = '章节';
