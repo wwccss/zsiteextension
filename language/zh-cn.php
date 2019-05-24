@@ -107,6 +107,7 @@ $lang->keywordsHolder    = '多个关键字中间用逗号隔开';
 $lang->autoUpgrade       = '自动升级';
 $lang->detail            = '详情';
 $lang->searchPlaceholder = '请输入关键字';
+$lang->selectDate        = '选择日期';
 
 $lang->setOkFile = <<<EOT
 <h5>请按照下面的步骤操作以确认您的管理员身份。</h5>
@@ -581,7 +582,6 @@ $lang->article->editor      = '编辑';
 $lang->article->date        = '日期';
 $lang->article->addedDate   = '发布时间';
 $lang->article->editedDate  = '编辑时间';
-$lang->article->selectDate  = '选择日期';
 $lang->article->status      = '状态';
 $lang->article->type        = '类型';
 $lang->article->statistics  = '统计';
@@ -724,6 +724,7 @@ $lang->article->stateList['stick']      = '置顶(%d)';
 
 $lang->article->stateShow['article']    = ',all,normal,timed,draft,submission,stick';
 $lang->article->stateShow['page']       = ',all,normal,timed,draft';
+$lang->article->stateShow['blog']    = ',all,normal,timed,draft,submission,stick';
 
 $lang->article->blog = new stdclass();
 $lang->article->blog->category                   = '博客列表类目';
@@ -1106,7 +1107,7 @@ $lang->book->index      = '首页';
 $lang->book->more       = '更多';
 
 $lang->book->searchResults     = '搜索结果';
-$lang->book->inputArticleTitle = '请输入文章标题';
+$lang->book->searchPlaceholder = '请输入文章关键字';
 
 $lang->book->id          = '编号';
 $lang->book->type        = '类型';
@@ -1130,8 +1131,8 @@ $lang->book->images      = '图片';
 $lang->book->chapterList = '目录';
 $lang->book->articleList = '文章';
 $lang->book->fullScreen  = '全屏显示';
-$lang->book->fullShow    = '全部展示';
-$lang->book->fullHide    = '全部隐藏';
+$lang->book->fullShow    = '全部展开';
+$lang->book->fullHide    = '全部收起';
 
 $lang->book->typeList['book']    = '手册';
 $lang->book->typeList['chapter'] = '章节';
@@ -1159,10 +1160,17 @@ $lang->book->goHome   = '返回首页';
 $lang->book->aliasRepeat   = '别名: %s 不能重复添加。';
 $lang->book->confirmDelete = "<span class='text-danger'>此操作将删除该手册所有章节和文章，确认删除?</span>";
 
+$lang->book->releaseStatusList['normal'] = '已发布';
+$lang->book->releaseStatusList['draft']  = '最后修改';
+$lang->book->releaseStatusList['timed']  = '定时发布';
+
 $lang->book->note = new stdclass();
 $lang->book->note->addedDate = '可以延迟到选定的时间发布。';
 $lang->book->note->link      = '请输入链接，可以是站外链接';
-/* cart */
+
+$lang->book->move = new stdclass();
+$lang->book->move->up   = '上移';
+$lang->book->move->down = '下移';/* cart */
 $lang->cart->common = '购物车';
 $lang->cart->browse = '我的购物车';
 
@@ -1846,6 +1854,11 @@ $lang->order->comment           = '备注';
 $lang->order->manage            = '管理';
 $lang->order->finish            = '完成';
 
+$lang->order->paypalParam    = 'paypal 参数';
+$lang->order->paypalAccount  = 'API用户名';
+$lang->order->paypalPassword = 'API密码';
+$lang->order->paypalSign     = '签名';
+
 $lang->order->deliverList['not_send']  = '待发货';
 $lang->order->deliverList['send']      = '已发货';
 $lang->order->deliverList['confirmed'] = '已收货';
@@ -1931,6 +1944,10 @@ $lang->order->placeholder->mchid     = '微信支付分配的商户号';
 $lang->order->placeholder->apikey    = '微信支付API安全密钥';
 $lang->order->placeholder->appsecret = '微信公众号密钥';
 $lang->order->placeholder->note      = '选填，给卖家留言';
+
+$lang->order->placeholder->account  = '请填写 Paypal 商户账号';
+$lang->order->placeholder->password = '请填写 Paypal API 密码';
+$lang->order->placeholder->sign     = '请填写 Paypal 签名';
 
 $lang->order->paymentList = array();
 $lang->order->paymentList['alipay']        = '支付宝即时到帐';
@@ -2243,6 +2260,11 @@ $lang->product->priceOptions[0] = '不显示';
 $lang->product->namePositionOptions = array();
 $lang->product->namePositionOptions['left']   = '居左';
 $lang->product->namePositionOptions['center'] = '居中';
+
+$lang->product->stateList = array();
+$lang->product->stateList['all']        = '全部(%d)';
+$lang->product->stateList['normal']     = '已上架(%d)';
+$lang->product->stateList['timed']      = '定时发布(%d)';
 
 $lang->product->noCategoriesTip = '您还没有为产品添加类目，请添加类目';
 /* reply */

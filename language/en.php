@@ -107,6 +107,7 @@ $lang->keywordsHolder    = 'use comma to separate tags';
 $lang->autoUpgrade       = 'Auto update';
 $lang->detail            = 'Detail';
 $lang->searchPlaceholder = 'Input keywords to search';
+$lang->selectDate        = 'Select Date';
 
 $lang->setOkFile = <<<EOT
 <h5>Please confirm your admin account by following steps below.</h5>
@@ -580,7 +581,6 @@ $lang->article->editor      = 'Edit';
 $lang->article->date        = 'Date';
 $lang->article->addedDate   = 'Publish On';
 $lang->article->editedDate  = 'Edit On';
-$lang->article->selectDate  = 'Select Date';
 $lang->article->status      = 'Status';
 $lang->article->type        = 'Type';
 $lang->article->statistics  = 'Statistics';
@@ -1115,7 +1115,7 @@ $lang->book->index      = 'Home';
 $lang->book->more       = 'More';
 
 $lang->book->searchResults     = 'Search Results';
-$lang->book->inputArticleTitle = 'Pleae enter the title of the article';
+$lang->book->searchPlaceholder = 'Pleae enter the keywords of the article';
 
 $lang->book->id          = 'ID';
 $lang->book->type        = 'Type';
@@ -1168,9 +1168,17 @@ $lang->book->goHome   = 'Back to Homepage';
 $lang->book->aliasRepeat   = 'Alias %s cannot be added more than twice.';
 $lang->book->confirmDelete = "<span class='text-danger'>You will delete all chapters and articles in this manual. Do you want to delete it?</span>";
 
+$lang->book->releaseStatusList['normal'] = 'Published';
+$lang->book->releaseStatusList['draft']  = 'Edited';
+$lang->book->releaseStatusList['timed']  = 'Scheduled';
+
 $lang->book->note = new stdclass();
 $lang->book->note->addedDate = 'You can publish it on selected date.';
 $lang->book->note->link      = 'Enter the link here. External link is OK.';
+
+$lang->book->move = new stdclass();
+$lang->book->move->up   = 'Up';
+$lang->book->move->down = 'Down';
 /* cart */
 $lang->cart->common = 'Shopping Cart';
 $lang->cart->browse = 'My Cart';
@@ -1855,6 +1863,11 @@ $lang->order->comment           = 'Comment';
 $lang->order->manage            = 'Manage';
 $lang->order->finish            = 'Done';
 
+$lang->order->paypalParam    = 'paypal Parameters';
+$lang->order->paypalAccount  = 'API Account';
+$lang->order->paypalPassword = 'API Password';
+$lang->order->paypalSign     = 'Sign';
+
 $lang->order->deliverList['not_send']  = 'Pending';
 $lang->order->deliverList['send']      = 'Delivered';
 $lang->order->deliverList['confirmed'] = 'Received';
@@ -1940,6 +1953,10 @@ $lang->order->placeholder->mchid     = 'Merchant id assigned by wechatpay';
 $lang->order->placeholder->apikey    = 'Key of wechatpay API';
 $lang->order->placeholder->appsecret = "wechat public's key";
 $lang->order->placeholder->note      = 'Optional，leave a message for seller.';
+
+$lang->order->placeholder->account  = 'please fill in Paypal Account';
+$lang->order->placeholder->password = 'Please fill in Paypal API Password';
+$lang->order->placeholder->sign     = 'Please fill in Paypal Sign';
 
 $lang->order->paymentList = array();
 $lang->order->paymentList['alipay']        = 'Alipay Payment';
