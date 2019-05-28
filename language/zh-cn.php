@@ -216,11 +216,10 @@ $lang->menu->visual         = "可视化|visual|design|";
 $lang->menu->edit           = "编辑模板|ui|edittemplate|";
 $lang->menu->setTemplate    = '我的主题|ui|settemplate|';
 $lang->menu->themeStore     = '主题市场|ui|themeStore|';
-$lang->menu->desktopNav     = '桌面端导航|nav|admin|type=desktop_top';
-$lang->menu->desktopBlogNav = '桌面端博客导航|nav|admin|type=desktop_blog';
-$lang->menu->mobileNav      = '移动端导航|nav|admin|type=mobile_top';
-$lang->menu->mobileBlogNav  = '移动端博客导航|nav|admin|type=mobile_blog';
-$lang->menu->wmpNav         = '小程序导航|nav|admin|type=wmp';
+$lang->menu->desktop_top    = '桌面端导航|nav|admin|type=desktop_top';
+$lang->menu->desktop_blog   = '桌面端博客导航|nav|admin|type=desktop_blog';
+$lang->menu->mobile_top     = '移动端导航|nav|admin|type=mobile_top';
+$lang->menu->mobile_blog    = '移动端博客导航|nav|admin|type=mobile_blog';
 $lang->menu->component      = '常用组件|ui|component|';
 $lang->menu->browsesource   = '素材库|file|browsesource|';
 
@@ -724,7 +723,7 @@ $lang->article->stateList['stick']      = '置顶(%d)';
 
 $lang->article->stateShow['article']    = ',all,normal,timed,draft,submission,stick';
 $lang->article->stateShow['page']       = ',all,normal,timed,draft';
-$lang->article->stateShow['blog']    = ',all,normal,timed,draft,submission,stick';
+$lang->article->stateShow['blog']       = ',all,normal,timed,draft,stick';
 
 $lang->article->blog = new stdclass();
 $lang->article->blog->category                   = '博客列表类目';
