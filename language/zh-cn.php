@@ -1130,8 +1130,8 @@ $lang->book->images      = '图片';
 $lang->book->chapterList = '目录';
 $lang->book->articleList = '文章';
 $lang->book->fullScreen  = '全屏显示';
-$lang->book->fullShow    = '全部展开';
-$lang->book->fullHide    = '全部收起';
+$lang->book->showAll     = '全部展开';
+$lang->book->hideAll     = '全部收起';
 
 $lang->book->typeList['book']    = '手册';
 $lang->book->typeList['chapter'] = '章节';
@@ -1169,7 +1169,8 @@ $lang->book->note->link      = '请输入链接，可以是站外链接';
 
 $lang->book->move = new stdclass();
 $lang->book->move->up   = '上移';
-$lang->book->move->down = '下移';/* cart */
+$lang->book->move->down = '下移';
+/* cart */
 $lang->cart->common = '购物车';
 $lang->cart->browse = '我的购物车';
 
