@@ -108,6 +108,7 @@ $lang->autoUpgrade       = 'Auto update';
 $lang->detail            = 'Detail';
 $lang->searchPlaceholder = 'Input keywords to search';
 $lang->selectDate        = 'Select Date';
+$lang->bindWechat        = 'Please bind your Wechat first';
 
 $lang->setOkFile = <<<EOT
 <h5>Please confirm your admin account by following steps below.</h5>

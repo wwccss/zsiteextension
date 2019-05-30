@@ -108,6 +108,7 @@ $lang->autoUpgrade       = '自动升级';
 $lang->detail            = '详情';
 $lang->searchPlaceholder = '请输入关键字';
 $lang->selectDate        = '选择日期';
+$lang->bindWechat        = '请先绑定您的微信';
 
 $lang->setOkFile = <<<EOT
 <h5>请按照下面的步骤操作以确认您的管理员身份。</h5>
