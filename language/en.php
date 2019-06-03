@@ -1866,6 +1866,7 @@ $lang->order->last              = 'Last Action';
 $lang->order->comment           = 'Comment';
 $lang->order->manage            = 'Manage';
 $lang->order->finish            = 'Done';
+$lang->order->moreLabels        = 'More Labels';
 
 $lang->order->paypalParam    = 'paypal Parameters';
 $lang->order->paypalAccount  = 'API Account';
@@ -1998,17 +1999,19 @@ $lang->order->abbr->deliveriedDate = 'Delivered';
 $lang->order->abbr->confirmedDate  = 'Received';
 $lang->order->abbr->createdDate    = 'Created';
 
-$lang->order->searchLabels = new stdclass();
-$lang->order->searchLabels->all         = 'All|mode=all';
-$lang->order->searchLabels->waitPay     = 'Not paid|mode=payStatus&param=not_paid';
-$lang->order->searchLabels->waitSend    = 'Pending|mode=deliveryStatus&param=not_send';
-$lang->order->searchLabels->waitConfirm = 'Sent|mode=deliveryStatus&param=send';
-$lang->order->searchLabels->refunding   = 'Refunding|mode=payStatus&param=refunding';
-$lang->order->searchLabels->confirmed   = 'Received|mode=deliveryStatus&param=confirmed';
-$lang->order->searchLabels->finished    = 'Finished|mode=status&param=finished';
-$lang->order->searchLabels->refunded    = 'Refunded|mode=payStatus&param=refunded';
-$lang->order->searchLabels->canceled    = 'Cancelled|mode=status&param=canceled';
-$lang->order->searchLabels->expired     = 'Expired|mode=status&param=expired';
+$lang->order->displayedSearchLabels = new stdclass();
+$lang->order->displayedSearchLabels->all         = 'All|mode=all';
+$lang->order->displayedSearchLabels->waitPay     = 'Not paid|mode=payStatus&param=not_paid';
+$lang->order->displayedSearchLabels->waitSend    = 'Pending|mode=deliveryStatus&param=not_send';
+$lang->order->displayedSearchLabels->waitConfirm = 'Sent|mode=deliveryStatus&param=send';
+$lang->order->displayedSearchLabels->refunding   = 'Refunding|mode=payStatus&param=refunding';
+
+$lang->order->hiddenSearchLabels = new stdclass();
+$lang->order->hiddenSearchLabels->confirmed   = 'Received|mode=deliveryStatus&param=confirmed';
+$lang->order->hiddenSearchLabels->finished    = 'Finished|mode=status&param=finished';
+$lang->order->hiddenSearchLabels->refunded    = 'Refunded|mode=payStatus&param=refunded';
+$lang->order->hiddenSearchLabels->canceled    = 'Cancelled|mode=status&param=canceled';
+$lang->order->hiddenSearchLabels->expired     = 'Expired|mode=status&param=expired';
 /* package */
 $lang->package->common        = 'Extension';
 $lang->package->browse        = 'View Extensions';
@@ -2141,6 +2144,7 @@ $lang->product->unit        = 'Unit';
 $lang->product->price       = 'Price';
 $lang->product->promotion   = 'On Sale';
 $lang->product->amount      = 'Quantity';
+$lang->product->replenish   = 'Replenish';
 $lang->product->keywords    = 'Tags';
 $lang->product->desc        = 'Introduction';
 $lang->product->content     = 'Details';
@@ -2163,9 +2167,10 @@ $lang->product->reviewed    = 'Reviewed:%d';
 $lang->product->css         = 'CSS';
 $lang->product->js          = 'JS';
 
-$lang->product->currency  = 'Currency';
-$lang->product->stock     = 'Inventory';
-$lang->product->negotiate = 'Negotiate';
+$lang->product->currency     = 'Currency';
+$lang->product->stock        = 'Inventory';
+$lang->product->stockWarning = "<span class='first'>Early warning when stock is less than </span>%s";
+$lang->product->negotiate    = 'Negotiate';
 
 $lang->product->list         = 'Product';
 $lang->product->view         = 'View';
@@ -2282,6 +2287,12 @@ $lang->product->stateList = array();
 $lang->product->stateList['all']     = 'All(%d)';
 $lang->product->stateList['normal']  = 'Normal(%d)';
 $lang->product->stateList['offline'] = 'Offline(%d)';
+
+$lang->product->iconList = array();
+$lang->product->iconList['wechatpay']     = "<i class='icon icon-wechat'></i>";
+$lang->product->iconList['COD']           = "<i class='icon icon-wechat'></i>";
+$lang->product->iconList['alipaySecured'] = "<i class='icon icon-wechat'></i>";
+$lang->product->iconList['alipay']        = "<i class='icon icon-wechat'></i>";
 
 $lang->product->noCategoriesTip = 'You have not added any categories. Please add a category at first.';
 /* reply */

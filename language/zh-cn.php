@@ -1853,6 +1853,7 @@ $lang->order->last              = '最后处理时间';
 $lang->order->comment           = '备注';
 $lang->order->manage            = '管理';
 $lang->order->finish            = '完成';
+$lang->order->moreLabels        = '更多筛选';
 
 $lang->order->paypalParam    = 'paypal 参数';
 $lang->order->paypalAccount  = 'API用户名';
@@ -1985,17 +1986,19 @@ $lang->order->abbr->deliveriedDate = '发货';
 $lang->order->abbr->confirmedDate  = '收货';
 $lang->order->abbr->createdDate    = '下单';
 
-$lang->order->searchLabels = new stdclass();
-$lang->order->searchLabels->all         = '所有|mode=all';
-$lang->order->searchLabels->waitPay     = '待付款|mode=payStatus&param=not_paid';
-$lang->order->searchLabels->waitSend    = '待发货|mode=deliveryStatus&param=not_send';
-$lang->order->searchLabels->waitConfirm = '待收货|mode=deliveryStatus&param=send';
-$lang->order->searchLabels->refunding   = '待退款|mode=payStatus&param=refunding';
-$lang->order->searchLabels->confirmed   = '已收货|mode=deliveryStatus&param=confirmed';
-$lang->order->searchLabels->finished    = '已完成|mode=status&param=finished';
-$lang->order->searchLabels->refunded    = '已退款|mode=payStatus&param=refunded';
-$lang->order->searchLabels->canceled    = '已取消|mode=status&param=canceled';
-$lang->order->searchLabels->expired     = '已过期|mode=status&param=expired';
+$lang->order->displayedSearchLabels = new stdclass();
+$lang->order->displayedSearchLabels->all         = '所有(%d)|mode=all';
+$lang->order->displayedSearchLabels->waitPay     = '待付款(%d)|mode=payStatus&param=not_paid';
+$lang->order->displayedSearchLabels->waitSend    = '待发货(%d)|mode=deliveryStatus&param=not_send';
+$lang->order->displayedSearchLabels->refunding   = '待退款(%d)|mode=payStatus&param=refunding';
+$lang->order->displayedSearchLabels->waitConfirm = '待收货(%d)|mode=deliveryStatus&param=send';
+
+$lang->order->hiddenSearchLabels = new stdclass();
+$lang->order->hiddenSearchLabels->confirmed   = '已收货|mode=deliveryStatus&param=confirmed';
+$lang->order->hiddenSearchLabels->finished    = '已完成|mode=status&param=finished';
+$lang->order->hiddenSearchLabels->refunded    = '已退款|mode=payStatus&param=refunded';
+$lang->order->hiddenSearchLabels->canceled    = '已取消|mode=status&param=canceled';
+$lang->order->hiddenSearchLabels->expired     = '已过期|mode=status&param=expired';
 /* package */
 $lang->package->common        = '插件';
 $lang->package->browse        = '浏览插件';
@@ -2128,6 +2131,7 @@ $lang->product->unit        = '单位';
 $lang->product->price       = '价格';
 $lang->product->promotion   = '特价';
 $lang->product->amount      = '库存';
+$lang->product->replenish   = '补货';
 $lang->product->keywords    = '关键字';
 $lang->product->desc        = '简介';
 $lang->product->content     = '详情';
@@ -2150,9 +2154,10 @@ $lang->product->reviewed    = '已发布 : %d';
 $lang->product->css         = 'CSS';
 $lang->product->js          = 'JS';
 
-$lang->product->currency  = '货币';
-$lang->product->stock     = '库存';
-$lang->product->negotiate = '面议';
+$lang->product->currency     = '货币';
+$lang->product->stock        = '库存';
+$lang->product->stockWarning = "<span class='first'>当库存小于</span>%s<span>时进行预警</span>";
+$lang->product->negotiate    = '面议';
 
 $lang->product->list         = '产品列表';
 $lang->product->view         = '详情';
@@ -2269,6 +2274,12 @@ $lang->product->stateList = array();
 $lang->product->stateList['all']     = '全部(%d)';
 $lang->product->stateList['normal']  = '已上架(%d)';
 $lang->product->stateList['offline'] = '已下架(%d)';
+
+$lang->product->iconList = array();
+$lang->product->iconList['wechatpay']     = "<i class='icon icon-wechat'></i>";
+$lang->product->iconList['COD']           = "<i class='icon icon-wechat'></i>";
+$lang->product->iconList['alipaySecured'] = "<i class='icon icon-wechat'></i>";
+$lang->product->iconList['alipay']        = "<i class='icon icon-wechat'></i>";
 
 $lang->product->noCategoriesTip = '您还没有为产品添加类目，请添加类目';
 /* reply */
