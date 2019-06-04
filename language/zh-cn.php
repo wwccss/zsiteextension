@@ -1817,6 +1817,7 @@ $lang->nav->dropdown['dropdown-hover']  = '悬停展开';
 $lang->order->common  = '订单';
 
 $lang->order->id                = 'ID';
+$lang->order->orderNumber       = '订单号';
 $lang->order->productInfo       = '商品信息';
 $lang->order->account           = '帐号';
 $lang->order->address           = '收货地址';
@@ -1824,6 +1825,7 @@ $lang->order->price             = '价格';
 $lang->order->score             = '积分';
 $lang->order->count             = '数量';
 $lang->order->amount            = '金额';
+$lang->order->category          = '产品分类';
 $lang->order->sn                = '交易号';
 $lang->order->payStatus         = '付款状态';
 $lang->order->paidDate          = '付款时间';
@@ -1835,9 +1837,11 @@ $lang->order->createdDate       = '下单时间';
 $lang->order->express           = '快递公司';
 $lang->order->waybill           = '快递单号';
 $lang->order->expressInfo       = '快递详情';
+$lang->order->buyer             = '买家';
 $lang->order->receiver          = '收货人';
 $lang->order->noRecord          = '无';
 $lang->order->status            = '状态';
+$lang->order->orderStatus       = '订单状态';
 $lang->order->note              = '买家留言';
 $lang->order->frontNote         = '留言';
 $lang->order->basic             = '基本信息';
@@ -1972,6 +1976,7 @@ $lang->order->statusList['expired']   = '已过期';
 
 $lang->order->payStatusList = array();
 $lang->order->payStatusList['not_paid']  = '未付款';
+$lang->order->payStatusList['COD']       = '货到付款';
 $lang->order->payStatusList['paid']      = '已付款';
 $lang->order->payStatusList['refunding'] = '待退款';
 $lang->order->payStatusList['refunded']  = '已退款';
@@ -2277,9 +2282,9 @@ $lang->product->stateList['offline'] = '已下架(%d)';
 
 $lang->product->iconList = array();
 $lang->product->iconList['wechatpay']     = "<i class='icon icon-wechat'></i>";
-$lang->product->iconList['COD']           = "<i class='icon icon-wechat'></i>";
-$lang->product->iconList['alipaySecured'] = "<i class='icon icon-wechat'></i>";
-$lang->product->iconList['alipay']        = "<i class='icon icon-wechat'></i>";
+$lang->product->iconList['COD']           = "<i class='icon icon-delivery'></i>";
+$lang->product->iconList['alipaySecured'] = "<i class='icon icon-alipay'></i>";
+$lang->product->iconList['alipay']        = "<i class='icon icon-alipay'></i>";
 
 $lang->product->noCategoriesTip = '您还没有为产品添加类目，请添加类目';
 /* reply */
