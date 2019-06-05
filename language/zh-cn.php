@@ -1992,7 +1992,7 @@ $lang->order->abbr->confirmedDate  = '收货';
 $lang->order->abbr->createdDate    = '下单';
 
 $lang->order->displayedSearchLabels = new stdclass();
-$lang->order->displayedSearchLabels->all         = '所有(%d)|mode=all';
+$lang->order->displayedSearchLabels->all         = '所有(%d)|mode=all&param=';
 $lang->order->displayedSearchLabels->waitPay     = '待付款(%d)|mode=payStatus&param=not_paid';
 $lang->order->displayedSearchLabels->waitSend    = '待发货(%d)|mode=deliveryStatus&param=not_send';
 $lang->order->displayedSearchLabels->refunding   = '待退款(%d)|mode=payStatus&param=refunding';
