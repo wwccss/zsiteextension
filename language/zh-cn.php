@@ -3569,6 +3569,7 @@ $lang->user->status     = '状态';
 $lang->user->captcha    = '验证码';
 $lang->user->alert      = '您的帐号已被禁用';
 $lang->user->privilege  = '权限';
+$lang->user->grouppriv  = '分组权限';
 $lang->user->certified  = '已认证';
 
 $lang->user->all             = '全部会员';
@@ -3601,8 +3602,8 @@ $lang->user->getCertifyCode  = '获取验证码';
 $lang->user->setEmail        = '邮箱设置';
 $lang->user->setMobile       = '手机设置';
 $lang->user->newEmail        = '新邮箱';
-$lang->user->rank            = '等级积分';
-$lang->user->score           = '消耗积分';
+$lang->user->rank            = '总积分';
+$lang->user->score           = '可用积分';
 $lang->user->details         = '积分详情';
 $lang->user->buyScore        = '积分充值';
 $lang->user->addScore        = '奖励积分';
@@ -3790,9 +3791,9 @@ $lang->user->oauth->lblBindFailed    = "绑定用户失败！";
 $lang->user->oauth->ignore           = "忽略";
 
 $lang->user->statusList = new stdclass();
-$lang->user->statusList->locked    = "<label class='label label-danger'>锁定</label>";
-$lang->user->statusList->forbidden = "<label class='label label-danger'>禁用</label>";
-$lang->user->statusList->normal    = "<label class='label label-success'>正常</label>";
+$lang->user->statusList->locked    = "<span class='span span-danger'>锁定</span>";
+$lang->user->statusList->forbidden = "<span class='span span-danger'>禁用</span>";
+$lang->user->statusList->normal    = "<span class='span span-success'>正常</span>";
 
 $lang->user->control = new stdclass();
 $lang->user->control->common      = '用户中心';
@@ -3838,6 +3839,12 @@ $lang->user->placeholder->password   = '请输入您的网站登录密码';
 $lang->user->placeholder->verifyCode = '请输入验证邮件里面收到的验证码';
 
 $lang->user->isSensitive = '用户名或者真实姓名不能含有敏感词，请修改后再提交';
+
+$lang->user->stateList = array();
+$lang->user->stateList['all']   = '全部(%d)';
+$lang->user->stateList['admin'] = '管理员(%d)';
+$lang->user->stateList['email'] = '邮箱认证(%d)';
+$lang->user->stateList['qq']    = 'QQ会员(%d)';
 /* visual */
 $lang->visual->common      = "预览编辑";
 $lang->visual->editLogo    = "编辑标志";

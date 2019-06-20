@@ -3582,6 +3582,7 @@ $lang->user->status    = 'Status';
 $lang->user->captcha   = 'Verification Code';
 $lang->user->alert     = 'Your account has been disabled.';
 $lang->user->privilege = 'Privilege';
+$lang->user->grouppriv = 'Group Priv';
 $lang->user->certified = 'Verified';
 
 $lang->user->all             = 'All Users';
@@ -3850,6 +3851,12 @@ $lang->user->placeholder->password   = 'Please enter your password.';
 $lang->user->placeholder->verifyCode = 'Please enter verification code received by Email.';
 
 $lang->user->isSensitive = 'Username can not be sensitive words. Please change it';
+
+$lang->user->stateList = array();
+$lang->user->stateList['all']   = 'All(%d)';
+$lang->user->stateList['admin'] = 'Admin(%d)';
+$lang->user->stateList['email'] = 'Email Certification(%d)';
+$lang->user->stateList['qq']    = 'QQ Certification(%d)';
 /* visual */
 $lang->visual->common      = "Visual Editor";
 $lang->visual->editLogo    = "Edit Logo";
