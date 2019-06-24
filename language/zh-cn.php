@@ -337,8 +337,8 @@ $lang->security->menu->log         = '登录日志|user|adminlog|';
 
 $lang->order   = new stdclass();
 $lang->order->menu = new stdclass();
-$lang->order->menu->product = '商品订单|order|admin|type=shop&mode=all';
-$lang->order->menu->score   = '积分订单|order|admin|type=score&mode=all';
+$lang->order->menu->product = '商品订单|order|admin|type=shop';
+$lang->order->menu->score   = '积分订单|order|admin|type=score';
 
 $lang->cart    = new stdclass();
 $lang->address = new stdclass();
@@ -2850,10 +2850,10 @@ $lang->thread->board       = '板块';
 $lang->thread->author      = '作者';
 $lang->thread->content     = '内容';
 $lang->thread->file        = '附件: ';
-$lang->thread->postedDate  = '发表于';
+$lang->thread->postedDate  = '发表时间';
 $lang->thread->replies     = '回帖';
 $lang->thread->replyCount  = '回帖数';
-$lang->thread->views       = '阅读';
+$lang->thread->views       = '阅读数';
 $lang->thread->lastReply   = '最后回帖';
 $lang->thread->isLink      = '跳转';
 $lang->thread->link        = '链接';
@@ -2885,7 +2885,7 @@ $lang->thread->sticks[2] = '全局置顶';
 $lang->thread->displayList['hidden'] = '已隐藏';
 $lang->thread->displayList['normal'] = '正常';
 
-$lang->thread->statusList['wait']     = '未审核';
+$lang->thread->statusList['wait']     = '待审核';
 $lang->thread->statusList['approved'] = '通过';
 
 $lang->thread->confirmDeleteThread = "您确定删除该主题吗？";
