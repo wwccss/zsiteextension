@@ -252,6 +252,14 @@ $lang->menuGroups->company = 'company';
 $lang->menuGroups->score   = 'score';
 $lang->menuGroups->guarder = 'security';
 
+$lang->siteMenus = new stdclass();
+$lang->siteMenus->theme     = array('link' => 'Basic|ui|settemplate|', 'alias' => 'themestore,design,customtheme');
+$lang->siteMenus->block     = array('link' => 'Module|block|admin|', 'alias' => 'create');
+$lang->siteMenus->nav       = array('link' => 'SEO|nav|admin|');
+$lang->siteMenus->component = array('link' => 'HTPP|ui|component|', 'alias' => 'effect,browsesource');
+$lang->siteMenus->senior    = array('link' => 'Wechat|ui|editTemplate|');
+$lang->siteMenus->others    = array('link' => 'More|ui|others|');
+
 $lang->designMenus = new stdclass();
 $lang->designMenus->theme     = array('link' => 'Theme|ui|settemplate|', 'alias' => 'themestore,design,customtheme');
 $lang->designMenus->block     = array('link' => 'Widget|block|admin|', 'alias' => 'create');
@@ -2304,9 +2312,12 @@ $lang->product->noCategoriesTip = 'You have not added any categories. Please add
 $lang->reply = new stdclass();
 $lang->reply->common           = 'Reply';
 $lang->reply->reply            = 'Reply';
+$lang->reply->replyTo          = 'Reply To';
 $lang->reply->id               = 'ID';
 $lang->reply->list             = 'List';
 $lang->reply->content          = 'Text';
+$lang->reply->board            = 'Board';
+$lang->reply->forum            = 'Forum';
 $lang->reply->author           = 'Author';
 $lang->reply->files            = 'File：';
 $lang->reply->addedDate        = 'Replied on';

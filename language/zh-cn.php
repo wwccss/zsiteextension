@@ -252,6 +252,14 @@ $lang->menuGroups->company = 'company';
 $lang->menuGroups->score   = 'site';
 $lang->menuGroups->guarder = 'security';
 
+$lang->siteMenus = new stdclass();
+$lang->siteMenus->theme     = array('link' => '基本设置|ui|settemplate|', 'alias' => 'themestore,design,customtheme');
+$lang->siteMenus->block     = array('link' => '功能模块|block|admin|', 'alias' => 'create');
+$lang->siteMenus->nav       = array('link' => 'SEO设置|nav|admin|');
+$lang->siteMenus->component = array('link' => '网络设置|ui|component|', 'alias' => 'effect,browsesource');
+$lang->siteMenus->senior    = array('link' => '微信设置|ui|editTemplate|');
+$lang->siteMenus->others    = array('link' => '更多设置|ui|others|');
+
 $lang->designMenus = new stdclass();
 $lang->designMenus->theme     = array('link' => '主题|ui|settemplate|', 'alias' => 'themestore,design,customtheme');
 $lang->designMenus->block     = array('link' => '区块|block|admin|', 'alias' => 'create');
@@ -724,6 +732,7 @@ $lang->article->stateList['stick']      = '置顶(%d)';
 $lang->article->stateShow['article']    = ',all,normal,timed,draft,submission,stick';
 $lang->article->stateShow['page']       = ',all,normal,timed,draft';
 $lang->article->stateShow['blog']       = ',all,normal,timed,draft,stick';
+$lang->article->stateShow['submission'] = ',submission';
 
 $lang->article->blog = new stdclass();
 $lang->article->blog->category                   = '博客列表类目';
@@ -2291,9 +2300,12 @@ $lang->product->noCategoriesTip = '您还没有为产品添加类目，请添加
 $lang->reply = new stdclass();
 $lang->reply->common           = '回贴';
 $lang->reply->reply            = '回复';
+$lang->reply->replyTo          = '回复至';
 $lang->reply->id               = '编号';
 $lang->reply->list             = '回帖列表';
 $lang->reply->content          = '内容';
+$lang->reply->board            = '板块：';
+$lang->reply->forum            = '主题帖：';
 $lang->reply->author           = '作者';
 $lang->reply->files            = '附件：';
 $lang->reply->addedDate        = '回复时间';
