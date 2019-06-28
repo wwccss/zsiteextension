@@ -2022,6 +2022,8 @@ $lang->package->installForce  = '强制安装';
 $lang->package->uninstall     = '卸载';
 $lang->package->activate      = '激活';
 $lang->package->deactivate    = '禁用';
+$lang->package->status        = '状态';
+$lang->package->control       = '控制';
 $lang->package->obtain        = '获得插件';
 $lang->package->view          = '详情';
 $lang->package->download      = '下载插件';
@@ -2033,7 +2035,7 @@ $lang->package->agreeLicense  = '我同意该授权';
 $lang->package->settemplate   = '设置模板';
 $lang->package->buy           = '购买';
 
-$lang->package->structure   = '目录结构';
+$lang->package->structure   = '目录';
 $lang->package->installed   = '已安装';
 $lang->package->deactivated = '被禁用';
 $lang->package->available   = '已下载';
@@ -2123,6 +2125,11 @@ $lang->package->errorConflicts               = '与插件“%s”冲突！';
 $lang->package->errorDepends                 = '以下依赖插件没有安装或版本不正确：<br /><br /> %s';
 $lang->package->errorIncompatible            = '该插件与您的蝉知版本不兼容';
 $lang->package->errorUninstallDepends        = '插件“%s”依赖该插件，不能卸载';
+
+$lang->package->stateList = array();
+$lang->package->stateList['installed']   = '已安装(%d)';
+$lang->package->stateList['available']   = '已下载(%d)';
+$lang->package->stateList['deactivated'] = '被禁用(%d)';
 
 $lang->theme->common = '主题市场';
 /* product */

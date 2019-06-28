@@ -2034,6 +2034,8 @@ $lang->package->installForce  = 'Force Install';
 $lang->package->uninstall     = 'Uninstall';
 $lang->package->activate      = 'Activate';
 $lang->package->deactivate    = 'Disable';
+$lang->package->status        = 'Status';
+$lang->package->control       = 'Control';
 $lang->package->obtain        = 'Get Extensions';
 $lang->package->view          = 'Details';
 $lang->package->download      = 'Download';
@@ -2045,7 +2047,7 @@ $lang->package->agreeLicense  = 'I have read and acknowledged the License';
 $lang->package->settemplate   = 'Template Settings';
 $lang->package->buy           = 'Buy';
 
-$lang->package->structure   = 'Directory Structure';
+$lang->package->structure   = 'Directory';
 $lang->package->installed   = 'Installed';
 $lang->package->deactivated = 'Deactivated';
 $lang->package->available   = 'Available';
@@ -2135,6 +2137,11 @@ $lang->package->errorConflicts               = 'Conflicted with “%s”!';
 $lang->package->errorDepends                 = 'Dependent plug-in<br /><br /> %s is not installed or its version is incompatible.';
 $lang->package->errorIncompatible            = 'This plug-in is incompatible with Zsite.';
 $lang->package->errorUninstallDepends        = '“%s” is dependent on this plug-in. Do not uninstall it.';
+
+$lang->package->stateList = array();
+$lang->package->stateList['installed']   = 'Installled(%d)';
+$lang->package->stateList['available']   = 'Available(%d)';
+$lang->package->stateList['deactivated'] = 'Deactivated(%d)';
 
 $lang->theme->common = 'Theme';
 /* product */
