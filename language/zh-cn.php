@@ -253,12 +253,12 @@ $lang->menuGroups->score   = 'site';
 $lang->menuGroups->guarder = 'security';
 
 $lang->siteMenus = new stdclass();
-$lang->siteMenus->theme     = array('link' => '基本设置|ui|settemplate|', 'alias' => 'themestore,design,customtheme');
-$lang->siteMenus->block     = array('link' => '功能模块|block|admin|', 'alias' => 'create');
-$lang->siteMenus->nav       = array('link' => 'SEO设置|nav|admin|');
-$lang->siteMenus->component = array('link' => '网络设置|ui|component|', 'alias' => 'effect,browsesource');
-$lang->siteMenus->senior    = array('link' => '微信设置|ui|editTemplate|');
-$lang->siteMenus->others    = array('link' => '更多设置|ui|others|');
+$lang->siteMenus->basic  = array('link' => '基本设置|site|setbasic|');
+$lang->siteMenus->module = array('link' => '功能模块|site|setmodule|');
+$lang->siteMenus->seo    = array('link' => 'SEO设置 |site|setseo|');
+$lang->siteMenus->http   = array('link' => '网络设置|site|sethttp|');
+$lang->siteMenus->wechat = array('link' => '微信设置|wechat|admin|');
+$lang->siteMenus->more   = array('link' => '更多设置|company|setbasic|', 'alias' => 'setcontact,sethomemenu');
 
 $lang->designMenus = new stdclass();
 $lang->designMenus->theme     = array('link' => '主题|ui|settemplate|', 'alias' => 'themestore,design,customtheme');
@@ -2115,7 +2115,7 @@ $lang->package->errorPackageFileExists       = '下载路径已经有一个名�
 $lang->package->errorDownloadFailed          = '下载失败，请重新下载。如果多次重试还不行，请尝试手工下载，然后通过上传功能上传。';
 $lang->package->errorMd5Checking             = '下载文件不完整，请重新下载。如果多次重试还不行，请尝试手工下载，然后通过上传功能上传。';
 $lang->package->errorExtracted               = '包文件<strong> %s </strong>解压缩失败，可能不是一个有效的zip文件。错误信息如下：<br />%s';
-$lang->package->errorCheckIncompatible       = '该插件与蝉知版本不兼容，%s后可能无法使用。。<h3>您可以选择 <a href="%s" class="loadInModal">强制%s</a> 或者 <a href="#" onclick=parent.location.href="%s">取消</a></h3>';
+$lang->package->errorCheckIncompatible       = '该插件与蝉知版本不兼容，%s后可能无法使用。。<h3>您可以选择 <a href="#" url="%s" class="model-jump">强制%s</a> 或者 <a href="#" onclick="window.location.reload()">取消</a></h3>';
 $lang->package->errorFileConflicted          = '有以下文件冲突：<br />%s <h3>您可以选择 <a href="%s">覆盖</a> 或者 <a href="#" onclick=parent.location.href="%s">取消</a></h3>';
 $lang->package->errorPackageNotFound         = '包文件 <strong>%s </strong>没有找到，可能是因为自动下载失败。您可以尝试再次下载。';
 $lang->package->errorTargetPathNotWritable   = '目标路径 <strong>%s </strong>不可写。';
@@ -2636,6 +2636,21 @@ $lang->site->moduleAvailable->mall['product'] = '产品';
 $lang->site->moduleAvailable->score = array();
 $lang->site->moduleAvailable->score['search'] = '搜索';
 $lang->site->moduleAvailable->score['stat']   = '统计';
+
+$lang->site->moduleSummary = new stdclass();
+$lang->site->moduleSummary->article    = '系统地发布和管理文章内容';
+$lang->site->moduleSummary->blog       = '通过博客在网上写文发声';
+$lang->site->moduleSummary->page       = '为网站添加自定义单独页面';
+$lang->site->moduleSummary->book       = '用户写章节型的帮助手册等';
+$lang->site->moduleSummary->user       = '系统自带的会员管理模块';
+$lang->site->moduleSummary->forum      = '用户主题话题和会员交流';
+$lang->site->moduleSummary->score      = '会员积分相关';
+$lang->site->moduleSummary->message    = '用户对文章/产品等发表评论';
+$lang->site->moduleSummary->submission = '会员经审核后可以发布文章';
+$lang->site->moduleSummary->shop       = '包含订单管理的交易模块';
+$lang->site->moduleSummary->product    = '系统自带的产品管理';
+$lang->site->moduleSummary->search     = '全站全文搜索功能';
+$lang->site->moduleSummary->stat       = '对网站的各种信息进行统计';
 
 $lang->site->metaHolder       = '可放置<meta><script><style>和<link>标签。';
 $lang->site->fileAllowedRole  = '多个后缀名之间请用 "," 隔开';

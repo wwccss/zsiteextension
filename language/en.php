@@ -2127,7 +2127,7 @@ $lang->package->errorPackageFileExists       = 'A file named <strong>%s</strong>
 $lang->package->errorDownloadFailed          = 'Download failed. Please try it again. If failed again, please download it manually, and upload it to install.';
 $lang->package->errorMd5Checking             = 'Download file is incomplete. Please try it again. If failed again, please download it manually, and upload it to install.';
 $lang->package->errorExtracted               = 'Unzip <strong> %s </strong> failed. It could be an invalid zip file. Error info <br />%s';
-$lang->package->errorCheckIncompatible       = 'It is not compatible with Zsite. After %sed, it might be inapplicable. <h3>You can <a href="%s" class="loadInModal">force %s</a> or <a href="#" onclick=parent.location.href="%s"> cancel it.</a></h3>';
+$lang->package->errorCheckIncompatible       = 'It is not compatible with Zsite. After %sed, it might be inapplicable. <h3>You can <a href="#" url="%s" class="model-jump">force %s</a> or <a href="#" onclick="window.location.reload()"> cancel it.</a></h3>';
 $lang->package->errorFileConflicted          = 'It is conflicted with <br />%s. <h3>You can <a href="%s">override</a> or <a href="#" onclick=parent.location.href="%s">cancel it.</a></h3>';
 $lang->package->errorPackageNotFound         = ' <strong>%s </strong> is not found. It could be auto downloading failure. Please try it again.';
 $lang->package->errorTargetPathNotWritable   = 'Path <strong>%s </strong>is not writable.';
@@ -2648,6 +2648,21 @@ $lang->site->moduleAvailable->mall['product'] = 'Product';
 $lang->site->moduleAvailable->score = array();
 $lang->site->moduleAvailable->score['search'] = 'Search';
 $lang->site->moduleAvailable->score['stat']   = 'Statistics';
+
+$lang->site->moduleSummary = new stdclass();
+$lang->site->moduleSummary->article    = '';
+$lang->site->moduleSummary->blog       = '';
+$lang->site->moduleSummary->page       = '';
+$lang->site->moduleSummary->book       = '';
+$lang->site->moduleSummary->user       = '';
+$lang->site->moduleSummary->forum      = '';
+$lang->site->moduleSummary->score      = '';
+$lang->site->moduleSummary->message    = '';
+$lang->site->moduleSummary->submission = '';
+$lang->site->moduleSummary->shop       = '';
+$lang->site->moduleSummary->product    = '';
+$lang->site->moduleSummary->search     = '';
+$lang->site->moduleSummary->stat       = '';
 
 $lang->site->metaHolder       = 'Tag <meta><script><style> and <link> applicable';
 $lang->site->fileAllowedRole  = 'Use "," to separate file types.';
