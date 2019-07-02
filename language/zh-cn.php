@@ -195,7 +195,6 @@ $lang->menu->forum        = '论坛|forum|admin|';
 $lang->menu->thread       = '主题|forum|admin|';
 $lang->menu->forumreply   = '回帖|reply|admin|';
 $lang->menu->submission   = '投稿|article|admin|type=submission&tab=user';
-$lang->menu->wechat       = '微信|wechat|message|mode=replied&replied=0';
 
 $lang->menu->summary     = '统计概况|stat|summary|';
 $lang->menu->traffic     = '流量|stat|from|';
@@ -244,7 +243,7 @@ $lang->menu->contact        = '联系方式|company|setContact|';
 
 $lang->menuGroups = new stdclass();
 $lang->menuGroups->mail    = 'site';
-$lang->menuGroups->wechat  = 'wechatSetting';
+$lang->menuGroups->wechat  = 'site';
 $lang->menuGroups->group   = 'security';
 $lang->menuGroups->tree    = 'article';
 $lang->menuGroups->search  = 'site';
@@ -256,9 +255,9 @@ $lang->siteMenus = new stdclass();
 $lang->siteMenus->basic  = array('link' => '基本设置|site|setbasic|');
 $lang->siteMenus->module = array('link' => '功能模块|site|setmodule|');
 $lang->siteMenus->seo    = array('link' => 'SEO设置 |site|setseo|');
-$lang->siteMenus->http   = array('link' => '网络设置|site|sethttp|');
-$lang->siteMenus->wechat = array('link' => '微信设置|wechat|admin|');
-$lang->siteMenus->more   = array('link' => '更多设置|company|setbasic|', 'alias' => 'setcontact,sethomemenu');
+$lang->siteMenus->http   = array('link' => '网络设置|site|setwebsite|');
+$lang->siteMenus->wechat = array('link' => '微信设置|wechat|admin|', 'alias' => 'create,message');
+$lang->siteMenus->more   = array('link' => '更多设置|company|setbasic|', 'alias' => 'setcontact,sethomemenu,envelope,buildindex,index,setagreement,setcounts,showstateinfo,detect,setoauth,edit');
 
 $lang->designMenus = new stdclass();
 $lang->designMenus->theme     = array('link' => '主题|ui|settemplate|', 'alias' => 'themestore,design,customtheme');
@@ -323,8 +322,6 @@ $lang->site->menu->stateinfo = '积分结算|score|showstateinfo|';
 $lang->site->menu->mail      = array('link' => '邮箱设置|mail|admin|', 'alias' => 'detect,edit,save,test');
 $lang->site->menu->oauth     = '第三方登录|site|setoauth|';
 
-//$lang->site->menu->api    = 'API|site|setapi|';
-
 if(!isset($lang->company)) $lang->company = new stdclass();
 $lang->company->menu = new stdclass();
 $lang->company->menu->company   = '公司信息|company|setbasic|';
@@ -339,7 +336,7 @@ $lang->security->menu->whitelist   = '白名单管理|guarder|setwhitelist|';
 $lang->security->menu->sensitive   = '敏感词设置|site|setsensitive|';
 $lang->security->menu->captcha     = '验证码设置|guarder|setcaptcha|';
 $lang->security->menu->upload      = '附件上传|site|setupload|';
-$lang->security->menu->admin       = array('link' => '管理员|user|admin|admin=1', 'alias' => 'delete,batchdelete');
+$lang->security->menu->admin       = array('link' => '管理员|user|admin|user=&orderBy=&recTotal=&recPerPage=&pageID=&status=admin&admin=1', 'alias' => 'delete,batchdelete');
 $lang->security->menu->group       = array('link' => '分组权限|group|browse|', 'alias' => 'managepriv,managemember');
 $lang->security->menu->log         = '登录日志|user|adminlog|';
 

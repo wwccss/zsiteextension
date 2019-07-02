@@ -195,7 +195,6 @@ $lang->menu->forum        = 'Forum|forum|admin|';
 $lang->menu->thread       = 'Thread|forum|admin|';
 $lang->menu->forumreply   = 'Post|reply|admin|';
 $lang->menu->submission   = 'Submission|article|admin|type=submission&tab=user';
-$lang->menu->wechat       = 'WeChat|wechat|message|mode=replied&replied=0';
 
 $lang->menu->summary     = 'Summary|stat|summary|';
 $lang->menu->traffic     = 'Traffic|stat|from|';
@@ -243,38 +242,38 @@ $lang->menu->companyInfo    = 'Company|company|setBasic|';
 $lang->menu->contact        = 'Contact|company|setContact|';
 
 $lang->menuGroups = new stdclass();
-$lang->menuGroups->mail    = 'interface';
-$lang->menuGroups->wechat  = 'wechatSetting';
+$lang->menuGroups->mail    = 'site';
+$lang->menuGroups->wechat  = 'site';
 $lang->menuGroups->group   = 'security';
 $lang->menuGroups->tree    = 'article';
 $lang->menuGroups->search  = 'site';
 $lang->menuGroups->company = 'company';
-$lang->menuGroups->score   = 'score';
+$lang->menuGroups->score   = 'site';
 $lang->menuGroups->guarder = 'security';
 
 $lang->siteMenus = new stdclass();
-$lang->siteMenus->theme     = array('link' => 'Basic|ui|settemplate|', 'alias' => 'themestore,design,customtheme');
-$lang->siteMenus->block     = array('link' => 'Module|block|admin|', 'alias' => 'create');
-$lang->siteMenus->nav       = array('link' => 'SEO|nav|admin|');
-$lang->siteMenus->component = array('link' => 'HTPP|ui|component|', 'alias' => 'effect,browsesource');
-$lang->siteMenus->senior    = array('link' => 'Wechat|ui|editTemplate|');
-$lang->siteMenus->others    = array('link' => 'More|ui|others|');
+$lang->siteMenus->basic  = array('link' => 'Basic |site|setbasic|');
+$lang->siteMenus->module = array('link' => 'Module|site|setmodule|');
+$lang->siteMenus->seo    = array('link' => 'SEO   |site|setseo|');
+$lang->siteMenus->http   = array('link' => 'HTPP  |site|setwebsite|');
+$lang->siteMenus->wechat = array('link' => 'Wechat|wechat|admin|', 'alias' => 'create,message');
+$lang->siteMenus->more   = array('link' => 'More  |company|setbasic|', 'alias' => 'setcontact,sethomemenu');
 
 $lang->designMenus = new stdclass();
-$lang->designMenus->theme     = array('link' => 'Theme|ui|settemplate|', 'alias' => 'themestore,design,customtheme');
-$lang->designMenus->block     = array('link' => 'Widget|block|admin|', 'alias' => 'create');
-$lang->designMenus->nav       = array('link' => 'Nav|nav|admin|');
-$lang->designMenus->component = array('link' => 'CMPT|ui|component|', 'alias' => 'effect,browsesource');
-$lang->designMenus->senior    = array('link' => 'Senior|ui|editTemplate|');
+$lang->designMenus->theme     = array('link' => 'Theme  |ui|settemplate|', 'alias' => 'themestore,design,customtheme');
+$lang->designMenus->block     = array('link' => 'Widget |block|admin|', 'alias' => 'create');
+$lang->designMenus->nav       = array('link' => 'Nav    |nav|admin|');
+$lang->designMenus->component = array('link' => 'CMPT   |ui|component|', 'alias' => 'effect,browsesource');
+$lang->designMenus->senior    = array('link' => 'Senior |ui|editTemplate|');
 $lang->designMenus->others    = array('link' => 'Setting|ui|others|');
 
 $lang->article = new stdclass();
 $lang->article->menu = new stdclass();
-$lang->article->menu->browse       = 'Article|article|admin|';
+$lang->article->menu->browse = 'Article|article|admin|';
 
 $lang->blog = new stdclass();
 $lang->blog->menu = new stdclass();
-$lang->blog->menu->browse       = 'Blog|article|admin|type=blog';
+$lang->blog->menu->browse = 'Blog|article|admin|type=blog';
 
 $lang->page = new stdclass();
 
@@ -287,7 +286,6 @@ $lang->orderSetting->menu->express     = 'Express|tree|browse|type=express';
 
 $lang->product = new stdclass();
 $lang->product->menu = new stdclass();
-$lang->product->menu->browse   = array('link' => 'Product|product|admin|', 'alias' => 'create, edit');
 $lang->product->menu->category = array('link' => 'Category|product|admin|', 'alias' => 'create, category');
 
 $lang->ui = new stdclass();
@@ -314,17 +312,15 @@ $lang->forum->menu->setting = 'Settings|forum|setting|';
 
 $lang->site = new stdclass();
 $lang->site->menu = new stdclass();
-$lang->site->menu->basic     = 'Basic Settings|site|setbasic|';
-$lang->site->menu->langs     = 'Language Settings|site|setlanguage|';
-$lang->site->menu->request   = 'Request Type|site|seturltype|';
-$lang->site->menu->domain    = 'Domain Settings|site|setdomain|';
-$lang->site->menu->cdn       = 'CDN Settings|site|setcdn|';
-$lang->site->menu->cache     = 'Cache Settings|site|setcache|';
 $lang->site->menu->shortcuts = 'Shortcuts|site|sethomemenu|';
+$lang->site->menu->cache     = 'Cache Settings|site|setcache|';
 $lang->site->menu->search    = 'Full Text Retrieval|search|buildindex|';
 $lang->site->menu->backup    = 'Backup/Restore|backup|index|';
 $lang->site->menu->agreement = 'Agreement|site|setagreement|';
-//$lang->site->menu->api     = 'API|site|setapi|';
+$lang->site->menu->score     = 'Points|score|setcounts|';
+$lang->site->menu->stateinfo = 'Stateinfo|score|showstateinfo|';
+$lang->site->menu->mail      = array('link' => 'Set Mail|mail|admin|', 'alias' => 'detect,edit,save,test');
+$lang->site->menu->oauth     = 'Oauth|site|setoauth|';
 
 if(!isset($lang->company)) $lang->company = new stdclass();
 $lang->company->menu = new stdclass();
@@ -340,14 +336,14 @@ $lang->security->menu->whitelist   = 'Whitelist|guarder|setwhitelist|';
 $lang->security->menu->sensitive   = 'Sensitive Words|site|setsensitive|';
 $lang->security->menu->captcha     = 'Security Questions|guarder|setcaptcha|';
 $lang->security->menu->upload      = 'File Upload|site|setupload|';
-$lang->security->menu->admin       = array('link' => 'Administrator|user|admin|admin=1', 'alias' => 'delete,batchdelete');
+$lang->security->menu->admin       = array('link' => 'Administrator|user|admin|user=&orderBy=&recTotal=&recPerPage=&pageID=&status=admin&admin=1', 'alias' => 'delete,batchdelete');
 $lang->security->menu->group       = array('link' => 'Group Privilege|group|browse|', 'alias' => 'managepriv,managemember');
 $lang->security->menu->log         = 'Login Log|user|adminlog|';
 
 $lang->order   = new stdclass();
 $lang->order->menu = new stdclass();
-$lang->order->menu->product = 'Goods Order|order|admin|type=shop&mode=all';
-$lang->order->menu->score   = 'Score Order|order|admin|type=score&mode=all';
+$lang->order->menu->product = 'Goods Order|order|admin|type=shop';
+$lang->order->menu->score   = 'Score Order|order|admin|type=score';
 
 $lang->cart    = new stdclass();
 $lang->address = new stdclass();
