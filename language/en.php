@@ -256,8 +256,8 @@ $lang->siteMenus->basic  = array('link' => 'Basic |site|setbasic|');
 $lang->siteMenus->module = array('link' => 'Module|site|setmodule|');
 $lang->siteMenus->seo    = array('link' => 'SEO   |site|setseo|');
 $lang->siteMenus->http   = array('link' => 'HTPP  |site|setwebsite|');
-$lang->siteMenus->wechat = array('link' => 'Wechat|wechat|admin|', 'alias' => 'create,message');
-$lang->siteMenus->more   = array('link' => 'More  |company|setbasic|', 'alias' => 'setcontact,sethomemenu');
+$lang->siteMenus->wechat = array('link' => 'Wechat|wechat|admin|', 'alias' => 'create,message,integrate');
+$lang->siteMenus->more   = array('link' => 'More  |company|setbasic|', 'alias' => 'setcontact,sethomemenu,envelope,buildindex,index,setagreement,setcounts,showstateinfo,detect,setoauth');
 
 $lang->designMenus = new stdclass();
 $lang->designMenus->theme     = array('link' => 'Theme  |ui|settemplate|', 'alias' => 'themestore,design,customtheme');
