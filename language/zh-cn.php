@@ -171,7 +171,7 @@ $lang->groups = new stdclass();
 $lang->groups->content    = array('title' => '内容', 'link' => 'article|admin|type=article', 'icon' => 'content');
 $lang->groups->statistics = array('title' => '统计', 'link' => 'stat|summary',               'icon' => 'statistics');
 $lang->groups->promote    = array('title' => '推广', 'link' => 'tag|admin|',                 'icon' => 'horn');
-$lang->groups->shop       = array('title' => '商城', 'link' => 'order|admin|',               'icon' => 'shopping');
+$lang->groups->shop       = array('title' => '商城', 'link' => 'order|stat|',                'icon' => 'shopping');
 $lang->groups->user       = array('title' => '会员', 'link' => 'user|admin|',                'icon' => 'verify');
 $lang->groups->site       = array('title' => '站点', 'link' => 'site|setbasic|',             'icon' => 'site');
 $lang->groups->design     = array('title' => '设计', 'link' => 'ui|settemplate|',            'icon' => 'design');
@@ -185,7 +185,7 @@ $lang->menu->book       = '手册|book|admin|';
 $lang->menu->page       = '单页|article|admin|type=page';
 $lang->menu->attachment = '附件|file|admin|';
 
-$lang->menu->order        = '订单|order|admin|';
+$lang->menu->order        = '订单|order|stat|';
 $lang->menu->product      = '产品|product|admin|';
 $lang->menu->orderSetting = '设置|product|setting|';
 
@@ -342,6 +342,7 @@ $lang->security->menu->log         = '登录日志|user|adminlog|';
 
 $lang->order   = new stdclass();
 $lang->order->menu = new stdclass();
+$lang->order->menu->stat    = '商品概览|order|stat|';
 $lang->order->menu->product = '商品订单|order|admin|type=shop';
 $lang->order->menu->score   = '积分订单|order|admin|type=score';
 
@@ -1833,12 +1834,16 @@ $lang->order->count             = '数量';
 $lang->order->amount            = '金额';
 $lang->order->category          = '产品分类';
 $lang->order->sn                = '交易号';
+$lang->order->look              = '查看';
+$lang->order->startDate         = '开始时间';
+$lang->order->endDate           = '结束时间';
 $lang->order->payStatus         = '付款状态';
 $lang->order->paidDate          = '付款时间';
 $lang->order->deliveryStatus    = '发货状态';
 $lang->order->deliveriedDate    = '发货时间';
 $lang->order->confirmedDate     = '收货时间';
 $lang->order->payment           = '交易方式';
+$lang->order->payAmount         = '交易金额';
 $lang->order->createdDate       = '下单时间';
 $lang->order->express           = '快递公司';
 $lang->order->waybill           = '快递单号';
@@ -1848,6 +1853,9 @@ $lang->order->receiver          = '收货人';
 $lang->order->noRecord          = '无';
 $lang->order->status            = '状态';
 $lang->order->orderStatus       = '订单状态';
+$lang->order->orderTotal        = '订单总量';
+$lang->order->todoOrder         = '待处理订单';
+$lang->order->finishedOrder     = '已完成订单';
 $lang->order->note              = '买家留言';
 $lang->order->frontNote         = '留言';
 $lang->order->basic             = '基本信息';
@@ -2010,6 +2018,13 @@ $lang->order->hiddenSearchLabels->finished    = '已完成|mode=status&param=fin
 $lang->order->hiddenSearchLabels->refunded    = '已退款|mode=payStatus&param=refunded';
 $lang->order->hiddenSearchLabels->canceled    = '已取消|mode=status&param=canceled';
 $lang->order->hiddenSearchLabels->expired     = '已过期|mode=status&param=expired';
+
+$lang->order->orderStat = new stdclass();
+$lang->order->orderStat->all       = '全部';
+$lang->order->orderStat->today     = '今日';
+$lang->order->orderStat->yesterday = '昨日';
+$lang->order->orderStat->week      = '最近7天';
+$lang->order->orderStat->month     = '最近30天';
 /* package */
 $lang->package->common        = '插件';
 $lang->package->browse        = '浏览插件';

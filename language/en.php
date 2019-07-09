@@ -342,6 +342,7 @@ $lang->security->menu->log         = 'Login Log|user|adminlog|';
 
 $lang->order   = new stdclass();
 $lang->order->menu = new stdclass();
+$lang->order->menu->stat    = 'Orders Stat|order|stat|';
 $lang->order->menu->product = 'Goods Order|order|admin|type=shop';
 $lang->order->menu->score   = 'Score Order|order|admin|type=score';
 
@@ -1844,12 +1845,16 @@ $lang->order->count             = 'Count';
 $lang->order->amount            = 'Amount';
 $lang->order->category          = 'Category';
 $lang->order->sn                = 'TSN';
+$lang->order->look              = 'Search';
+$lang->order->startDate         = 'Start Date';
+$lang->order->endDate           = 'End Date';
 $lang->order->payStatus         = 'Payment';
 $lang->order->paidDate          = 'Paid On';
 $lang->order->deliveryStatus    = 'Shipment Status';
 $lang->order->deliveriedDate    = 'Shipped';
 $lang->order->confirmedDate     = 'Delivered';
 $lang->order->payment           = 'Payment';
+$lang->order->payAmount         = 'Pay Amount';
 $lang->order->createdDate       = 'Order Placed';
 $lang->order->express           = 'Shipping Carrier';
 $lang->order->waybill           = 'Tracking Number';
@@ -1859,6 +1864,9 @@ $lang->order->receiver          = 'Receiver';
 $lang->order->noRecord          = 'N/A';
 $lang->order->status            = 'Status';
 $lang->order->orderStatus       = 'Order Status';
+$lang->order->orderTotal        = 'Order Total';
+$lang->order->todoOrder         = 'To-do';
+$lang->order->finishedOrder     = 'Finished';
 $lang->order->note              = 'Note';
 $lang->order->frontNote         = 'Note';
 $lang->order->basic             = 'Basic Info';
@@ -2021,6 +2029,13 @@ $lang->order->hiddenSearchLabels->finished    = 'Finished|mode=status&param=fini
 $lang->order->hiddenSearchLabels->refunded    = 'Refunded|mode=payStatus&param=refunded';
 $lang->order->hiddenSearchLabels->canceled    = 'Cancelled|mode=status&param=canceled';
 $lang->order->hiddenSearchLabels->expired     = 'Expired|mode=status&param=expired';
+
+$lang->order->orderStat = new stdclass();
+$lang->order->orderStat->all       = 'All';
+$lang->order->orderStat->today     = 'Today';
+$lang->order->orderStat->yesterday = 'Yesterday';
+$lang->order->orderStat->week      = 'Last Week';
+$lang->order->orderStat->month     = 'Last Month';
 /* package */
 $lang->package->common        = 'Extension';
 $lang->package->browse        = 'View Extensions';
