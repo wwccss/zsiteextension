@@ -223,7 +223,7 @@ $lang->menu->mobile_blog  = 'Mobile Blog|nav|admin|type=mobile_blog';
 $lang->menu->component    = 'Component|ui|component|';
 $lang->menu->browsesource = 'Browse Source|file|browsesource|';
 
-$lang->menu->site          = 'Site|site|setbasic|';
+$lang->menu->site          = 'System|site|sethomemenu|';
 $lang->menu->security      = 'Security|site|setsecurity|';
 $lang->menu->company       = 'Company|company|setbasic|';
 $lang->menu->score         = 'Points|score|setcounts|';
@@ -2200,6 +2200,7 @@ $lang->product->js          = 'JS';
 
 $lang->product->currency     = 'Currency';
 $lang->product->stock        = 'Inventory';
+$lang->product->stockRemind  = 'Inventory Alert';
 $lang->product->stockWarning = "<span class='first'>Early warning when stock is less than </span>%s";
 $lang->product->negotiate    = 'Negotiate';
 
@@ -4152,7 +4153,7 @@ $lang->wechat->placeholder->token    = 'English letter or number, length of 3-32
 $lang->wechat->mailSubject     = "From %s wechat";
 $lang->wechat->remindUsers     = "Mail to selected";
 $lang->wechat->remindNotice    = "Note: Email notification has to be configured, or they cannot receive notifications.";
-$lang->wechat->remindNoMail    = "Email notification is not enabled. Configure in the Set->API-> Email.";
+$lang->wechat->remindNoMail    = "Email notification is not enabled. Configure in the More->System->Email.";
 $lang->wechat->curlSSLRequired = "This feature requires curl module with ssl encryption transmission.";
 $lang->wechat->opensslRequired = "This feature requires openssl module. Please open the PHP module";
 $lang->wechat->needCertified   = "This feature requires the account to be verified.";
