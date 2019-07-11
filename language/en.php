@@ -228,7 +228,7 @@ $lang->menu->security      = 'Security|site|setsecurity|';
 $lang->menu->company       = 'Company|company|setbasic|';
 $lang->menu->score         = 'Points|score|setcounts|';
 $lang->menu->interface     = 'API|site|setoauth|';
-$lang->menu->wechatSetting = 'WeChat Setting|wechat|admin|';
+$lang->menu->wechat        = 'WeChat Setting|wechat|admin|';
 $lang->menu->bear          = 'Bear|bear|setting|';
 
 $lang->menu->package    = 'Extension|package|browse|';
@@ -257,7 +257,7 @@ $lang->siteMenus->module = array('link' => 'Module|site|setmodule|');
 $lang->siteMenus->seo    = array('link' => 'SEO   |site|setseo|');
 $lang->siteMenus->http   = array('link' => 'HTPP  |site|setwebsite|');
 $lang->siteMenus->wechat = array('link' => 'Wechat|wechat|admin|', 'alias' => 'create,message,integrate');
-$lang->siteMenus->more   = array('link' => 'More  |company|setbasic|', 'alias' => 'setcontact,sethomemenu,envelope,buildindex,index,setagreement,setcounts,showstateinfo,detect,setoauth');
+$lang->siteMenus->more   = array('link' => 'More  |company|setbasic|', 'alias' => 'setcontact,sethomemenu,envelope,buildindex,setagreement,setcounts,showstateinfo,detect,setoauth');
 
 $lang->designMenus = new stdclass();
 $lang->designMenus->theme     = array('link' => 'Theme  |ui|settemplate|', 'alias' => 'themestore,design,customtheme');

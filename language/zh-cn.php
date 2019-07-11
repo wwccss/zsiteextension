@@ -228,7 +228,7 @@ $lang->menu->security      = '安全|site|setsecurity|';
 $lang->menu->company       = '公司|company|setbasic|';
 $lang->menu->score         = '积分|score|setcounts|';
 $lang->menu->interface     = '接口|site|setoauth|';
-$lang->menu->wechatSetting = '微信设置|wechat|admin|';
+$lang->menu->wechat        = '微信公众号|wechat|admin|';
 $lang->menu->bear          = '熊掌号|bear|setting|';
 
 $lang->menu->package    = '插件|package|browse|';
@@ -257,7 +257,7 @@ $lang->siteMenus->module = array('link' => '功能模块|site|setmodule|');
 $lang->siteMenus->seo    = array('link' => 'SEO设置 |site|setseo|');
 $lang->siteMenus->http   = array('link' => '网络设置|site|setwebsite|');
 $lang->siteMenus->wechat = array('link' => '微信设置|wechat|admin|', 'alias' => 'create,message,integrate');
-$lang->siteMenus->more   = array('link' => '更多设置|company|setbasic|', 'alias' => 'setcontact,sethomemenu,envelope,buildindex,index,setagreement,setcounts,showstateinfo,detect,setoauth');
+$lang->siteMenus->more   = array('link' => '更多设置|company|setbasic|', 'alias' => 'setcontact,sethomemenu,envelope,buildindex,setagreement,setcounts,showstateinfo,detect,setoauth');
 
 $lang->designMenus = new stdclass();
 $lang->designMenus->theme     = array('link' => '主题|ui|settemplate|', 'alias' => 'themestore,design,customtheme');
