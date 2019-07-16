@@ -198,7 +198,7 @@ $lang->menu->submission   = 'Submission|article|admin|type=submission&tab=user';
 
 $lang->menu->summary     = 'Summary|stat|summary|';
 $lang->menu->traffic     = 'Traffic|stat|from|';
-$lang->menu->visitor     = 'Visitor|stat|client|';
+$lang->menu->visitor     = 'Visitor|stat|guest|';
 $lang->menu->ranking     = 'Ranking|stat|page|';
 $lang->menu->statSetting = 'Settings|stat|setting|';
 
@@ -372,8 +372,10 @@ $lang->traffic->menu->search   = 'Search Engine|stat|search|';
 
 $lang->visitor = new stdclass();
 $lang->visitor->menu = new stdclass();
-$lang->visitor->menu->client  = 'Client|stat|client|type=browser';
-$lang->visitor->menu->setStat = 'Settings|stat|setting|';
+$lang->visitor->menu->guest   = 'Guest|stat|guest|';
+$lang->visitor->menu->os      = 'OS|stat|os|';
+$lang->visitor->menu->browser = 'Browser|stat|browser|';
+$lang->visitor->menu->device  = 'Device|stat|device|';
 
 $lang->bear = new stdclass();
 $lang->bear->menu = new stdclass;
@@ -2819,6 +2821,10 @@ $lang->stat->traffic       = 'Traffic Summary';
 $lang->stat->todayTraffic  = 'Today Traffic';
 $lang->stat->report        = 'Report';
 $lang->stat->client        = 'Client';
+$lang->stat->guest         = 'Guest';
+$lang->stat->newGuest      = 'New Guest';
+$lang->stat->newMember     = 'New Member';
+$lang->stat->guestTotal    = 'Guest Total';
 $lang->stat->device        = 'Client Type';
 $lang->stat->os            = 'Operating System';
 $lang->stat->browser       = 'Browser';

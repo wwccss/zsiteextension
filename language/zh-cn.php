@@ -198,7 +198,7 @@ $lang->menu->submission   = '投稿|article|admin|type=submission&tab=user';
 
 $lang->menu->summary     = '统计概况|stat|summary|';
 $lang->menu->traffic     = '流量|stat|from|';
-$lang->menu->visitor     = '访客|stat|client|';
+$lang->menu->visitor     = '访客|stat|guest|';
 $lang->menu->ranking     = '排行|stat|page|';
 $lang->menu->statSetting = '设置|stat|setting|';
 
@@ -372,8 +372,10 @@ $lang->traffic->menu->search   = '搜索引擎|stat|search|';
 
 $lang->visitor = new stdclass();
 $lang->visitor->menu = new stdclass();
-$lang->visitor->menu->client  = '用户终端|stat|client|type=browser';
-$lang->visitor->menu->setStat = '设置|stat|setting|';
+$lang->visitor->menu->guest   = '访客人数|stat|guest|';
+$lang->visitor->menu->os      = '操作系统|stat|os|';
+$lang->visitor->menu->browser = '浏览器|stat|browser|';
+$lang->visitor->menu->device  = '终端设备|stat|device|';
 
 $lang->bear = new stdclass();
 $lang->bear->menu = new stdclass;
@@ -2808,6 +2810,12 @@ $lang->stat->traffic       = '流量概况';
 $lang->stat->todayTraffic  = '今日流量';
 $lang->stat->report        = '详细报告';
 $lang->stat->client        = '终端';
+$lang->stat->guest         = '访客人数';
+$lang->stat->newGuest      = '新访客数';
+$lang->stat->newMember     = '新增会员';
+$lang->stat->guestTotal    = '总访客数';
+$lang->stat->guestType     = '访客类型';
+$lang->stat->number        = '人数';
 $lang->stat->device        = '设备类型';
 $lang->stat->os            = '操作系统';
 $lang->stat->browser       = '用户终端';
@@ -2868,6 +2876,10 @@ $lang->stat->fromList = new stdclass();
 $lang->stat->fromList->self   = '直接访问';
 $lang->stat->fromList->out    = '外链';
 $lang->stat->fromList->search = '搜索引擎';
+
+$lang->stat->guestTypes = new stdclass();
+$lang->stat->guestTypes->guestTotal = '总访客数';
+$lang->stat->guestTypes->newGuest   = '新访客数';
 
 $lang->stat->dataTypes = new stdclass();
 $lang->stat->dataTypes->pv = '浏览量(PV)';
