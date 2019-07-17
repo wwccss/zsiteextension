@@ -2863,8 +2863,8 @@ $lang->stat->itemList = new stdclass();
 $lang->stat->itemList->self    = '直接访问';
 $lang->stat->itemList->out     = '外链访问';
 $lang->stat->itemList->search  = '搜索引擎';
-$lang->stat->itemList->desktop = '桌面设备';
-$lang->stat->itemList->mobile  = '移动设备';
+$lang->stat->itemList->desktop = '桌面端';
+$lang->stat->itemList->mobile  = '移动端';
 
 $lang->stat->trafficModes = new stdclass();
 $lang->stat->trafficModes->yesterday = '昨日';
