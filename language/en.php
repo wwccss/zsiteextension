@@ -1885,6 +1885,8 @@ $lang->order->manage            = 'Manage';
 $lang->order->finish            = 'Done';
 $lang->order->moreLabels        = 'More Labels';
 
+$lang->order->selectAddress     = 'Pleace Select Address';
+
 $lang->order->paypalParam    = 'paypal Parameters';
 $lang->order->paypalAccount  = 'API Account';
 $lang->order->paypalPassword = 'API Password';

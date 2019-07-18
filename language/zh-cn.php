@@ -1874,6 +1874,8 @@ $lang->order->manage            = '管理';
 $lang->order->finish            = '完成';
 $lang->order->moreLabels        = '更多筛选';
 
+$lang->order->selectAddress     = '请选择一个收货地址';
+
 $lang->order->paypalParam    = 'paypal 参数';
 $lang->order->paypalAccount  = 'API用户名';
 $lang->order->paypalPassword = 'API密码';
