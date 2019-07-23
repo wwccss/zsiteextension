@@ -199,7 +199,7 @@ $lang->menu->submission   = '投稿|article|admin|type=submission&tab=user';
 $lang->menu->summary     = '统计概况|stat|summary|';
 $lang->menu->traffic     = '流量|stat|from|';
 $lang->menu->visitor     = '访客|stat|guest|';
-$lang->menu->ranking     = '排行|stat|page|';
+$lang->menu->ranking     = '排行|stat|clickrank|';
 $lang->menu->statSetting = '设置|stat|setting|';
 
 $lang->menu->tag     = '关键词|tag|admin|';
@@ -376,6 +376,13 @@ $lang->visitor->menu->guest   = '访客人数|stat|guest|';
 $lang->visitor->menu->os      = '操作系统|stat|os|';
 $lang->visitor->menu->browser = '浏览器|stat|browser|';
 $lang->visitor->menu->device  = '终端设备|stat|device|';
+
+$lang->ranking = new stdclass();
+$lang->ranking->menu = new stdclass();
+$lang->ranking->menu->clickRank   = '点击排行|stat|clickrank|';
+$lang->ranking->menu->articleRank = '文章排行|stat|articlerank|';
+$lang->ranking->menu->deviceRank  = '平台排行|stat|devicerank|';
+$lang->ranking->menu->productRank = '产品排行|stat|productrank|';
 
 $lang->bear = new stdclass();
 $lang->bear->menu = new stdclass;
@@ -1862,6 +1869,7 @@ $lang->order->frontNote         = '留言';
 $lang->order->basic             = '基本信息';
 $lang->order->type              = '类型';
 $lang->order->info              = '订单信息';
+$lang->order->stat              = '订单概览';
 $lang->order->savePay           = '回款';
 $lang->order->edit              = '编辑';
 $lang->order->contact           = '收货姓名';
@@ -2488,6 +2496,7 @@ $lang->site->homeMenus        = '首页菜单';
 $lang->site->agreement        = '注册协议';
 $lang->site->agreementTitle   = '协议标题';
 $lang->site->agreementContent = '协议内容';
+$lang->site->setSeo           = 'SEO 设置';
 
 $lang->site->importantOption  = '重要操作';
 $lang->site->resetPassword    = '前台找回密码';
@@ -2828,7 +2837,7 @@ $lang->stat->keyword       = '关键词';
 $lang->stat->outSite       = '来源网站统计';
 $lang->stat->search        = '搜索引擎';
 $lang->stat->domain        = '来路域名';
-$lang->stat->click         = '点击排行';
+$lang->stat->clickRank     = '点击排行';
 $lang->stat->link          = '链接';
 $lang->stat->today         = '今天';
 $lang->stat->yesterday     = '昨天';
