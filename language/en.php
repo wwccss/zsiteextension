@@ -381,7 +381,6 @@ $lang->ranking = new stdclass();
 $lang->ranking->menu = new stdclass();
 $lang->ranking->menu->clickRank   = 'Click Ranking|stat|clickrank|';
 $lang->ranking->menu->articleRank = 'Article Ranking|stat|articlerank|';
-$lang->ranking->menu->deviceRank  = 'Device Ranking|stat|devicerank|';
 $lang->ranking->menu->productRank = 'Product Ranking|stat|productrank|';
 
 $lang->bear = new stdclass();
@@ -2847,6 +2846,8 @@ $lang->stat->outSite       = 'Site Stats';
 $lang->stat->search        = 'Search';
 $lang->stat->domain        = 'Domain';
 $lang->stat->clickRank     = 'Click Ranking';
+$lang->stat->articleRank   = 'Article Ranking';
+$lang->stat->productRank   = 'Product Ranking';
 $lang->stat->link          = 'Links';
 $lang->stat->today         = 'Today';
 $lang->stat->yesterday     = 'Yesterday';
@@ -2903,8 +2904,15 @@ $lang->stat->dataTypes->uv = 'Unique Visit';
 $lang->stat->dataTypes->ip = 'IP Count';
 
 $lang->stat->page = new stdclass();
-$lang->stat->page->common = 'Page Visits';
-$lang->stat->page->url    = 'Page URL';
+$lang->stat->page->common  = 'Page Visits';
+$lang->stat->page->url     = 'Page URL';
+$lang->stat->page->title   = 'Title';
+$lang->stat->page->author  = 'Author';
+$lang->stat->page->views   = 'Views';
+$lang->stat->page->pv      = 'Views';
+$lang->stat->page->sales   = 'Sales';
+$lang->stat->page->message = 'Comments';
+$lang->stat->page->pubDate = 'PubLish Date';
 
 $lang->stat->maxDays    = 'The maximum days for chart';
 $lang->stat->maxDaysTip = 'Number of days should be >0.';

@@ -381,7 +381,6 @@ $lang->ranking = new stdclass();
 $lang->ranking->menu = new stdclass();
 $lang->ranking->menu->clickRank   = '点击排行|stat|clickrank|';
 $lang->ranking->menu->articleRank = '文章排行|stat|articlerank|';
-$lang->ranking->menu->deviceRank  = '平台排行|stat|devicerank|';
 $lang->ranking->menu->productRank = '产品排行|stat|productrank|';
 
 $lang->bear = new stdclass();
@@ -2838,6 +2837,8 @@ $lang->stat->outSite       = '来源网站统计';
 $lang->stat->search        = '搜索引擎';
 $lang->stat->domain        = '来路域名';
 $lang->stat->clickRank     = '点击排行';
+$lang->stat->articleRank   = '文章排行';
+$lang->stat->productRank   = '产品排行';
 $lang->stat->link          = '链接';
 $lang->stat->today         = '今天';
 $lang->stat->yesterday     = '昨天';
@@ -2879,9 +2880,9 @@ $lang->stat->itemList->mobile  = '移动端';
 
 $lang->stat->trafficModes = new stdclass();
 $lang->stat->trafficModes->yesterday = '昨日';
-$lang->stat->trafficModes->today    = '今日';
-$lang->stat->trafficModes->weekly   = '最近一周';
-$lang->stat->trafficModes->monthly  = '最近30天';
+$lang->stat->trafficModes->today     = '今日';
+$lang->stat->trafficModes->weekly    = '最近一周';
+$lang->stat->trafficModes->monthly   = '最近30天';
 
 $lang->stat->fromList = new stdclass();
 $lang->stat->fromList->self   = '直接访问';
@@ -2898,8 +2899,16 @@ $lang->stat->dataTypes->uv = '访客数(UV)';
 $lang->stat->dataTypes->ip = 'IP数';
 
 $lang->stat->page = new stdclass();
-$lang->stat->page->common = '页面访问量';
-$lang->stat->page->url    = '页面地址';
+$lang->stat->page->common  = '页面访问量';
+$lang->stat->page->url     = '页面地址';
+$lang->stat->page->title   = '标题';
+$lang->stat->page->name    = '产品名称';
+$lang->stat->page->author  = '作者';
+$lang->stat->page->views   = '阅读量';
+$lang->stat->page->pv      = '访问量';
+$lang->stat->page->sales   = '销量';
+$lang->stat->page->message = '评论数';
+$lang->stat->page->pubDate = '发布时间';
 
 $lang->stat->maxDays    = '概况图显示最大天数';
 $lang->stat->maxDaysTip = '最大天数必须为为 >0 的数字。';
