@@ -243,7 +243,7 @@ $lang->menu->contact        = '联系方式|company|setContact|';
 
 $lang->menuGroups = new stdclass();
 $lang->menuGroups->mail    = 'site';
-$lang->menuGroups->wechat  = 'site';
+$lang->menuGroups->wechat  = 'wechat';
 $lang->menuGroups->group   = 'security';
 $lang->menuGroups->tree    = 'article';
 $lang->menuGroups->search  = 'site';
@@ -257,7 +257,7 @@ $lang->siteMenus->module = array('link' => '功能模块|site|setmodule|');
 $lang->siteMenus->seo    = array('link' => 'SEO设置 |site|setseo|');
 $lang->siteMenus->http   = array('link' => '网络设置|site|setwebsite|');
 $lang->siteMenus->wechat = array('link' => '微信设置|wechat|admin|', 'alias' => 'create,message,integrate');
-$lang->siteMenus->more   = array('link' => '更多设置|company|setbasic|', 'alias' => 'setcontact,sethomemenu,envelope,buildindex,setagreement,setcounts,showstateinfo,detect,setoauth');
+$lang->siteMenus->more   = array('link' => '更多设置|company|setbasic|', 'alias' => 'setcontact,sethomemenu,setcache,buildindex,setagreement,setcounts,showstateinfo,setoauth,setsecurity,setfilter,setblacklist,setwhitelist,setsensitive,setcaptcha,setupload');
 
 $lang->designMenus = new stdclass();
 $lang->designMenus->theme     = array('link' => '主题|ui|settemplate|', 'alias' => 'themestore,design,customtheme');

@@ -243,7 +243,7 @@ $lang->menu->contact        = 'Contact|company|setContact|';
 
 $lang->menuGroups = new stdclass();
 $lang->menuGroups->mail    = 'site';
-$lang->menuGroups->wechat  = 'site';
+$lang->menuGroups->wechat  = 'wechat';
 $lang->menuGroups->group   = 'security';
 $lang->menuGroups->tree    = 'article';
 $lang->menuGroups->search  = 'site';
@@ -257,7 +257,7 @@ $lang->siteMenus->module = array('link' => 'Module|site|setmodule|');
 $lang->siteMenus->seo    = array('link' => 'SEO   |site|setseo|');
 $lang->siteMenus->http   = array('link' => 'HTPP  |site|setwebsite|');
 $lang->siteMenus->wechat = array('link' => 'Wechat|wechat|admin|', 'alias' => 'create,message,integrate');
-$lang->siteMenus->more   = array('link' => 'More  |company|setbasic|', 'alias' => 'setcontact,sethomemenu,envelope,buildindex,setagreement,setcounts,showstateinfo,detect,setoauth');
+$lang->siteMenus->more   = array('link' => 'More  |company|setbasic|', 'alias' => 'setcontact,sethomemenu,setcache,buildindex,setagreement,setcounts,showstateinfo,setoauth,setsecurity,setfilter,setblacklist,setwhitelist,setsensitive,setcaptcha,setupload');
 
 $lang->designMenus = new stdclass();
 $lang->designMenus->theme     = array('link' => 'Theme  |ui|settemplate|', 'alias' => 'themestore,design,customtheme');
