@@ -970,7 +970,7 @@ $lang->block->header->bottomOptions['navAndSearch'] = '导航 + 搜索框';
 
 $lang->block->admin        = "区块管理";
 $lang->block->pages        = "布局";
-$lang->block->add          = "添加";
+$lang->block->add          = "添加区块";
 $lang->block->insertLink   = '插入';
 $lang->block->addChild     = "子区块";
 $lang->block->addRandom    = "随机区块";
@@ -1026,9 +1026,9 @@ $lang->block->probabilityOptions[8] = '80%';
 $lang->block->probabilityOptions[9] = '90%';
 
 $lang->block->categoryList['custom']  = '自定义';
-$lang->block->categoryList['article'] = '内容';
-$lang->block->categoryList['product'] = '产品';
-$lang->block->categoryList['system']  = '系统';
+$lang->block->categoryList['article'] = '内容区块';
+$lang->block->categoryList['product'] = '产品区块';
+$lang->block->categoryList['system']  = '系统区块';
 
 $lang->block->pageGroupList['system']   = '系统';
 $lang->block->pageGroupList['content']  = '内容';
