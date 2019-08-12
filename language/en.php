@@ -3857,20 +3857,20 @@ $lang->user->oauth->wechat->autoLoginList = array();
 $lang->user->oauth->wechat->autoLoginList['on']  = 'On';
 $lang->user->oauth->wechat->autoLoginList['off'] = 'Off';
 
-$lang->user->oauth->providers['sina'] = 'Weibo';
-$lang->user->oauth->providers['qq']   = 'QQ';
-$lang->user->oauth->providers['github'] = 'Github';
-#$lang->user->oauth->providers['twitter'] = 'Twitter';
-$lang->user->oauth->providers['facebook'] = 'Facebook';
-#$lang->user->oauth->providers['google'] = 'Google';
+$lang->user->oauth->providers['qq']       = 'QQ';
 $lang->user->oauth->providers['wechat']   = 'Wechat';
+$lang->user->oauth->providers['github']   = 'Github';
+$lang->user->oauth->providers['facebook'] = 'Facebook';
+$lang->user->oauth->providers['sina']     = 'Weibo';
+#$lang->user->oauth->providers['twitter'] = 'Twitter';
+#$lang->user->oauth->providers['google']  = 'Google';
 
-$lang->user->oauth->typeList['sina']   = 'Weibo User';
-$lang->user->oauth->typeList['qq']     = 'QQ User';
-$lang->user->oauth->typeList['wechat'] = 'Wechat User';
-$lang->user->oauth->typeList['github'] = 'Github';
+$lang->user->oauth->typeList['sina']     = 'Weibo User';
+$lang->user->oauth->typeList['qq']       = 'QQ User';
+$lang->user->oauth->typeList['wechat']   = 'Wechat User';
+$lang->user->oauth->typeList['github']   = 'Github';
 $lang->user->oauth->typeList['facebook'] = 'Facebook';
-#$lang->user->oauth->typeList['google'] = 'Google';
+#$lang->user->oauth->typeList['google']  = 'Google';
 
 $lang->user->oauth->bindUser         = 'Bind User';
 $lang->user->oauth->lblWelcome       = 'Open Login';
