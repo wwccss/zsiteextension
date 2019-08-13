@@ -2117,7 +2117,7 @@ $lang->package->deactivateFinished       = 'Plug-in has been deactivated.';
 $lang->package->activateFinished         = 'Plug-in has been activated.';
 $lang->package->eraseFinished            = 'Plug-in has been cleared.';
 $lang->package->unremovedFiles           = 'Some files can not be delteted. Please delete it manually.';
-$lang->package->executeCommands          = '<h3> Execute the followings to fix the problem,</h3>';
+$lang->package->executeCommands          = '<h3 class="text-center"> Execute the followings to fix the problem,</h3>';
 $lang->package->successDownloadedPackage = 'Plug-in is downloaded.';
 $lang->package->successUploadedPackage   = 'Plug-in is uploaded.';
 $lang->package->successCopiedFiles       = 'File is copied.';
