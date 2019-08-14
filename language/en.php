@@ -733,9 +733,10 @@ $lang->article->stateList['draft']      = 'Draft(%d)';
 $lang->article->stateList['submission'] = 'Submission(%d)';
 $lang->article->stateList['stick']      = 'Stick(%d)';
 
-$lang->article->stateShow['article']    = ',all,normal,timed,draft,submission,stick';
-$lang->article->stateShow['page']       = ',all,normal,timed,draft';
-$lang->article->stateShow['blog']       = ',all,normal,timed,draft,stick';
+$lang->article->stateTabs['article']    = ',all,normal,timed,draft,submission,stick';
+$lang->article->stateTabs['page']       = ',all,normal,timed,draft';
+$lang->article->stateTabs['blog']       = ',all,normal,timed,draft,stick';
+$lang->article->stateTabs['submission'] = ',submission';
 
 $lang->article->blog = new stdclass();
 $lang->article->blog->category                   = 'Category';
@@ -1393,6 +1394,7 @@ $lang->group->successSaved       = 'Saved';
 $lang->group->errorNotSaved      = 'Not saved. Please choose privilege.';
 
 $lang->group->id       = 'ID';
+$lang->group->group    = 'Group';
 $lang->group->name     = 'Name';
 $lang->group->desc     = 'Description';
 $lang->group->users    = 'User List';
@@ -2027,11 +2029,16 @@ $lang->order->abbr->confirmedDate  = 'Received';
 $lang->order->abbr->createdDate    = 'Created';
 
 $lang->order->displayedSearchLabels = new stdclass();
-$lang->order->displayedSearchLabels->all         = 'All|mode=all';
-$lang->order->displayedSearchLabels->waitPay     = 'Not paid|mode=payStatus&param=not_paid';
-$lang->order->displayedSearchLabels->waitSend    = 'Pending|mode=deliveryStatus&param=not_send';
-$lang->order->displayedSearchLabels->waitConfirm = 'Sent|mode=deliveryStatus&param=send';
-$lang->order->displayedSearchLabels->refunding   = 'Refunding|mode=payStatus&param=refunding';
+$lang->order->displayedSearchLabels->all         = 'ALL(%d)|mode=all&param=';
+$lang->order->displayedSearchLabels->waitPay     = 'Not Paid(%d)|mode=payStatus&param=not_paid';
+$lang->order->displayedSearchLabels->waitSend    = 'Pending(%d)|mode=deliveryStatus&param=not_send';
+$lang->order->displayedSearchLabels->refunding   = 'Sent(%d)|mode=payStatus&param=refunding';
+$lang->order->displayedSearchLabels->waitConfirm = 'Refunding(%d)|mode=deliveryStatus&param=send';
+
+$lang->order->scoreDisplayedSearchLabels = new stdclass();
+$lang->order->scoreDisplayedSearchLabels->all      = 'ALL(%d)|mode=all&param=';
+$lang->order->scoreDisplayedSearchLabels->waitPay  = 'Not Paid(%d)|mode=payStatus&param=not_paid';
+$lang->order->scoreDisplayedSearchLabels->finished = 'Finished(%d)|mode=status&param=finished';
 
 $lang->order->hiddenSearchLabels = new stdclass();
 $lang->order->hiddenSearchLabels->confirmed   = 'Received|mode=deliveryStatus&param=confirmed';
@@ -2979,7 +2986,7 @@ $lang->thread->sticks[1] = 'Sticky';
 $lang->thread->sticks[2] = 'Global Sticky ';
 
 $lang->thread->displayList['hidden'] = 'Hidden';
-$lang->thread->displayList['normal'] = 'Normal';
+$lang->thread->displayList['normal'] = 'Show';
 
 $lang->thread->statusList['wait']     = 'Pending';
 $lang->thread->statusList['approved'] = 'Approved';

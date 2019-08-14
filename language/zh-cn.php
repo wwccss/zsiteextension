@@ -734,10 +734,10 @@ $lang->article->stateList['draft']      = '草稿(%d)';
 $lang->article->stateList['submission'] = '投稿(%d)';
 $lang->article->stateList['stick']      = '置顶(%d)';
 
-$lang->article->stateShow['article']    = ',all,normal,timed,draft,submission,stick';
-$lang->article->stateShow['page']       = ',all,normal,timed,draft';
-$lang->article->stateShow['blog']       = ',all,normal,timed,draft,stick';
-$lang->article->stateShow['submission'] = ',submission';
+$lang->article->stateTabs['article']    = ',all,normal,timed,draft,submission,stick';
+$lang->article->stateTabs['page']       = ',all,normal,timed,draft';
+$lang->article->stateTabs['blog']       = ',all,normal,timed,draft,stick';
+$lang->article->stateTabs['submission'] = ',submission';
 
 $lang->article->blog = new stdclass();
 $lang->article->blog->category                   = '博客列表类目';
@@ -1382,6 +1382,7 @@ $lang->group->successSaved       = '成功保存';
 $lang->group->errorNotSaved      = '没有保存，请确认选择了权限数据。';
 
 $lang->group->id       = '编号';
+$lang->group->group    = '分组';
 $lang->group->name     = '分组名称';
 $lang->group->desc     = '分组描述';
 $lang->group->users    = '用户列表';
@@ -2021,6 +2022,11 @@ $lang->order->displayedSearchLabels->waitPay     = '待付款(%d)|mode=payStatus
 $lang->order->displayedSearchLabels->waitSend    = '待发货(%d)|mode=deliveryStatus&param=not_send';
 $lang->order->displayedSearchLabels->refunding   = '待退款(%d)|mode=payStatus&param=refunding';
 $lang->order->displayedSearchLabels->waitConfirm = '待收货(%d)|mode=deliveryStatus&param=send';
+
+$lang->order->scoreDisplayedSearchLabels = new stdclass();
+$lang->order->scoreDisplayedSearchLabels->all      = '全部(%d)|mode=all&param=';
+$lang->order->scoreDisplayedSearchLabels->waitPay  = '待付款(%d)|mode=payStatus&param=not_paid';
+$lang->order->scoreDisplayedSearchLabels->finished = '已完成(%d)|mode=status&param=finished';
 
 $lang->order->hiddenSearchLabels = new stdclass();
 $lang->order->hiddenSearchLabels->confirmed   = '已收货|mode=deliveryStatus&param=confirmed';
@@ -2956,11 +2962,11 @@ $lang->thread->postTo         = '发布帖子到';
 $lang->thread->browse         = '主题列表';
 $lang->thread->stick          = '置顶';
 $lang->thread->edit           = '编辑主题';
-$lang->thread->status         = '状态';
-$lang->thread->approve        = '通过';
+$lang->thread->status         = '帖子状态';
+$lang->thread->approve        = '审核';
 $lang->thread->display        = '显示';
 $lang->thread->hide           = '隐藏';
-$lang->thread->show           = '显示';
+$lang->thread->show           = '显示状态';
 $lang->thread->transfer       = '转移';
 $lang->thread->switchStatus   = '隐藏/显示';
 $lang->thread->deleteFile     = '删除附件';
@@ -2974,11 +2980,11 @@ $lang->thread->sticks[0] = '不置顶';
 $lang->thread->sticks[1] = '版块置顶';
 $lang->thread->sticks[2] = '全局置顶';
 
-$lang->thread->displayList['hidden'] = '已隐藏';
-$lang->thread->displayList['normal'] = '正常';
+$lang->thread->displayList['hidden'] = '隐藏';
+$lang->thread->displayList['normal'] = '显示';
 
 $lang->thread->statusList['wait']     = '待审核';
-$lang->thread->statusList['approved'] = '通过';
+$lang->thread->statusList['approved'] = '已通过';
 
 $lang->thread->confirmDeleteThread = "您确定删除该主题吗？";
 $lang->thread->confirmHideReply    = "您确定隐藏回帖吗？";
