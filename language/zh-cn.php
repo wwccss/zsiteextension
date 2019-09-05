@@ -3947,8 +3947,8 @@ $lang->user->isSensitive = '用户名或者真实姓名不能含有敏感词，�
 $lang->user->stateList = array();
 $lang->user->stateList['all']   = '全部(%d)';
 $lang->user->stateList['admin'] = '管理员(%d)';
-$lang->user->stateList['email'] = '邮箱认证(%d)';
 $lang->user->stateList['qq']    = 'QQ会员(%d)';
+$lang->user->stateList['email'] = '邮箱认证(%d)';
 /* visual */
 $lang->visual->common      = "预览编辑";
 $lang->visual->editLogo    = "编辑标志";
