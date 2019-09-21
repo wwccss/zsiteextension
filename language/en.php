@@ -221,7 +221,7 @@ $lang->menu->desktop_blog = 'Desktop Blog|nav|admin|type=desktop_blog';
 $lang->menu->mobile_top   = 'Mobile|nav|admin|type=mobile_top';
 $lang->menu->mobile_blog  = 'Mobile Blog|nav|admin|type=mobile_blog';
 $lang->menu->component    = 'Component|ui|component|';
-$lang->menu->browsesource = 'Browse Source|file|browsesource|';
+$lang->menu->browsesource = 'Source|file|browsesource|';
 
 $lang->menu->site          = 'System|site|sethomemenu|';
 $lang->menu->security      = 'Security|site|setsecurity|';
@@ -1348,9 +1348,10 @@ $lang->forum->successUpdate = 'Done!';
 $lang->forum->bindWechatTip = 'Posting sets the limit for binding WeChat. Please bind WeChat user first.';
 
 $lang->forum->indexModeOptions = array();
-$lang->forum->indexModeOptions['board']  = 'Board';
-$lang->forum->indexModeOptions['latest'] = 'Latest Thread';
-$lang->forum->indexModeOptions['stick']  = 'Sticky Thread';
+$lang->forum->indexModeOptions['board']  = 'Boards';
+$lang->forum->indexModeOptions['latest'] = 'Latest Threads';
+$lang->forum->indexModeOptions['stick']  = 'Sticky Threads`:wq
+';
 
 $lang->forum->bindWechatOptions = array();
 $lang->forum->bindWechatOptions['open']  = 'Open';
@@ -3051,7 +3052,7 @@ $lang->tree->aliasNumber      = 'Alias should not be numbers.';
 $lang->tree->hasChildren      = 'This board has Child Board. Do not delete it.';
 $lang->tree->confirmDelete    = "Do you want to delete this category?";
 $lang->tree->successFixed     = "Done!";
-$lang->tree->browseByCategory = 'View by Category';
+$lang->tree->browseByCategory = 'By Category';
 
 $lang->tree->placeholder = new stdclass();
 $lang->tree->placeholder->link = 'Enter a link. External one is OK.';
@@ -3445,7 +3446,7 @@ $lang->ui->folderAlias->thread = 'forum';
 $lang->ui->folderAlias->reply  = 'forum';
 
 $lang->ui->settingList['display']   = 'Display';
-$lang->ui->settingList['browse']    = 'Browse Page';
+$lang->ui->settingList['browse']    = 'Pages';
 $lang->ui->settingList['thumb']     = 'Thumb';
 $lang->ui->settingList['watermark'] = 'Watermark';
 
@@ -3522,7 +3523,7 @@ $lang->ui->files->default->forum = array();
 $lang->ui->files->default->forum['index'] = 'Forum Home';
 $lang->ui->files->default->forum['board'] = 'Board';
 
-$lang->ui->files->default->forum['thread/view']   = 'View Thread';
+$lang->ui->files->default->forum['thread/view']   = 'Threads';
 $lang->ui->files->default->forum['thread/thread'] = 'Show Thread ';
 $lang->ui->files->default->forum['thread/reply']  = 'Show Reply';
 $lang->ui->files->default->forum['thread/post']   = 'Post Thread';
@@ -3530,7 +3531,7 @@ $lang->ui->files->default->forum['reply/reply']   = 'Reply List';
 
 $lang->ui->files->default->user['control']     = 'Dashboard';
 $lang->ui->files->default->user['side']        = 'Menu';
-$lang->ui->files->default->user['deny']        = 'Access denied';
+$lang->ui->files->default->user['deny']        = 'Access is denied.';
 $lang->ui->files->default->user['edit']        = 'Edit';
 $lang->ui->files->default->user['login.front'] = 'Login';
 $lang->ui->files->default->user['message']     = 'Messages';
@@ -3686,7 +3687,7 @@ $lang->user->changeEmail     = "Email Settings";
 $lang->user->recoverPassword = "Forgot Password";
 $lang->user->newPassword     = "New Password";
 $lang->user->update          = "Edit User";
-$lang->user->browse          = "View User";
+$lang->user->browse          = "Users";
 $lang->user->deny            = "You access is denied.";
 $lang->user->confirmDelete   = "Do you want to delete it?";
 $lang->user->confirmActivate = "Do you want to activate it?";
