@@ -2813,6 +2813,7 @@ $lang->slide->noImageSelected = '没有选择图片';
 $lang->slide->suitableSize    = '背景图片大小保持一致。';
 $lang->slide->noChange        = '未做更改';
 $lang->slide->groupNotEmpty   = '名称不能为空';
+$lang->slide->uploadFail      = '图片上传失败';
 
 $lang->slide->defaultGroup = '默认分组';
 

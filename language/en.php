@@ -2813,6 +2813,7 @@ $lang->slide->noImageSelected = 'Select an Image';
 $lang->slide->suitableSize    = 'Image size should be the same.';
 $lang->slide->noChange        = 'Nothing changed.';
 $lang->slide->groupNotEmpty   = 'Group name should not be empty.';
+$lang->slide->uploadFail      = 'Image upload fail.';
 
 $lang->slide->defaultGroup = 'Default Group';
 
