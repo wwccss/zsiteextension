@@ -228,6 +228,7 @@ $lang->menu->security      = '安全|site|setsecurity|';
 $lang->menu->company       = '公司|company|setbasic|';
 $lang->menu->score         = '积分|score|setcounts|';
 $lang->menu->interface     = '接口|site|setoauth|';
+$lang->menu->wechatmsg     = '微信|wechat|message|mode=replied&replied=0';
 $lang->menu->wechat        = '微信公众号|wechat|admin|';
 $lang->menu->bear          = '熊掌号|bear|setting|';
 
