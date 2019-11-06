@@ -72,6 +72,7 @@ $lang->productMenu      = '产品';
 $lang->history          = '历史记录';
 $lang->reverse          = '切换顺序';
 $lang->transfer         = '转发';
+$lang->lifetime         = '终生';
 
 $lang->reset             = '重置';
 $lang->add               = '新增';
@@ -444,6 +445,11 @@ $lang->date->minutesAgo   = '分钟前';
 $lang->date->oneHourAgo   = '1小时前';
 $lang->date->hoursAgo     = '小时前';
 
+$lang->encrypt = new stdclass();
+$lang->encrypt->free  = '试用版';
+$lang->encrypt->basic = '基础版';
+$lang->encrypt->pro   = '专业版';
+
 if(!defined('DT_DATETIME1'))  define('DT_DATETIME1',  'Y-m-d H:i:s');
 if(!defined('DT_DATETIME2'))  define('DT_DATETIME2',  'y-m-d H:i');
 if(!defined('DT_MONTHTIME1')) define('DT_MONTHTIME1', 'n/d H:i');
@@ -545,6 +551,13 @@ $lang->admin->shortcuts->site               = '站点设置';
 $lang->admin->shortcuts->logo               = 'LOGO设置';
 $lang->admin->shortcuts->company            = '公司信息';
 $lang->admin->shortcuts->contact            = '联系方式';
+
+$lang->admin->licenseVersion = '蝉知授权版本';
+$lang->admin->versionNumber  = '授权版本号';
+$lang->admin->licesenEndDate = '授权到期时间';
+$lang->admin->applyBasic     = '申请基础版';
+$lang->admin->buyPro         = '购买专业版';
+$lang->admin->updateLicense  = '更新授权';
 
 $lang->admin->thread       = '最新帖子';
 $lang->admin->order        = '最新订单';

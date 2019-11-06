@@ -72,6 +72,7 @@ $lang->productMenu      = 'Product';
 $lang->history          = 'History';
 $lang->reverse          = 'Reverse';
 $lang->transfer         = 'Transfer';
+$lang->lifetime         = 'Lift Time';
 
 $lang->reset             = 'Reset';
 $lang->add               = 'Add';
@@ -443,6 +444,11 @@ $lang->date->minutesAgo   = 'minutes ago';
 $lang->date->oneHourAgo   = '1 hour ago';
 $lang->date->hoursAgo     = 'hours ago';
 
+$lang->encrypt = new stdclass();
+$lang->encrypt->free  = 'Try';
+$lang->encrypt->basic = 'Basic';
+$lang->encrypt->pro   = 'Pro';
+
 if(!defined('DT_DATETIME1'))  define('DT_DATETIME1',  'Y-m-d H:i:s');
 if(!defined('DT_DATETIME2'))  define('DT_DATETIME2',  'y-m-d H:i');
 if(!defined('DT_MONTHTIME1')) define('DT_MONTHTIME1', 'n/d H:i');
@@ -543,6 +549,13 @@ $lang->admin->shortcuts->site               = 'Settings';
 $lang->admin->shortcuts->logo               = 'Logo';
 $lang->admin->shortcuts->company            = 'Company';
 $lang->admin->shortcuts->contact            = 'Contact';
+
+$lang->admin->licenseVersion = 'Chanzhi License Version';
+$lang->admin->versionNumber  = 'License Code';
+$lang->admin->licesenEndDate = 'License Expiration date';
+$lang->admin->applyBasic     = 'Apply Chanzhi basic';
+$lang->admin->buyPro         = 'Buy Chanzhi pro';
+$lang->admin->updateLicense  = 'Update License';
 
 $lang->admin->thread       = 'New Thread';
 $lang->admin->order        = 'New Order';
