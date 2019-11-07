@@ -233,9 +233,9 @@ $lang->menu->wechatmsg     = '微信|wechat|message|mode=replied&replied=0';
 $lang->menu->wechat        = '微信公众号|wechat|admin|';
 $lang->menu->bear          = '熊掌号|bear|setting|';
 
-$lang->menu->package    = '插件|package|browse|';
-$lang->menu->community  = '社区|admin|register|';
-$lang->menu->license    = '蝉知授权|admin|license|';
+$lang->menu->package        = '插件|package|browse|';
+$lang->menu->community      = '社区|admin|register|';
+$lang->menu->chanzhiLicense = '蝉知授权|admin|license|';
 
 $lang->menu->articleCreate  = '发布文章|article|create|type=article';
 $lang->menu->productCreate  = '添加产品|product|create|';
