@@ -552,12 +552,17 @@ $lang->admin->shortcuts->logo               = 'LOGO设置';
 $lang->admin->shortcuts->company            = '公司信息';
 $lang->admin->shortcuts->contact            = '联系方式';
 
-$lang->admin->licenseVersion = '蝉知授权版本';
-$lang->admin->versionNumber  = '授权版本号';
-$lang->admin->licesenEndDate = '授权到期时间';
-$lang->admin->applyBasic     = '申请基础版';
-$lang->admin->buyPro         = '购买专业版';
-$lang->admin->updateLicense  = '更新授权';
+$lang->admin->licenseVersion   = '蝉知授权版本';
+$lang->admin->versionNumber    = '授权版本号';
+$lang->admin->licesenEndDate   = '授权到期时间';
+$lang->admin->applyBasic       = '申请基础版';
+$lang->admin->buyPro           = '购买专业版';
+$lang->admin->install          = '安装';
+$lang->admin->updateLicense    = '更新授权';
+$lang->admin->applyBasicResult = '基础版申请结果';
+$lang->admin->buyProResult     = '专业版购买结果';
+$lang->admin->licenseDomain    = '申请域名';
+$lang->admin->licenseStatus    = '申请状态';
 
 $lang->admin->thread       = '最新帖子';
 $lang->admin->order        = '最新订单';
@@ -586,6 +591,26 @@ $lang->admin->bind = new stdclass();
 $lang->admin->bind->caption = '已有蝉知社区账号，输入用户名密码进行绑定！';
 $lang->admin->bind->submit  = '绑定账号';
 $lang->admin->bind->success = "关联账户成功";
+
+
+$lang->admin->license = new stdclass();
+$lang->admin->license->domain   = '域名';
+$lang->admin->license->notice   = '注意：一个授权只能绑定一个域名，域名提交后不能修改';
+$lang->admin->license->customer = '授予';
+$lang->admin->license->contact  = '手机号';
+$lang->admin->license->comment  = '备注';
+
+$lang->admin->license->statusList['wait']    = '待审核';
+$lang->admin->license->statusList['notpaid'] = '待支付';
+$lang->admin->license->statusList['normal']  = '已审核';
+
+$lang->admin->license->redirecting      = "<span class='text-muted'><span id='countDown'>3</span>秒后跳转到社区账号注册/绑定页面......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>立即跳转</a>";
+$lang->admin->license->bindCommunity    = '申请授权前必须绑定蝉知社区账号，请先注册并绑定蝉知社区账号后，获取授权。';
+$lang->admin->license->errorRedirect    = "<span class='text-muted'><span id='countDown'>10</span>秒后跳转到蝉知授权页面......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>立即跳转</a>";
+$lang->admin->license->licenseDirError  = '文件权限不够,请手动到服务器执行<br/> "sudo mkdir -m 777 %s"。';
+$lang->admin->license->licenseFileError = '文件权限不够,请手动到服务器执行<br/> "sudo chmod -R o=wrx %s"。';
+$lang->admin->license->installSuccess   = '安装授权成功';
+$lang->admin->license->successRedirect  = "<span class='text-muted'><span id='countDown'>3</span>秒后跳转到蝉知授权页面......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>立即跳转</a>";
 /* article */
 $lang->article->common                = '文章';
 $lang->article->setting               = '文章设置';

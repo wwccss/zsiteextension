@@ -550,12 +550,17 @@ $lang->admin->shortcuts->logo               = 'Logo';
 $lang->admin->shortcuts->company            = 'Company';
 $lang->admin->shortcuts->contact            = 'Contact';
 
-$lang->admin->licenseVersion = 'Chanzhi License Version';
-$lang->admin->versionNumber  = 'License Code';
-$lang->admin->licesenEndDate = 'License Expiration date';
-$lang->admin->applyBasic     = 'Apply Chanzhi basic';
-$lang->admin->buyPro         = 'Buy Chanzhi pro';
-$lang->admin->updateLicense  = 'Update License';
+$lang->admin->licenseVersion   = 'Chanzhi License Version';
+$lang->admin->versionNumber    = 'License Code';
+$lang->admin->licesenEndDate   = 'License Expiration date';
+$lang->admin->applyBasic       = 'Apply Chanzhi basic';
+$lang->admin->buyPro           = 'Buy Chanzhi pro';
+$lang->admin->updateLicense    = 'Update License';
+$lang->admin->install          = 'Install License';
+$lang->admin->applyBasicResult = 'Chanzhi Basic Apply Result';
+$lang->admin->buyProResult     = 'Chanzhi Pro Pay Result';
+$lang->admin->licenseDomain    = 'License Domain';
+$lang->admin->licenseStatus    = 'License Status';
 
 $lang->admin->thread       = 'New Thread';
 $lang->admin->order        = 'New Order';
@@ -584,6 +589,25 @@ $lang->admin->bind = new stdclass();
 $lang->admin->bind->caption = 'Zsite Account';
 $lang->admin->bind->submit  = 'Bind account';
 $lang->admin->bind->success = "Binding account is done.";
+
+$lang->admin->license = new stdclass();
+$lang->admin->license->domain   = 'Domain';
+$lang->admin->license->notice   = 'Note：One license is for one domain. Once submitted, domain cannot be changed.';
+$lang->admin->license->customer = 'Grant';
+$lang->admin->license->contact  = 'Phone';
+$lang->admin->license->comment  = 'Notes';
+
+$lang->admin->license->statusList['wait']    = 'To be audited';
+$lang->admin->license->statusList['notpaid'] = 'To be paid';
+$lang->admin->license->statusList['normal']  = 'Normal';
+
+$lang->admin->license->redirecting      = "<span class='text-muted'><span id='countDown'>3</span>Seconds later, jump to the community account registration / binding page......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>Jump immediately</a>";
+$lang->admin->license->bindCommunity    = 'Before applying for authorization, you must bind the chanzhi community account. Please register and bind the chanzhi community account first to obtain authorization.';
+$lang->admin->license->errorRedirect    = "<span class='text-muted'>Jump to the chanzhi authorization page in <span id='countDown'>10</span> seconds......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>Jump immediately</a>";
+$lang->admin->license->licenseDirError  = 'File permissions are not enough. Please execute manually on the server<br/> "sudo mkdir -m 777 %s"。';
+$lang->admin->license->licenseFileError = 'File permissions are not enough. Please execute manually on the server<br/> "sudo chmod -R o=wrx %s"。';
+$lang->admin->license->installSuccess   = 'Installation authorization successful';
+$lang->admin->license->successRedirect  = "<span class='text-muted'>Jump to the chanzhi authorization page in <span id='countDown'>3</span> seconds......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>Jump immediately</a>";
 /* article */
 $lang->article->common                = 'Article';
 $lang->article->setting               = 'Basic Settings';
