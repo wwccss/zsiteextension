@@ -83,7 +83,7 @@ $lang->delete            = '删除';
 $lang->close             = '关闭';
 $lang->save              = '保存';
 $lang->confirm           = '确认';
-$lang->addToBlacklist    = '加黑';
+$lang->addToBlacklist    = '拉黑';
 $lang->send              = '发送';
 $lang->preview           = '预览';
 $lang->goback            = '返回';
@@ -611,6 +611,7 @@ $lang->admin->license->licenseDirError  = '文件权限不够,请手动到服务
 $lang->admin->license->licenseFileError = '文件权限不够,请手动到服务器执行<br/> "sudo chmod -R o=wrx %s"。';
 $lang->admin->license->installSuccess   = '安装授权成功';
 $lang->admin->license->successRedirect  = "<span class='text-muted'><span id='countDown'>3</span>秒后跳转到蝉知授权页面......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>立即跳转</a>";
+$lang->admin->license->installError     = '安装授权失败,可能是获取授权失败或者写入文件失败。';
 /* article */
 $lang->article->common                = '文章';
 $lang->article->setting               = '文章设置';
@@ -2058,24 +2059,26 @@ $lang->order->abbr->deliveriedDate = '发货';
 $lang->order->abbr->confirmedDate  = '收货';
 $lang->order->abbr->createdDate    = '下单';
 
-$lang->order->displayedSearchLabels = new stdclass();
-$lang->order->displayedSearchLabels->all         = '全部(%d)|mode=all&param=';
-$lang->order->displayedSearchLabels->waitPay     = '待付款(%d)|mode=payStatus&param=not_paid';
-$lang->order->displayedSearchLabels->waitSend    = '待发货(%d)|mode=deliveryStatus&param=not_send';
-$lang->order->displayedSearchLabels->refunding   = '待退款(%d)|mode=payStatus&param=refunding';
-$lang->order->displayedSearchLabels->waitConfirm = '待收货(%d)|mode=deliveryStatus&param=send';
+$lang->order->labels = new stdclass();
 
-$lang->order->scoreDisplayedSearchLabels = new stdclass();
-$lang->order->scoreDisplayedSearchLabels->all      = '全部(%d)|mode=all&param=';
-$lang->order->scoreDisplayedSearchLabels->waitPay  = '待付款(%d)|mode=payStatus&param=not_paid';
-$lang->order->scoreDisplayedSearchLabels->finished = '已完成(%d)|mode=status&param=finished';
+$lang->order->labels->default = new stdclass();
+$lang->order->labels->default->all         = '全部(%d)|mode=all&param=';
+$lang->order->labels->default->waitPay     = '待付款(%d)|mode=payStatus&param=not_paid';
+$lang->order->labels->default->waitSend    = '待发货(%d)|mode=deliveryStatus&param=not_send';
+$lang->order->labels->default->refunding   = '待退款(%d)|mode=payStatus&param=refunding';
+$lang->order->labels->default->waitConfirm = '待收货(%d)|mode=deliveryStatus&param=send';
 
-$lang->order->hiddenSearchLabels = new stdclass();
-$lang->order->hiddenSearchLabels->confirmed   = '已收货|mode=deliveryStatus&param=confirmed';
-$lang->order->hiddenSearchLabels->finished    = '已完成|mode=status&param=finished';
-$lang->order->hiddenSearchLabels->refunded    = '已退款|mode=payStatus&param=refunded';
-$lang->order->hiddenSearchLabels->canceled    = '已取消|mode=status&param=canceled';
-$lang->order->hiddenSearchLabels->expired     = '已过期|mode=status&param=expired';
+$lang->order->labels->score = new stdclass();
+$lang->order->labels->score->all      = '全部(%d)|mode=all&param=';
+$lang->order->labels->score->waitPay  = '待付款(%d)|mode=payStatus&param=not_paid';
+$lang->order->labels->score->finished = '已完成(%d)|mode=status&param=finished';
+
+$lang->order->labels->hidden = new stdclass();
+$lang->order->labels->hidden->confirmed   = '已收货|mode=deliveryStatus&param=confirmed';
+$lang->order->labels->hidden->finished    = '已完成|mode=status&param=finished';
+$lang->order->labels->hidden->refunded    = '已退款|mode=payStatus&param=refunded';
+$lang->order->labels->hidden->canceled    = '已取消|mode=status&param=canceled';
+$lang->order->labels->hidden->expired     = '已过期|mode=status&param=expired';
 
 $lang->order->orderStat = new stdclass();
 $lang->order->orderStat->all       = '全部';
@@ -3634,7 +3637,7 @@ $lang->effect->importSuccess = '导入成功';
 $lang->effect->noEffect      = "<code>%s</code> 不可写！请检查该目录权限，否则无法导入。";
 $lang->effect->noWritable    = "<code>%s</code> 不可写！请检查该目录权限，否则无法导入。";
 $lang->effect->bindCommunity = '蝉知特效只对蝉知社区认证用户开放，请先注册并绑定蝉知社区账号后，获取蝉知特效。';
-$lang->effect->noRsults      = "你还没有任何特效，请登录蝉知特效平台，<a href='http://www.chanzhi.org/effect.html' target='_blank'>获取特效</a>。";
+$lang->effect->noRsults      = "你还没有任何特效，请登录蝉知特效平台。<a href='http://www.chanzhi.org/effect.html' class='btn btn-xs btn-primary' target='_blank'>获取特效</a>";
 $lang->effect->redirecting   = "<span class='text-muted'><span id='countDown'>3</span>秒后跳转到社区账号注册/绑定页面......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>立即跳转</a>";
 /* upgrade */
 $lang->upgrade->common  = '升级';

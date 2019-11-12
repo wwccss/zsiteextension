@@ -606,6 +606,7 @@ $lang->admin->license->bindCommunity    = 'Before applying for authorization, yo
 $lang->admin->license->errorRedirect    = "<span class='text-muted'>Jump to the chanzhi authorization page in <span id='countDown'>10</span> seconds......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>Jump immediately</a>";
 $lang->admin->license->licenseDirError  = 'File permissions are not enough. Please execute manually on the server<br/> "sudo mkdir -m 777 %s"。';
 $lang->admin->license->licenseFileError = 'File permissions are not enough. Please execute manually on the server<br/> "sudo chmod -R o=wrx %s"。';
+$lang->admin->license->installError     = 'Failed to install the authorization. It may be failed to get the authorization or failed to write the file.';
 $lang->admin->license->installSuccess   = 'Installation authorization successful';
 $lang->admin->license->successRedirect  = "<span class='text-muted'>Jump to the chanzhi authorization page in <span id='countDown'>3</span> seconds......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>Jump immediately</a>";
 /* article */
@@ -2056,24 +2057,26 @@ $lang->order->abbr->deliveriedDate = 'Delivered';
 $lang->order->abbr->confirmedDate  = 'Received';
 $lang->order->abbr->createdDate    = 'Created';
 
-$lang->order->displayedSearchLabels = new stdclass();
-$lang->order->displayedSearchLabels->all         = 'ALL(%d)|mode=all&param=';
-$lang->order->displayedSearchLabels->waitPay     = 'Not Paid(%d)|mode=payStatus&param=not_paid';
-$lang->order->displayedSearchLabels->waitSend    = 'Pending(%d)|mode=deliveryStatus&param=not_send';
-$lang->order->displayedSearchLabels->refunding   = 'Sent(%d)|mode=payStatus&param=refunding';
-$lang->order->displayedSearchLabels->waitConfirm = 'Refunding(%d)|mode=deliveryStatus&param=send';
+$lang->order->labels = new stdclass();
 
-$lang->order->scoreDisplayedSearchLabels = new stdclass();
-$lang->order->scoreDisplayedSearchLabels->all      = 'ALL(%d)|mode=all&param=';
-$lang->order->scoreDisplayedSearchLabels->waitPay  = 'Not Paid(%d)|mode=payStatus&param=not_paid';
-$lang->order->scoreDisplayedSearchLabels->finished = 'Finished(%d)|mode=status&param=finished';
+$lang->order->labels->default = new stdclass();
+$lang->order->labels->default->all         = 'ALL(%d)|mode=all&param=';
+$lang->order->labels->default->waitPay     = 'Not Paid(%d)|mode=payStatus&param=not_paid';
+$lang->order->labels->default->waitSend    = 'Pending(%d)|mode=deliveryStatus&param=not_send';
+$lang->order->labels->default->refunding   = 'Sent(%d)|mode=payStatus&param=refunding';
+$lang->order->labels->default->waitConfirm = 'Refunding(%d)|mode=deliveryStatus&param=send';
 
-$lang->order->hiddenSearchLabels = new stdclass();
-$lang->order->hiddenSearchLabels->confirmed   = 'Received|mode=deliveryStatus&param=confirmed';
-$lang->order->hiddenSearchLabels->finished    = 'Finished|mode=status&param=finished';
-$lang->order->hiddenSearchLabels->refunded    = 'Refunded|mode=payStatus&param=refunded';
-$lang->order->hiddenSearchLabels->canceled    = 'Cancelled|mode=status&param=canceled';
-$lang->order->hiddenSearchLabels->expired     = 'Expired|mode=status&param=expired';
+$lang->order->labels->score = new stdclass();
+$lang->order->labels->score->all      = 'ALL(%d)|mode=all&param=';
+$lang->order->labels->score->waitPay  = 'Not Paid(%d)|mode=payStatus&param=not_paid';
+$lang->order->labels->score->finished = 'Finished(%d)|mode=status&param=finished';
+
+$lang->order->labels->hidden = new stdclass();
+$lang->order->labels->hidden->confirmed   = 'Received|mode=deliveryStatus&param=confirmed';
+$lang->order->labels->hidden->finished    = 'Finished|mode=status&param=finished';
+$lang->order->labels->hidden->refunded    = 'Refunded|mode=payStatus&param=refunded';
+$lang->order->labels->hidden->canceled    = 'Cancelled|mode=status&param=canceled';
+$lang->order->labels->hidden->expired     = 'Expired|mode=status&param=expired';
 
 $lang->order->orderStat = new stdclass();
 $lang->order->orderStat->all       = 'All';
@@ -3632,7 +3635,7 @@ $lang->effect->importSuccess = 'Imported';
 $lang->effect->noEffect      = '<code>%s</code> cannot be written! Please check the directory permissions, or it cannot be imported';
 $lang->effect->noWritable    = '<code>%s</code> cannot be written! Please check the directory permissions, or it cannot be imported';
 $lang->effect->bindCommunity = 'Please bind the account of Zsite before get effect';
-$lang->effect->noRsults      = "You have no effect. Login Zsite <a href='http://www.zsite.net/effect.html' target='_blank'>get effect</a>。";
+$lang->effect->noRsults      = "You have no effect. Login Zsite.<a href='http://www.zsite.net/effect.html'  class='btn btn-xs btn-primary' target='_blank'>get effect</a>";
 $lang->effect->redirecting   = "<span class='text-muted'><span id='countDown'>3</span> seconds. Redirecting to the community page...</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>Link</a>";
 /* upgrade */
 $lang->upgrade->common  = 'Upgrade';
