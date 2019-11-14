@@ -550,6 +550,7 @@ $lang->admin->shortcuts->logo               = 'Logo';
 $lang->admin->shortcuts->company            = 'Company';
 $lang->admin->shortcuts->contact            = 'Contact';
 
+$lang->admin->chanzhiLicense   = 'Chanzhi License';
 $lang->admin->licenseVersion   = 'Chanzhi License Version';
 $lang->admin->versionNumber    = 'License Code';
 $lang->admin->licesenEndDate   = 'License Expiration date';
@@ -596,6 +597,7 @@ $lang->admin->license->notice   = 'Note：One license is for one domain. Once su
 $lang->admin->license->customer = 'Grant';
 $lang->admin->license->contact  = 'Phone';
 $lang->admin->license->comment  = 'Notes';
+$lang->admin->license->codeDiff = 'Inconsistent with the latest licensing. It is recommended to reinstall the licensing.';
 
 $lang->admin->license->statusList['wait']    = 'To be audited';
 $lang->admin->license->statusList['notpaid'] = 'To be paid';

@@ -552,6 +552,7 @@ $lang->admin->shortcuts->logo               = 'LOGO设置';
 $lang->admin->shortcuts->company            = '公司信息';
 $lang->admin->shortcuts->contact            = '联系方式';
 
+$lang->admin->chanzhiLicense   = '蝉知授权';
 $lang->admin->licenseVersion   = '蝉知授权版本';
 $lang->admin->versionNumber    = '授权版本号';
 $lang->admin->licesenEndDate   = '授权到期时间';
@@ -592,13 +593,13 @@ $lang->admin->bind->caption = '已有蝉知社区账号，输入用户名密码�
 $lang->admin->bind->submit  = '绑定账号';
 $lang->admin->bind->success = "关联账户成功";
 
-
 $lang->admin->license = new stdclass();
 $lang->admin->license->domain   = '域名';
 $lang->admin->license->notice   = '注意：一个授权只能绑定一个域名，域名提交后不能修改';
 $lang->admin->license->customer = '授予';
 $lang->admin->license->contact  = '手机号';
 $lang->admin->license->comment  = '备注';
+$lang->admin->license->codeDiff = '与最新授权不一致 建议重新安装授权';
 
 $lang->admin->license->statusList['wait']    = '待审核';
 $lang->admin->license->statusList['notpaid'] = '待支付';
