@@ -3233,8 +3233,8 @@ $lang->ui->deleteFaviconFail      = 'Deleting %s fail.';
 $lang->ui->lengthOverflow         = 'The content length is %s bytes. Keep it be <65535 bytes, or some content cannot be saved.';
 
 $lang->ui->deviceList = new stdclass();
-$lang->ui->deviceList->desktop = "<i class='icon icon-desktop'></i> Desktop";
-$lang->ui-edeviceList->mobile  = "<i class='icon icon-tablet'></i> Mobile";
+$lang->ui->deviceList->desktop = "DeskTop";
+$lang->ui->deviceList->mobile  = "Mobile";
 
 $lang->ui->productViewList[1] = 'On';
 $lang->ui->productViewList[0] = 'Off';
