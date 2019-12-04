@@ -233,8 +233,9 @@ $lang->menu->wechatmsg     = 'WeChat|wechat|message|mode=replied&replied=0';
 $lang->menu->wechat        = 'WeChat Setting|wechat|admin|';
 $lang->menu->bear          = 'Bear|bear|setting|';
 
-$lang->menu->package    = 'Extension|package|browse|';
-$lang->menu->community  = 'Community|admin|register|';
+$lang->menu->package        = 'Extension|package|browse|';
+$lang->menu->community      = 'Community|admin|register|';
+$lang->menu->chanzhiLicense = 'Chanzhi License|admin|license|';
 
 $lang->menu->articleCreate  = 'Article|article|create|';
 $lang->menu->productCreate  = 'Product|product|create|';
