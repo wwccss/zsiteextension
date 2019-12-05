@@ -186,7 +186,7 @@ $lang->menu->book       = 'Book|book|admin|';
 $lang->menu->page       = 'Page|article|admin|type=page';
 $lang->menu->attachment = 'File|file|admin|';
 
-$lang->menu->order        = 'Order|order|admin|';
+$lang->menu->order        = 'Order|order|stat|';
 $lang->menu->product      = 'Product|product|admin|';
 $lang->menu->orderSetting = 'Settings|product|setting|';
 
@@ -1187,8 +1187,8 @@ $lang->book->images      = 'Image';
 $lang->book->chapterList = 'Table of Contents';
 $lang->book->articleList = 'Articles';
 $lang->book->fullScreen  = 'Full Screen';
-$lang->book->fullShow    = 'Full Show';
-$lang->book->fullHide    = 'Full Hidden';
+$lang->book->showAll     = 'Show';
+$lang->book->hideAll     = 'Hidden';
 
 $lang->book->typeList['book']    = 'Book';
 $lang->book->typeList['chapter'] = 'Chapter';
