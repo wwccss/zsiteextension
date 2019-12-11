@@ -258,7 +258,7 @@ $lang->siteMenus = new stdclass();
 $lang->siteMenus->basic  = array('link' => 'Basic |site|setbasic|');
 $lang->siteMenus->module = array('link' => 'Module|site|setmodule|');
 $lang->siteMenus->seo    = array('link' => 'SEO   |site|setseo|');
-$lang->siteMenus->http   = array('link' => 'HTPP  |site|setwebsite|');
+$lang->siteMenus->http   = array('link' => 'HTTP  |site|setwebsite|');
 $lang->siteMenus->wechat = array('link' => 'Wechat|wechat|admin|', 'alias' => 'create,message,integrate');
 $lang->siteMenus->more   = array('link' => 'More  |company|setbasic|', 'alias' => 'setcontact,sethomemenu,setcache,buildindex,setagreement,setcounts,showstateinfo,setoauth,setsecurity,setfilter,setblacklist,setwhitelist,setsensitive,setcaptcha,setupload');
 
@@ -316,7 +316,7 @@ $lang->forum->menu->setting = 'Settings|forum|setting|';
 $lang->site = new stdclass();
 $lang->site->menu = new stdclass();
 $lang->site->menu->shortcuts = 'Shortcuts|site|sethomemenu|';
-$lang->site->menu->language  = 'Language Settings|site|setlanaguge|';
+$lang->site->menu->language  = 'Language Settings|site|setlanguage|';
 $lang->site->menu->cache     = 'Cache Settings|site|setcache|';
 $lang->site->menu->search    = 'Full Text Search|search|buildindex|';
 $lang->site->menu->backup    = 'Backup/Restore|backup|index|';
