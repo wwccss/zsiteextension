@@ -107,7 +107,7 @@ $lang->alias             = 'For SEO, enter letters and numbers.';
 $lang->keywordsHolder    = 'use comma to separate tags';
 $lang->autoUpgrade       = 'Auto update';
 $lang->detail            = 'Detail';
-$lang->searchPlaceholder = 'Input keywords to search';
+$lang->searchPlaceholder = 'Input keywords';
 $lang->selectDate        = 'Select Date';
 $lang->bindWechat        = 'Please bind your Wechat first';
 
@@ -682,7 +682,7 @@ $lang->article->onlyBody = 'Display body only (for custom).';
 
 $lang->article->list          = 'List';
 $lang->article->admin         = 'Manage';
-$lang->article->create        = 'Add Article';
+$lang->article->create        = 'Add';
 $lang->article->setcss        = 'CSS Settings';
 $lang->article->setjs         = 'JS Settings';
 $lang->article->edit          = 'Edit';
@@ -729,7 +729,7 @@ $lang->article->sticks[0] = 'No Sticky';
 $lang->article->sticks[1] = 'Categorical';
 $lang->article->sticks[2] = 'Global';
 
-$lang->article->stickTime      = 'Top End Time';
+$lang->article->stickTime      = 'End Time';
 $lang->article->stickBold      = 'Title Bold';
 $lang->article->successStick   = 'Sticky!';
 $lang->article->successUnstick = 'Sticky cancelled!';
@@ -1500,8 +1500,8 @@ $lang->guarder->blacklistModes['guard']    = 'Website';
 $lang->guarder->blacklistModes['email']    = 'Email';
 
 $lang->guarder->whitelist = new stdclass();
-$lang->guarder->whitelist->ip            = 'IP Whitelist';
-$lang->guarder->whitelist->account       = 'Account Whitelist';
+$lang->guarder->whitelist->ip            = 'IP';
+$lang->guarder->whitelist->account       = 'Account';
 $lang->guarder->whitelist->accountHolder = 'use comma to separate multiple accounts, such as John, Jeff.';
 $lang->guarder->whitelist->ipHolder      = 'use comma to separate multiple IP, such as 202.194.133.1, 202.194.132.0/28';
 $lang->guarder->whitelist->wrongIP       = 'IP Error';
@@ -2251,7 +2251,7 @@ $lang->product->js          = 'JS';
 
 $lang->product->currency     = 'Currency';
 $lang->product->stock        = 'Inventory';
-$lang->product->stockRemind  = 'Inventory Alert';
+$lang->product->stockRemind  = 'Inventory';
 $lang->product->stockWarning = "<span class='first'>Early warning when stock is less than </span>%s";
 $lang->product->negotiate    = 'Quote';
 
