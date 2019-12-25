@@ -429,7 +429,7 @@ $lang->pager->noRecord     = "No record found!";
 $lang->pager->digest       = "<strong>%s</strong> Records found. %s &nbsp; ";
 $lang->pager->recPerPage   = "<strong>%s</strong> Records per Page";
 $lang->pager->first        = "<i class='icon-page-first icon-lg' title='Home'></i>";
-$lang->pager->pre          = "<i class='icon angle-left icon-lg' title='Previous'></i>";
+$lang->pager->pre          = "<i class='icon icon-angle-left icon-lg' title='Previous'></i>";
 $lang->pager->next         = "<i class='icon-angle-right icon-lg' title='Next'></i>";
 $lang->pager->last         = "<i class='icon-page-last icon-lg' title='last page'></i>";
 $lang->pager->locate       = "GO!";
