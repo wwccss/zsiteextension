@@ -446,9 +446,10 @@ $lang->date->oneHourAgo   = '1小时前';
 $lang->date->hoursAgo     = '小时前';
 
 $lang->encrypt = new stdclass();
-$lang->encrypt->free  = '试用版';
-$lang->encrypt->basic = '基础版';
-$lang->encrypt->pro   = '专业版';
+$lang->encrypt->free       = '试用版';
+$lang->encrypt->personal   = '个人版';
+$lang->encrypt->enterprise = '企业版';
+$lang->encrypt->pro        = '专业版';
 
 if(!defined('DT_DATETIME1'))  define('DT_DATETIME1',  'Y-m-d H:i:s');
 if(!defined('DT_DATETIME2'))  define('DT_DATETIME2',  'y-m-d H:i');

@@ -446,9 +446,10 @@ $lang->date->oneHourAgo   = '1 hour ago';
 $lang->date->hoursAgo     = 'hours ago';
 
 $lang->encrypt = new stdclass();
-$lang->encrypt->free  = 'Try';
-$lang->encrypt->basic = 'Basic';
-$lang->encrypt->pro   = 'Pro';
+$lang->encrypt->free       = 'Try';
+$lang->encrypt->personal   = 'Personal';
+$lang->encrypt->enterprise = 'Enterprise';
+$lang->encrypt->pro        = 'Pro';
 
 if(!defined('DT_DATETIME1'))  define('DT_DATETIME1',  'Y-m-d H:i:s');
 if(!defined('DT_DATETIME2'))  define('DT_DATETIME2',  'y-m-d H:i');
