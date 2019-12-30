@@ -599,11 +599,17 @@ $lang->admin->license->notice   = 'Note：One license is for one domain. Once su
 $lang->admin->license->customer = 'Grant';
 $lang->admin->license->contact  = 'Phone';
 $lang->admin->license->comment  = 'Notes';
+$lang->admin->license->type     = 'Type';
+$lang->admin->license->reason   = 'Reason';
 $lang->admin->license->codeDiff = 'Inconsistent with the latest licensing. It is recommended to reinstall the licensing.';
+
+$lang->admin->license->identityList['chanzhipersonal']   = "Chanzhi Personal";
+$lang->admin->license->identityList['chanzhienterprise'] = "Chanzhi Enterprise";
 
 $lang->admin->license->statusList['wait']    = 'To be audited';
 $lang->admin->license->statusList['notpaid'] = 'To be paid';
 $lang->admin->license->statusList['normal']  = 'Normal';
+$lang->admin->license->statusList['reject']  = 'Reject';
 
 $lang->admin->license->redirecting      = "<span class='text-muted'><span id='countDown'>3</span>Seconds later, jump to the community account registration / binding page......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>Jump immediately</a>";
 $lang->admin->license->bindCommunity    = 'Before applying for authorization, you must bind the chanzhi community account. Please register and bind the chanzhi community account first to obtain authorization.';
