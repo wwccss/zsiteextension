@@ -595,14 +595,15 @@ $lang->admin->bind->submit  = '绑定账号';
 $lang->admin->bind->success = "关联账户成功";
 
 $lang->admin->license = new stdclass();
-$lang->admin->license->domain   = '域名';
-$lang->admin->license->notice   = '注意：一个授权只能绑定一个域名，域名提交后不能修改';
-$lang->admin->license->customer = '授予';
-$lang->admin->license->contact  = '手机号';
-$lang->admin->license->comment  = '备注';
-$lang->admin->license->type     = '类型';
-$lang->admin->license->reason   = '拒绝理由';
-$lang->admin->license->codeDiff = '与最新授权不一致 建议重新安装授权';
+$lang->admin->license->domain       = '域名';
+$lang->admin->license->notice       = '注意：一个授权只能绑定一个域名，域名提交后不能修改';
+$lang->admin->license->customer     = '授予';
+$lang->admin->license->contact      = '手机号';
+$lang->admin->license->comment      = '备注';
+$lang->admin->license->type         = '类型';
+$lang->admin->license->reason       = '拒绝理由';
+$lang->admin->license->codeDiff     = '与最新授权不一致 建议重新安装授权';
+$lang->admin->license->captchaError = '请输入正确的验证码。';
 
 $lang->admin->license->identityList['chanzhipersonal']   = "个人版";
 $lang->admin->license->identityList['chanzhienterprise'] = "企业版";
@@ -610,6 +611,7 @@ $lang->admin->license->identityList['chanzhienterprise'] = "企业版";
 $lang->admin->license->statusList['wait']    = '待审核';
 $lang->admin->license->statusList['notpaid'] = '待支付';
 $lang->admin->license->statusList['normal']  = '已审核';
+$lang->admin->license->statusList['paid']    = '已支付';
 $lang->admin->license->statusList['reject']  = '已拒绝';
 
 $lang->admin->license->redirecting      = "<span class='text-muted'><span id='countDown'>3</span>秒后跳转到社区账号注册/绑定页面......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>立即跳转</a>";
