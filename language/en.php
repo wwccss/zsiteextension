@@ -559,7 +559,8 @@ $lang->admin->licesenEndDate   = 'License Expiration date';
 $lang->admin->applyBasic       = 'Apply Chanzhi basic';
 $lang->admin->buyPro           = 'Buy Chanzhi pro';
 $lang->admin->updateLicense    = 'Update License';
-$lang->admin->install          = 'Install License';
+$lang->admin->install          = 'Install';
+$lang->admin->upgrade          = 'Upgrade';
 $lang->admin->applyBasicResult = 'Chanzhi Basic Apply Result';
 $lang->admin->buyProResult     = 'Chanzhi Pro Pay Result';
 $lang->admin->licenseDomain    = 'License Domain';
@@ -612,6 +613,9 @@ $lang->admin->license->statusList['notpaid'] = 'To be paid';
 $lang->admin->license->statusList['normal']  = 'Normal';
 $lang->admin->license->statusList['paid']    = 'Paid';
 $lang->admin->license->statusList['reject']  = 'Reject';
+
+$lang->admin->license->welcome = "Welcome to Chanzhi enterprise portal system. You can use Chanzhi professional edition function for free until <span class='text-danger'>%s</span>. After expiration, you can continue to use Chanzhi free edition function, apply for formal edition authorization for free, or purchase Professional Edition authorization.";
+$lang->admin->license->overdue = "Welcome to Chanzhi enterprise portal system. The function of Chanzhi professional edition you tried has <span class='text-danger'>expired</span>. You can continue to use Chanzhi free edition function, apply for official edition authorization for free, or purchase Professional Edition authorization.";
 
 $lang->admin->license->redirecting      = "<span class='text-muted'><span id='countDown'>3</span>Seconds later, jump to the community account registration / binding page......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>Jump immediately</a>";
 $lang->admin->license->bindCommunity    = 'Before applying for authorization, you must bind the chanzhi community account. Please register and bind the chanzhi community account first to obtain authorization.';

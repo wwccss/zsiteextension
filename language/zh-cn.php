@@ -554,16 +554,17 @@ $lang->admin->shortcuts->company            = '公司信息';
 $lang->admin->shortcuts->contact            = '联系方式';
 
 $lang->admin->chanzhiLicense   = '蝉知授权';
-$lang->admin->licenseVersion   = '蝉知授权版本';
+$lang->admin->licenseVersion   = '授权版本';
 $lang->admin->versionNumber    = '授权版本号';
 $lang->admin->licesenEndDate   = '授权到期时间';
 $lang->admin->applyBasic       = '申请基础版';
 $lang->admin->buyPro           = '购买专业版';
 $lang->admin->install          = '安装';
+$lang->admin->upgrade          = '升级';
 $lang->admin->updateLicense    = '更新授权';
 $lang->admin->applyBasicResult = '基础版申请结果';
 $lang->admin->buyProResult     = '专业版购买结果';
-$lang->admin->licenseDomain    = '申请域名';
+$lang->admin->licenseDomain    = '绑定域名';
 $lang->admin->licenseStatus    = '申请状态';
 
 $lang->admin->thread       = '最新帖子';
@@ -613,6 +614,9 @@ $lang->admin->license->statusList['notpaid'] = '待支付';
 $lang->admin->license->statusList['normal']  = '已审核';
 $lang->admin->license->statusList['paid']    = '已支付';
 $lang->admin->license->statusList['reject']  = '已拒绝';
+
+$lang->admin->license->welcome = "欢迎使用蝉知企业门户系统，您可以免费使用蝉知专业版功能至 <span class='text-danger'>%s</span>，到期后您可以继续使用蝉知免费版功能，也可免费申请正式版授权，或购买专业版授权。";
+$lang->admin->license->overdue = "欢迎使用蝉知企业门户系统，您试用的蝉知专业版功能<span class='text-danger'>已过期</span>，您可以继续使用蝉知免费版功能，也可免费申请正式版授权，或购买专业版授权。";
 
 $lang->admin->license->redirecting      = "<span class='text-muted'><span id='countDown'>3</span>秒后跳转到社区账号注册/绑定页面......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>立即跳转</a>";
 $lang->admin->license->bindCommunity    = '申请授权前必须绑定蝉知社区账号，请先注册并绑定蝉知社区账号后，获取授权。';
