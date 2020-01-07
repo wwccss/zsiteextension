@@ -538,8 +538,8 @@ $lang->admin->checked       = 'Checked';
 $lang->admin->adminLog      = 'Admin';
 $lang->admin->frontLog      = 'Front';
 
-$lang->admin->getEmailCodeByApi  = 'Get email code';
-$lang->admin->getMobileCodeByApi = 'Get mobile code';
+$lang->admin->getEmailCodeByApi  = 'Get code';
+$lang->admin->getMobileCodeByApi = 'Get code';
 
 $lang->admin->shortcuts = new stdclass();
 $lang->admin->shortcuts->common             = 'Shortcuts';
@@ -1405,8 +1405,7 @@ $lang->forum->bindWechatTip = 'Posting sets the limit for binding WeChat. Please
 $lang->forum->indexModeOptions = array();
 $lang->forum->indexModeOptions['board']  = 'Boards';
 $lang->forum->indexModeOptions['latest'] = 'Latest Threads';
-$lang->forum->indexModeOptions['stick']  = 'Sticky Threads`:wq
-';
+$lang->forum->indexModeOptions['stick']  = 'Sticky Threads';
 
 $lang->forum->bindWechatOptions = array();
 $lang->forum->bindWechatOptions['open']  = 'Open';
@@ -4346,11 +4345,11 @@ $lang->widget->typeList->commonMenu     = 'Quick Entry';
 $lang->widget->typeList->html           = 'Custom';
 
 $lang->widget->stat = new stdclass();
-$lang->widget->stat->article = 'Article quantity';
-$lang->widget->stat->blog    = 'Blog quantity';
-$lang->widget->stat->product = 'Product quantity';
-$lang->widget->stat->thread  = 'Thread quantity';
-$lang->widget->stat->user    = 'User quantity';
+$lang->widget->stat->article = 'Article Num';
+$lang->widget->stat->blog    = 'Blog Num';
+$lang->widget->stat->product = 'Product Num';
+$lang->widget->stat->thread  = 'Thread Num';
+$lang->widget->stat->user    = 'User Num';
 $lang->widget->stat->pv      = 'PV';
 $lang->widget->stat->uv      = 'UV';
 $lang->widget->stat->ip      = 'IP';
@@ -4359,22 +4358,22 @@ $lang->widget->stat->statLeft  = array('article' => 'article', 'blog' => 'articl
 $lang->widget->stat->statRight = array('pv' => 'stat', 'uv' => 'stat', 'ip' => 'stat');
 
 $lang->widget->process = array();
-$lang->widget->process[0] = array('Site','Setting','Account');
-$lang->widget->process[1] = array('Design','Theme','Typeset');
-$lang->widget->process[2] = array('Content','Publish','Product');
-$lang->widget->process[3] = array('SEO','Content','Member');
+$lang->widget->process[0] = array('top' => 'Site','site' => 'Setting','heart-sign' => 'Account');
+$lang->widget->process[1] = array('top' => 'Design','palette' => 'Theme','layout' => 'Typeset');
+$lang->widget->process[2] = array('top' => 'Content','send' => 'Publish','promote' => 'Product');
+$lang->widget->process[3] = array('top' => 'SEO','horn' => 'Content','verify' => 'Member');
 
 $lang->widget->todoList = new stdclass();
 $lang->widget->todoList->verifyProcess        = 'Review';
 $lang->widget->todoList->orderProcess         = 'Order';
 $lang->widget->todoList->replenishmentProcess = 'Replenishment';
-$lang->widget->todoList->needVerifyFeedBack   = 'Pending Review Feedback';
-$lang->widget->todoList->needVerifyContribute = 'Pending Review Submission';
-$lang->widget->todoList->needVerifyThread     = 'Pending Review Thread';
-$lang->widget->todoList->needDeliveryOrder    = 'Pending Delivery';
-$lang->widget->todoList->needRetrunOrder      = 'Pending Return';
-$lang->widget->todoList->needReceivingOrder   = 'Pending Delivery';
-$lang->widget->todoList->needAddProduct       = 'Pending Replenishment';
+$lang->widget->todoList->needVerifyFeedBack   = 'Feedback';
+$lang->widget->todoList->needVerifyContribute = 'Submission';
+$lang->widget->todoList->needVerifyThread     = 'Thread';
+$lang->widget->todoList->needDeliveryOrder    = 'Delivery';
+$lang->widget->todoList->needRetrunOrder      = 'Return';
+$lang->widget->todoList->needReceivingOrder   = 'Delivery';
+$lang->widget->todoList->needAddProduct       = 'Product';
 
 $lang->widget->operationLog = new stdclass();
 $lang->widget->operationLog->today = 'Today';
