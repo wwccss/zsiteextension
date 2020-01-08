@@ -4020,6 +4020,7 @@ $lang->visual->preview         = "Preview";
 $lang->visual->exit            = "Exit";
 $lang->visual->exitVisualEdit  = "Exit Visual Editor";
 $lang->visual->customTheme     = "Custom Theme";
+$lang->visual->saveAsTheme     = "Save As Theme";
 $lang->visual->admin           = "Admin";
 $lang->visual->reload          = 'Refresh';
 $lang->visual->createBlock     = 'Add Widget';
