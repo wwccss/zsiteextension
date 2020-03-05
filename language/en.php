@@ -1,6 +1,6 @@
 <?php
 /* common */
-$lang->colon      = ' ：';
+$lang->colon      = ' : ';
 $lang->prev       = '‹';
 $lang->next       = '›';
 $lang->equal      = '=';
@@ -558,9 +558,9 @@ $lang->admin->versionNumber    = 'License Code';
 $lang->admin->licesenEndDate   = 'License Expiration date';
 $lang->admin->applyBasic       = 'Apply Chanzhi basic';
 $lang->admin->buyPro           = 'Buy Chanzhi pro';
-$lang->admin->updateLicense    = 'Update License';
 $lang->admin->install          = 'Install';
 $lang->admin->upgrade          = 'Upgrade';
+$lang->admin->updateLicense    = 'Update License';
 $lang->admin->applyBasicResult = 'Chanzhi Basic Apply Result';
 $lang->admin->buyProResult     = 'Chanzhi Pro Pay Result';
 $lang->admin->licenseDomain    = 'License Domain';
@@ -605,8 +605,19 @@ $lang->admin->license->reason       = 'Reason';
 $lang->admin->license->codeDiff     = 'Inconsistent with the latest licensing. It is recommended to reinstall the licensing.';
 $lang->admin->license->captchaError = 'Please enter the correct code.';
 
-$lang->admin->license->identityList['chanzhipersonal']   = "Chanzhi Personal";
-$lang->admin->license->identityList['chanzhienterprise'] = "Chanzhi Enterprise";
+$lang->admin->license->currentLicense    = "Current License";
+$lang->admin->license->currentType       = "Current Type";
+$lang->admin->license->tryUser           = "Try";
+$lang->admin->license->notBind           = "Not Bind";
+$lang->admin->license->communityaccount  = "Community Account";
+$lang->admin->license->clickhere         = "Click here";
+$lang->admin->license->notBind           = "The current community account is not bound. After binding the community account, the account can be authenticated";
+$lang->admin->license->hasNewLicense     = "You have an updated license that can be installed and enabled. %s to enter the authorized installation page immediately.";
+
+$lang->admin->license->identityList['chanzhifree'] = "Pro (<span class='text-danger'>Try</span>)";
+$lang->admin->license->identityList['personal']    = "Personal";
+$lang->admin->license->identityList['enterprise']  = "Enterprise";
+$lang->admin->license->identityList['chanzhipro']  = "Pro";
 
 $lang->admin->license->statusList['wait']    = 'To be audited';
 $lang->admin->license->statusList['notpaid'] = 'To be paid';
@@ -622,9 +633,9 @@ $lang->admin->license->bindCommunity    = 'Before applying for authorization, yo
 $lang->admin->license->errorRedirect    = "<span class='text-muted'>Jump to the chanzhi authorization page in <span id='countDown'>10</span> seconds......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>Jump immediately</a>";
 $lang->admin->license->licenseDirError  = 'File permissions are not enough. Please execute manually on the server<br/> "sudo mkdir -m 777 %s"。';
 $lang->admin->license->licenseFileError = 'File permissions are not enough. Please execute manually on the server<br/> "sudo chmod -R o=wrx %s"。';
-$lang->admin->license->installError     = 'Failed to install the authorization. It may be failed to get the authorization or failed to write the file.';
 $lang->admin->license->installSuccess   = 'Installation authorization successful';
 $lang->admin->license->successRedirect  = "<span class='text-muted'>Jump to the chanzhi authorization page in <span id='countDown'>3</span> seconds......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>Jump immediately</a>";
+$lang->admin->license->installError     = 'Failed to install the authorization. It may be failed to get the authorization or failed to write the file.';
 /* article */
 $lang->article->common                = 'Article';
 $lang->article->setting               = 'Basic Settings';
