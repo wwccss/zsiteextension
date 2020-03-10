@@ -232,6 +232,10 @@ $lang->menu->interface     = 'API|site|setoauth|';
 $lang->menu->wechatmsg     = 'WeChat|wechat|message|mode=replied&replied=0';
 $lang->menu->wechat        = 'WeChat Setting|wechat|admin|';
 $lang->menu->bear          = 'Bear|bear|setting|';
+$lang->menu->basic         = 'Basic|site|setbasic|';
+$lang->menu->module        = 'Module|site|setmodule|';
+$lang->menu->seo           = 'SEO|site|setseo|';
+$lang->menu->http          = 'HTTP|site|setwebsite|';
 
 $lang->menu->package        = 'Extension|package|browse|';
 $lang->menu->community      = 'Community|admin|register|';
@@ -253,14 +257,6 @@ $lang->menuGroups->search  = 'site';
 $lang->menuGroups->company = 'company';
 $lang->menuGroups->score   = 'site';
 $lang->menuGroups->guarder = 'security';
-
-$lang->siteMenus = new stdclass();
-$lang->siteMenus->basic  = array('link' => 'Basic |site|setbasic|');
-$lang->siteMenus->module = array('link' => 'Module|site|setmodule|');
-$lang->siteMenus->seo    = array('link' => 'SEO   |site|setseo|');
-$lang->siteMenus->http   = array('link' => 'HTTP  |site|setwebsite|');
-$lang->siteMenus->wechat = array('link' => 'Wechat|wechat|admin|', 'alias' => 'create,message,integrate');
-$lang->siteMenus->more   = array('link' => 'More  |company|setbasic|', 'alias' => 'setcontact,sethomemenu,setcache,buildindex,setagreement,setcounts,showstateinfo,setoauth,setsecurity,setfilter,setblacklist,setwhitelist,setsensitive,setcaptcha,setupload');
 
 $lang->designMenus = new stdclass();
 $lang->designMenus->theme     = array('link' => 'Theme  |ui|settemplate|', 'alias' => 'themestore,design,customtheme');

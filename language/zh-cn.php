@@ -232,6 +232,10 @@ $lang->menu->interface     = '接口|site|setoauth|';
 $lang->menu->wechatmsg     = '微信|wechat|message|mode=replied&replied=0';
 $lang->menu->wechat        = '微信公众号|wechat|admin|';
 $lang->menu->bear          = '熊掌号|bear|setting|';
+$lang->menu->basic         = '站点|site|setbasic|';
+$lang->menu->module        = '模块|site|setmodule|';
+$lang->menu->seo           = 'SEO|site|setseo|';
+$lang->menu->http          = '网络|site|setwebsite|';
 
 $lang->menu->package        = '插件|package|browse|';
 $lang->menu->community      = '社区|admin|register|';
@@ -253,14 +257,6 @@ $lang->menuGroups->search  = 'site';
 $lang->menuGroups->company = 'company';
 $lang->menuGroups->score   = 'site';
 $lang->menuGroups->guarder = 'security';
-
-$lang->siteMenus = new stdclass();
-$lang->siteMenus->basic  = array('link' => '基本设置|site|setbasic|');
-$lang->siteMenus->module = array('link' => '功能模块|site|setmodule|');
-$lang->siteMenus->seo    = array('link' => 'SEO设置 |site|setseo|');
-$lang->siteMenus->http   = array('link' => '网络设置|site|setwebsite|');
-$lang->siteMenus->wechat = array('link' => '微信设置|wechat|admin|', 'alias' => 'create,message,integrate');
-$lang->siteMenus->more   = array('link' => '更多设置|company|setbasic|', 'alias' => 'setcontact,sethomemenu,setcache,buildindex,setagreement,setcounts,showstateinfo,setoauth,setsecurity,setfilter,setblacklist,setwhitelist,setsensitive,setcaptcha,setupload');
 
 $lang->designMenus = new stdclass();
 $lang->designMenus->theme     = array('link' => '主题|ui|settemplate|', 'alias' => 'themestore,design,customtheme');
@@ -534,6 +530,7 @@ $lang->address->allSelect      = '全选';
 $lang->address->deleteEmptyIDs = '未选择删除项';
 /* admin */
 $lang->admin->common        = '后台管理';
+$lang->admin->adminLicense  = '授权管理';
 $lang->admin->dashboard     = '控制台';
 $lang->admin->checked       = '已认证';
 $lang->admin->adminLog      = '后台动态';
@@ -541,6 +538,8 @@ $lang->admin->frontLog      = '前台动态';
 
 $lang->admin->getEmailCodeByApi  = '获取邮箱验证码';
 $lang->admin->getMobileCodeByApi = '获取手机验证码';
+$lang->admin->currentLicense     = '当前授权';
+$lang->admin->validLicenses      = '可用授权';
 
 $lang->admin->shortcuts = new stdclass();
 $lang->admin->shortcuts->common             = '快捷入口';
@@ -554,18 +553,20 @@ $lang->admin->shortcuts->company            = '公司信息';
 $lang->admin->shortcuts->contact            = '联系方式';
 
 $lang->admin->chanzhiLicense   = '蝉知授权';
+$lang->admin->uploadLicense    = "上传授权包";
 $lang->admin->licenseVersion   = '授权版本';
 $lang->admin->versionNumber    = '授权版本号';
 $lang->admin->licesenEndDate   = '到期时间';
-$lang->admin->applyBasic       = '申请基础版';
+$lang->admin->applyBasic       = '申请基础版授权';
+$lang->admin->licenseApplied   = "您的授权申请正在审核中，请在审核通过后在我的授权页面安装。";
 $lang->admin->buyPro           = '购买专业版';
-$lang->admin->install          = '安装';
+$lang->admin->installLicense   = '安装此授权';
 $lang->admin->upgrade          = '升级';
 $lang->admin->updateLicense    = '更新授权';
 $lang->admin->applyBasicResult = '基础版申请结果';
 $lang->admin->buyProResult     = '专业版购买结果';
 $lang->admin->licenseDomain    = '绑定域名';
-$lang->admin->licenseStatus    = '申请状态';
+$lang->admin->licenseStatus    = '授权状态';
 
 $lang->admin->thread       = '最新帖子';
 $lang->admin->order        = '最新订单';
@@ -598,7 +599,7 @@ $lang->admin->bind->success = "关联账户成功";
 $lang->admin->license = new stdclass();
 $lang->admin->license->domain       = '域名';
 $lang->admin->license->notice       = '注意：一个授权只能绑定一个域名，域名提交后不能修改';
-$lang->admin->license->customer     = '授予对象';
+$lang->admin->license->customer     = '授予';
 $lang->admin->license->contact      = '手机号';
 $lang->admin->license->comment      = '备注';
 $lang->admin->license->type         = '类型';
@@ -609,16 +610,16 @@ $lang->admin->license->captchaError = '请输入正确的验证码。';
 $lang->admin->license->currentLicense    = "当前授权";
 $lang->admin->license->currentType       = "当前版本";
 $lang->admin->license->tryUser           = "试用用户";
+$lang->admin->license->tryDomain         = "未绑定";
 $lang->admin->license->notBind           = "未绑定";
 $lang->admin->license->communityaccount  = "社区账户";
 $lang->admin->license->clickhere         = "点击此处";
 $lang->admin->license->notBind           = "当前社区账户未绑定，绑定社区账户后可进行账户认证";
-$lang->admin->license->hasNewLicense     = "您有一个更新的授权可以安装启用，%s立即进入授权安装页面。";
+$lang->admin->license->tryLabel          = "<span class='text-muted'>试用</span>";
 
-$lang->admin->license->identityList['chanzhifree'] = "专业版 (<span class='text-danger'>试用</span>)";
-$lang->admin->license->identityList['personal']    = "个人版";
-$lang->admin->license->identityList['enterprise']  = "企业版";
-$lang->admin->license->identityList['chanzhipro']  = "专业版";
+$lang->admin->license->versions['try']   = "试用版";
+$lang->admin->license->versions['basic'] = "标准版";
+$lang->admin->license->versions['pro']   = "专业版";
 
 $lang->admin->license->statusList['wait']    = '审核中';
 $lang->admin->license->statusList['notpaid'] = '未支付';
@@ -626,14 +627,13 @@ $lang->admin->license->statusList['normal']  = '申请通过';
 $lang->admin->license->statusList['paid']    = '已支付';
 $lang->admin->license->statusList['reject']  = '申请失败';
 
-$lang->admin->license->welcome = "欢迎使用蝉知企业门户系统，您可以免费使用蝉知专业版功能至 <span class='text-danger'>%s</span>，到期后您可以继续使用蝉知免费版功能，也可免费申请正式版授权，或购买专业版授权。";
-$lang->admin->license->overdue = "欢迎使用蝉知企业门户系统，您试用的蝉知专业版功能<span class='text-danger'>已过期</span>，您可以继续使用蝉知免费版功能，也可免费申请正式版授权，或购买专业版授权。";
-
 $lang->admin->license->redirecting      = "<span class='text-muted'><span id='countDown'>3</span>秒后跳转到社区账号注册/绑定页面......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>立即跳转</a>";
 $lang->admin->license->bindCommunity    = '申请授权前必须绑定蝉知社区账号，请先注册并绑定蝉知社区账号后，获取授权。';
 $lang->admin->license->errorRedirect    = "<span class='text-muted'><span id='countDown'>10</span>秒后跳转到蝉知授权页面......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>立即跳转</a>";
-$lang->admin->license->licenseDirError  = '文件权限不够,请手动到服务器执行<br/> "sudo mkdir -m 777 %s"。';
-$lang->admin->license->licenseFileError = '文件权限不够,请手动到服务器执行<br/> "sudo chmod -R o=wrx %s"。';
+$lang->admin->license->licenseDirError  = "授权文件目录：<pre> %s</pre>不存在或者没有写权限，请创建此目录并开启目录写权限。";
+$lang->admin->license->licenseFileError = "授权文件没有写权限，请手动到服务器执行：<br/> <pre>sudo chmod -R o=wrx %s</pre>后继续操作。";
+$lang->admin->license->packageError     = '安装失败，请上传标准的蝉知授权包。';
+$lang->admin->license->copyFail         = '安装失败，请手动安装。';
 $lang->admin->license->installSuccess   = '安装授权成功';
 $lang->admin->license->successRedirect  = "<span class='text-muted'><span id='countDown'>3</span>秒后跳转到蝉知授权页面......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>立即跳转</a>";
 $lang->admin->license->installError     = '安装授权失败,可能是获取授权失败或者写入文件失败。';
