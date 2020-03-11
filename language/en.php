@@ -174,8 +174,8 @@ $lang->groups->statistics = array('title' => 'Stats', 'link' => 'stat|summary', 
 $lang->groups->promote    = array('title' => 'SEO', 'link' => 'tag|admin|',                 'icon' => 'horn');
 $lang->groups->shop       = array('title' => 'Mall', 'link' => 'order|admin|',              'icon' => 'shopping');
 $lang->groups->user       = array('title' => 'User', 'link' => 'user|admin|',               'icon' => 'verify');
-$lang->groups->site       = array('title' => 'Site', 'link' => 'site|setbasic|',            'icon' => 'site');
 $lang->groups->design     = array('title' => 'UI', 'link' => 'ui|settemplate|',             'icon' => 'design');
+$lang->groups->site       = array('title' => 'Site', 'link' => 'site|setbasic|',            'icon' => 'site');
 $lang->groups->open       = array('title' => 'Plugin', 'link' => 'package|browse|',         'icon' => 'link-sign');
 
     $lang->menu = new stdclass();

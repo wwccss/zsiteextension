@@ -174,8 +174,8 @@ $lang->groups->statistics = array('title' => '统计', 'link' => 'stat|summary',
 $lang->groups->promote    = array('title' => '推广', 'link' => 'tag|admin|',                 'icon' => 'horn');
 $lang->groups->shop       = array('title' => '商城', 'link' => 'order|stat|',                'icon' => 'shopping');
 $lang->groups->user       = array('title' => '会员', 'link' => 'user|admin|',                'icon' => 'verify');
-$lang->groups->site       = array('title' => '站点', 'link' => 'site|setbasic|',             'icon' => 'site');
 $lang->groups->design     = array('title' => '设计', 'link' => 'ui|settemplate|',            'icon' => 'design');
+$lang->groups->site       = array('title' => '站点', 'link' => 'site|setbasic|',             'icon' => 'site');
 $lang->groups->open       = array('title' => '平台', 'link' => 'package|browse|',            'icon' => 'link-sign');
 
 $lang->menu = new stdclass();
@@ -618,7 +618,7 @@ $lang->admin->license->notBind           = "当前社区账户未绑定，绑定
 $lang->admin->license->tryLabel          = "<span class='text-muted'>试用</span>";
 
 $lang->admin->license->versions['try']   = "试用版";
-$lang->admin->license->versions['basic'] = "标准版";
+$lang->admin->license->versions['basic'] = "基础版";
 $lang->admin->license->versions['pro']   = "专业版";
 
 $lang->admin->license->statusList['wait']    = '审核中';
