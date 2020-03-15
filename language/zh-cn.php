@@ -207,7 +207,7 @@ $lang->menu->tag     = '关键词|tag|admin|';
 $lang->menu->links   = '友情链接|links|admin|';
 
 $lang->menu->ui             = '界面|ui|settemplate|';
-$lang->menu->logo           = '标志|ui|setlogo|';
+$lang->menu->setlogo        = '标志|ui|setlogo|';
 $lang->menu->nav            = '导航|nav|admin|';
 $lang->menu->block          = '区块|block|admin|';
 $lang->menu->slide          = '幻灯片|slide|admin|';
@@ -221,7 +221,6 @@ $lang->menu->desktop_top    = '桌面端导航|nav|admin|type=desktop_top';
 $lang->menu->desktop_blog   = '桌面端博客导航|nav|admin|type=desktop_blog';
 $lang->menu->mobile_top     = '移动端导航|nav|admin|type=mobile_top';
 $lang->menu->mobile_blog    = '移动端博客导航|nav|admin|type=mobile_blog';
-$lang->menu->component      = '常用组件|ui|component|';
 $lang->menu->browsesource   = '素材库|file|browsesource|';
 
 $lang->menu->site          = '系统|site|sethomemenu|';
@@ -262,7 +261,7 @@ $lang->designMenus = new stdclass();
 $lang->designMenus->theme     = array('link' => '主题|ui|settemplate|', 'alias' => 'themestore,design,customtheme');
 $lang->designMenus->block     = array('link' => '区块|block|admin|', 'alias' => 'create');
 $lang->designMenus->nav       = array('link' => '导航|nav|admin|');
-$lang->designMenus->component = array('link' => '组件|ui|component|', 'alias' => 'effect,browsesource');
+$lang->designMenus->component = array('link' => '组件|ui|setlogo|', 'alias' => 'setlogo,effect,browsesource');
 $lang->designMenus->senior    = array('link' => '高级|ui|editTemplate|');
 $lang->designMenus->others    = array('link' => '设置|ui|others|');
 

@@ -207,7 +207,7 @@ $lang->menu->tag     = 'Tag|tag|admin|';
 $lang->menu->links   = 'Link|links|admin|';
 
 $lang->menu->ui           = 'UI|ui|settemplate|';
-$lang->menu->logo         = 'Logo|ui|setlogo|';
+$lang->menu->setlogo      = 'Logo|ui|setlogo|';
 $lang->menu->nav          = 'Navigation|nav|admin|';
 $lang->menu->block        = 'Widget|block|admin|';
 $lang->menu->slide        = 'Slide|slide|admin|';
@@ -221,7 +221,6 @@ $lang->menu->desktop_top  = 'Desktop|nav|admin|type=desktop_top';
 $lang->menu->desktop_blog = 'Desktop Blog|nav|admin|type=desktop_blog';
 $lang->menu->mobile_top   = 'Mobile|nav|admin|type=mobile_top';
 $lang->menu->mobile_blog  = 'Mobile Blog|nav|admin|type=mobile_blog';
-$lang->menu->component    = 'Component|ui|component|';
 $lang->menu->browsesource = 'Source|file|browsesource|';
 
 $lang->menu->site          = 'System|site|sethomemenu|';
@@ -262,7 +261,7 @@ $lang->designMenus = new stdclass();
 $lang->designMenus->theme     = array('link' => 'Theme  |ui|settemplate|', 'alias' => 'themestore,design,customtheme');
 $lang->designMenus->block     = array('link' => 'Widget |block|admin|', 'alias' => 'create');
 $lang->designMenus->nav       = array('link' => 'Nav    |nav|admin|');
-$lang->designMenus->component = array('link' => 'CMPT   |ui|component|', 'alias' => 'effect,browsesource');
+$lang->designMenus->component = array('link' => 'CMPT   |ui|setlogo|', 'alias' => 'setlogo,admin,effect,browsesource');
 $lang->designMenus->senior    = array('link' => 'Senior |ui|editTemplate|');
 $lang->designMenus->others    = array('link' => 'Setting|ui|others|');
 
