@@ -4312,29 +4312,33 @@ $lang->widget->dynamic     = 'Dynamic';
 $lang->widget->dynamicInfo = "%s, %s <em>%s</em> %s <a href='%s'>%s</a>。";
 
 $lang->widget->default = array();
-$lang->widget->default['1']['title'] = '';
+$lang->widget->default['1']['title'] = 'Novice guide';
 $lang->widget->default['1']['type']  = 'process';
-$lang->widget->default['1']['grid']  = 8;
+$lang->widget->default['1']['grid']  = 7;
 
-$lang->widget->default['2']['title'] = 'Overview';
-$lang->widget->default['2']['type']  = 'stat';
-$lang->widget->default['2']['grid']  = 8;
+$lang->widget->default['2']['title'] = 'License';
+$lang->widget->default['2']['type']  = 'license';
+$lang->widget->default['2']['grid']  = 3;
 
-$lang->widget->default['3']['title'] = 'To-do list';
-$lang->widget->default['3']['type']  = 'untreatedList';
-$lang->widget->default['3']['grid']  = 5;
+$lang->widget->default['3']['title'] = 'Overview';
+$lang->widget->default['3']['type']  = 'stat';
+$lang->widget->default['3']['grid']  = 9;
 
-$lang->widget->default['4']['title'] = 'Trend map';
-$lang->widget->default['4']['type']  = 'trendMap';
-$lang->widget->default['4']['grid']  = 6;
+$lang->widget->default['4']['title'] = 'To-do list';
+$lang->widget->default['4']['type']  = 'untreatedList';
+$lang->widget->default['4']['grid']  = 5;
 
-$lang->widget->default['5']['title'] = 'Operation log';
-$lang->widget->default['5']['type']  = 'operationLog';
-$lang->widget->default['5']['grid']  = 4;
+$lang->widget->default['5']['title'] = 'Trend map';
+$lang->widget->default['5']['type']  = 'trendMap';
+$lang->widget->default['5']['grid']  = 6;
 
-$lang->widget->default['6']['title'] = 'Zsite Dynamic';
-$lang->widget->default['6']['type']  = 'chanzhiDynamic';
+$lang->widget->default['6']['title'] = 'Operation log';
+$lang->widget->default['6']['type']  = 'operationLog';
 $lang->widget->default['6']['grid']  = 4;
+
+$lang->widget->default['7']['title'] = 'Zsite Dynamic';
+$lang->widget->default['7']['type']  = 'chanzhiDynamic';
+$lang->widget->default['7']['grid']  = 4;
 
 $lang->widget->typeList = new stdclass();
 $lang->widget->typeList->process        = 'Process';

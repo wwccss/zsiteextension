@@ -4320,27 +4320,31 @@ $lang->widget->dynamicInfo = "%s, %s <em>%s</em> %s <a href='%s'>%s</a>。";
 $lang->widget->default = array();
 $lang->widget->default['1']['title'] = '新手引导';
 $lang->widget->default['1']['type']  = 'process';
-$lang->widget->default['1']['grid']  = 8;
+$lang->widget->default['1']['grid']  = 7;
 
-$lang->widget->default['2']['title'] = '概览';
-$lang->widget->default['2']['type']  = 'stat';
-$lang->widget->default['2']['grid']  = 8;
+$lang->widget->default['2']['title'] = '授权信息';
+$lang->widget->default['2']['type']  = 'license';
+$lang->widget->default['2']['grid']  = 3;
 
-$lang->widget->default['3']['title'] = '待办事项';
-$lang->widget->default['3']['type']  = 'untreatedList';
-$lang->widget->default['3']['grid']  = 5;
+$lang->widget->default['3']['title'] = '概览';
+$lang->widget->default['3']['type']  = 'stat';
+$lang->widget->default['3']['grid']  = 9;
 
-$lang->widget->default['4']['title'] = '趋势图';
-$lang->widget->default['4']['type']  = 'trendMap';
-$lang->widget->default['4']['grid']  = 6;
+$lang->widget->default['4']['title'] = '待办事项';
+$lang->widget->default['4']['type']  = 'untreatedList';
+$lang->widget->default['4']['grid']  = 5;
 
-$lang->widget->default['5']['title'] = '操作日志';
-$lang->widget->default['5']['type']  = 'operationLog';
-$lang->widget->default['5']['grid']  = 4;
+$lang->widget->default['5']['title'] = '趋势图';
+$lang->widget->default['5']['type']  = 'trendMap';
+$lang->widget->default['5']['grid']  = 6;
 
-$lang->widget->default['6']['title'] = '蝉知动态';
-$lang->widget->default['6']['type']  = 'chanzhiDynamic';
+$lang->widget->default['6']['title'] = '操作日志';
+$lang->widget->default['6']['type']  = 'operationLog';
 $lang->widget->default['6']['grid']  = 4;
+
+$lang->widget->default['7']['title'] = '蝉知动态';
+$lang->widget->default['7']['type']  = 'chanzhiDynamic';
+$lang->widget->default['7']['grid']  = 4;
 
 $lang->widget->typeList = new stdclass();
 $lang->widget->typeList->process        = '新手引导';
