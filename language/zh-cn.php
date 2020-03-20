@@ -616,9 +616,11 @@ $lang->admin->license->clickhere         = "点击此处";
 $lang->admin->license->notBind           = "当前社区账户未绑定，绑定社区账户后可进行账户认证";
 $lang->admin->license->tryLabel          = "<span class='text-muted'>试用</span>";
 
-$lang->admin->license->versions['try']   = "试用版";
-$lang->admin->license->versions['basic'] = "基础版";
-$lang->admin->license->versions['pro']   = "专业版";
+$lang->admin->license->versions['try']        = "试用版";
+$lang->admin->license->versions['personal']   = "基础版";
+$lang->admin->license->versions['enterprise'] = "基础版";
+$lang->admin->license->versions['basic']      = "基础版";
+$lang->admin->license->versions['pro']        = "专业版";
 
 $lang->admin->license->statusList['wait']    = '审核中';
 $lang->admin->license->statusList['notpaid'] = '未支付';
