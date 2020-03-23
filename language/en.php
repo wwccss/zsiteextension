@@ -528,6 +528,7 @@ $lang->address->complete       = 'Done';
 $lang->address->allSelect      = 'All';
 $lang->address->deleteEmptyIDs = 'None Selected';/* admin */
 $lang->admin->common        = 'Admin';
+$lang->admin->adminLicense  = 'License';
 $lang->admin->dashboard     = 'Dashboard';
 $lang->admin->checked       = 'Checked';
 $lang->admin->adminLog      = 'Admin';
@@ -535,6 +536,8 @@ $lang->admin->frontLog      = 'Front';
 
 $lang->admin->getEmailCodeByApi  = 'Get code';
 $lang->admin->getMobileCodeByApi = 'Get code';
+$lang->admin->currentLicense     = 'Current License';
+$lang->admin->validLicenses      = 'Valid License';
 
 $lang->admin->shortcuts = new stdclass();
 $lang->admin->shortcuts->common             = 'Shortcuts';
@@ -548,10 +551,12 @@ $lang->admin->shortcuts->company            = 'Company';
 $lang->admin->shortcuts->contact            = 'Contact';
 
 $lang->admin->chanzhiLicense   = 'Chanzhi License';
+$lang->admin->uploadLicense    = "Upload License Package";
 $lang->admin->licenseVersion   = 'Chanzhi License Version';
 $lang->admin->versionNumber    = 'License Code';
 $lang->admin->licesenEndDate   = 'License Expiration date';
 $lang->admin->applyBasic       = 'Apply Chanzhi basic';
+$lang->admin->licenseApplied   = "Your authorization application is under review. Please install it on my authorization page after passing the review.";
 $lang->admin->buyPro           = 'Buy Chanzhi pro';
 $lang->admin->install          = 'Install';
 $lang->admin->upgrade          = 'Upgrade';
@@ -603,16 +608,18 @@ $lang->admin->license->captchaError = 'Please enter the correct code.';
 $lang->admin->license->currentLicense    = "Current License";
 $lang->admin->license->currentType       = "Current Type";
 $lang->admin->license->tryUser           = "Try";
+$lang->admin->license->tryDomain         = "Not Bind";
 $lang->admin->license->notBind           = "Not Bind";
 $lang->admin->license->communityaccount  = "Community Account";
 $lang->admin->license->clickhere         = "Click here";
 $lang->admin->license->notBind           = "The current community account is not bound. After binding the community account, the account can be authenticated";
 $lang->admin->license->hasNewLicense     = "You have an updated license that can be installed and enabled. %s to enter the authorized installation page immediately.";
 
-$lang->admin->license->identityList['chanzhifree'] = "Pro (<span class='text-danger'>Try</span>)";
-$lang->admin->license->identityList['personal']    = "Personal";
-$lang->admin->license->identityList['enterprise']  = "Enterprise";
-$lang->admin->license->identityList['chanzhipro']  = "Pro";
+$lang->admin->license->versions['try']        = "Try";
+$lang->admin->license->versions['personal']   = "Basic";
+$lang->admin->license->versions['enterprise'] = "Basic";
+$lang->admin->license->versions['basic']      = "Basic";
+$lang->admin->license->versions['pro']        = "Pro";
 
 $lang->admin->license->statusList['wait']    = 'To be audited';
 $lang->admin->license->statusList['notpaid'] = 'To be paid';
@@ -4322,23 +4329,27 @@ $lang->widget->default['2']['grid']  = 3;
 
 $lang->widget->default['3']['title'] = 'Overview';
 $lang->widget->default['3']['type']  = 'stat';
-$lang->widget->default['3']['grid']  = 9;
+$lang->widget->default['3']['grid']  = 7;
 
-$lang->widget->default['4']['title'] = 'To-do list';
-$lang->widget->default['4']['type']  = 'untreatedList';
-$lang->widget->default['4']['grid']  = 5;
+$lang->widget->default['4']['title'] = 'Operation log';
+$lang->widget->default['4']['type']  = 'fontLog';
+$lang->widget->default['4']['grid']  = 3;
 
-$lang->widget->default['5']['title'] = 'Trend map';
-$lang->widget->default['5']['type']  = 'trendMap';
-$lang->widget->default['5']['grid']  = 6;
+$lang->widget->default['5']['title'] = 'To-do list';
+$lang->widget->default['5']['type']  = 'untreatedList';
+$lang->widget->default['5']['grid']  = 5;
 
-$lang->widget->default['6']['title'] = 'Operation log';
-$lang->widget->default['6']['type']  = 'operationLog';
-$lang->widget->default['6']['grid']  = 4;
+$lang->widget->default['6']['title'] = 'Trend map';
+$lang->widget->default['6']['type']  = 'trendMap';
+$lang->widget->default['6']['grid']  = 6;
 
-$lang->widget->default['7']['title'] = 'Zsite Dynamic';
-$lang->widget->default['7']['type']  = 'chanzhiDynamic';
+$lang->widget->default['7']['title'] = 'Operation log';
+$lang->widget->default['7']['type']  = 'operationLog';
 $lang->widget->default['7']['grid']  = 4;
+
+$lang->widget->default['8']['title'] = 'Zsite Dynamic';
+$lang->widget->default['8']['type']  = 'chanzhiDynamic';
+$lang->widget->default['8']['grid']  = 4;
 
 $lang->widget->typeList = new stdclass();
 $lang->widget->typeList->process        = 'Process';
