@@ -552,9 +552,10 @@ $lang->admin->shortcuts->contact            = 'Contact';
 
 $lang->admin->chanzhiLicense   = 'Chanzhi License';
 $lang->admin->uploadLicense    = "Upload License Package";
-$lang->admin->licenseVersion   = 'Chanzhi License Version';
+$lang->admin->licenseVersion   = 'Version';
 $lang->admin->versionNumber    = 'License Code';
-$lang->admin->licesenEndDate   = 'License Expiration date';
+$lang->admin->licesenEndDate   = 'Expiration';
+$lang->admin->apply            = 'Aplly';
 $lang->admin->applyBasic       = 'Apply Chanzhi basic';
 $lang->admin->licenseApplied   = "Your authorization application is under review. Please install it on my authorization page after passing the review.";
 $lang->admin->buyPro           = 'Buy Chanzhi pro';
@@ -563,8 +564,8 @@ $lang->admin->upgrade          = 'Upgrade';
 $lang->admin->updateLicense    = 'Update License';
 $lang->admin->applyBasicResult = 'Chanzhi Basic Apply Result';
 $lang->admin->buyProResult     = 'Chanzhi Pro Pay Result';
-$lang->admin->licenseDomain    = 'License Domain';
-$lang->admin->licenseStatus    = 'License Status';
+$lang->admin->licenseDomain    = 'Domain';
+$lang->admin->licenseStatus    = 'Status';
 
 $lang->admin->thread       = 'New Thread';
 $lang->admin->order        = 'New Order';
@@ -4331,8 +4332,8 @@ $lang->widget->default['3']['title'] = 'Overview';
 $lang->widget->default['3']['type']  = 'stat';
 $lang->widget->default['3']['grid']  = 7;
 
-$lang->widget->default['4']['title'] = 'Operation log';
-$lang->widget->default['4']['type']  = 'fontLog';
+$lang->widget->default['4']['title'] = 'Front Log';
+$lang->widget->default['4']['type']  = 'frontLog';
 $lang->widget->default['4']['grid']  = 3;
 
 $lang->widget->default['5']['title'] = 'To-do list';

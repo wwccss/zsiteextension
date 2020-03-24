@@ -556,6 +556,7 @@ $lang->admin->uploadLicense    = "上传授权包";
 $lang->admin->licenseVersion   = '授权版本';
 $lang->admin->versionNumber    = '授权版本号';
 $lang->admin->licesenEndDate   = '到期时间';
+$lang->admin->apply            = '申请授权';
 $lang->admin->applyBasic       = '申请基础版授权';
 $lang->admin->licenseApplied   = "您的授权申请正在审核中，请在审核通过后在我的授权页面安装。";
 $lang->admin->buyPro           = '购买专业版';
