@@ -557,13 +557,13 @@ $lang->admin->licenseVersion   = '授权版本';
 $lang->admin->versionNumber    = '授权版本号';
 $lang->admin->licesenEndDate   = '到期时间';
 $lang->admin->apply            = '申请授权';
-$lang->admin->applyBasic       = '申请基础版授权';
+$lang->admin->applyBasic       = '申请免费版授权';
 $lang->admin->licenseApplied   = "您的授权申请正在审核中，请在审核通过后在我的授权页面安装。";
 $lang->admin->buyPro           = '购买专业版';
 $lang->admin->installLicense   = '安装此授权';
 $lang->admin->upgrade          = '升级';
 $lang->admin->updateLicense    = '更新授权';
-$lang->admin->applyBasicResult = '基础版申请结果';
+$lang->admin->applyBasicResult = '免费版申请结果';
 $lang->admin->buyProResult     = '专业版购买结果';
 $lang->admin->licenseDomain    = '绑定域名';
 $lang->admin->licenseStatus    = '授权状态';
@@ -618,9 +618,9 @@ $lang->admin->license->notBind           = "当前社区账户未绑定，绑定
 $lang->admin->license->tryLabel          = "<span class='text-muted'>试用</span>";
 
 $lang->admin->license->versions['try']        = "试用版";
-$lang->admin->license->versions['personal']   = "基础版";
-$lang->admin->license->versions['enterprise'] = "基础版";
-$lang->admin->license->versions['basic']      = "基础版";
+$lang->admin->license->versions['personal']   = "免费版";
+$lang->admin->license->versions['enterprise'] = "免费版";
+$lang->admin->license->versions['basic']      = "免费版";
 $lang->admin->license->versions['pro']        = "专业版";
 
 $lang->admin->license->statusList['wait']    = '审核中';
@@ -1189,8 +1189,9 @@ $lang->book->setting    = '设置';
 $lang->book->index      = '首页';
 $lang->book->more       = '更多';
 
-$lang->book->searchResults     = '搜索结果';
-$lang->book->searchPlaceholder = '请输入文章关键字';
+$lang->book->searchResults         = '搜索结果';
+$lang->book->searchPlaceholder     = '请输入文章关键字';
+$lang->book->searchBookPlaceholder = '在手册中搜索';
 
 $lang->book->id          = '编号';
 $lang->book->type        = '类型';
@@ -3732,7 +3733,7 @@ $lang->user->yahoo      = '雅虎通';
 $lang->user->gtalk      = 'Gtalk';
 $lang->user->wangwang   = '旺旺';
 $lang->user->mobile     = '手机';
-$lang->user->phone      = '电话';
+$lang->user->phone      = '固话';
 $lang->user->company    = '公司/组织';
 $lang->user->address    = '通讯地址';
 $lang->user->zipcode    = '邮编';

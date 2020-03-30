@@ -556,13 +556,13 @@ $lang->admin->licenseVersion   = 'Version';
 $lang->admin->versionNumber    = 'License Code';
 $lang->admin->licesenEndDate   = 'Expiration';
 $lang->admin->apply            = 'Aplly';
-$lang->admin->applyBasic       = 'Apply Chanzhi basic';
+$lang->admin->applyBasic       = 'Apply Chanzhi Free';
 $lang->admin->licenseApplied   = "Your authorization application is under review. Please install it on my authorization page after passing the review.";
 $lang->admin->buyPro           = 'Buy Chanzhi pro';
 $lang->admin->install          = 'Install';
 $lang->admin->upgrade          = 'Upgrade';
 $lang->admin->updateLicense    = 'Update License';
-$lang->admin->applyBasicResult = 'Chanzhi Basic Apply Result';
+$lang->admin->applyBasicResult = 'Chanzhi Free Apply Result';
 $lang->admin->buyProResult     = 'Chanzhi Pro Pay Result';
 $lang->admin->licenseDomain    = 'Domain';
 $lang->admin->licenseStatus    = 'Status';
@@ -617,9 +617,9 @@ $lang->admin->license->notBind           = "The current community account is not
 $lang->admin->license->hasNewLicense     = "You have an updated license that can be installed and enabled. %s to enter the authorized installation page immediately.";
 
 $lang->admin->license->versions['try']        = "Try";
-$lang->admin->license->versions['personal']   = "Basic";
-$lang->admin->license->versions['enterprise'] = "Basic";
-$lang->admin->license->versions['basic']      = "Basic";
+$lang->admin->license->versions['personal']   = "Free";
+$lang->admin->license->versions['enterprise'] = "Free";
+$lang->admin->license->versions['basic']      = "Free";
 $lang->admin->license->versions['pro']        = "Pro";
 
 $lang->admin->license->statusList['wait']    = 'To be audited';
@@ -1189,8 +1189,9 @@ $lang->book->setting    = 'Settings';
 $lang->book->index      = 'Home';
 $lang->book->more       = 'More';
 
-$lang->book->searchResults     = 'Search Results';
-$lang->book->searchPlaceholder = 'Pleae enter the keywords of the article';
+$lang->book->searchResults         = 'Search Results';
+$lang->book->searchPlaceholder     = 'Pleae enter the keywords of the article';
+$lang->book->searchBookPlaceholder = 'Search In Book';
 
 $lang->book->id          = 'ID';
 $lang->book->type        = 'Type';
