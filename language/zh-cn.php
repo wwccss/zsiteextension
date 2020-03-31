@@ -1188,6 +1188,7 @@ $lang->book->sort       = '排序';
 $lang->book->setting    = '设置';
 $lang->book->index      = '首页';
 $lang->book->more       = '更多';
+$lang->book->noDesc     = '暂无简介';
 
 $lang->book->searchResults         = '搜索结果';
 $lang->book->searchPlaceholder     = '请输入文章关键字';
@@ -3483,10 +3484,6 @@ $lang->ui->importTypes->full  = '导入样式和数据';
 
 $lang->ui->theme->encryptTip = new stdclass();
 $lang->ui->theme->encryptTip->common    = '提示：';
-$lang->ui->theme->encryptTip->zend      = '您导入的主题是zend方式加密的，需要环境安装Zend Guard Loader解密程序，<a href="http://www.chanzhi.org/book/chanzhieps/133.html" target="_blank">Zend Guard Loader安装文档</a> 。';
-$lang->ui->theme->encryptTip->ioncube   = '导入的主题是ioncube软件加密的，需要环境安装ioncube扩展，<a href="http://www.chanzhi.org/book/chanzhieps/189.html" target="_blank">ioncube扩展安装文档</a> 。';
-$lang->ui->theme->encryptTip->noZend    = '您没有安装Zend Guard Loader解密程序。';
-$lang->ui->theme->encryptTip->noIoncube = '您没有安装ioncube扩展。';
 $lang->ui->theme->encryptTip->none      = '您还没有安装任何解密程序。';
 
 $lang->ui->themeColors = array();
@@ -4148,6 +4145,7 @@ $lang->visual->design->book         = '手册';
 $lang->visual->design->page         = '单页';
 $lang->visual->design->blog         = '博客';
 $lang->visual->design->product      = '产品';
+$lang->visual->design->video        = '视频';
 $lang->visual->design->custom       = '自定义';
 
 $lang->visual->design->placeholders                = array();

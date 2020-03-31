@@ -1188,6 +1188,7 @@ $lang->book->sort       = 'Ranking';
 $lang->book->setting    = 'Settings';
 $lang->book->index      = 'Home';
 $lang->book->more       = 'More';
+$lang->book->noDesc     = 'No Description';
 
 $lang->book->searchResults         = 'Search Results';
 $lang->book->searchPlaceholder     = 'Pleae enter the keywords of the article';
@@ -3483,10 +3484,6 @@ $lang->ui->importTypes->full  = 'Full data';
 
 $lang->ui->theme->encryptTip = new stdclass();
 $lang->ui->theme->encryptTip->common    = 'Prompt:';
-$lang->ui->theme->encryptTip->zend      = 'The theme you imported is encrypted by zend, so you have to install Zend Guard Loader to decrypt it. <a href="http://www.zsite.net/book/zsitemanual/162.html" target="_blank">Zend Guard Loader installation documentation</a>.';
-$lang->ui->theme->encryptTip->ioncube   = 'The imported theme is encrypted by ioncube, so you have to install the ioncube, <a href="http://www.zsite.net/book/zsitemanual/160.html" target="_blank">ioncube extension installation documentation</a>.';
-$lang->ui->theme->encryptTip->noZend    = 'You did not install the Zend Guard Loader.';
-$lang->ui->theme->encryptTip->noIoncube = 'You did not install ioncube.';
 $lang->ui->theme->encryptTip->none      = 'You did not have any decryption program installed.';
 
 $lang->ui->themeColors = array();
@@ -4147,6 +4144,7 @@ $lang->visual->design->book         = 'Book';
 $lang->visual->design->page         = 'Page';
 $lang->visual->design->blog         = 'Blog';
 $lang->visual->design->product      = 'Product';
+$lang->visual->design->video        = 'Video';
 $lang->visual->design->custom       = 'Custom';
 
 $lang->visual->design->placeholders                = array();
