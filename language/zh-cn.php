@@ -1188,11 +1188,11 @@ $lang->book->sort       = '排序';
 $lang->book->setting    = '设置';
 $lang->book->index      = '首页';
 $lang->book->more       = '更多';
-$lang->book->noDesc     = '暂无简介';
+$lang->book->noDesc     = '暂无摘要';
 
 $lang->book->searchResults         = '搜索结果';
 $lang->book->searchPlaceholder     = '请输入文章关键字';
-$lang->book->searchBookPlaceholder = '在手册中搜索';
+$lang->book->searchBookPlaceholder = '在本手册中搜索';
 
 $lang->book->id          = '编号';
 $lang->book->type        = '类型';
@@ -1206,7 +1206,7 @@ $lang->book->addedDate   = '发布时间';
 $lang->book->editedDate  = '编辑时间';
 $lang->book->title       = '标题';
 $lang->book->keywords    = '关键词';
-$lang->book->summary     = '简介';
+$lang->book->summary     = '摘要';
 $lang->book->content     = '内容';
 $lang->book->alias       = '别名';
 $lang->book->order       = '排序';

@@ -1192,7 +1192,7 @@ $lang->book->noDesc     = 'No Description';
 
 $lang->book->searchResults         = 'Search Results';
 $lang->book->searchPlaceholder     = 'Pleae enter the keywords of the article';
-$lang->book->searchBookPlaceholder = 'Search In Book';
+$lang->book->searchBookPlaceholder = 'Search in current book';
 
 $lang->book->id          = 'ID';
 $lang->book->type        = 'Type';
