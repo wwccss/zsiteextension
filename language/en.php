@@ -122,7 +122,7 @@ $lang->colorPlates = '333333|000000|CA1407|45872B|148D00|F25D03|2286D2|D92958|A6
 
 $lang->score = new stdclass();
 $lang->score->common      = 'Points';
-$lang->score->getScoreURL = 'https://www.chanzhi.org/thread/1338.html';
+$lang->score->getScoreURL = 'https://www.zsite.com/thread/1338.html';
 
 $lang->community = new stdclass();
 $lang->community->common  = 'Community';
@@ -2147,7 +2147,7 @@ $lang->package->name        = 'Title';
 $lang->package->code        = 'Plug-in ID';
 $lang->package->version     = 'Version';
 $lang->package->compatible  = 'Applicable Version';
-$lang->package->latest      = '<small>The lasted verion <strong><a href="%s" target="_blank" class="package">%s</a></strong> is compatible with Zsite <a href="http://api.chanzhi.org/goto.php?item=latest" target="_blank" class="alert-link"><strong>%s</strong></a></small>';
+$lang->package->latest      = '<small>The lasted verion <strong><a href="%s" target="_blank" class="package">%s</a></strong> is compatible with Zsite <a href="http://api.zsite.com/goto.php?item=latest" target="_blank" class="alert-link"><strong>%s</strong></a></small>';
 $lang->package->author      = 'Author';
 $lang->package->license     = 'License';
 $lang->package->intro       = 'Details';
@@ -3256,8 +3256,8 @@ $lang->ui->rebuildThumbs          = 'Rebuild Thumbnail';
 $lang->ui->packagePathTip         = 'Please upload the zip file to %s, then install';
 $lang->ui->gdHelp                 = 'How to install';
 $lang->ui->gdTip                  = 'Image watermark features requires PHP-gd extension.';
-$lang->ui->effectError            = 'Importing effects fails. Check whether your effects are normal. View the address: http://www.chanzhi.org/effect';
-$lang->ui->errorGetEffect         = 'Getting effect failed. Please check your network and your effect. View the address: http://www.chanzhi.org/effect';
+$lang->ui->effectError            = 'Importing effects fails. Check whether your effects are normal. View the address: http://www.zsite.com/effect';
+$lang->ui->errorGetEffect         = 'Getting effect failed. Please check your network and your effect. View the address: http://www.zsite.com/effect';
 $lang->ui->deleteFaviconFail      = 'Deleting %s fail.';
 $lang->ui->lengthOverflow         = 'The content length is %s bytes. Keep it be <65535 bytes, or some content cannot be saved.';
 

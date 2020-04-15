@@ -25,8 +25,8 @@ $lang->thanks = '致谢';
 $lang->chanzhiEPS     = '蝉知企业门户系统';
 $lang->chanzhiEPSx    = '蝉知';
 $lang->agreement      = "已阅读并同意<a href='http://zpl.pub/page/zplv12.html' target='_blank'>《Z PUBLIC LICENSE授权协议1.2》</a>。<span class='text-danger'>未经许可，不得去除、隐藏或遮掩蝉知系统的任何标志及链接。</span>";
-$lang->poweredBy      = "<a href='http://www.chanzhi.org/?v=%s' target='_blank' title='%s'>%s</a>";
-$lang->poweredByAdmin = "<span id='poweredBy'>由 <a href='http://www.chanzhi.org/?v=%s' target='_blank' title='%s'>蝉知企业门户系统 %s</a> 强力驱动！</span>";
+$lang->poweredBy      = "<a href='http://www.zsite.com/?v=%s' target='_blank' title='%s'>%s</a>";
+$lang->poweredByAdmin = "<span id='poweredBy'>由 <a href='http://www.zsite.com/?v=%s' target='_blank' title='%s'>蝉知企业门户系统 %s</a> 强力驱动！</span>";
 $lang->newVersion     = "提示：蝉知系统已于 <span id='releaseDate'></span> 发布 <span id='version'></span>版本。<a href='' target='_blank' id='upgradeLink'>马上下载</a>";
 $lang->execInfo       = "<span id='execInfoBar' class='hide'><span class='text-left'>SQL查询：<b>%s</b> 次<br>内存占用：<b>%s</b><br> PHP 执行时间：<b>%s</b> 秒</span></span>";
 $lang->customCssError = "不能生成样式文件，如果您是网站管理员，请到网站后台外观管理重新设置样式文件";
@@ -122,7 +122,7 @@ $lang->colorPlates = '333333|000000|CA1407|45872B|148D00|F25D03|2286D2|D92958|A6
 
 $lang->score = new stdclass();
 $lang->score->common      = '积分';
-$lang->score->getScoreURL = 'https://www.chanzhi.org/thread/1338.html';
+$lang->score->getScoreURL = 'https://www.zsite.com/thread/1338.html';
 
 $lang->community = new stdclass();
 $lang->community->common  = '社区';
@@ -1740,7 +1740,7 @@ $lang->mail->sendContent = <<<EOT
 <p>%s 您好：</p>
 <p>您在<strong>%s</strong>(%s)上面的验证码为：%s </p>
 <p>如非您本人操作，请忽略。</p>
-<p> <a style="color:gray;font-size:12px;text-decoration:none" href="http://www.chanzhi.org" target="_blank">Powerd By 蝉知</a> </p>
+<p> <a style="color:gray;font-size:12px;text-decoration:none" href="http://www.zsite.com" target="_blank">Powerd By 蝉知</a> </p>
 EOT;
 /* message */
 $lang->message->common            = '留言';
@@ -2147,7 +2147,7 @@ $lang->package->name        = '名称';
 $lang->package->code        = '插件代号';
 $lang->package->version     = '版本';
 $lang->package->compatible  = '适用版本';
-$lang->package->latest      = '<small>最新版本<strong><a href="%s" target="_blank" class="package">%s</a></strong>，兼容蝉知<a href="http://api.chanzhi.org/goto.php?item=latest" target="_blank" class="alert-link"><strong>%s</strong></a></small>';
+$lang->package->latest      = '<small>最新版本<strong><a href="%s" target="_blank" class="package">%s</a></strong>，兼容蝉知<a href="http://api.zsite.com/goto.php?item=latest" target="_blank" class="alert-link"><strong>%s</strong></a></small>';
 $lang->package->author      = '作者';
 $lang->package->license     = '授权';
 $lang->package->intro       = '详情';
@@ -2209,8 +2209,8 @@ $lang->package->types->patch     = '补丁';
 $lang->package->waring = '警告';
 
 $lang->package->errorOccurs                  = '错误：';
-$lang->package->errorGetModules              = '从www.chanzhi.org获得插件分类失败。可能是因为网络方面的原因，请检查后重新刷新页面。';
-$lang->package->errorGetPackages             = '从www.chanzhi.org获得插件失败。可能是因为网络方面的原因，您可以到 <a href="http://www.chanzhi.org/extension" target="_blank" class="alert-link">www.chanzhi.org</a> 手工下载插件，然后上传安装。';
+$lang->package->errorGetModules              = '从www.zsite.com获得插件分类失败。可能是因为网络方面的原因，请检查后重新刷新页面。';
+$lang->package->errorGetPackages             = '从www.zsite.com获得插件失败。可能是因为网络方面的原因，您可以到 <a href="http://www.zsite.com/extension" target="_blank" class="alert-link">www.zsite.com</a> 手工下载插件，然后上传安装。';
 $lang->package->errorDownloadPathNotFound    = '插件下载存储路径<strong>%s</strong>不存在。<br />linux下面请执行命令：<strong>mkdir -p %s</strong>来修正。';
 $lang->package->errorDownloadPathNotWritable = '插件下载存储路径<strong>%s</strong>不可写。<br />linux下面请执行命令：<strong>sudo chmod 777 %s</strong>来修正。';
 $lang->package->errorPackageFileExists       = '下载路径已经有一个名为的<strong>%s</strong>附件。<a href="%s" class="btn btn-primary loadInModal">重新%s</a>';
@@ -3256,8 +3256,8 @@ $lang->ui->rebuildThumbs          = '重新生成缩略图';
 $lang->ui->packagePathTip         = '请将主题包的zip文件上传至 %s 目录，进行安装。';
 $lang->ui->gdHelp                 = '查看安装方式';
 $lang->ui->gdTip                  = '蝉知图片水印功能需要安装php-gd扩展才能使用。';
-$lang->ui->effectError            = '导入特效失败，请检查您的特效是否正常，查看地址：http://www.chanzhi.org/effect';
-$lang->ui->errorGetEffect         = '获取特效失败，可能是网络方面的原因，请检查您的特效是否正常，查看地址：http://www.chanzhi.org/effect';
+$lang->ui->effectError            = '导入特效失败，请检查您的特效是否正常，查看地址：http://www.zsite.com/effect';
+$lang->ui->errorGetEffect         = '获取特效失败，可能是网络方面的原因，请检查您的特效是否正常，查看地址：http://www.zsite.com/effect';
 $lang->ui->deleteFaviconFail      = '删除 %s 失败。';
 $lang->ui->lengthOverflow         = '内容长度 %s 字节。请保持长度不超过65535字节，否则会导致部分内容丢失。';
 
@@ -3662,7 +3662,7 @@ $lang->effect->importSuccess = '导入成功';
 $lang->effect->noEffect      = "<code>%s</code> 不可写！请检查该目录权限，否则无法导入。";
 $lang->effect->noWritable    = "<code>%s</code> 不可写！请检查该目录权限，否则无法导入。";
 $lang->effect->bindCommunity = '蝉知特效只对蝉知社区认证用户开放，请先注册并绑定蝉知社区账号后，获取蝉知特效。';
-$lang->effect->noRsults      = "你还没有任何特效，请登录蝉知特效平台。<a href='http://www.chanzhi.org/effect.html' class='btn btn-xs btn-primary' target='_blank'>获取特效</a>";
+$lang->effect->noRsults      = "你还没有任何特效，请登录蝉知特效平台。<a href='http://www.zsite.com/effect.html' class='btn btn-xs btn-primary' target='_blank'>获取特效</a>";
 $lang->effect->redirecting   = "<span class='text-muted'><span id='countDown'>3</span>秒后跳转到社区账号注册/绑定页面......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>立即跳转</a>";
 /* upgrade */
 $lang->upgrade->common  = '升级';
@@ -4041,7 +4041,7 @@ $lang->visual->manageBlock     = '区块管理';
 $lang->visual->searchBlock     = '搜索区块';
 $lang->visual->allBlock        = '全部';
 $lang->visual->openInNewWindow = '在新窗口中打开当前编辑页面';
-$lang->visual->editPowerBy     = "<p>您可以在遵守我们<a href='http://www.chanzhi.org/book/chanzhieps/58_license.html' target='_blank'>授权协议</a>的前提下免费使用蝉知系统，保留蝉知标志是对宣传蝉知系统非常重要。如果您想去除蝉知的标志，请<a href='http://www.chanzhi.org/license-search.html' target='_blank'>购买蝉知商业授权</a>。</p>";
+$lang->visual->editPowerBy     = "<p>您可以在遵守我们<a href='http://www.zsite.com/book/chanzhieps/58_license.html' target='_blank'>授权协议</a>的前提下免费使用蝉知系统，保留蝉知标志是对宣传蝉知系统非常重要。如果您想去除蝉知的标志，请<a href='http://www.zsite.com/license-search.html' target='_blank'>购买蝉知商业授权</a>。</p>";
 $lang->visual->pageLayout      = '页面布局已启用';
 $lang->visual->pageLayoutInfo  = '区块布局仅适合当前<span class="page-name"></span>，不会影响全局设置';
 $lang->visual->globalLayout    = '全局布局';
@@ -4284,7 +4284,7 @@ $lang->wechat->remindNoMail    = "站点发信功能没有开启，请到更多�
 $lang->wechat->curlSSLRequired = "微信公众号功能需要curl模块，并支持ssl加密传输。";
 $lang->wechat->opensslRequired = "微信公众号功能需要openssl模块，请开启PHP该模块。";
 $lang->wechat->needCertified   = "此功能需要公众号认证后使用。";
-$lang->wechat->integrateInfo   = "请到微信的公众平台完成接入，以获取appID和appSecret信息。 <a href='http://api.chanzhi.org/goto.php?item=help_wechat' target='_blank'>帮助</a>";
+$lang->wechat->integrateInfo   = "请到微信的公众平台完成接入，以获取appID和appSecret信息。 <a href='http://api.zsite.com/goto.php?item=help_wechat' target='_blank'>帮助</a>";
 $lang->wechat->integrateDone   = "已完成接入";
 $lang->wechat->openUserModule  = "微信功能需要启用会员模块，确认开启？";
 /* widget */
