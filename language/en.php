@@ -497,6 +497,12 @@ $lang->action->desc->diff1             = 'changed <strong><i>%s</i></strong>, ol
 $lang->action->desc->diff2             = 'changed <strong><i>%s</i></strong>, the diff is:' . "\n" . "<blockquote>%s</blockquote>" . "\n<div class='hidden'>%s</div>";
 $lang->action->desc->diff3             = "changed file name %s to %s.";
 
+$lang->action->desc->login             = 'login';
+$lang->action->desc->edituser          = 'edited user <strong>$account</strong>';
+$lang->action->desc->deleteuser        = 'deleted user <strong>$account</strong>';
+$lang->action->desc->forbiduser        = 'forbidden user <strong>$account</strong>';
+$lang->action->desc->activateuser      = 'activated user <strong>$account</strong>';
+
 $lang->action->label = new stdclass();
 $lang->action->label->created           = 'Created';
 $lang->action->label->paid              = 'Paid';
@@ -4399,8 +4405,3 @@ $lang->widget->todoList->needAddProduct       = 'Product';
 
 $lang->widget->operationLog = new stdclass();
 $lang->widget->operationLog->today = 'Today';
-
-$lang->widget->operationLog->admin = new stdclass();
-$lang->widget->operationLog->admin->login = 'login.';
-$lang->widget->operationLog->front = new stdclass();
-$lang->widget->operationLog->front->login = 'login.';

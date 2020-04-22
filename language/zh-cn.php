@@ -497,6 +497,12 @@ $lang->action->desc->diff1             = '修改了 <strong><i>%s</i></strong>�
 $lang->action->desc->diff2             = '修改了 <strong><i>%s</i></strong>，区别为：' . "\n" . "<blockquote>%s</blockquote>" . "\n<div class='hidden'>%s</div>";
 $lang->action->desc->diff3             = "将文件名 %s 改为 %s 。\n";
 
+$lang->action->desc->login             = '登陆了系统';
+$lang->action->desc->edituser          = '编辑了用户 <strong>$account</strong>';
+$lang->action->desc->deleteuser        = '删除了用户 <strong>$account</strong>';
+$lang->action->desc->forbiduser        = '禁用了用户 <strong>$account</strong>';
+$lang->action->desc->activateuser      = '解禁了用户 <strong>$account</strong>';
+
 $lang->action->label = new stdclass();
 $lang->action->label->created           = '创建了';
 $lang->action->label->paid              = '付款';
@@ -4400,9 +4406,3 @@ $lang->widget->todoList->needAddProduct       = '待补货产品';
 
 $lang->widget->operationLog = new stdclass();
 $lang->widget->operationLog->today = '今天';
-
-$lang->widget->operationLog->admin = new stdclass();
-$lang->widget->operationLog->admin->login = '登录了后台';
-$lang->widget->operationLog->front = new stdclass();
-$lang->widget->operationLog->front->login = '登录了前台';
-
