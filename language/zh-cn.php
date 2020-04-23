@@ -499,7 +499,7 @@ $lang->action->desc->diff3             = "将文件名 %s 改为 %s 。\n";
 
 $lang->action->desc->login             = '登陆了系统';
 $lang->action->desc->edituser          = '编辑了用户 <strong>$account</strong>';
-$lang->action->desc->deleteuser        = '删除了用户 <strong>$account</strong>';
+$lang->action->desc->deleteuser        = '删除了用户';
 $lang->action->desc->forbiduser        = '禁用了用户 <strong>$account</strong>';
 $lang->action->desc->activateuser      = '解禁了用户 <strong>$account</strong>';
 
@@ -3813,14 +3813,15 @@ $lang->user->totalScore     = '共有消耗积分';
 $lang->user->levelScore     = '等级积分';
 $lang->user->scoreRecharge  = '积分充值';
 
-$lang->user->userHistory       = "用户历史数据";
-$lang->user->threadHistory     = "发帖";
-$lang->user->replyHistory      = "回帖";
-$lang->user->commentHistory    = "评论";
-$lang->user->messageHistory    = "留言";
-$lang->user->orderHistory      = "订单";
-$lang->user->addressHistory    = "地址";
-$lang->user->submissionHistory = "投稿";
+$lang->user->userHistory           = "用户历史数据";
+$lang->user->threadHistory         = "发帖";
+$lang->user->replyHistory          = "回帖";
+$lang->user->commentHistory        = "评论";
+$lang->user->commentRepliesHistory = "评论回复";
+$lang->user->messageHistory        = "留言";
+$lang->user->orderHistory          = "订单";
+$lang->user->addressHistory        = "地址";
+$lang->user->submissionHistory     = "投稿";
 
 $lang->user->message = new stdclass();
 $lang->user->message->mine = "我的消息 <span class='label label-badge text-latin'>%s</span>";

@@ -499,7 +499,7 @@ $lang->action->desc->diff3             = "changed file name %s to %s.";
 
 $lang->action->desc->login             = 'login';
 $lang->action->desc->edituser          = 'edited user <strong>$account</strong>';
-$lang->action->desc->deleteuser        = 'deleted user <strong>$account</strong>';
+$lang->action->desc->deleteuser        = 'deleted user';
 $lang->action->desc->forbiduser        = 'forbidden user <strong>$account</strong>';
 $lang->action->desc->activateuser      = 'activated user <strong>$account</strong>';
 
@@ -3813,14 +3813,15 @@ $lang->user->totalScore     = "Total Point";
 $lang->user->levelScore     = "Level Point";
 $lang->user->scoreRecharge  = "Buy Point";
 
-$lang->user->userHistory       = "User History";
-$lang->user->threadHistory     = "Post";
-$lang->user->replyHistory      = "Reply";
-$lang->user->commentHistory    = "Comment";
-$lang->user->messageHistory    = "Message";
-$lang->user->orderHistory      = "Order";
-$lang->user->addressHistory    = "Address";
-$lang->user->submissionHistory = "Submission";
+$lang->user->userHistory           = "User History";
+$lang->user->threadHistory         = "Post";
+$lang->user->replyHistory          = "Reply";
+$lang->user->commentHistory        = "Comment";
+$lang->user->commentRepliesHistory = "Comment Replies";
+$lang->user->messageHistory        = "Message";
+$lang->user->orderHistory          = "Order";
+$lang->user->addressHistory        = "Address";
+$lang->user->submissionHistory     = "Submission";
 
 $lang->user->message = new stdclass();
 $lang->user->message->mine   = "Message <span class='label label-badge text-latin'>%s</span>";
