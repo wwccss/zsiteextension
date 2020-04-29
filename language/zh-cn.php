@@ -4153,6 +4153,7 @@ $lang->visual->design->page         = '单页';
 $lang->visual->design->blog         = '博客';
 $lang->visual->design->product      = '产品';
 $lang->visual->design->video        = '视频';
+$lang->visual->design->form         = '表单';
 $lang->visual->design->custom       = '自定义';
 
 $lang->visual->design->placeholders                = array();

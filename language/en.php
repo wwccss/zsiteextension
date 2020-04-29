@@ -4152,6 +4152,7 @@ $lang->visual->design->page         = 'Page';
 $lang->visual->design->blog         = 'Blog';
 $lang->visual->design->product      = 'Product';
 $lang->visual->design->video        = 'Video';
+$lang->visual->design->form         = 'Form';
 $lang->visual->design->custom       = 'Custom';
 
 $lang->visual->design->placeholders                = array();
