@@ -964,7 +964,7 @@ $lang->block->product         = '产品';
 $lang->block->slide           = '幻灯片';
 $lang->block->titleless       = '无标题';
 $lang->block->borderless      = '无边框';
-$lang->block->icon            = '图标';
+$lang->block->icon            = '显示图标';
 $lang->block->padding         = '内边距';
 $lang->block->border          = '边框';
 $lang->block->grid            = '宽度';
@@ -1026,8 +1026,10 @@ $lang->block->header->top->leftOptions['slogan'] = '站点口号';
 $lang->block->header->top->leftOptions['custom'] = '自定义';
 
 $lang->block->header->top->rightOptions['']               = '不显示';
-$lang->block->header->top->rightOptions['login']          = '登录注册 + 语言切换';
+$lang->block->header->top->rightOptions['miniLogin']      = '登录注册';
+$lang->block->header->top->rightOptions['language']       = '语言切换';
 $lang->block->header->top->rightOptions['search']         = '搜索框';
+$lang->block->header->top->rightOptions['login']          = '登录注册 + 语言切换';
 $lang->block->header->top->rightOptions['loginAndSearch'] = '登录注册语言 + 搜索框';
 $lang->block->header->top->rightOptions['searchAndLogin'] = '搜索框 + 登录注册语言';
 $lang->block->header->top->rightOptions['custom']         = '自定义';
@@ -1039,8 +1041,11 @@ $lang->block->header->middle->centerOptions['']       = '不显示';
 $lang->block->header->middle->centerOptions['slogan'] = '站点口号';
 $lang->block->header->middle->centerOptions['nav']    = '导航';
 
-$lang->block->header->middle->rightOptions['']       = '不显示';
-$lang->block->header->middle->rightOptions['search'] = '搜索框';
+$lang->block->header->middle->rightOptions['']          = '不显示';
+$lang->block->header->middle->rightOptions['miniLogin'] = '登录注册';
+$lang->block->header->middle->rightOptions['language']  = '语言切换';
+$lang->block->header->middle->rightOptions['search']    = '搜索框';
+$lang->block->header->middle->rightOptions['custom']    = '自定义';
 
 $lang->block->header->bottomOptions['']             = '不显示';
 $lang->block->header->bottomOptions['nav']          = '导航';

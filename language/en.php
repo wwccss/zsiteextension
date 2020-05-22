@@ -964,7 +964,7 @@ $lang->block->product         = 'Product';
 $lang->block->slide           = 'Slide';
 $lang->block->titleless       = 'No Title';
 $lang->block->borderless      = 'No Border';
-$lang->block->icon            = 'Icon';
+$lang->block->icon            = 'Display Icon';
 $lang->block->padding         = 'Padding';
 $lang->block->border          = 'Border';
 $lang->block->grid            = 'Width';
@@ -1026,8 +1026,10 @@ $lang->block->header->top->leftOptions['slogan'] = 'Slogan';
 $lang->block->header->top->leftOptions['custom'] = 'Custom';
 
 $lang->block->header->top->rightOptions['']               = 'Hide';
-$lang->block->header->top->rightOptions['login']          = 'Login/Register + Switch Language';
+$lang->block->header->top->rightOptions['miniLogin']      = 'Login/Register';
+$lang->block->header->top->rightOptions['language']       = 'Switch Language';
 $lang->block->header->top->rightOptions['search']         = 'Search bar';
+$lang->block->header->top->rightOptions['login']          = 'Login/Register + Switch Language';
 $lang->block->header->top->rightOptions['loginAndSearch'] = 'Login/Register Language + Search Box';
 $lang->block->header->top->rightOptions['searchAndLogin'] = 'Search Box + Login/Register Language';
 $lang->block->header->top->rightOptions['custom']         = 'Custom';
@@ -1039,8 +1041,11 @@ $lang->block->header->middle->centerOptions['']       = 'Hide';
 $lang->block->header->middle->centerOptions['slogan'] = 'Slogan';
 $lang->block->header->middle->centerOptions['nav']    = 'Navigation';
 
-$lang->block->header->middle->rightOptions['']       = 'Hide';
-$lang->block->header->middle->rightOptions['search'] = 'Search bar';
+$lang->block->header->middle->rightOptions['']          = 'Hide';
+$lang->block->header->middle->rightOptions['miniLogin'] = 'Login/Register';
+$lang->block->header->middle->rightOptions['language']  = 'Switch Language';
+$lang->block->header->middle->rightOptions['search']    = 'Search bar';
+$lang->block->header->middle->rightOptions['custom']    = 'Custom';
 
 $lang->block->header->bottomOptions['']             = 'Hide';
 $lang->block->header->bottomOptions['nav']          = 'Navigation';
