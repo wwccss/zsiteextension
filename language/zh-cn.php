@@ -996,6 +996,7 @@ $lang->block->image           = '图片';
 $lang->block->uploadImage     = '上传图片';
 $lang->block->all             = '所有区块';
 $lang->block->openNewWindow   = '新窗口打开';
+$lang->block->setcolumns      = '分栏设置';
 
 $lang->block->layout            = '布局';
 $lang->block->logoPosition      = 'Logo';
@@ -4034,12 +4035,13 @@ $lang->user->stateList['admin'] = '管理员(%d)';
 $lang->user->stateList['qq']    = 'QQ会员(%d)';
 $lang->user->stateList['email'] = '邮箱认证(%d)';
 /* visual */
-$lang->visual->common      = "预览编辑";
-$lang->visual->editLogo    = "编辑标志";
-$lang->visual->editSlogan  = "编辑口号";
-$lang->visual->appendBlock = "插入区块";
-$lang->visual->removeBlock = "移除区块";
-$lang->visual->sortBlocks  = "区块排序";
+$lang->visual->common       = "预览编辑";
+$lang->visual->editLogo     = "编辑标志";
+$lang->visual->editSlogan   = "编辑口号";
+$lang->visual->appendBlock  = "插入区块";
+$lang->visual->removeBlock  = "移除区块";
+$lang->visual->sortBlocks   = "区块排序";
+$lang->visual->changeLayout = '更改布局';
 
 $lang->visual->info            = "编辑模式";
 $lang->visual->preview         = "预览";

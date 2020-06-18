@@ -996,6 +996,7 @@ $lang->block->image           = 'Image';
 $lang->block->uploadImage     = 'Upload image';
 $lang->block->all             = 'All Blocks';
 $lang->block->openNewWindow   = 'Open in new window';
+$lang->block->setcolumns      = 'Set Columns';
 
 $lang->block->layout            = 'Layout';
 $lang->block->logoPosition      = 'Logo';
@@ -4033,12 +4034,13 @@ $lang->user->stateList['admin'] = 'Admin(%d)';
 $lang->user->stateList['email'] = 'Email Certification(%d)';
 $lang->user->stateList['qq']    = 'QQ Certification(%d)';
 /* visual */
-$lang->visual->common      = "Visual Editor";
-$lang->visual->editLogo    = "Edit Logo";
-$lang->visual->editSlogan  = "Edit slogan";
-$lang->visual->appendBlock = "Insert Widget";
-$lang->visual->removeBlock = "Remove Widget";
-$lang->visual->sortBlocks  = "Sort Widgets";
+$lang->visual->common       = "Visual Editor";
+$lang->visual->editLogo     = "Edit Logo";
+$lang->visual->editSlogan   = "Edit slogan";
+$lang->visual->appendBlock  = "Insert Widget";
+$lang->visual->removeBlock  = "Remove Widget";
+$lang->visual->sortBlocks   = "Sort Widgets";
+$lang->visual->changeLayout = "Change Layout";
 
 $lang->visual->info            = "Edit Mode";
 $lang->visual->preview         = "Preview";
