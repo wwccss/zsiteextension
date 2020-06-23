@@ -468,6 +468,7 @@ $lang->label->hot    = '热';
 $lang->label->latest = '新';
 /* action */
 $lang->action->common = '系统日志';
+$lang->action->browse = '查看日志';
 
 $lang->action->objectType = '对象类型';
 $lang->action->objectID   = '对象ID';
@@ -475,6 +476,8 @@ $lang->action->objectName = '对象名称';
 $lang->action->actor      = '操作者';
 $lang->action->action     = '动作';
 $lang->action->date       = '日期';
+
+$lang->action->editComment = '修改备注';
 
 $lang->action->switch = '切换';
 
@@ -1198,6 +1201,7 @@ $lang->book->create     = '添加';
 $lang->book->catalog    = '章节';
 $lang->book->edit       = '编辑';
 $lang->book->sort       = '排序';
+$lang->book->search     = '搜索';
 $lang->book->setting    = '设置';
 $lang->book->index      = '首页';
 $lang->book->more       = '更多';
@@ -3215,6 +3219,7 @@ $lang->ui->addTheme        = '添加主题';
 $lang->ui->setTheme        = '主题设置';
 $lang->ui->setDevice       = '设备设置';
 $lang->ui->setFavicon      = "Favicon设置";
+$lang->ui->deleteTheme     = "删除主题";
 $lang->ui->deleteFavicon   = "不显示Favicon";
 $lang->ui->deleteLogo      = "删除Logo";
 $lang->ui->others          = "其他设置";
@@ -3227,6 +3232,8 @@ $lang->ui->currentTheme    = '当前主题';
 $lang->ui->internalTheme   = '内置主题';
 $lang->ui->uploadPackage   = '上传主题包';
 $lang->ui->installTheme    = '导入主题';
+$lang->ui->importFullSite  = '导入样式和数据';
+$lang->ui->fixTheme        = '导入样式';
 $lang->ui->importedBlocks  = '导入区块';
 $lang->ui->matchedBlock    = '对应区块';
 $lang->ui->createBlock     = '导入新区块';
@@ -3234,7 +3241,6 @@ $lang->ui->useOldBlock     = '使用已有区块';
 $lang->ui->themeStore      = '主题市场';
 $lang->ui->themeList       = '主题列表';
 $lang->ui->help            = "帮助";
-$lang->ui->deleteLogo      = "删除Logo";
 $lang->ui->setCode         = "代码";
 $lang->ui->editTemplate    = "编辑模板";
 $lang->ui->installedThemes = "已安装主题";
