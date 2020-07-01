@@ -476,9 +476,8 @@ $lang->action->objectName  = 'Details';
 $lang->action->actor       = 'Account';
 $lang->action->action      = 'Action';
 $lang->action->date        = 'Date';
+$lang->action->switch      = 'Switch';
 $lang->action->editComment = 'Change Comment';
-
-$lang->action->switch = 'Switch';
 
 $lang->action->objectTypes['order'] = 'Order';
 
@@ -499,11 +498,25 @@ $lang->action->desc->diff1             = 'changed <strong><i>%s</i></strong>, ol
 $lang->action->desc->diff2             = 'changed <strong><i>%s</i></strong>, the diff is:' . "\n" . "<blockquote>%s</blockquote>" . "\n<div class='hidden'>%s</div>";
 $lang->action->desc->diff3             = "changed file name %s to %s.";
 
-$lang->action->desc->login             = 'login';
-$lang->action->desc->edituser          = 'edited user <strong>$account</strong>';
-$lang->action->desc->deleteuser        = 'deleted user';
-$lang->action->desc->forbiduser        = 'forbidden user <strong>$account</strong>';
-$lang->action->desc->activateuser      = 'activated user <strong>$account</strong>';
+$lang->action->indexDesc = new stdclass();
+$lang->action->indexDesc->login             = '$actor Login';
+$lang->action->indexDesc->common            = '$action by $actor';
+$lang->action->indexDesc->created           = '$actor created $objectType $link';
+$lang->action->indexDesc->paid              = '$actor paid $objectType $link';
+$lang->action->indexDesc->savedpayment      = '$actor saved payment $objectType $link';
+$lang->action->indexDesc->applyrefunded     = '$actor apply refund $objectType $link';
+$lang->action->indexDesc->refunded          = '$actor refunded $objectType $link';
+$lang->action->indexDesc->deliveried        = '$actor deliveried $objectType $link';
+$lang->action->indexDesc->confirmedDelivery = '$actor confirmed $objectType $link';
+$lang->action->indexDesc->edited            = '$actor edited $objectType $link';
+$lang->action->indexDesc->finished          = '$actor finished $objectType $link';
+$lang->action->indexDesc->canceled          = '$actor canceled $objectType $link';
+$lang->action->indexDesc->deleted           = '$actor deleted $objectType $link';
+$lang->action->indexDesc->forbidden         = '$actor forbidden $objectType $link';
+$lang->action->indexDesc->activated         = '$actor activated $objectType $link';
+$lang->action->indexDesc->diff1             = 'changed <strong><i>%s</i></strong>, old is "%s", new is "%s".<br />';
+$lang->action->indexDesc->diff2             = 'changed <strong><i>%s</i></strong>, the diff is:' . "\n" . "<blockquote>%s</blockquote>" . "\n<div class='hidden'>%s</div>";
+$lang->action->indexDesc->diff3             = "changed file name %s to %s.";
 
 $lang->action->label = new stdclass();
 $lang->action->label->created           = 'Created';
@@ -4350,11 +4363,11 @@ $lang->widget->default['2']['grid']  = 3;
 
 $lang->widget->default['3']['title'] = 'Overview';
 $lang->widget->default['3']['type']  = 'stat';
-$lang->widget->default['3']['grid']  = 7;
+$lang->widget->default['3']['grid']  = 9;
 
 $lang->widget->default['4']['title'] = 'Front Log';
 $lang->widget->default['4']['type']  = 'frontLog';
-$lang->widget->default['4']['grid']  = 3;
+$lang->widget->default['4']['grid']  = 4;
 
 $lang->widget->default['5']['title'] = 'To-do list';
 $lang->widget->default['5']['type']  = 'untreatedList';

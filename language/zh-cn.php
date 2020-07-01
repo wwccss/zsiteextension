@@ -470,16 +470,14 @@ $lang->label->latest = '新';
 $lang->action->common = '系统日志';
 $lang->action->browse = '查看日志';
 
-$lang->action->objectType = '对象类型';
-$lang->action->objectID   = '对象ID';
-$lang->action->objectName = '对象名称';
-$lang->action->actor      = '操作者';
-$lang->action->action     = '动作';
-$lang->action->date       = '日期';
-
+$lang->action->objectType  = '对象类型';
+$lang->action->objectID    = '对象ID';
+$lang->action->objectName  = '对象名称';
+$lang->action->actor       = '操作者';
+$lang->action->action      = '动作';
+$lang->action->date        = '日期';
+$lang->action->switch      = '切换';
 $lang->action->editComment = '修改备注';
-
-$lang->action->switch = '切换';
 
 $lang->action->objectTypes['order'] = '订单';
 
@@ -500,11 +498,25 @@ $lang->action->desc->diff1             = '修改了 <strong><i>%s</i></strong>�
 $lang->action->desc->diff2             = '修改了 <strong><i>%s</i></strong>，区别为：' . "\n" . "<blockquote>%s</blockquote>" . "\n<div class='hidden'>%s</div>";
 $lang->action->desc->diff3             = "将文件名 %s 改为 %s 。\n";
 
-$lang->action->desc->login             = '登陆了系统';
-$lang->action->desc->edituser          = '编辑了用户 <strong>$account</strong>';
-$lang->action->desc->deleteuser        = '删除了用户';
-$lang->action->desc->forbiduser        = '禁用了用户 <strong>$account</strong>';
-$lang->action->desc->activateuser      = '解禁了用户 <strong>$account</strong>';
+$lang->action->indexDesc = new stdclass();
+$lang->action->indexDesc->login             = '$actor 登陆系统';
+$lang->action->indexDesc->common            = '$action by $actor';
+$lang->action->indexDesc->created           = '$actor 创建了$objectType $link';
+$lang->action->indexDesc->paid              = '$actor 付款了$objectType $link';
+$lang->action->indexDesc->savedpayment      = '$actor 收款了$objectType $link';
+$lang->action->indexDesc->applyrefunded     = '$actor 申请$objectType退款 $link';
+$lang->action->indexDesc->refunded          = '$actor 退款了$objectType $link';
+$lang->action->indexDesc->deliveried        = '$actor 发货了$objectType $link';
+$lang->action->indexDesc->confirmedDelivery = '$actor 收货了$objectType $link';
+$lang->action->indexDesc->edited            = '$actor 编辑了$objectType $link';
+$lang->action->indexDesc->finished          = '$actor 完成了$objectType $link';
+$lang->action->indexDesc->canceled          = '$actor 取消了$objectType $link';
+$lang->action->indexDesc->deleted           = '$actor 删除了$objectType $link';
+$lang->action->indexDesc->forbidden         = '$actor 禁用了$objectType $link';
+$lang->action->indexDesc->activated         = '$actor 解禁了$objectType $link';
+$lang->action->indexDesc->diff1             = '修改了 <strong><i>%s</i></strong>，旧值为 "%s"，新值为 "%s"。<br />' . "\n";
+$lang->action->indexDesc->diff2             = '修改了 <strong><i>%s</i></strong>，区别为：' . "\n" . "<blockquote>%s</blockquote>" . "\n<div class='hidden'>%s</div>";
+$lang->action->indexDesc->diff3             = "将文件名 %s 改为 %s 。\n";
 
 $lang->action->label = new stdclass();
 $lang->action->label->created           = '创建了';
@@ -4352,11 +4364,11 @@ $lang->widget->default['2']['grid']  = 3;
 
 $lang->widget->default['3']['title'] = '概览';
 $lang->widget->default['3']['type']  = 'stat';
-$lang->widget->default['3']['grid']  = 7;
+$lang->widget->default['3']['grid']  = 9;
 
 $lang->widget->default['4']['title'] = '前台动态';
 $lang->widget->default['4']['type']  = 'frontLog';
-$lang->widget->default['4']['grid']  = 3;
+$lang->widget->default['4']['grid']  = 4;
 
 $lang->widget->default['5']['title'] = '待办事项';
 $lang->widget->default['5']['type']  = 'untreatedList';
