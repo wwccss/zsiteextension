@@ -19,15 +19,15 @@ $lang->en = 'EN';
 
 $lang->toBeAdded = '待添加';
 
-$lang->about  = '关于蝉知';
+$lang->about  = '关于ZSITE';
 $lang->thanks = '致谢';
 
-$lang->chanzhiEPS     = '蝉知企业门户系统';
-$lang->chanzhiEPSx    = '蝉知';
-$lang->agreement      = "已阅读并同意<a href='http://zpl.pub/page/zplv12.html' target='_blank'>《Z PUBLIC LICENSE授权协议1.2》</a>。<span class='text-danger'>未经许可，不得去除、隐藏或遮掩蝉知系统的任何标志及链接。</span>";
+$lang->chanzhiEPS     = 'ZSITE企业建站系统';
+$lang->chanzhiEPSx    = 'ZSITE';
+$lang->agreement      = "已阅读并同意<a href='http://zpl.pub/page/zplv12.html' target='_blank'>《Z PUBLIC LICENSE授权协议1.2》</a>。<span class='text-danger'>未经许可，不得去除、隐藏或遮掩ZSITE系统的任何标志及链接。</span>";
 $lang->poweredBy      = "<a href='http://www.zsite.com/?v=%s' target='_blank' title='%s'>%s</a>";
-$lang->poweredByAdmin = "<span id='poweredBy'>由 <a href='http://www.zsite.com/?v=%s' target='_blank' title='%s'>蝉知企业门户系统 %s</a> 强力驱动！</span>";
-$lang->newVersion     = "提示：蝉知系统已于 <span id='releaseDate'></span> 发布 <span id='version'></span>版本。<a href='' target='_blank' id='upgradeLink'>马上下载</a>";
+$lang->poweredByAdmin = "<span id='poweredBy'>由 <a href='http://www.zsite.com/?v=%s' target='_blank' title='%s'>ZSITE企业建站系统 %s</a> 强力驱动！</span>";
+$lang->newVersion     = "提示：ZSITE系统已于 <span id='releaseDate'></span> 发布 <span id='version'></span>版本。<a href='' target='_blank' id='upgradeLink'>马上下载</a>";
 $lang->execInfo       = "<span id='execInfoBar' class='hide'><span class='text-left'>SQL查询：<b>%s</b> 次<br>内存占用：<b>%s</b><br> PHP 执行时间：<b>%s</b> 秒</span></span>";
 $lang->customCssError = "不能生成样式文件，如果您是网站管理员，请到网站后台外观管理重新设置样式文件";
 $lang->redirecting    = "<span class='text-muted'><span id='countDown'>3</span>秒后跳转到类目管理页面......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>立即跳转</a>";
@@ -238,7 +238,7 @@ $lang->menu->http          = '网络|site|setwebsite|';
 
 $lang->menu->package        = '插件|package|browse|';
 $lang->menu->community      = '社区|admin|register|';
-$lang->menu->chanzhiLicense = '蝉知授权|admin|license|';
+$lang->menu->chanzhiLicense = 'ZSITE授权|admin|license|';
 
 $lang->menu->articleCreate  = '发布文章|article|create|type=article';
 $lang->menu->productCreate  = '添加产品|product|create|';
@@ -458,11 +458,11 @@ if(!defined('DT_DATE5'))      define('DT_DATE5',     'm月d日');
 if(!defined('DT_TIME1'))      define('DT_TIME1',     'H:i:s');
 if(!defined('DT_TIME2'))      define('DT_TIME2',     'H:i');
 
-$lang->k  = '开源 cms — 首选蝉知建站系统;';
-$lang->k .= '蝉知建站系统，开源免费的CMS系统;';
-$lang->k .= 'cms系统，首选蝉知cms;';
-$lang->k .= '企业建站，就用蝉知cms;';
-$lang->k .= '蝉知企业建站系统，开源免费的php CMS系统';
+$lang->k  = '开源 cms — 首选ZSITE建站系统;';
+$lang->k .= 'ZSITE建站系统，开源免费的CMS系统;';
+$lang->k .= 'cms系统，首选ZSITEcms;';
+$lang->k .= '企业建站，就用ZSITEcms;';
+$lang->k .= 'ZSITE企业建站系统，开源免费的php CMS系统';
 
 $lang->label = new stdclass();
 $lang->label->hot    = '热';
@@ -573,7 +573,7 @@ $lang->admin->shortcuts->logo               = 'LOGO设置';
 $lang->admin->shortcuts->company            = '公司信息';
 $lang->admin->shortcuts->contact            = '联系方式';
 
-$lang->admin->chanzhiLicense   = '蝉知授权';
+$lang->admin->chanzhiLicense   = 'ZSITE授权';
 $lang->admin->uploadLicense    = "上传授权包";
 $lang->admin->licenseVersion   = '授权版本';
 $lang->admin->versionNumber    = '授权版本号';
@@ -596,17 +596,17 @@ $lang->admin->feedback     = '最新反馈';
 
 $lang->admin->adminEntry     = '警告：您现在的管理入口还是默认的admin.php，建议将admin.php改名以增强系统安全!';
 
-$lang->admin->connectApiFail = "不能连接到蝉知社区，请检查您的网络设置后 <a href='javascritp:loaction.reload()'>重试</a>。";
-$lang->admin->registerInfo   = "站点已经绑定到蝉知账号%s，%s";
+$lang->admin->connectApiFail = "不能连接到ZSITE社区，请检查您的网络设置后 <a href='javascritp:loaction.reload()'>重试</a>。";
+$lang->admin->registerInfo   = "站点已经绑定到ZSITE账号%s，%s";
 $lang->admin->registerPage   = '登记页面';
 $lang->admin->rebind         = "重新绑定";
-$lang->admin->bindedInfo     = '蝉知社区账号信息';
+$lang->admin->bindedInfo     = 'ZSITE社区账号信息';
 
-$lang->js->confirmRebind = "确认要重新绑定蝉知账号？";
+$lang->js->confirmRebind = "确认要重新绑定ZSITE账号？";
 
 $lang->admin->community = new stdclass();
-$lang->admin->community->common     = '蝉知社区';
-$lang->admin->community->caption    = '没有蝉知社区账号？马上注册一个!';
+$lang->admin->community->common     = 'ZSITE社区';
+$lang->admin->community->caption    = '没有ZSITE社区账号？马上注册一个!';
 $lang->admin->community->lblAccount = '请设置英文字母和数字的组合。';
 $lang->admin->community->lblPasswd  = '请设置您的密码。数字和字母的组合，六位以上。';
 $lang->admin->community->submit     = '注册';
@@ -614,7 +614,7 @@ $lang->admin->community->success    = "注册账户成功";
 $lang->admin->community->update     = "更新资料";
 
 $lang->admin->bind = new stdclass();
-$lang->admin->bind->caption = '已有蝉知社区账号，输入用户名密码进行绑定！';
+$lang->admin->bind->caption = '已有ZSITE社区账号，输入用户名密码进行绑定！';
 $lang->admin->bind->submit  = '绑定账号';
 $lang->admin->bind->success = "关联账户成功";
 
@@ -652,14 +652,14 @@ $lang->admin->license->statusList['paid']    = '已支付';
 $lang->admin->license->statusList['reject']  = '申请失败';
 
 $lang->admin->license->redirecting      = "<span class='text-muted'><span id='countDown'>3</span>秒后跳转到社区账号注册/绑定页面......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>立即跳转</a>";
-$lang->admin->license->bindCommunity    = '申请授权前必须绑定蝉知社区账号，请先注册并绑定蝉知社区账号后，获取授权。';
-$lang->admin->license->errorRedirect    = "<span class='text-muted'><span id='countDown'>10</span>秒后跳转到蝉知授权页面......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>立即跳转</a>";
+$lang->admin->license->bindCommunity    = '申请授权前必须绑定ZSITE社区账号，请先注册并绑定ZSITE社区账号后，获取授权。';
+$lang->admin->license->errorRedirect    = "<span class='text-muted'><span id='countDown'>10</span>秒后跳转到ZSITE授权页面......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>立即跳转</a>";
 $lang->admin->license->licenseDirError  = "授权文件目录：<pre> %s</pre>不存在或者没有写权限，请创建此目录并开启目录写权限。";
 $lang->admin->license->licenseFileError = "授权文件没有写权限，请手动到服务器执行：<br/> <pre>sudo chmod -R o=wrx %s</pre>后继续操作。";
-$lang->admin->license->packageError     = '安装失败，请上传标准的蝉知授权包。';
+$lang->admin->license->packageError     = '安装失败，请上传标准的ZSITE授权包。';
 $lang->admin->license->copyFail         = '安装失败，请手动安装。';
 $lang->admin->license->installSuccess   = '安装授权成功';
-$lang->admin->license->successRedirect  = "<span class='text-muted'><span id='countDown'>3</span>秒后跳转到蝉知授权页面......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>立即跳转</a>";
+$lang->admin->license->successRedirect  = "<span class='text-muted'><span id='countDown'>3</span>秒后跳转到ZSITE授权页面......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>立即跳转</a>";
 $lang->admin->license->installError     = '安装授权失败,可能是获取授权失败或者写入文件失败。';
 /* article */
 $lang->article->common                = '文章';
@@ -1636,10 +1636,10 @@ $lang->install->error   = '错误 ';
 
 $lang->install->start            = '开始安装';
 $lang->install->keepInstalling   = '继续安装当前版本';
-$lang->install->welcome          = '您睿智地选择了蝉知企业门户系统!';
+$lang->install->welcome          = '您睿智地选择了ZSITE企业建站系统!';
 $lang->install->license          = '授权协议';
 $lang->install->desc             = <<<EOT
-<p>使用蝉知，您可以：</p>
+<p>使用ZSITE，您可以：</p>
 <blockquote>
   <ul>
     <li><strong>品牌宣传</strong>：建立品牌网站，展示企业形象。</li>
@@ -1650,7 +1650,7 @@ $lang->install->desc             = <<<EOT
 </blockquote>
 EOT;
 
-$lang->install->newVersion = "提示：蝉知系统已于 <span id='releaseDate'></span> 发布 <span id='version'></span>版本。<a href='' target='_blank' id='upgradeLink'>马上下载</a>";
+$lang->install->newVersion = "提示：ZSITE系统已于 <span id='releaseDate'></span> 发布 <span id='version'></span>版本。<a href='' target='_blank' id='upgradeLink'>马上下载</a>";
 
 $lang->install->choice     = '您可以选择：';
 $lang->install->checking   = '系统检查';
@@ -1689,7 +1689,7 @@ $lang->install->dbPassword     = '数据库密码';
 $lang->install->dbName         = '数据库名';
 $lang->install->dbPrefix       = '建表使用的前缀';
 $lang->install->createDB       = '自动创建数据库';
-$lang->install->clearDB        = '清空已有蝉知数据';
+$lang->install->clearDB        = '清空已有ZSITE数据';
 $lang->install->importDemoData = '导入demo数据';
 
 $lang->install->errorDBName        = "数据库名不能带'.'";
@@ -1770,7 +1770,7 @@ $lang->mail->sendContent = <<<EOT
 <p>%s 您好：</p>
 <p>您在<strong>%s</strong>(%s)上面的验证码为：%s </p>
 <p>如非您本人操作，请忽略。</p>
-<p> <a style="color:gray;font-size:12px;text-decoration:none" href="http://www.zsite.com" target="_blank">Powerd By 蝉知</a> </p>
+<p> <a style="color:gray;font-size:12px;text-decoration:none" href="http://www.zsite.com" target="_blank">Powerd By ZSITE</a> </p>
 EOT;
 /* message */
 $lang->message->common            = '留言';
@@ -1881,7 +1881,7 @@ $lang->misc->support     = '技术支持';
 $lang->misc->userbook    = '用户手册';
 $lang->misc->forum       = '论坛交流';
 
-$lang->misc->thanksTitle      = '蝉知构建于众多优秀的开源项目之上';
+$lang->misc->thanksTitle      = 'ZSITE构建于众多优秀的开源项目之上';
 $lang->misc->thanksFooter     = '感谢%s提供安全审计';
 $lang->misc->thanksObjectName = '站长安全网';
 /* nav */
@@ -2177,7 +2177,7 @@ $lang->package->name        = '名称';
 $lang->package->code        = '插件代号';
 $lang->package->version     = '版本';
 $lang->package->compatible  = '适用版本';
-$lang->package->latest      = '<small>最新版本<strong><a href="%s" target="_blank" class="package">%s</a></strong>，兼容蝉知<a href="http://api.zsite.com/goto.php?item=latest" target="_blank" class="alert-link"><strong>%s</strong></a></small>';
+$lang->package->latest      = '<small>最新版本<strong><a href="%s" target="_blank" class="package">%s</a></strong>，兼容ZSITE<a href="http://api.zsite.com/goto.php?item=latest" target="_blank" class="alert-link"><strong>%s</strong></a></small>';
 $lang->package->author      = '作者';
 $lang->package->license     = '授权';
 $lang->package->intro       = '详情';
@@ -2247,7 +2247,7 @@ $lang->package->errorPackageFileExists       = '下载路径已经有一个名�
 $lang->package->errorDownloadFailed          = '下载失败，请重新下载。如果多次重试还不行，请尝试手工下载，然后通过上传功能上传。';
 $lang->package->errorMd5Checking             = '下载文件不完整，请重新下载。如果多次重试还不行，请尝试手工下载，然后通过上传功能上传。';
 $lang->package->errorExtracted               = '包文件<strong> %s </strong>解压缩失败，可能不是一个有效的zip文件。错误信息如下：<br />%s';
-$lang->package->errorCheckIncompatible       = '该插件与蝉知版本不兼容，%s后可能无法使用。。<h3>您可以选择 <a href="#" url="%s" class="model-jump">强制%s</a> 或者 <a href="#" onclick="window.location.reload()">取消</a></h3>';
+$lang->package->errorCheckIncompatible       = '该插件与ZSITE版本不兼容，%s后可能无法使用。。<h3>您可以选择 <a href="#" url="%s" class="model-jump">强制%s</a> 或者 <a href="#" onclick="window.location.reload()">取消</a></h3>';
 $lang->package->errorFileConflicted          = '有以下文件冲突：<br />%s <h3>您可以选择 <a href="%s">覆盖</a> 或者 <a href="#" onclick=parent.location.href="%s">取消</a></h3>';
 $lang->package->errorPackageNotFound         = '包文件 <strong>%s </strong>没有找到，可能是因为自动下载失败。您可以尝试再次下载。';
 $lang->package->errorTargetPathNotWritable   = '目标路径 <strong>%s </strong>不可写。';
@@ -2255,7 +2255,7 @@ $lang->package->errorTargetPathNotExists     = '目标路径 <strong>%s </strong
 $lang->package->errorInstallDB               = '执行数据库语句失败。错误信息如下：%s';
 $lang->package->errorConflicts               = '与插件“%s”冲突！';
 $lang->package->errorDepends                 = '以下依赖插件没有安装或版本不正确：<br /><br /> %s';
-$lang->package->errorIncompatible            = '该插件与您的蝉知版本不兼容';
+$lang->package->errorIncompatible            = '该插件与您的ZSITE版本不兼容';
 $lang->package->errorUninstallDepends        = '插件“%s”依赖该插件，不能卸载';
 
 $lang->package->stateList = array();
@@ -2807,7 +2807,7 @@ $lang->site->sensitiveTip      = '多个敏感词之间请用英文逗号分隔'
 $lang->site->mobileTemplateTip = '启动时可以使用移动端主题，禁用时移动端访问显示自适应的web端主题';
 $lang->site->gzipOutputTip     = '页面数据会压缩，访问时网页加载速度会变快，还会有利于搜索引擎的抓取';
 $lang->site->setDomainTip      = '所有网站访问跳转至该域名，请确保域名解析正确，该值为空时不进行跳转';
-$lang->site->setCDNTip         = '目前仅支持CSS（蝉知原版文件等CSS文件）和JS（chanzhi（eps）www / js下所有的 *.all.*.js）文件加速';
+$lang->site->setCDNTip         = '目前仅支持CSS（ZSITE原版文件等CSS文件）和JS（chanzhi（eps）www / js下所有的 *.all.*.js）文件加速';
 
 $lang->site->robots            = 'Robots';
 $lang->site->robotsUnwriteable = 'Robots文件%s 不可写，请修改权限后设置。';
@@ -3287,7 +3287,7 @@ $lang->ui->selectSourceImage      = '从素材库选择';
 $lang->ui->rebuildThumbs          = '重新生成缩略图';
 $lang->ui->packagePathTip         = '请将主题包的zip文件上传至 %s 目录，进行安装。';
 $lang->ui->gdHelp                 = '查看安装方式';
-$lang->ui->gdTip                  = '蝉知图片水印功能需要安装php-gd扩展才能使用。';
+$lang->ui->gdTip                  = 'ZSITE图片水印功能需要安装php-gd扩展才能使用。';
 $lang->ui->effectError            = '导入特效失败，请检查您的特效是否正常，查看地址：http://www.zsite.com/effect';
 $lang->ui->errorGetEffect         = '获取特效失败，可能是网络方面的原因，请检查您的特效是否正常，查看地址：http://www.zsite.com/effect';
 $lang->ui->deleteFaviconFail      = '删除 %s 失败。';
@@ -3693,8 +3693,8 @@ $lang->effect->imported      = '已导入';
 $lang->effect->importSuccess = '导入成功';
 $lang->effect->noEffect      = "<code>%s</code> 不可写！请检查该目录权限，否则无法导入。";
 $lang->effect->noWritable    = "<code>%s</code> 不可写！请检查该目录权限，否则无法导入。";
-$lang->effect->bindCommunity = '蝉知特效只对蝉知社区认证用户开放，请先注册并绑定蝉知社区账号后，获取蝉知特效。';
-$lang->effect->noRsults      = "你还没有任何特效，请登录蝉知特效平台。<a href='http://www.zsite.com/effect.html' class='btn btn-xs btn-primary' target='_blank'>获取特效</a>";
+$lang->effect->bindCommunity = 'ZSITE特效只对ZSITE社区认证用户开放，请先注册并绑定ZSITE社区账号后，获取ZSITE特效。';
+$lang->effect->noRsults      = "你还没有任何特效，请登录ZSITE特效平台。<a href='http://www.zsite.com/effect.html' class='btn btn-xs btn-primary' target='_blank'>获取特效</a>";
 $lang->effect->redirecting   = "<span class='text-muted'><span id='countDown'>3</span>秒后跳转到社区账号注册/绑定页面......</span> <a class='btn-redirec' href='%s'><i class='icon icon-hand-right'></i>立即跳转</a>";
 /* upgrade */
 $lang->upgrade->common  = '升级';
@@ -3710,7 +3710,7 @@ $lang->upgrade->selectVersion    = '确认升级之前的版本';
 $lang->upgrade->confirm          = '确认要执行的SQL语句';
 $lang->upgrade->execute          = '确认执行';
 $lang->upgrade->next             = '下一步';
-$lang->upgrade->updateLicense    = '蝉知 4.0 已更换授权协议至 Z PUBLIC LICENSE(ZPL) 1.2。';
+$lang->upgrade->updateLicense    = 'ZSITE 4.0 已更换授权协议至 Z PUBLIC LICENSE(ZPL) 1.2。';
 
 $lang->upgrade->deleteTips   = '需要删除部分文件。linux下面命令为：';
 $lang->upgrade->deleteDir    = '<code>rm -fr %s</code>';
@@ -3991,7 +3991,7 @@ $lang->user->oauth->lblOtherLogin    = '其他方式 : ';
 $lang->user->oauth->lblProfile       = "注册新用户";
 $lang->user->oauth->lblBind          = "绑定已有用户";
 $lang->user->oauth->directBind       = "直接绑定";
-$lang->user->oauth->lblBindCurrent   = "当前登录蝉知用户为 %s，微信用户为 %s";
+$lang->user->oauth->lblBindCurrent   = "当前登录ZSITE用户为 %s，微信用户为 %s";
 $lang->user->oauth->lblUnbind        = "解除绑定";
 $lang->user->oauth->lblUnbindSuccess = "解除绑定成功！";
 $lang->user->oauth->lblUnbindFailed  = "解除绑定失败！";
@@ -4075,7 +4075,7 @@ $lang->visual->manageBlock     = '区块管理';
 $lang->visual->searchBlock     = '搜索区块';
 $lang->visual->allBlock        = '全部';
 $lang->visual->openInNewWindow = '在新窗口中打开当前编辑页面';
-$lang->visual->editPowerBy     = "<p>您可以在遵守我们<a href='http://www.zsite.com/book/chanzhieps/58_license.html' target='_blank'>授权协议</a>的前提下免费使用蝉知系统，保留蝉知标志是对宣传蝉知系统非常重要。如果您想去除蝉知的标志，请<a href='http://www.zsite.com/license-search.html' target='_blank'>购买蝉知商业授权</a>。</p>";
+$lang->visual->editPowerBy     = "<p>您可以在遵守我们<a href='http://www.zsite.com/book/chanzhieps/58_license.html' target='_blank'>授权协议</a>的前提下免费使用ZSITE系统，保留ZSITE标志是对宣传ZSITE系统非常重要。如果您想去除ZSITE的标志，请<a href='http://www.zsite.com/license-search.html' target='_blank'>购买ZSITE商业授权</a>。</p>";
 $lang->visual->pageLayout      = '页面布局已启用';
 $lang->visual->pageLayoutInfo  = '区块布局仅适合当前<span class="page-name"></span>，不会影响全局设置';
 $lang->visual->globalLayout    = '全局布局';
@@ -4113,8 +4113,8 @@ $lang->visual->js->actions           = array('edit' => '编辑', 'delete' => '�
 $lang->visual->setting = new stdclass();
 $lang->visual->setting->logo                               = array('name' => "Logo/名称");
 $lang->visual->setting->slogan                             = array('name' => "口号");
-$lang->visual->setting->powerby                            = array('name' => "蝉知标识", 'actions' => array());
-$lang->visual->setting->powerby['actions']['edit']         = array('title' => '移除蝉知标识', 'text' => '移除蝉知标识', 'alert' => $lang->visual->editPowerBy);
+$lang->visual->setting->powerby                            = array('name' => "ZSITE标识", 'actions' => array());
+$lang->visual->setting->powerby['actions']['edit']         = array('title' => '移除ZSITE标识', 'text' => '移除ZSITE标识', 'alert' => $lang->visual->editPowerBy);
 $lang->visual->setting->company                            = array('name' => "公司介绍", 'actions' => array());
 $lang->visual->setting->company['actions']['edit']         = array('text' => '编辑公司介绍');
 $lang->visual->setting->companyName                        = array('name' => "公司名称");
@@ -4383,7 +4383,7 @@ $lang->widget->default['7']['title'] = '操作日志';
 $lang->widget->default['7']['type']  = 'operationLog';
 $lang->widget->default['7']['grid']  = 4;
 
-$lang->widget->default['8']['title'] = '蝉知动态';
+$lang->widget->default['8']['title'] = 'ZSITE动态';
 $lang->widget->default['8']['type']  = 'chanzhiDynamic';
 $lang->widget->default['8']['grid']  = 4;
 
@@ -4398,7 +4398,7 @@ $lang->widget->typeList->latestThread   = '最新帖子';
 $lang->widget->typeList->message        = '反馈';
 $lang->widget->typeList->wechatMessage  = '微信留言';
 $lang->widget->typeList->submission     = '最新投稿';
-$lang->widget->typeList->chanzhiDynamic = '蝉知动态';
+$lang->widget->typeList->chanzhiDynamic = 'ZSITE动态';
 $lang->widget->typeList->commonMenu     = '快捷入口';
 $lang->widget->typeList->html           = '自定义';
 
