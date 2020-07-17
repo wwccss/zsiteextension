@@ -1218,6 +1218,7 @@ $lang->book->search     = 'Search';
 $lang->book->setting    = 'Settings';
 $lang->book->index      = 'Home';
 $lang->book->more       = 'More';
+$lang->book->shareLinks = 'Share links';
 $lang->book->noDesc     = 'No Description';
 
 $lang->book->searchResults         = 'Search Results';

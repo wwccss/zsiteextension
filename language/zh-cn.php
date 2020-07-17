@@ -1218,6 +1218,7 @@ $lang->book->search     = '搜索';
 $lang->book->setting    = '设置';
 $lang->book->index      = '首页';
 $lang->book->more       = '更多';
+$lang->book->shareLinks = '分享链接';
 $lang->book->noDesc     = '暂无摘要';
 
 $lang->book->searchResults         = '搜索结果';
