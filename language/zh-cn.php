@@ -1320,10 +1320,12 @@ $lang->error->blogCategory    = '博客分类';
 $lang->error->searchTip       = '欢迎继续浏览本站的其他内容，或者通过搜索来查找内容：';
 /* file */
 $lang->file->common        = '附件';
+$lang->file->category      = '类目';
 $lang->file->upload        = '上传附件';
 $lang->file->browse        = '附件列表';
 $lang->file->imageList     = '图片列表';
 $lang->file->download      = '下载附件';
+$lang->file->all           = '全部';
 $lang->file->edit          = '编辑';
 $lang->file->primary       = '封面';
 $lang->file->name          = '名称';
@@ -1424,6 +1426,9 @@ $lang->file->watermarkList['close'] = '关闭';
 $lang->file->image = array();
 $lang->file->image['width']  = '宽度';
 $lang->file->image['height'] = '高度';
+
+$lang->file->browseSource = new stdclass();
+$lang->file->browseSource->menu = '附件列表|file|browsesource|';
 /* forum */
 $lang->forum->common      = '论坛';
 $lang->forum->board       = '版块';
@@ -3215,6 +3220,7 @@ $lang->tree->adminLinks->article = '返回文章列表|article|admin|type=articl
 $lang->tree->adminLinks->blog    = '返回博客列表|article|admin|type=blog';
 $lang->tree->adminLinks->forum   = '返回主题列表|forum|admin|';
 $lang->tree->adminLinks->product = '返回产品列表|product|admin|';
+$lang->tree->adminLinks->file    = '返回素材列表|file|browsesource|';
 /* ui */
 $lang->ui->common = "界面";
 

@@ -1320,10 +1320,12 @@ $lang->error->blogCategory    = 'Blog Category';
 $lang->error->searchTip       = 'Please continue browsing our website. You can also use Search to look for contents you want.';
 /* file */
 $lang->file->common        = 'File';
+$lang->file->category      = 'Category';
 $lang->file->upload        = 'Upload ';
 $lang->file->browse        = 'File';
 $lang->file->imageList     = 'Image';
 $lang->file->download      = 'Download';
+$lang->file->all           = 'All';
 $lang->file->edit          = 'Edit';
 $lang->file->primary       = 'Cover';
 $lang->file->name          = 'Title';
@@ -1424,6 +1426,9 @@ $lang->file->watermarkList['close'] = 'Off';
 $lang->file->image = array();
 $lang->file->image['width']  = 'Width';
 $lang->file->image['height'] = 'Height';
+
+$lang->file->browseSource = new stdclass();
+$lang->file->browseSource->menu = 'File List|file|browsesource|';
 /* forum */
 $lang->forum->common      = 'Forum';
 $lang->forum->board       = 'Board';
@@ -3215,6 +3220,7 @@ $lang->tree->adminLinks->article = 'Manage articles|article|admin|type=article';
 $lang->tree->adminLinks->blog    = 'Manage blogs|article|admin|type=blog';
 $lang->tree->adminLinks->forum   = 'Manage threads|forum|admin|';
 $lang->tree->adminLinks->product = 'Manage products|product|admin|';
+$lang->tree->adminLinks->file    = 'Manage Files|file|browsesource|';
 /* ui */
 $lang->ui->common = "UI";
 
