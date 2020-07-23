@@ -3353,6 +3353,8 @@ $lang->ui->template->qq              = 'QQ';
 $lang->ui->template->email           = 'Email';
 $lang->ui->template->site            = 'site';
 
+$lang->ui->template->errorCheckIncompatible = '该主题版本(%s)与ZSITE版本(%s)不兼容，安装后可能无法使用。。<h3>您可以选择 <a href="%s" class="model-jump">强制安装</a> 或者 <a href="#" onclick="window.location.reload()">取消</a></h3>';
+
 $lang->ui->appearance         = '外观';
 $lang->ui->custom             = '自定义';
 $lang->ui->themeSaved         = '主题配置已保存';

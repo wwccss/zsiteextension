@@ -3353,6 +3353,8 @@ $lang->ui->template->qq              = 'QQ';
 $lang->ui->template->email           = 'Email';
 $lang->ui->template->site            = 'Site';
 
+$lang->package->errorCheckIncompatible       = 'It(%s) is not compatible with Zsite(%s). After installed, it might be inapplicable. <h3>You can <a href="%s" class="model-jump">force install</a> or <a href="#" onclick="window.location.reload()"> cancel it.</a></h3>';
+
 $lang->ui->appearance      = 'Appearance';
 $lang->ui->custom          = 'Customize';
 $lang->ui->themeSaved      = 'Theme saved!';
