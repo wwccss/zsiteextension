@@ -701,7 +701,9 @@ $lang->article->layout      = 'Layout';
 $lang->article->viewCount   = 'views:%d';
 $lang->article->underReview = 'UnderReview:%d';
 $lang->article->reviewed    = 'Reviewed:%d';
-$lang->article->publish     = 'Publish';
+
+$lang->article->publish        = 'Publish';
+$lang->article->SaveAndPreview = 'Save And Preview';
 
 $lang->article->forward2Blog     = 'To Blog';
 $lang->article->forward2Forum    = 'To Forum';
