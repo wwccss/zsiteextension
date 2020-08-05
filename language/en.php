@@ -814,10 +814,10 @@ $lang->article->forwardFrom = 'Repost from';
 $lang->article->noCategoriesTip = 'You have not added the categories, please add the categories at first';
 
 $lang->article->noCategories = array();
-$lang->article->noCategories['article'] = 'You have not added the categories for article. <a href="/admin.php?m=tree&f=browse&type=article">Please add the categories at first</a>.';
-$lang->article->noCategories['blog']    = 'You have not added the categories for blog. <a href="/admin.php?m=tree&f=browse&type=blog">Please add the categories at first</a>.';
-$lang->article->noCategories['video']   = 'You have not added the categories for video. <a href="/admin.php?m=tree&f=browse&type=video">Please add the categories at first</a>.';
-$lang->article->noCategories['forum']   = 'You have not added the categories for forum. <a href="/admin.php?m=tree&f=browse&type=forum">Please add the categories at first</a>.';
+$lang->article->noCategories['article'] = 'You have not added the categories for article. <a href="%s">Please add the categories at first</a>.';
+$lang->article->noCategories['blog']    = 'You have not added the categories for blog. <a href="%s">Please add the categories at first</a>.';
+$lang->article->noCategories['video']   = 'You have not added the categories for video. <a href="%s">Please add the categories at first</a>.';
+$lang->article->noCategories['forum']   = 'You have not added the categories for forum. <a href="%s">Please add the categories at first</a>.';
 
 $lang->article->stateList = array();
 $lang->article->stateList['all']        = 'All(%d)';

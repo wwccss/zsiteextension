@@ -814,10 +814,10 @@ $lang->article->forwardFrom = '转发自';
 $lang->article->noCategoriesTip = '您还没有添加类目，请添加类目。';
 
 $lang->article->noCategories = array();
-$lang->article->noCategories['article'] = '您还没有为文章添加类目，请<a href="/admin.php?m=tree&f=browse&type=article">添加类目</a>。';
-$lang->article->noCategories['blog']    = '您还没有为博客添加类目，请<a href="/admin.php?m=tree&f=browse&type=blog">添加类目</a>。';
-$lang->article->noCategories['video']   = '您还没有为视频添加类目，请<a href="/admin.php?m=tree&f=browse&type=video">添加类目</a>。';
-$lang->article->noCategories['forum']   = '您还没有为论坛添加板块，请<a href="/admin.php?m=tree&f=browse&type=forum">添加板块</a>。';
+$lang->article->noCategories['article'] = '您还没有为文章添加类目，请<a href="%s">添加类目</a>。';
+$lang->article->noCategories['blog']    = '您还没有为博客添加类目，请<a href="%s">添加类目</a>。';
+$lang->article->noCategories['video']   = '您还没有为视频添加类目，请<a href="%s">添加类目</a>。';
+$lang->article->noCategories['forum']   = '您还没有为论坛添加板块，请<a href="%s">添加板块</a>。';
 
 $lang->article->stateList = array();
 $lang->article->stateList['all']        = '全部(%d)';
